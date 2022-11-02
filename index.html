@@ -1,212 +1,90 @@
-<!DOCTYPE html>
-<html lang="en">
-    <head>
-        <meta charset="utf-8" />
-        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
-        <meta name="description" content="" />
-        <meta name="author" content="" />
-        <title>谭立行</title>
-        <link rel="icon" type="image/x-icon" href="assets/img/favicon.ico" />
-        <!-- Font Awesome icons (free version)-->
-        <script src="https://use.fontawesome.com/releases/v5.13.0/js/all.js" crossorigin="anonymous"></script>
-        <!-- Google fonts-->
-        <link href="https://fonts.googleapis.com/css?family=Saira+Extra+Condensed:500,700" rel="stylesheet" type="text/css" />
-        <link href="https://fonts.googleapis.com/css?family=Muli:400,400i,800,800i" rel="stylesheet" type="text/css" />
-        <!-- Core theme CSS (includes Bootstrap)-->
-        <link href="css/styles.css" rel="stylesheet" />
-    </head>
-    <body id="page-top">
-        <!-- Navigation-->
-        <nav class="navbar navbar-expand-lg navbar-dark bg-primary fixed-top" id="sideNav">
-            <a class="navbar-brand js-scroll-trigger" href="#page-top">
-                <span class="d-block d-lg-none">谭立行</span>
-                <span class="d-none d-lg-block"><img class="img-fluid img-profile rounded-circle mx-auto mb-2" src="assets/img/heads.pic.jpg" alt="" /></span>
+---
+layout: default
+---
+<div class="search-container">
+  <input type="text" id="search-input" placeholder="search blog posts..." style="width: 90%;
+    height: 35px;
+    color: #333;
+    background-color: rgba(227,231,236,.2);
+    line-height: 35px;
+    padding:0px 16px;
+    border: 1px solid #c0c0c0;
+    font-size: 16px;
+    font-weight: bold;
+    border-radius: 17px;
+    outline: none;
+    box-sizing: border-box;
+    box-shadow: inset 0 1px 1px rgba(0,0,0,.075), 0 0 8px rgba(102,175,233,.6);">
+  <ul id="results-container"></ul>
+</div>
+
+<!--script src="https://unpkg.com/simple-jekyll-search/dest/simple-jekyll-search.min.js"></script-->
+<script src="{{ site.baseurl }}/js/simple-jekyll-search.min.js"></script>
+
+<script>
+	window.simpleJekyllSearch = new SimpleJekyllSearch({
+	searchInput: document.getElementById('search-input'),
+	resultsContainer: document.getElementById('results-container'),
+	json: '{{ site.baseurl }}/search.json',
+	searchResultTemplate: '<li><a href="{url}?query={query}" title="{desc}">{title}</a></li>',
+	noResultsText: 'No results found',
+	limit: 10,
+	fuzzy: false,
+	exclude: ['Welcome']
+  })
+</script>
+ 
+{% if site.posts.size == 0 %}
+  <h2>No post found</h2>
+{% endif %}
+
+<div class="posts">
+  {% for post in paginator.posts %}
+  {% unless post.draft %}
+    <article class="post">
+      <h1>
+        <a href="{{ site.baseurl }}{{ post.url }}">{{ post.title }}</a>
+      </h1>
+
+      <div clsss="meta">
+        <span class="date">
+          {{ post.date | date: "%Y-%m-%d" }}
+        </span>
+
+        <ul class="tag">
+          {% for tag in post.tags %}
+          <li>
+            <a href="{{ site.url }}{{ site.baseurl }}/tags#{{ tag }}">
+              {{ tag }}
             </a>
-            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation"><span class="navbar-toggler-icon"></span></button>
-            <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                <ul class="navbar-nav">
-                    <li class="nav-item"><a class="nav-link js-scroll-trigger" href="#about">About</a></li>
-                    <li class="nav-item"><a class="nav-link js-scroll-trigger" href="#education">Education</a></li>
-                    <li class="nav-item"><a class="nav-link js-scroll-trigger" href="#experience">Experience</a></li>
-                    <li class="nav-item"><a class="nav-link js-scroll-trigger" href="#skills">Skills</a></li>
-                    <li class="nav-item"><a class="nav-link js-scroll-trigger" href="#interests">Interests</a></li>
-                    <li class="nav-item"><a class="nav-link js-scroll-trigger" href="#awards">Awards</a></li>
-                    <li class="nav-item"><a class="nav-link js-scroll-trigger" href="#Publications">Publications</a></li>
-                </ul>
-            </div>
-        </nav>
-        <!-- Page Content-->
-        <div class="container-fluid p-0">
-            <!-- About-->
-            <section class="resume-section" id="about">
-                <div class="resume-section-content">
-                    <h1 class="mb-0">Lixing Tan</h1>
-                    <div class="subheading mb-5">
-                        Beijing · China · <a href="mailto:name@email.com">LexonTran@qq.com</a>
-                    </div>
-                    <div class="d-flex flex-column flex-md-row justify-content-between mb-5">
-                        <div class="flex-grow-1">
-                            <div>
-                                I am working on my EE MEng. at the University of Science & Technology Beijing. 
-                                My research focuses are surgical robotics perception and navigation, 
-                                with emphasis on image registration durign surgery. 
-                                I am jointly advised by Dr. Shuang Song (primary) Dr. Cheng Chen and Dr. Ruoxiu Xiao 
-                                in the School of Computer & Communication Engineering. I am affiliated with Laboratory of Medical
-                                Artificial Intelligence (MedAI).
-                                I received a Bachelor of Engineering in College of Big Data and Information Engineering from 
-                                Guizhou University. I was fortunate to work with Dr. Hanyu Lu and Dr. Rongfen Zhang 
-                                during my undergraduate study.
-                            </div>
-                        </div>
-                    </div>
-                    <p class="lead mb-5"></p>
-                    <div class="social-icons">
-                        <a class="social-icon" href="https://github.com/LexTran"><i class="fab fa-github"></i></a>
-                        <a class="social-icon" href="https://www.zhihu.com/people/tu-lang-xing-jun"><i class="fab fa-zhihu"></i></a>
-                        </div>
-                </div>
-            </section>
-            <hr class="m-0" />
-            <!-- Education-->
-            <section class="resume-section" id="education">
-                <div class="resume-section-content">
-                    <h2 class="mb-5">Education</h2>
-                    <div class="d-flex flex-column flex-md-row justify-content-between mb-5">
-                        <img class="rounded-circle" src="assets/img/USTB.jpg" width="80" height="80" alt="" />
-                        <div class="flex-grow-1" style="margin-left:20px ;">
-                            <h3 class="mb-0">
-                                University of Science & Technology Beijing
-                            </h3>
-                            <div class="subheading mb-3">MEng.</div>
-                            <div>Electronic Engineering</div>
-                            <div>Medical Image Processing</div>
-                        </div>
-                        <div class="flex-shrink-0"><span class="text-primary">Sep. 2022 - present</span></div>
-                    </div>
-                    <div class="d-flex flex-column flex-md-row justify-content-between mb-5">
-                        <img class="rounded-circle" src="assets/img/GZU.jpg" width="80" height="80" alt="" />
-                        <div class="flex-grow-1" style="margin-left:20px ;">
-                            <h3 class="mb-0">
-                                Guizhou University
-                            </h3>
-                            <div class="subheading mb-3">Bachelor of Engineering</div>
-                            <div>Electronic Communication Engineering</div>
-                        </div>
-                        <div class="flex-shrink-0"><span class="text-primary">Sep. 2017 - June 2021</span></div>
-                    </div>
-                </div>
-            </section>
-            <hr class="m-0" />
-            <!-- Experience-->
-            <section class="resume-section" id="experience">
-                <div class="resume-section-content">
-                    <h2 class="mb-5">Experience</h2>
-                    <div class="d-flex flex-column flex-md-row justify-content-between mb-5">
-                        <div class="flex-grow-1">
-                            <h3 class="mb-0">Embedded Software Engineer</h3>
-                            <div class="subheading mb-3">CSIC</div>
-                            <ul class="fa-ul mb-0">
-                                <li>
-                                    <span class="fa-li"><i class="fas fa-check"></i></span>
-                                    Embedded C Programming
-                                </li>
-                                <li>
-                                    <span class="fa-li"><i class="fas fa-check"></i></span>
-                                    C# Software Development
-                                </li>
-                            </ul>
-                        </div>
-                        <div class="flex-shrink-0"><span class="text-primary">July 2021 - Sep. 2021</span></div>
-                    </div>
+          </li>
+          {% endfor %}
+        </ul>
+      </div>
 
+      <div class="entry">
+        {{ post.excerpt | truncate: 200 }}
+      </div>
 
-                </div>
-            </section>
-            <hr class="m-0" />
-            <!-- Skills-->
-            <section class="resume-section" id="skills">
-                <div class="resume-section-content">
-                    <h2 class="mb-5">Skills</h2>
-                    <div class="subheading mb-3">Programming Skills</div>
-                    <ul class="list-inline dev-icons">
-                        <li class="list-inline-item"><i class="fab fa-python"></i></li>
-                        <li class="list-inline-item"><i class="fab fa-medapps"></i></li>
-                        <li class="list-inline-item"><i class="fab fa-linux"></i></li>
-                        <li class="list-inline-item"><i class="fab fa-git"></i></li>
-                        <li class="list-inline-item"><i class="fab fa-html5"></i></li>
-                        <li class="list-inline-item"><i class="fab fa-css3-alt"></i></li>
-                    </ul>
-                    <div class="subheading mb-3">Research Interests</div>
-                    <ul class="fa-ul mb-0">
-                      <li>
-                          <span class="fa-li"><i class="fas fa-check"></i></span>
-                          Computer Assisted Interventions
-                      </li>
-                      <li>
-                          <span class="fa-li"><i class="fas fa-check"></i></span>
-                          Surgical Robotics Vision
-                      </li>
-                      <li>
-                          <span class="fa-li"><i class="fas fa-check"></i></span>
-                          Surgical Video Analysis
-                      </li>
-                    </ul>
-                </div>
-            </section>
-            <hr class="m-0" />
-            <!-- Interests-->
-            <section class="resume-section" id="interests">
-                <div class="resume-section-content">
-                    <h2 class="mb-5">Interests</h2>
-                    <p>In my spare time, I enjoy playing mountain ball, doing rope jumping and reading.</p>
-                    <p>I also like to watch movies, strongly recommended 'The Secret Life of Walter Mitty'.</p>
-                    <p>As for music, my taste may seem a little bit wierd, I'm addicted to Vaporwave.</p>
-                </div>
-            </section>
-            <hr class="m-0" />
-            <!-- Awards-->
-            <section class="resume-section" id="awards">
-                <div class="resume-section-content">
-                    <h2 class="mb-5">Awards & Certifications</h2>
-                    <ul class="fa-ul mb-0">
-                      <li>
-                          <span class="fa-li"><i class="fas fa-trophy text-warning"></i></span>
-                          2nd Price at Provincial Level, 2021 The Chinese Mathematics Competitions(CMC)
-                      </li>
-                      <li>
-                        <span class="fa-li"><i class="fas fa-trophy text-warning"></i></span>
-                        2nd Price at Provincial Level, 2021 China College Students' Entrepreneureship Competition
-                    </li>
-                    </ul>
-                </div>
-            </section>
-            <hr class="m-0" />
-            <!-- Publishing-->
-            <section class="resume-section" id="Publications">
-                <div class="resume-section-content">
-                    <h2 class="mb-5">Publications</h2>
-                    <div class="d-flex flex-column flex-md-row justify-content-between mb-5">
-                        <div class="flex-grow-1">
-                            <div class="mb-0" style="font-size: 24px;color: #343a40;margin-bottom: 0.5rem;line-height: 1.2;">
-                                <b>Tan Lixing</b>, Lu Jiaqi, Zhang Xiaonan, Liu Yuhong, Zhang Rongfen
-                            </div>
-                            <div class="subheading mb-3">
-                                <b>Improved Ghost Machine Gesture Interaction System based on Lightweight OpenPose.</b> Computer Engineering and Applications 57(16)
-                            </div>
-                        </div>
-                        <div class="flex-shrink-0">
-                            <p class="text-primary" style="text-align: right;font-size:20px">Oct. 2020</p>
-                        </div>
-                    </div>
-                </div>
-            </section>
-        </div>
-        <!-- Bootstrap core JS-->
-        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.bundle.min.js"></script>
-        <!-- Third party plugin JS-->
-        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-easing/1.4.1/jquery.easing.min.js"></script>
-        <!-- Core theme JS-->
-        <script src="js/scripts.js"></script>
-    </body>
-</html>
+      <a href="{{ site.baseurl }}{{ post.url }}" class="read-more">Read More</a>
+    </article>
+  {% endunless %}
+  {% endfor %}
+</div>
+
+<div class="pagination">
+  {% if paginator.previous_page %}
+    <span class="prev">
+      <a href="{{ site.baseurl }}{{ paginator.previous_page_path }}" class="prev">
+        ← 上一页
+      </a>
+    </span>
+  {% endif %}
+  {% if paginator.next_page %}
+    <span class="next">
+      <a href="{{ site.baseurl}}{{ paginator.next_page_path }}" class="next">
+        下一页 →
+      </a>
+    </span>
+  {% endif %}
+</div>
