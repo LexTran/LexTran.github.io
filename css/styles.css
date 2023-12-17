@@ -24,7 +24,7 @@
   --white: #fff;
   --gray: #6c757d;
   --gray-dark: #343a40;
-  --primary: #3bb6b2;
+  --primary: #618264;
   --secondary: #6c757d;
   --success: #28a745;
   --info: #17a2b8;
@@ -66,7 +66,7 @@ body {
   line-height: 1.5;
   color: #212529;
   text-align: left;
-  background-color: #fff;
+  background-color: #e2f8e4;
 }
 
 [tabindex="-1"]:focus:not(:focus-visible) {
@@ -159,12 +159,12 @@ sup {
 }
 
 a {
-  color: #3bb6b2;
+  color: #79AC78;
   text-decoration: none;
   background-color: transparent;
 }
 a:hover {
-  color: #276582;
+  color: #618264;
   text-decoration: underline;
 }
 
@@ -570,8 +570,8 @@ pre code {
 
 .container-fluid, .container-xl, .container-lg, .container-md, .container-sm {
   width: 100%;
-  padding-right: 0.75rem;
-  padding-left: 0.75rem;
+  padding-right: 0.5rem;
+  padding-left: 0.5rem;
   margin-right: auto;
   margin-left: auto;
 }
@@ -4810,9 +4810,9 @@ a.badge-dark:focus, a.badge-dark.focus {
 
 .jumbotron {
   padding: 2rem 1rem;
-  margin-bottom: 2rem;
-  background-color: #e9ecef;
-  border-radius: 0.3rem;
+  margin-bottom: 1rem;
+  background-color: #618264;
+  /* border-radius: 0.3rem; */
 }
 @media (min-width: 576px) {
   .jumbotron {
@@ -6097,7 +6097,7 @@ a.close.disabled {
 }
 
 .bg-primary {
-  background-color: #3bb6b2  !important;
+  background-color: #618264  !important;
 }
 
 a.bg-primary:hover, a.bg-primary:focus,
@@ -9799,7 +9799,7 @@ button.bg-dark:focus {
 }
 
 .text-primary {
-  color: #3bb6b2 !important;
+  color: #79AC78 !important;
 }
 
 a.text-primary:hover, a.text-primary:focus {
@@ -10107,8 +10107,8 @@ section.resume-section {
   align-items: center;
   padding-left: 1rem;
   padding-right: 1rem;
-  padding-top: 3rem;
-  padding-bottom: 3rem;
+  padding-top: 1rem;
+  padding-bottom: 1rem;
   max-width: 75rem;
 }
 section.resume-section .resume-section-content {
@@ -10124,7 +10124,23 @@ section.resume-section .resume-section-content {
   section.resume-section {
     padding-left: 3rem;
     padding-right: 3rem;
-    padding-top: 3rem;
-    padding-bottom: 3rem;
+    padding-top: 1rem;
+    padding-bottom: 1rem;
   }
+}
+
+.email{
+  color: #D0E7D2;
+}
+
+.email:hover{
+  color: #79AC78;
+}
+
+#heading{
+  color: #D0E7D2;
+}
+
+#place{
+  color: #D0E7D2;
 }
