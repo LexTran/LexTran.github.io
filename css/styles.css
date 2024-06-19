@@ -3919,6 +3919,25 @@ input[type=button].btn-block {
   cursor: default;
 }
 
+.nav-button {
+  display: inline-block;
+  padding-left: 0.2rem;
+  margin: 0.01rem 0.3rem;
+  background-color: transparent;
+  border-style: none;
+  font-weight: 800;
+  letter-spacing: 0.05rem;
+  text-transform: uppercase;
+}
+.nav-button:hover, .nav-button:focus {
+  text-decoration: none;
+}
+.nav-button.disabled {
+  color: #6c757d;
+  pointer-events: none;
+  cursor: default;
+}
+
 .nav-tabs {
   border-bottom: 1px solid #dee2e6;
 }
