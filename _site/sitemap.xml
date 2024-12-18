@@ -1,14 +1,31 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.sitemaps.org/schemas/sitemap/0.9 http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd" xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
 <url>
-<loc>http://localhost:4000/demo/</loc>
+<loc>http://localhost:4000/2022/11/02/jekyll/</loc>
 <lastmod>2022-11-02T00:00:00+08:00</lastmod>
+</url>
+<url>
+<loc>http://localhost:4000/2023/06/12/ros2/</loc>
+<lastmod>2023-06-12T00:00:00+08:00</lastmod>
+</url>
+<url>
+<loc>http://localhost:4000/2023/12/17/stylegan/</loc>
+<lastmod>2023-12-17T00:00:00+08:00</lastmod>
+</url>
+<url>
+<loc>http://localhost:4000/2024/04/29/deploy/</loc>
+<lastmod>2024-04-29T00:00:00+08:00</lastmod>
+</url>
+<url>
+<loc>http://localhost:4000/homepage.html</loc>
+</url>
+<url>
+<loc>http://localhost:4000/homepage_cn.html</loc>
 </url>
 <url>
 <loc>http://localhost:4000/</loc>
 </url>
 <url>
-<loc>http://localhost:4000/homepage.html</loc>
-<lastmod>2022-11-02T15:35:20+08:00</lastmod>
+<loc>http://localhost:4000/new-post/</loc>
 </url>
 </urlset>

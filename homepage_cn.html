@@ -1,3 +1,7 @@
+---
+layout: none
+permalink: /homepage_cn.html
+---
 <!DOCTYPE html>
 <html lang="en">
     <head>
@@ -17,31 +21,69 @@
     </head>
     <body id="page-top">
         <div class="jumbotron">
-            <h1 class="mb-0" id="heading">谭立行</h1>
-            <div class="subheading", id="place">
-                北京 · 中国 · <a class="email" href="mailto:name@email.com">LexonTran@qq.com</a>
+            <div class="row align-items-center">
+                <!-- 左侧：姓名和基本信息 -->
+                <div class="col-md-6">
+                    <h1 class="mb-0" id="heading">谭立行</h1>
+                    <div class="subheading mb-3" id="place">
+                        北京 · 中国 · <a class="email" href="mailto:name@email.com">LexonTran@qq.com</a>
+                    </div>
+                </div>
+                
+                <!-- 右侧：教育背景 -->
+                <div class="col-md-6">
+                    <div class="education-item d-flex align-items-center mb-3">
+                        <img class="rounded-circle me-3" src="assets/img/USTB.jpg" width="70" height="70" alt="" style="margin-right: 1rem !important;"/>
+                        <div class="education-details">
+                            <h4 class="mb-0" style="color: #D0E7D2 !important;">北京科技大学</h4>
+                            <div style="color: #C7E8CA !important;">工学硕士 · 电子信息</div>
+                            <small style="color: #C7E8CA !important;">2022 - 至今</small>
+                        </div>
+                    </div>
+                    
+                    <div class="education-item d-flex align-items-center">
+                        <img class="rounded-circle me-3" src="assets/img/GZU.jpg" width="70" height="70" alt="" style="margin-right: 1rem !important;"/>
+                        <div class="education-details">
+                            <h4 class="mb-0" style="color: #D0E7D2 !important;">贵州大学</h4>
+                            <div style="color: #C7E8CA !important;">工学学士 · 通信工程</div>
+                            <small style="color: #C7E8CA !important;">2017 - 2021</small>
+                        </div>
+                    </div>
+                </div>
             </div>
         </div>
         <!-- Navigation-->
         <nav class="navbar navbar-expand-lg navbar-dark bg-primary fixed-top" id="sideNav">
             <a class="navbar-brand js-scroll-trigger" href="#page-top">
                 <span class="d-block d-lg-none">谭立行</span>
-                <span class="d-none d-lg-block"><img class="img-fluid img-profile rounded-circle mx-auto mb-2" src="assets/img/heads.pic.jpg" alt="" /></span>
+                <span class="d-none d-lg-block"><img class="img-fluid img-profile rounded-circle mx-auto mb-2" src="assets/img/heads.jpg" alt="" /></span>
             </a>
-            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation"><span class="navbar-toggler-icon"></span></button>
+            
+            <!-- 技能图标部分 -->
+            <div class="skill-section d-none d-lg-block">
+                <div class="skill-icons-container">
+                    <span style="color: #FF6B6B !important; font-weight: bold; font-size: 1.2rem;">PyTorch</span>
+                    <i class="fab fa-python skill-icon" style="color: #4FB4FF !important; font-size: 1.2rem;"></i>
+                    <i class="fab fa-linux skill-icon" style="color: #FFD700 !important; font-size: 1.2rem;"></i>
+                    <i class="fab fa-git skill-icon" style="color: #FF9F45 !important; font-size: 1.2rem;"></i>
+                    <i class="fab fa-html5 skill-icon" style="color: #B19CD9 !important; font-size: 1.2rem;"></i>
+                    <i class="fas fa-code skill-icon" style="color: #00CED1 !important; font-size: 1.2rem;"></i>
+                </div>
+            </div>
+
+            <!-- 导航菜单 -->
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
             <div class="collapse navbar-collapse" id="navbarSupportedContent">
                 <ul class="navbar-nav">
                     <li class="nav-item"><a class="nav-link js-scroll-trigger" href="#about">关于我</a></li>
-                    <li class="nav-item"><a class="nav-link js-scroll-trigger" href="#education">教育背景</a></li>
                     <li class="nav-item"><a class="nav-link js-scroll-trigger" href="#experience">工作经验</a></li>
-                    <li class="nav-item"><a class="nav-link js-scroll-trigger" href="#skills">工作技能</a></li>
-                    <li class="nav-item"><a class="nav-link js-scroll-trigger" href="#interests">个人兴趣</a></li>
-                    <li class="nav-item"><a class="nav-link js-scroll-trigger" href="#awards">获奖情况</a></li>
                     <li class="nav-item"><a class="nav-link js-scroll-trigger" href="#projects">项目经验</a></li>
                     <li class="nav-item"><a class="nav-link js-scroll-trigger" href="#publications">发表情况</a></li>
-                    <li class="nav-item"><a class="nav-link js-scroll-trigger" href="#plans">近期计划</a></li>
-                    <li class="nav-item"><a class="nav-link js-scroll-trigger" href="index.html">个人博客</a></li>
-                    <li class="nav-item"><a href="homepage.html" class="nav-button js-scroll-trigger">English</a><a href="homepage_cn.html" class="nav-button js-scroll-trigger">简体中文</a></li>
+                    <li class="nav-item"><a class="nav-link js-scroll-trigger" href="#blog">个人博客</a></li>
+                    <li class="nav-item"><a class="nav-link js-scroll-trigger" href="#awards">获奖情况</a></li>
+                    <li class="nav-item"><a href="homepage.html" class="nav-button js-scroll-trigger"><i class="fas fa-globe-americas" style="font-size: 2rem;"></i></a></li>
                 </ul>
             </div>
         </nav>
@@ -53,8 +95,11 @@
                     <div class="d-flex flex-column flex-md-row justify-content-between mb-5">
                         <div class="flex-grow-1">
                             <div>
-                                我目前在北京科技大学攻读电子信息硕士学位。我的研究兴趣主要集中于计算机辅助手术，医学仿真模拟。我由宋爽博士和肖若秀博士联合培养，目前是医学可视计算实验室的一员。
-                                我在贵州大学大数据与信息工程学院取得学士学位，很荣幸在本科阶段能够在卢晗宇博士以及张蓉芬博士的指导下进行科研训练。
+                                <p>我目前在北京科技大学攻读电子信息硕士学位。我的研究兴趣主要集中于计算机辅助手术，医学仿真模拟，由宋爽博士和肖若秀教授联合培养，目前是医学可视计算实验室的一员。</p>
+                                <p>我在贵州大学大数据与信息工程学院取得学士学位，很荣幸在本科阶段能够在卢晗宇博士以及张蓉芬博士的指导下进行科研训练。</p>
+                                <p>在空闲时间，我喜欢打羽毛球和去健身房，时常进行阅读，畅游书海。</p>
+                                <p>我还很喜欢看电影，我个人非常推荐《白日梦想家》，大家都应该看看。</p>
+                                <p>关于音乐品味，我的口味可能比较小众，我很喜欢蒸汽波和city pop风格的音乐。</p>
                             </div>
                         </div>
                     </div>
@@ -66,44 +111,13 @@
                 </div>
             </section>
             <hr class="m-0" />
-            <!-- Education-->
-            <section class="resume-section" id="education">
-                <div class="resume-section-content">
-                    <h2 class="mb-5">教育背景</h2>
-                    <div class="d-flex flex-column flex-md-row justify-content-between mb-5">
-                        <img class="rounded-circle" src="assets/img/USTB.jpg" width="80" height="80" alt="" />
-                        <div class="flex-grow-1" style="margin-left:20px ;">
-                            <h3 class="mb-0">
-                                北京科技大学
-                            </h3>
-                            <div class="subheading mb-3">工学硕士.</div>
-                            <div>电子信息</div>
-                            <div>医学影像处理</div>
-                        </div>
-                        <div class="flex-shrink-0"><span class="text-primary">Sep. 2022 - present</span></div>
-                    </div>
-                    <div class="d-flex flex-column flex-md-row justify-content-between mb-5">
-                        <img class="rounded-circle" src="assets/img/GZU.jpg" width="80" height="80" alt="" />
-                        <div class="flex-grow-1" style="margin-left:20px ;">
-                            <h3 class="mb-0">
-                                贵州大学
-                            </h3>
-                            <div class="subheading mb-3">工学学士</div>
-                            <div>通信工程</div>
-                            <div></div>
-                        </div>
-                        <div class="flex-shrink-0"><span class="text-primary">Sep. 2017 - June 2021</span></div>
-                    </div>
-                </div>
-            </section>
-            <hr class="m-0" />
             <!-- Experience-->
             <section class="resume-section" id="experience">
                 <div class="resume-section-content">
-                    <h2 class="mb-5">工作经验</h2>
+                    <h3 class="mb-5">工作经验</h3>
                     <div class="d-flex flex-column flex-md-row justify-content-between mb-5">
                         <div class="flex-grow-1">
-                            <h3 class="mb-0">嵌入式软件助理工程师</h3>
+                            <h4 class="mb-0">嵌入式软件助理工程师</h4>
                             <div class="subheading mb-3">中国船舶工业集团综合技术经济研究院</div>
                             <ul class="fa-ul mb-0">
                                 <li>
@@ -123,152 +137,57 @@
                 </div>
             </section>
             <hr class="m-0" />
-            <!-- Skills-->
-            <section class="resume-section" id="skills">
-                <div class="resume-section-content">
-                    <h2 class="mb-5">工作技能</h2>
-                    <div class="subheading mb-3">编程技能</div>
-                    <ul class="list-inline dev-icons">
-                        <li class="list-inline-item"><i class="fab fa-python"></i></li>
-                        <li class="list-inline-item"><i class="fab fa-medapps"></i></li>
-                        <li class="list-inline-item"><i class="fab fa-linux"></i></li>
-                        <li class="list-inline-item"><i class="fab fa-git"></i></li>
-                        <li class="list-inline-item"><i class="fab fa-html5"></i></li>
-                        <li class="list-inline-item"><i class="fab fa-css3-alt"></i></li>
-                    </ul>
-                    <div class="subheading mb-3">研究兴趣</div>
-                    <ul class="fa-ul mb-0">
-                      <li>
-                          <span class="fa-li"><i class="fas fa-check"></i></span>
-                          计算机辅助手术
-                      </li>
-                      <li>
-                          <span class="fa-li"><i class="fas fa-check"></i></span>
-                          医学影像的半监督/无监督方法
-                      </li>
-                      <li>
-                          <span class="fa-li"><i class="fas fa-check"></i></span>
-                          医学仿真模拟
-                      </li>
-                      <li>
-                          <span class="fa-li"><i class="fas fa-check"></i></span>
-                          医学影像中的生成式模型
-                    </li>
-                    </ul>
-                </div>
-            </section>
-            <hr class="m-0" />
-            <!-- Interests-->
-            <section class="resume-section" id="interests">
-                <div class="resume-section-content">
-                    <h2 class="mb-5">个人兴趣</h2>
-                    <p>在空闲时间，我喜欢打羽毛球和去健身房，时常进行阅读，畅游书海.</p>
-                    <p>我还很喜欢看电影，我个人非常推荐《白日梦想家》，大家都应该看看。</p>
-                    <p>关于音乐品味，我的口味可能比较小众，我很喜欢蒸汽波和city pop风格的音乐。</p>
-                </div>
-            </section>
-            <hr class="m-0" />
-            <!-- Awards-->
-            <section class="resume-section" id="awards">
-                <div class="resume-section-content">
-                    <h2 class="mb-5">获奖情况</h2>
-                    <ul class="fa-ul mb-0">
-                      <li>
-                        <span class="fa-li"><i class="fas fa-trophy text-warning"></i></span>
-                        全国特等奖，2023年挑战杯全国大学生课外学术科技作品竞赛“黑科技”赛道
-                      </li>
-                      <li>
-                        <span class="fa-li"><i class="fas fa-trophy text-warning"></i></span>
-                        首都特等奖，2023年“青创北京”挑战杯首都大学生课外学术科技作品竞赛“黑科技”赛道
-                      </li>
-                      <li>
-                        <span class="fa-li"><i class="fas fa-award text-warning"></i></span>
-                        首都二等奖，第九届大学生“互联网+”创新创业大赛 
-                      </li>
-                      <li>
-                        <span class="fa-li"><i class="fas fa-award text-warning"></i></span>
-                        省级二等奖，2021年全国大学生数学竞赛  
-                      </li>
-                      <li>
-                        <span class="fa-li"><i class="fas fa-award text-warning"></i></span>
-                        省级二等奖，2021年“创青春”中国大学生创新创业大赛
-                      </li>
-                      <li>
-                        <span class="fa-li"><i class="fas fa-award text-warning"></i></span>
-                        校级优胜奖，贵州大学物联网设计大赛
-                      </li>
-                    </ul>
-                </div>
-            </section>
-            <hr class="m-0" />
             <!-- Projects-->
             <section class="resume-section" id="projects">
                 <div class="resume-section-content">
-                    <h2 class="mb-5">项目经验</h2>
-                    <div class="d-flex flex-column flex-md-row justify-content-between mb-5">
-                        <div class="flex-grow-1">
-                            <div class="mb-0" style="font-size: 24px;color: #343a40;margin-bottom: 0.5rem;line-height: 1.2;">
+                    <h3 class="mb-5">项目经验</h3>
+                    <div class="project-list">
+                        <div class="project-item">
+                            <div class="project-name">
+                                <b>腔镜手术机器人自主缝合作业技术与系统研发</b>
+                            </div>
+                            <div class="project-level" style="font-weight: bold;">国家重点研发计划</div>
+                            <div class="project-date">Dec. 2023 -- Nov. 2026</div>
+                        </div>
+
+                        <div class="project-item">
+                            <div class="project-name">
+                                <b>面向冠心病的多模智能化诊断平台与评价体系关键技术研究</b>
+                            </div>
+                            <div class="project-level" style="font-weight: bold;">北自然重点研发计划</div>
+                            <div class="project-date">July 2024 -- June 2027</div>
+                        </div>
+
+                        <div class="project-item">
+                            <div class="project-name">
                                 <b>基于深度学习的复杂碳酸盐盐储层物性预测研究</b>
                             </div>
-                            <div class="subheading mb-3" style="font-size:16px">
-                                项目团队主要开发人员。进行三维地震品质资料分析及地震资料预处理，开发孔隙度智能预测算法模型，利用训练的模型进行储层孔隙度预测。
-                            </div>
+                            <div class="project-level"></div>
+                            <div class="project-date">Oct. 2023 -- May. 2024</div>
                         </div>
-                        <div class="flex-shrink-0">
-                            <p class="text-primary" style="text-align: right;font-size:20px">Oct. 2023 -- May.2024</p>
-                        </div>
-                    </div>
-                    <div class="d-flex flex-column flex-md-row justify-content-between mb-5">
-                        <div class="flex-grow-1">
-                            <div class="mb-0" style="font-size: 24px;color: #343a40;margin-bottom: 0.5rem;line-height: 1.2;">
+                        
+                        <div class="project-item">
+                            <div class="project-name">
                                 <b>基于深度学习的地震阻抗反演预测</b>
                             </div>
-                            <div class="subheading mb-3" style="font-size:16px">
-                                项目团队主要开发人员。结合地震属性维度及测井数据，搭建以地震属性维度为输入，测井密度数据为输出的孪生DenseNet。
-                            </div>
+                            <div class="project-level"></div>
+                            <div class="project-date">Mar. 2023 -- June 2023</div>
                         </div>
-                        <div class="flex-shrink-0">
-                            <p class="text-primary" style="text-align: right;font-size:20px">March. 2023 -- June.2023</p>
-                        </div>
-                    </div>
-                    <div class="d-flex flex-column flex-md-row justify-content-between mb-5">
-                        <div class="flex-grow-1">
-                            <div class="mb-0" style="font-size: 24px;color: #343a40;margin-bottom: 0.5rem;line-height: 1.2;">
+                        
+                        <div class="project-item">
+                            <div class="project-name">
                                 <b>井漏关键影响因素评估系统</b>
                             </div>
-                            <div class="subheading mb-3" style="font-size:16px">
-                                项目团队主要开发人员。为了分析不同的气田特征对井漏预测性能的影响，训练人工神经网络(Artificial Neural Network, ANN)比较和评估不同气田特征对于井漏预测的影响，并利用PyQT开发GUI界面。
-                            </div>
+                            <div class="project-level"></div>
+                            <div class="project-date">Oct. 2022 -- Dec. 2022</div>
                         </div>
-                        <div class="flex-shrink-0">
-                            <p class="text-primary" style="text-align: right;font-size:20px">Oct. 2022 -- Dec.2022</p>
-                        </div>
-                    </div>
-                    <div class="d-flex flex-column flex-md-row justify-content-between mb-5">
-                        <div class="flex-grow-1">
-                            <div class="mb-0" style="font-size: 24px;color: #343a40;margin-bottom: 0.5rem;line-height: 1.2;">
-                                <b>气田井漏智能预测软件系统</b>
+                        
+                        <div class="project-item">
+                            <div class="project-name">
+                                <b>气田井漏智能预测系统</b>
                             </div>
-                            <div class="subheading mb-3" style="font-size:16px">
-                                项目团队主要开发人员。为了在油井发生井漏前进行智能预测分析，首先利用主成分分析(Principal Componant Analysis, PCA)训练了六种核函数的支持向量机(Support Vector Machine, SVM)以及人工神经网络(Artificial Neural Network, ANN)
-                                进行气田井漏的预测，并利用PyQT开发GUI界面。
-                            </div>
-                        </div>
-                        <div class="flex-shrink-0">
-                            <p class="text-primary" style="text-align: right;font-size:20px">Oct. 2022 -- Dec.2022</p>
-                        </div>
-                    </div>
-                    <div class="d-flex flex-column flex-md-row justify-content-between mb-5">
-                        <div class="flex-grow-1">
-                            <div class="mb-0" style="font-size: 24px;color: #343a40;margin-bottom: 0.5rem;line-height: 1.2;">
-                                <b>掌上园丁</b>
-                            </div>
-                            <div class="subheading mb-3" style="font-size:16px">
-                                项目团队主要开发人员。项目基于CC2530开发板搭建，集成温湿度传感器、无线蓝牙模块等功能，开发了一个智能遥控花盆。项目技术涉及嵌入式C语言、CC2530开发板电路原理、传感器通信原理。
-                            </div>
-                        </div>
-                        <div class="flex-shrink-0">
-                            <p class="text-primary" style="text-align: right;font-size:20px">March. 2018 -- May.2018</p>
+                            <div class="project-level"></div>
+                            <div class="project-date">Oct. 2022 -- Dec. 2022</div>
                         </div>
                     </div>
                 </div>
@@ -277,10 +196,10 @@
             <!-- Publishing-->
             <section class="resume-section" id="publications">
                 <div class="resume-section-content">
-                    <h2 class="mb-5">发表情况</h2>
+                    <h3 class="mb-5">发表情况</h3>
                     <div class="d-flex flex-column flex-md-row justify-content-between mb-5">
                         <div class="flex-grow-1">
-                            <div class="mb-0" style="font-size: 24px;color: #343a40;margin-bottom: 0.5rem;line-height: 1.2;">
+                            <div class="mb-0" style="font-size: 20px;color: #343a40;margin-bottom: 0.5rem;line-height: 1.2;">
                                 <b>Tan Lixing</b>, Shuang Song*, Kangneng Zhou, Chengbo Duan, Lanying Wang, Huayang Ren, Linlin Liu, Wei Zhang and Ruoxiu Xiao*.
                             </div>
                             <div class="subheading mb-3">
@@ -288,12 +207,12 @@
                             </div>
                         </div>
                         <div class="flex-shrink-0">
-                            <p class="text-primary" style="text-align: right;font-size:20px">Apr. 2024</p>
+                            <p class="date text-primary">Apr. 2024</p>
                         </div>
                     </div>
                     <div class="d-flex flex-column flex-md-row justify-content-between mb-5">
                         <div class="flex-grow-1">
-                            <div class="mb-0" style="font-size: 24px;color: #343a40;margin-bottom: 0.5rem;line-height: 1.2;">
+                            <div class="mb-0" style="font-size: 20px;color: #343a40;margin-bottom: 0.5rem;line-height: 1.2;">
                                 <b>Tan Lixing</b>, Shuang Song, Yaofeng He, Kangneng Zhou, Tong Lu and Ruoxiu Xiao*.
                             </div>
                             <div class="subheading mb-3">
@@ -301,12 +220,12 @@
                             </div>
                         </div>
                         <div class="flex-shrink-0">
-                            <p class="text-primary" style="text-align: right;font-size:20px">May. 2024</p>
+                            <p class="date text-primary">May. 2024</p>
                         </div>
                     </div>
                     <div class="d-flex flex-column flex-md-row justify-content-between mb-5">
                         <div class="flex-grow-1">
-                            <div class="mb-0" style="font-size: 24px;color: #343a40;margin-bottom: 0.5rem;line-height: 1.2;">
+                            <div class="mb-0" style="font-size: 20px;color: #343a40;margin-bottom: 0.5rem;line-height: 1.2;">
                                 <b>谭立行</b>, 鲁嘉淇, 张笑楠, 刘宇红, 张荣芬*
                             </div>
                             <div class="subheading mb-3">
@@ -314,38 +233,103 @@
                             </div>
                         </div>
                         <div class="flex-shrink-0">
-                            <p class="text-primary" style="text-align: right;font-size:20px">Oct. 2020</p>
+                            <p class="date text-primary">Oct. 2020</p>
                         </div>
                     </div>
                 </div>
             </section>
             <hr class="m-0" />
-            <!-- RecentPlans-->
-            <section class="resume-section" id="plans">
+            <!-- Blog -->
+            <section class="resume-section" id="blog">
                 <div class="resume-section-content">
-                    <h2 class="mb-5">近期计划</h2>
-                    <div class="d-flex flex-column flex-md-row justify-content-between mb-5">
-                        <div class="subheading mb-3">
-                            <b>C106L Stanford.</b>
-                        </div>
-                        <p class="text-primary" style="text-align: right;font-size:20px">3 weeks</p>
+                    <h3 class="mb-5">博客文章</h3>
+                    
+                    <div class="blog-posts">
+                        {% for post in site.posts limit:3 %}
+                        <article class="blog-card">
+                            <!-- 如果有封面图 -->
+                            {% if post.cover_image %}
+                            <div class="blog-card-image">
+                                <img src="{{ post.cover_image }}" alt="{{ post.title }}">
+                            </div>
+                            {% endif %}
+                            
+                            <div class="blog-card-content">
+                                <!-- 标签 -->
+                                <div class="blog-tags">
+                                    {% for tag in post.tags %}
+                                    <span class="blog-tag">#{{ tag }}</span>
+                                    {% endfor %}
+                                </div>
+                                
+                                <!-- 标题 -->
+                                <h4 class="blog-title">
+                                    <a href="{{ post.url }}">{{ post.title }}</a>
+                                </h4>
+                                
+                                <!-- 摘要 -->
+                                <div class="blog-excerpt">
+                                    {{ post.excerpt | strip_html | truncate: 160 }}
+                                </div>
+                                
+                                <!-- 元信息 -->
+                                <div class="blog-meta">
+                                    <div class="blog-date">
+                                        <i class="far fa-calendar"></i>
+                                        {{ post.date | date: "%Y-%m-%d" }}
+                                    </div>
+                                    
+                                    <!-- 预计阅读时间 -->
+                                    <div class="blog-read-time">
+                                        <i class="far fa-clock"></i>
+                                        {{ post.content | number_of_words | divided_by: 350 | plus: 1 }}分钟阅读
+                                    </div>
+                                </div>
+                            </div>
+                        </article>
+                        {% endfor %}
                     </div>
-                    <div class="d-flex flex-column flex-md-row justify-content-between mb-5">
-                        <div class="subheading mb-3">
-                            <b>Web Development Bootcamp, Udemy.</b>
-                        </div>
-                        <p class="text-primary" style="text-align: right;font-size:20px">9 weeks</p>
-                    </div>
-                    <div class="d-flex flex-column flex-md-row justify-content-between mb-5">
-                        <div class="subheading mb-3">
-                            <b>Games103, GAMES-Webinar.</b>
-                        </div>
-                        <p class="text-primary" style="text-align: right;font-size:20px">8 weeks</p>
+                    
+                    <div class="view-more">
+                        <a href="index.html" class="btn btn-primary">查看更多文章</a>
                     </div>
                 </div>
             </section>
+
+            <hr class="m-0" />
+            <!-- Awards-->
+            <section class="resume-section" id="awards">
+                <div class="resume-section-content">
+                    <h3 class="mb-5">获奖情况</h3>
+                    <ul class="fa-ul mb-0">
+                      <li>
+                        <span class="fa-li"><i class="fas fa-trophy text-warning"></i></span>
+                        全国特等奖，2023年挑战杯全国大学生课外学术科技作品竞赛"黑科技"赛道
+                      </li>
+                      <li>
+                        <span class="fa-li"><i class="fas fa-trophy text-warning"></i></span>
+                        首都特等奖，2023年"青创北京"挑战杯首都大学生课外学术科技作品竞赛"黑科技"赛道
+                      </li>
+                      <li>
+                        <span class="fa-li"><i class="fas fa-award text-warning"></i></span>
+                        首都二等奖，第九届大学生"互联网+"创新创业大赛 
+                      </li>
+                      <li>
+                        <span class="fa-li"><i class="fas fa-award text-warning"></i></span>
+                        省级二等奖，2021年全国大学生数学竞赛  
+                      </li>
+                      <li>
+                        <span class="fa-li"><i class="fas fa-award text-warning"></i></span>
+                        省级二等奖，2021年"创青春"中国大学生创新创业大赛
+                      </li>
+                      <li>
+                        <span class="fa-li"><i class="fas fa-award text-warning"></i></span>
+                        校级优胜奖，贵州大学物联网设计大赛
+                      </li>
+                    </ul>
+                </div>
+            </section>
         </div>
-        
         
         <!-- Bootstrap core JS-->
         <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>

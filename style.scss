@@ -439,69 +439,51 @@ nav {
 
 // Posts
 
-.posts{
-
-  .tag {
-    display: inline;
-    font-weight: 300;
-    font-size: $small-font-size;
-
-    li:before {
-      content: '';
-    }
-
-    li {
-      display: inline;
-      margin: 0;
-
-      > a {
-        margin: 3px 3px 3px 0;
-        padding: .5px 4px;
-        color: $base-color;
-        background-color: $tag-index-label-background-color;
-        border-radius: 3px;
-
-        &:hover {
-          color: $link-color;
-          background-color:$link-bghv-color;
-        }
-      }
-    }
-  }
+.posts {
+  margin-bottom: 30px;
 }
 
-.posts > .post {
-  padding-bottom: 2em;
-  border-bottom: 1px solid $divider-color;
+.posts .post {
+  padding: 20px 0;
+  border-bottom: 1px solid #eee;
 }
 
-.posts > .post:last-child {
-  padding-bottom: 1em;
+.posts .post:last-child {
   border-bottom: none;
 }
 
-.date {
-  font-weight: 300;
-  font-size: $small-font-size;
-  color: $base-lighten-color;
-  margin-right: 4px;
+.posts h3 {
+  margin: 0;
+  font-size: 24px;
 }
 
+.posts .meta {
+  margin: 10px 0;
+  color: #666;
+}
 
-.post {
+.posts .tag {
+  display: inline;
+  list-style: none;
+  padding: 0;
+}
 
-  h1 {
-    margin-bottom: .1em;
-  }
+.posts .tag li {
+  display: inline-block;
+  margin-right: 10px;
+}
 
+.posts .entry {
+  margin: 15px 0;
+}
 
-  .comments {
-    margin-top: 10px;
-  }
+.posts .read-more {
+  color: #bd5d38;
+}
 
-  .read-more {
-    font-size: 15px;
-  }
+.view-more {
+  text-align: center;
+  margin-top: 30px;
 }
 
 .page {

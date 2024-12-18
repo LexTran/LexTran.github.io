@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
   <head>
-  <title>Lixing's Blog – </title>
+  <title>Unity Robotics Hub环境搭建 – Lixing's Blog – </title>
 
       <meta charset="utf-8" />
     <meta content='text/html; charset=utf-8' http-equiv='Content-Type'>
@@ -9,11 +9,16 @@
     <meta name='viewport' content='width=device-width, initial-scale=1.0, maximum-scale=1.0'>
 
     
-    <meta name="description" content="">
-    <meta property="og:description" content="" />
+    <meta name="description" content="
+" />
+    <meta property="og:description" content="
+" />
     
     <meta name="author" content="Lixing's Blog" />
 
+    
+    <meta property="og:title" content="Unity Robotics Hub环境搭建" />
+    <meta property="twitter:title" content="Unity Robotics Hub环境搭建" />
     
   <!-- Async font loading -->
 <script>
@@ -143,175 +148,160 @@
 
     <div id="main" role="main" class="wrapper-content">
       <div class="container">
-        <div class="search-container">
-  <input type="text" id="search-input" placeholder="search blog posts..." style="width: 90%;
-    height: 35px;
-    color: #333;
-    background-color: rgba(227,231,236,.2);
-    line-height: 35px;
-    padding:0px 16px;
-    border: 1px solid #c0c0c0;
-    font-size: 16px;
-    font-weight: bold;
-    border-radius: 17px;
-    outline: none;
-    box-sizing: border-box;
-    box-shadow: inset 0 1px 1px rgba(0,0,0,.075), 0 0 8px rgba(102,175,233,.6);">
-  <!-- 添加新建博客按钮 -->
-  <a href="/new-post" class="new-post-btn">
-    <i class="fas fa-plus" style="font-size: 16px; color: #333;"></i> 新建博客
-  </a>
-  <ul id="results-container"></ul>
+        <article class="posts">
+  
+  <h1>Unity Robotics Hub环境搭建</h1>
+
+  <div clsss="meta">
+    <span class="date">
+      2023-06-12
+    </span>
+
+    <ul class="tag">
+      
+      <li>
+        <a href="http://localhost:4000/tags#geek">
+          geek
+        </a>
+      </li>
+      
+    </ul>
+  </div>
+
+  
+
+  <div class="entry">
+    <!-- more -->
+<h1 id="环境设置">环境设置</h1>
+<ul>
+  <li>Windows 11 64位</li>
+  <li>wsl: Ubuntu 22.04 LTS</li>
+</ul>
+
+<h1 id="wsl安装ros2">WSL安装ROS2</h1>
+<p>按照<a href="http://docs.ros.org/en/foxy/Installation/Ubuntu-Install-Debians.html#install-ros-2-packages">ROS官方说明</a>进行ROS2 iron发行版的安装：
+首先确保UTF-8编码的支持</p>
+<div class="language-shell highlighter-rouge"><div class="highlight"><pre class="highlight"><code>locale  <span class="c"># check for UTF-8</span>
+
+<span class="nb">sudo </span>apt update <span class="o">&amp;&amp;</span> <span class="nb">sudo </span>apt <span class="nb">install </span>locales
+<span class="nb">sudo </span>locale-gen en_US en_US.UTF-8
+<span class="nb">sudo </span>update-locale <span class="nv">LC_ALL</span><span class="o">=</span>en_US.UTF-8 <span class="nv">LANG</span><span class="o">=</span>en_US.UTF-8
+<span class="nb">export </span><span class="nv">LANG</span><span class="o">=</span>en_US.UTF-8
+
+locale  <span class="c"># verify settings</span>
+</code></pre></div></div>
+<p>然后设置源环境，这一步根据需求可能需要换源，我在安装的时候系统用的阿里源</p>
+<div class="language-shell highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nb">sudo </span>apt <span class="nb">install </span>software-properties-common
+<span class="nb">sudo </span>add-apt-repository universe
+<span class="nb">sudo </span>apt update <span class="o">&amp;&amp;</span> <span class="nb">sudo </span>apt <span class="nb">install </span>curl <span class="nt">-y</span>
+<span class="nb">sudo </span>curl <span class="nt">-sSL</span> https://raw.githubusercontent.com/ros/rosdistro/master/ros.key <span class="nt">-o</span> /usr/share/keyrings/ros-archive-keyring.gpg
+<span class="nb">sudo </span>apt update <span class="o">&amp;&amp;</span> <span class="nb">sudo </span>apt <span class="nb">install </span>curl <span class="nt">-y</span>
+<span class="nb">sudo </span>curl <span class="nt">-sSL</span> https://raw.githubusercontent.com/ros/rosdistro/master/ros.key <span class="nt">-o</span> /usr/share/keyrings/ros-archive-keyring.gpg
+</code></pre></div></div>
+<p>添加好ros源以后就可以正式安装ROS2了</p>
+<div class="language-shell highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nb">sudo </span>apt update
+<span class="nb">sudo </span>apt upgrade
+<span class="nb">sudo </span>apt <span class="nb">install </span>ros-iron-desktop python3-argcomplete
+<span class="nb">sudo </span>apt <span class="nb">install </span>ros-dev-tools
+</code></pre></div></div>
+<p>然后设置环境</p>
+<div class="language-shell highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nb">source</span> /opt/ros/foxy/setup.bash
+</code></pre></div></div>
+<p>这样我们就安装好了ROS2，我们还希望安装Colcon工具，这是一个ROS的build工具，在ROS1中使用的是catkin，ROS2升级到了Colcon</p>
+<div class="language-shell highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nb">sudo </span>apt <span class="nb">install </span>python3-colcon-common-extensions
+</code></pre></div></div>
+<p>然后我们要创建workspace</p>
+<div class="language-shell highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nb">mkdir</span> <span class="nt">-p</span> ~/ros2_ws/src
+<span class="nb">cd</span> ~/ros2_ws
+git clone https://github.com/ros2/examples src/examples <span class="nt">-b</span> iron
+colcon build <span class="nt">--symlink-install</span>
+<span class="nb">source install</span>/setup.bash
+</code></pre></div></div>
+
+<h1 id="在workspace下构建unity-ros集成库">在workspace下构建unity-ros集成库</h1>
+<p>可以按照<a href="https://github.com/Unity-Technologies/Unity-Robotics-Hub/blob/main/tutorials/ros_unity_integration/setup.md">Unity官方的说明</a>构建</p>
+
+<p>创建好workspace以后，要在workspace的<code class="language-plaintext highlighter-rouge">\src</code>路径下把<a href="https://github.com/Unity-Technologies/ROS-TCP-Endpoint.git">ROS-TCP-Endpoint</a>这个库clone下来，然后用Colcon将它build好</p>
+<div class="language-shell highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nb">source install</span>/setup.bash
+colcon build
+<span class="nb">source install</span>/setup.bash
+</code></pre></div></div>
+<ul>
+  <li>如果这一步报错了的话，也可以选择用Docker直接build</li>
+</ul>
+
+<p>如果你还没有安装Docker，可以用如下指令安装</p>
+<div class="language-shell highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nb">sudo </span>apt <span class="nb">install </span>docker
+<span class="nb">sudo </span>apt <span class="nb">install </span>docker.io
+</code></pre></div></div>
+<p>安装好Docker以后，将<a href="https://github.com/Unity-Technologies/Unity-Robotics-Hub.git">Unity-Robotics-Hub</a>clone下来，进入<code class="language-plaintext highlighter-rouge">\tutorials\ros_unity_integration</code>路径，然后执行如下指令</p>
+<div class="language-shell highlighter-rouge"><div class="highlight"><pre class="highlight"><code>docker build <span class="nt">-t</span> foxy <span class="nt">-f</span> ros2_docker/Dockerfile <span class="nb">.</span>
+docker run <span class="nt">-it</span> <span class="nt">--rm</span> <span class="nt">-p</span> 10000:10000 foxy /bin/bash
+</code></pre></div></div>
+<p>至此完成安装，可以用如下指令运行ROS</p>
+<div class="language-shell highlighter-rouge"><div class="highlight"><pre class="highlight"><code>ros2 run ros_tcp_endpoint default_server_endpoint <span class="nt">--ros-args</span> <span class="nt">-p</span> ROS_IP:<span class="o">=</span>&lt;your IP address&gt;
+</code></pre></div></div>
+<p>用Docker的话可以用<code class="language-plaintext highlighter-rouge">0.0.0.0</code>放到<code class="language-plaintext highlighter-rouge">ROS_IP</code>的位置</p>
+
+<h1 id="unity安装插件">Unity安装插件</h1>
+<p>在Unity的项目界面中，点击左上角的<code class="language-plaintext highlighter-rouge">+</code>号，然后选择从git URL添加包，一共需要添加两个包</p>
+<ul>
+  <li>ROS-TCP-Connector – https://github.com/Unity-Technologies/ROS-TCP-Connector.git?path=/com.unity.robotics.ros-tcp-connector</li>
+  <li>URDF Importer – https://github.com/Unity-Technologies/URDF-Importer.git?path=/com.unity.robotics.urdf-importer#v0.5.2</li>
+</ul>
+
+<p>装好ROS-TCP-Connector以后记得在ROS Settings中将Protocol从ROS1修改为ROS2，ROS IP地址也要修改为与上方地址一致（使用Docker的话可以不管）</p>
+
+<h1 id="urdf模型导入">URDF模型导入</h1>
+<p>URDF Importer包允许我们在Unity中导入URDF格式的模型，可以使用<a href="https://github.com/NiryoRobotics/niryo_one_ros.git">niryo_one_ros</a>这个库的机械臂模型进行实验</p>
+
+<p>URDF文件在<code class="language-plaintext highlighter-rouge">\niryo_one_description\urdf\</code>路径下，<code class="language-plaintext highlighter-rouge">v1</code>和<code class="language-plaintext highlighter-rouge">v2</code>版本择其一即可</p>
+
+<p>但是要注意此路径下仅包含<code class="language-plaintext highlighter-rouge">.xacro</code>文件，需要使用<code class="language-plaintext highlighter-rouge">xacro</code>包将它转换成<code class="language-plaintext highlighter-rouge">.urdf</code>文件，然后把<code class="language-plaintext highlighter-rouge">\niryo_one_dedscription</code>文件夹放到Unity的Assets中，再把URDF文件放到Assets路径下，此时右键选中URDF文件选择导入URDF模型即可</p>
+
+<p>使用<code class="language-plaintext highlighter-rouge">xacro</code>进行格式转换需要安装xacro包，要注意此处无法在Docker中安装（你可以试试，但是我失败了），安装指令为</p>
+<div class="language-shell highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nb">sudo </span>apt <span class="nb">install </span>ros-iron-xacro
+</code></pre></div></div>
+<p>然后执行</p>
+<div class="language-shell highlighter-rouge"><div class="highlight"><pre class="highlight"><code>ros2 run xacro xacro <span class="nt">-o</span> ./xxx.urdf ./xxx.xacro 
+</code></pre></div></div>
+
+  </div>
+
+  
+<div class="comments">
+	<div id="disqus_thread"></div>
+	<script type="text/javascript">
+
+	    var disqus_shortname = '{"clientID"=>"aabbb89b1630d34f3abb", "clientSecret"=>"9ad0f345c24b1003d94f4ace6d81e0e686a0049a", "repo"=>"LexTran.github.io", "owner"=>"LexTran"}';
+
+	    (function() {
+	        var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
+	        dsq.src = '//' + disqus_shortname + '.disqus.com/embed.js';
+	        (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+	    })();
+
+	</script>
+	<noscript>Please enable JavaScript to view the <a href="http://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
 </div>
 
-<script src="https://unpkg.com/simple-jekyll-search/dest/simple-jekyll-search.min.js"></script>
-<script src="/js/simple-jekyll-search.min.js"></script>
-
-<script>
-	window.simpleJekyllSearch = new SimpleJekyllSearch({
-	searchInput: document.getElementById('search-input'),
-	resultsContainer: document.getElementById('results-container'),
-	json: '/search.json',
-	searchResultTemplate: '<li><a href="{url}?query={query}" title="{desc}">{title}</a></li>',
-	noResultsText: 'No results found',
-	limit: 10,
-	fuzzy: false,
-	exclude: ['Welcome']
-  })
-</script>
- 
-
-
-<div class="posts">
   
-  
-    <article class="post">
-      <h1>
-        <a href="/2024/04/29/deploy/">Deploy your DL model</a>
-      </h1>
-
-      <div clsss="meta">
-        <span class="date">
-          2024-04-29
-        </span>
-
-        <ul class="tag">
-          
-          <li>
-            <a href="http://localhost:4000/tags#geek">
-              geek
-            </a>
-          </li>
-          
-        </ul>
-      </div>
-
-      <div class="entry">
-        
-
-      </div>
-
-      <a href="/2024/04/29/deploy/" class="read-more">Read More</a>
-    </article>
-  
-  
-  
-    <article class="post">
-      <h1>
-        <a href="/2023/12/17/stylegan/">Issues during training StyleGAN2</a>
-      </h1>
-
-      <div clsss="meta">
-        <span class="date">
-          2023-12-17
-        </span>
-
-        <ul class="tag">
-          
-          <li>
-            <a href="http://localhost:4000/tags#geek">
-              geek
-            </a>
-          </li>
-          
-        </ul>
-      </div>
-
-      <div class="entry">
-        
-
-      </div>
-
-      <a href="/2023/12/17/stylegan/" class="read-more">Read More</a>
-    </article>
-  
-  
-  
-    <article class="post">
-      <h1>
-        <a href="/2023/06/12/ros2/">Unity Robotics Hub环境搭建</a>
-      </h1>
-
-      <div clsss="meta">
-        <span class="date">
-          2023-06-12
-        </span>
-
-        <ul class="tag">
-          
-          <li>
-            <a href="http://localhost:4000/tags#geek">
-              geek
-            </a>
-          </li>
-          
-        </ul>
-      </div>
-
-      <div class="entry">
-        
-
-      </div>
-
-      <a href="/2023/06/12/ros2/" class="read-more">Read More</a>
-    </article>
-  
-  
-  
-    <article class="post">
-      <h1>
-        <a href="/2022/11/02/jekyll/">Jekyll 搭建博客</a>
-      </h1>
-
-      <div clsss="meta">
-        <span class="date">
-          2022-11-02
-        </span>
-
-        <ul class="tag">
-          
-          <li>
-            <a href="http://localhost:4000/tags#geek">
-              geek
-            </a>
-          </li>
-          
-        </ul>
-      </div>
-
-      <div class="entry">
-        
-
-      </div>
-
-      <a href="/2022/11/02/jekyll/" class="read-more">Read More</a>
-    </article>
-  
-  
-</div>
+</article>
 
 <div class="pagination">
   
+    <span class="prev" >
+      <a href="http://localhost:4000/2022/11/02/jekyll/">
+        ← 上一篇
+      </a>
+    </span>
+  
+  
+    <span class="next" >
+      <a href="http://localhost:4000/2023/12/17/stylegan/">
+        下一篇 →
+      </a>
+    </span>
   
 </div>
       </div>

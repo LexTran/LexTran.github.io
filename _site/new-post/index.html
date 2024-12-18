@@ -1,0 +1,279 @@
+<!DOCTYPE html>
+<html>
+  <head>
+  <title>新建博客 – Lixing's Blog – </title>
+
+      <meta charset="utf-8" />
+    <meta content='text/html; charset=utf-8' http-equiv='Content-Type'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <meta name='viewport' content='width=device-width, initial-scale=1.0, maximum-scale=1.0'>
+
+    
+    <meta name="description" content="">
+    <meta property="og:description" content="" />
+    
+    <meta name="author" content="Lixing's Blog" />
+
+    
+    <meta property="og:title" content="新建博客" />
+    <meta property="twitter:title" content="新建博客" />
+    
+  <!-- Async font loading -->
+<script>
+  window.WebFontConfig = {
+      custom: {
+          families: ['Spoqa Han Sans:100,300,400,700'],
+          urls: ['https://spoqa.github.io/spoqa-han-sans/css/SpoqaHanSans-kr.css']
+      },
+      timeout: 60000
+  };
+  (function(d) {
+      var wf = d.createElement('script'), s = d.scripts[0];
+      wf.src = 'https://ajax.googleapis.com/ajax/libs/webfont/1.5.18/webfont.js';
+      s.parentNode.insertBefore(wf, s);
+  })(document);
+</script>
+
+  <!--[if lt IE 9]>
+    <script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+  <![endif]-->
+
+  <link rel="alternate" type="application/rss+xml" title="Lixing's Blog - " href="/feed.xml" />
+  <link rel="shortcut icon" href="">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/gitalk@1/dist/gitalk.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+  <script src="https://cdn.jsdelivr.net/npm/gitalk@1/dist/gitalk.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/marked/marked.min.js"></script>
+  <script>
+    (function(d) {
+      var config = {
+        kitId: 'vbt3gjx',
+        scriptTimeout: 3000,
+        async: true
+      },
+      h=d.documentElement,t=setTimeout(function(){h.className=h.className.replace(/\bwf-loading\b/g,"")+" wf-inactive";},config.scriptTimeout),tk=d.createElement("script"),f=false,s=d.getElementsByTagName("script")[0],a;h.className+=" wf-loading";tk.src='https://use.typekit.net/'+config.kitId+'.js';tk.async=true;tk.onload=tk.onreadystatechange=function(){a=this.readyState;if(f||a&&a!="complete"&&a!="loaded")return;f=true;clearTimeout(t);try{Typekit.load(config)}catch(e){}};s.parentNode.insertBefore(tk,s)
+    })(document);
+  </script> 
+  <link rel="stylesheet" type="text/css" href="/style.css" /> 
+
+
+  <!-- Created with Jekyll Now - http://github.com/barryclark/jekyll-now -->
+
+</head>
+  <body class="editor-page">
+    <div class="editor-wrapper">
+      <style>
+    body {
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+    }
+</style>
+
+
+<!-- CodeMirror -->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/codemirror/5.65.2/codemirror.min.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/codemirror/5.65.2/theme/material-darker.min.css">
+<script src="https://cdnjs.cloudflare.com/ajax/libs/codemirror/5.65.2/codemirror.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/codemirror/5.65.2/mode/markdown/markdown.min.js"></script>
+<!-- Marked.js -->
+<script src="https://cdn.jsdelivr.net/npm/marked@4.3.0/marked.min.js"></script>
+
+<!-- Font Awesome -->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+
+<div class="page-header">
+    <div class="header-inputs">
+      <input type="text" id="post-title" placeholder="输入文章标题..." class="title-input">
+      <input type="text" id="post-tags" placeholder="添加标签（用逗号分隔）" class="tags-input">
+    </div>
+    <button id="theme-toggle" class="btn btn-icon">
+      <i class="fas fa-moon"></i>
+    </button>
+  </div>
+  
+  <div class="editor-container">
+    <div class="editor-main">
+      <div id="editor-pane" class="editor-pane">
+        <textarea id="editor"></textarea>
+      </div>
+      <div id="preview-pane" class="preview-pane markdown-body">
+      </div>
+    </div>
+  </div>
+  
+  <div class="page-footer">
+    <button id="back-to-home" class="btn btn-primary">返回首页</button>
+    <button id="save-draft" class="btn btn-secondary">保存草稿</button>
+    <button id="publish-post" class="btn btn-primary">发布</button>
+  </div>
+
+<!-- 确保 new-post.js 在最后加载 -->
+<script src="/js/config.js"></script>
+<script src="/js/new-post.js"></script>
+
+<style>
+    /* 强制覆盖任何可能的冲突样式 */
+    .editor-main {
+      display: flex !important;
+      flex-direction: row !important;
+    }
+    
+    .editor-pane {
+      width: 50% !important;
+      min-width: 400px !important;
+    }
+    
+    .preview-pane {
+      width: 50% !important;
+    }
+</style>
+    </div>
+
+    
+
+    
+    <style>
+      html, body {
+        height: 100%;
+        margin: 0;
+        padding: 0;
+        background-color: #f5f5f5;
+      }
+      
+      .editor-page {
+        min-height: 100vh;
+        display: flex;
+        flex-direction: column;
+      }
+      
+      .editor-wrapper {
+        flex: 1;
+        padding: 2rem 4rem;
+        max-width: 1800px;
+        margin: 0 auto;
+        width: 100%;
+        box-sizing: border-box;
+        display: flex;
+        flex-direction: column;
+        gap: 1.5rem;
+      }
+
+      /* 页面顶部样式 */
+      .page-header {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        gap: 1rem;
+      }
+
+      .header-inputs {
+        flex: 1;
+        display: flex;
+        gap: 1rem;
+      }
+
+      .title-input {
+        flex: 2;
+        padding: 0.5rem;
+        font-size: 1.25rem;
+        border: none;
+        border-bottom: 2px solid #e0e0e0;
+        outline: none;
+        transition: border-color 0.3s;
+      }
+
+      .tags-input {
+        flex: 1;
+        padding: 0.5rem;
+        border: none;
+        border-bottom: 2px solid #e0e0e0;
+        outline: none;
+        transition: border-color 0.3s;
+      }
+
+      .title-input:focus,
+      .tags-input:focus {
+        border-bottom-color: #618264;
+      }
+
+      /* 编辑器容器样式 */
+      .editor-container {
+        flex: 1;
+        background: white;
+        border-radius: 8px;
+        box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+        overflow: hidden;
+        height: 600px;  /* 固定容器高度 */
+      }
+
+      /* 编辑器主体区域样式 */
+      .editor-main {
+        display: flex;
+        height: 100%;
+        overflow: hidden;
+      }
+
+      /* 编辑器和预览区样式 */
+      .editor-pane {
+        flex: 1;
+        border-right: 1px solid #e0e0e0;
+        display: flex;
+        flex-direction: column;
+        height: 100%;
+        overflow-y: hidden;
+      }
+
+      .preview-pane {
+        flex: 1;
+        padding: 20px;
+        padding-right: 32px;
+        overflow-y: scroll;  /* 始终显示滚动条 */
+        height: 570px;       /* 确保高度固定 */
+        box-sizing: border-box;
+      }
+
+      /* CodeMirror 编辑器样式 */
+      .CodeMirror {
+        height: 570px !important;  /* 与容器同高 */
+        padding-right: 12px;  /* 预留滚动条空间 */
+        overflow-y: hidden;
+      }
+
+      .markdown-body {
+        width: 100%;
+        word-wrap: break-word;
+        overflow-wrap: break-word;
+      }
+
+      /* 页面底部样式 */
+      .page-footer {
+        display: flex;
+        justify-content: flex-end;
+        gap: 1rem;
+      }
+
+      /* 按钮样式 */
+      .btn {
+        padding: 0.5rem 1rem;
+        border: none;
+        border-radius: 4px;
+        cursor: pointer;
+        transition: all 0.3s;
+      }
+
+      .btn-secondary {
+        background: #f0f0f0;
+        color: #333;
+      }
+
+      .btn-primary {
+        background: #618264;
+        color: white;
+      }
+
+      .btn:hover {
+        opacity: 0.9;
+        transform: translateY(-1px);
+      }
+    </style>
+  </body>
+</html>

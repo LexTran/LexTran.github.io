@@ -1,10 +1,34 @@
 [
   
     {
+      "title"    : "Deploy your DL model",
+      "category" : "",
+      "tags"     : "geek",
+      "url"      : "/2024/04/29/deploy/",
+      "date"     : "2024-04-29 00:00:00 +0800"
+    } ,
+  
+    {
+      "title"    : "Issues during training StyleGAN2",
+      "category" : "",
+      "tags"     : "geek",
+      "url"      : "/2023/12/17/stylegan/",
+      "date"     : "2023-12-17 00:00:00 +0800"
+    } ,
+  
+    {
+      "title"    : "Unity Robotics Hub环境搭建",
+      "category" : "",
+      "tags"     : "geek",
+      "url"      : "/2023/06/12/ros2/",
+      "date"     : "2023-06-12 00:00:00 +0800"
+    } ,
+  
+    {
       "title"    : "Jekyll 搭建博客",
       "category" : "",
       "tags"     : "geek",
-      "url"      : "/demo/",
+      "url"      : "/2022/11/02/jekyll/",
       "date"     : "2022-11-02 00:00:00 +0800"
     } 
   

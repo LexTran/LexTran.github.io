@@ -4828,7 +4828,7 @@ a.badge-dark:focus, a.badge-dark.focus {
 }
 
 .jumbotron {
-  padding: 2rem 1rem;
+  padding: 3rem 2rem;
   margin-bottom: 1rem;
   background-color: #618264;
   /* border-radius: 0.3rem; */
@@ -10047,7 +10047,8 @@ p.lead {
 .subheading {
   font-family: "Saira Extra Condensed", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
   font-weight: 500;
-  font-size: 1.5rem;
+  font-size: 1.5rem !important;
+  line-height: 1;
 }
 
 #sideNav .navbar-nav .nav-item .nav-link {
@@ -10123,11 +10124,12 @@ p.lead {
 
 section.resume-section {
   display: flex;
+  min-height: 2rem !important;
   align-items: center;
   padding-left: 1rem;
   padding-right: 1rem;
-  padding-top: 1rem;
-  padding-bottom: 1rem;
+  padding-top: 3rem;
+  padding-bottom: 2rem;
   max-width: 75rem;
 }
 section.resume-section .resume-section-content {
@@ -10162,4 +10164,410 @@ section.resume-section .resume-section-content {
 
 #place{
   color: #D0E7D2;
+}
+
+.education-container {
+  display: flex;
+  justify-content: space-between;
+  gap: 1rem;  /* 两个元素之间的间距 */
+}
+
+.education-container .sidebar-item {
+  flex: 1;  /* 让两个元素平均分配空间 */
+  font-size: 0.8rem;  /* 可能需要稍微减小字体以适应并排显示 */
+}
+
+/* 如果内容太长，确保文本不会溢出 */
+.education-container .degree {
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.education-item {
+  padding: 0.5rem 0;
+}
+
+.education-item img {
+  object-fit: cover;
+}
+
+.education-details {
+  flex-grow: 1;
+}
+
+.education-details h5 {
+  font-size: 1.1rem;
+  color: #343a40;
+}
+
+.education-details .text-muted {
+  font-size: 0.9rem;
+}
+
+.education-details .text-primary {
+  font-size: 0.85rem;
+}
+
+/* 添加响应式布局支持 */
+@media (max-width: 768px) {
+  .jumbotron {
+      padding: 2rem 1rem;
+  }
+  
+  .col-md-6:last-child {
+      margin-top: 2rem;
+  }
+}
+
+.date{
+  composes: text-primary;
+  font-size: 18px;
+  text-align: right;
+}
+
+/* 博客卡片容器 */
+.blog-posts {
+  display: grid;
+  gap: 2rem;
+  margin-bottom: 2rem;
+}
+
+/* 博客卡片 */
+.blog-card {
+  /* 使用略深一点的绿色作为卡片背景 */
+  background: #d4ecdf;
+  border-radius: 8px;
+  /* 调整阴影颜色，使其更柔和 */
+  box-shadow: 0 2px 4px rgba(97, 130, 100, 0.1);
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+  overflow: hidden;
+}
+
+.blog-card:hover {
+  transform: translateY(-4px);
+  /* 悬停时的阴影也调整为绿色系 */
+  box-shadow: 0 4px 8px rgba(97, 130, 100, 0.2);
+}
+
+/* 标签样式 */
+.blog-tag {
+  display: inline-block;
+  padding: 0.2rem 0.8rem;
+  margin-right: 0.5rem;
+  /* 标签使用深绿色背景 */
+  background: #618264;
+  border-radius: 100px;
+  /* 标签文字使用浅色 */
+  color: #e2f8e4;
+  font-size: 0.875rem;
+}
+
+/* 博客标题 */
+.blog-title a {
+  /* 标题使用深绿色 */
+  color: #2c4a2f;
+  text-decoration: none;
+}
+
+.blog-title a:hover {
+  /* 悬停时颜色稍微变亮 */
+  color: #3a623e;
+}
+
+/* 博客摘要 */
+.blog-excerpt {
+  /* 摘要文字使用稍深的绿色 */
+  color: #445946;
+  margin-bottom: 1rem;
+  line-height: 1.6;
+}
+
+/* 元信息 */
+.blog-meta {
+  display: flex;
+  gap: 1rem;
+  /* 元信息使用中等深度的绿色 */
+  color: #557657;
+  font-size: 0.875rem;
+}
+
+.project-list {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.project-item {
+  display: grid;
+  /* 设置固定宽度给第二列和第三列 */
+  grid-template-columns: auto 300px 200px;
+  align-items: center;
+  padding: 0.5rem 0;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+}
+
+.project-name {
+  font-size: 1.1rem;
+  color: #343a40;
+  padding-right: 1rem;
+  text-align: left;
+}
+
+.project-level {
+  color: #618264;
+  font-weight: bold;
+  /* 确保文本居中对齐 */
+  justify-self: center;
+  white-space: nowrap;
+}
+
+.project-date {
+  color: #618264;
+  /* 确保日期右对齐 */
+  justify-self: end;
+  white-space: nowrap;
+}
+
+/* 响应式布局 */
+@media (max-width: 768px) {
+  .project-item {
+      grid-template-columns: 1fr;
+      gap: 0.5rem;
+  }
+  
+  .project-level,
+  .project-date {
+      justify-self: start;
+  }
+}
+
+/* 新建博客按钮样式 */
+.new-post-btn {
+  display: inline-flex;
+  align-items: center;
+  padding: 8px 16px;
+  margin-left: 10px;
+  background-color: #618264;
+  color: white;
+  border-radius: 17px;
+  text-decoration: none;
+  font-weight: bold;
+  transition: background-color 0.3s;
+}
+
+.new-post-btn:hover {
+  background-color: #4a6b4d;
+  color: white;
+}
+
+.new-post-btn i {
+  margin-right: 8px;
+}
+
+/* 编辑器容器 */
+.editor-container {
+  max-width: 1800px;
+  margin: 40px auto;
+  padding: 0 60px;
+  min-height: calc(100vh - 80px);
+  display: flex;
+  flex-direction: column;
+  background: #fff;
+}
+
+/* 标题输入区 */
+.editor-header {
+  margin-bottom: 40px;
+}
+
+.title-input {
+  width: 100%;
+  font-size: 24px;
+  padding: 16px 0;
+  border: none;
+  border-bottom: 2px solid #E0E0E0;
+  margin-bottom: 24px;
+  transition: all 0.3s ease;
+  outline: none;
+  color: #2D3748;
+}
+
+.title-input:focus {
+  border-bottom-color: #3B82F6;
+}
+
+.title-input::placeholder {
+  color: #A0AEC0;
+}
+
+/* 标签输入区 */
+.tags-container {
+  position: relative;
+}
+
+.tags-input-wrapper {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+  padding: 8px 0;
+}
+
+.tags-input {
+  border: none;
+  outline: none;
+  padding: 8px 0;
+  font-size: 16px;
+  color: #2D3748;
+  flex: 1;
+  min-width: 120px;
+}
+
+.tags-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+}
+
+.tag {
+  display: inline-flex;
+  align-items: center;
+  padding: 4px 12px;
+  background: rgba(59, 130, 246, 0.1);
+  border-radius: 20px;
+  font-size: 14px;
+  color: #3B82F6;
+  transition: all 0.3s ease;
+}
+
+.tag .remove-tag {
+  margin-left: 8px;
+  cursor: pointer;
+  opacity: 0.6;
+  transition: opacity 0.3s ease;
+}
+
+.tag .remove-tag:hover {
+  opacity: 1;
+}
+
+/* 主编辑区域 */
+.editor-main {
+  display: flex;
+  flex: 1;
+  gap: 40px;
+  margin-bottom: 40px;
+  min-height: 500px;
+}
+
+.editor-pane {
+  flex: 1;
+  position: relative;
+}
+
+.preview-pane {
+  flex: 1;
+  padding: 20px;
+  background: #FAFAFA;
+  border-radius: 8px;
+  overflow-y: auto;
+}
+
+/* CodeMirror 自定义样式 */
+.CodeMirror {
+  height: 100% !important;
+  font-family: 'Fira Code', monospace;
+  font-size: 16px;
+  line-height: 1.6;
+  padding: 20px;
+  border-radius: 8px;
+  background: #FAFAFA;
+}
+
+/* 按钮样式 */
+.editor-footer {
+  display: flex;
+  justify-content: flex-end;
+  gap: 16px;
+  padding: 20px 0;
+}
+
+.btn {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  padding: 12px 24px;
+  border: none;
+  border-radius: 8px;
+  font-size: 16px;
+  font-weight: 500;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.btn:hover {
+  transform: translateY(-1px);
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.btn i {
+  font-size: 14px;
+}
+
+.btn-secondary {
+  background: #EDF2F7;
+  color: #2D3748;
+}
+
+.btn-secondary:hover {
+  background: #E2E8F0;
+}
+
+.btn-primary {
+  background: #618264;
+  color: white;
+  font-weight: bold;
+}
+
+.btn-primary:hover {
+  background: #79AC78;
+}
+
+/* Markdown 预览样式 */
+.markdown-body {
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, sans-serif;
+  font-size: 16px;
+  line-height: 1.6;
+  color: #2D3748;
+}
+
+/* 深色主题 */
+.theme-dark .editor-container {
+  background: #1A202C;
+}
+
+.theme-dark .title-input,
+.theme-dark .tags-input {
+  color: #E2E8F0;
+  background: transparent;
+}
+
+.theme-dark .title-input::placeholder,
+.theme-dark .tags-input::placeholder {
+  color: #718096;
+}
+
+.theme-dark .CodeMirror,
+.theme-dark .preview-pane {
+  background: #2D3748;
+  color: #E2E8F0;
+}
+
+.theme-dark .btn-secondary {
+  background: #4A5568;
+  color: #E2E8F0;
+}
+
+.theme-dark .btn-secondary:hover {
+  background: #2D3748;
 }

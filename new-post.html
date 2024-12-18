@@ -1,0 +1,68 @@
+---
+layout: editor
+title: 新建博客
+---
+<style>
+    body {
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+    }
+</style>
+
+
+<!-- CodeMirror -->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/codemirror/5.65.2/codemirror.min.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/codemirror/5.65.2/theme/material-darker.min.css">
+<script src="https://cdnjs.cloudflare.com/ajax/libs/codemirror/5.65.2/codemirror.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/codemirror/5.65.2/mode/markdown/markdown.min.js"></script>
+<!-- Marked.js -->
+<script src="https://cdn.jsdelivr.net/npm/marked@4.3.0/marked.min.js"></script>
+
+<!-- Font Awesome -->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+
+<div class="page-header">
+    <div class="header-inputs">
+      <input type="text" id="post-title" placeholder="输入文章标题..." class="title-input">
+      <input type="text" id="post-tags" placeholder="添加标签（用逗号分隔）" class="tags-input">
+    </div>
+    <button id="theme-toggle" class="btn btn-icon">
+      <i class="fas fa-moon"></i>
+    </button>
+  </div>
+  
+  <div class="editor-container">
+    <div class="editor-main">
+      <div id="editor-pane" class="editor-pane">
+        <textarea id="editor"></textarea>
+      </div>
+      <div id="preview-pane" class="preview-pane markdown-body">
+      </div>
+    </div>
+  </div>
+  
+  <div class="page-footer">
+    <button id="back-to-home" class="btn btn-primary">返回首页</button>
+    <button id="save-draft" class="btn btn-secondary">保存草稿</button>
+    <button id="publish-post" class="btn btn-primary">发布</button>
+  </div>
+
+<!-- 确保 new-post.js 在最后加载 -->
+<script src="{{ site.baseurl }}/js/config.js"></script>
+<script src="{{ site.baseurl }}/js/new-post.js"></script>
+
+<style>
+    /* 强制覆盖任何可能的冲突样式 */
+    .editor-main {
+      display: flex !important;
+      flex-direction: row !important;
+    }
+    
+    .editor-pane {
+      width: 50% !important;
+      min-width: 400px !important;
+    }
+    
+    .preview-pane {
+      width: 50% !important;
+    }
+</style>

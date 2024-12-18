@@ -16,23 +16,67 @@
         <link href="css/styles.css" rel="stylesheet" />
     </head>
     <body id="page-top">
+        <div class="jumbotron">
+            <div class="row align-items-center">
+                <!-- 左侧：姓名和基本信息 -->
+                <div class="col-md-6">
+                    <h1 class="mb-0" id="heading">Lixing Tan</h1>
+                    <div class="subheading mb-3" id="place">
+                        Beijing · China · <a class="email" href="mailto:name@email.com">LexonTran@qq.com</a>
+                    </div>
+                </div>
+                
+                <!-- 右侧：教育背景 -->
+                <div class="col-md-6">
+                    <div class="education-item d-flex align-items-center mb-3">
+                        <img class="rounded-circle me-3" src="assets/img/USTB.jpg" width="70" height="70" alt="" style="margin-right: 1rem !important;"/>
+                        <div class="education-details">
+                            <h3 class="mb-0" style="color: #D0E7D2 !important;">USTB</h3>
+                            <div style="color: #C7E8CA !important;">MEng · EE</div>
+                            <small style="color: #C7E8CA !important;">2022 - Now</small>
+                        </div>
+                    </div>
+                    
+                    <div class="education-item d-flex align-items-center">
+                        <img class="rounded-circle me-3" src="assets/img/GZU.jpg" width="70" height="70" alt="" style="margin-right: 1rem !important;"/>
+                        <div class="education-details">
+                            <h3 class="mb-0" style="color: #D0E7D2 !important;">GZU</h3>
+                            <div style="color: #C7E8CA !important;">BEng · ECE</div>
+                            <small style="color: #C7E8CA !important;">2017 - 2021</small>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
         <!-- Navigation-->
         <nav class="navbar navbar-expand-lg navbar-dark bg-primary fixed-top" id="sideNav">
             <a class="navbar-brand js-scroll-trigger" href="#page-top">
-                <span class="d-block d-lg-none">谭立行</span>
-                <span class="d-none d-lg-block"><img class="img-fluid img-profile rounded-circle mx-auto mb-2" src="assets/img/heads.pic.jpg" alt="" /></span>
+                <span class="d-block d-lg-none">Lixing Tan</span>
+                <span class="d-none d-lg-block"><img class="img-fluid img-profile rounded-circle mx-auto mb-2" src="assets/img/heads.jpg" alt="" /></span>
             </a>
+
+            <!-- 技能图标部分 -->
+            <div class="skill-section d-none d-lg-block">
+                <div class="skill-icons-container">
+                    <span style="color: #FF6B6B !important; font-weight: bold; font-size: 1.2rem;">PyTorch</span>
+                    <i class="fab fa-python skill-icon" style="color: #4FB4FF !important; font-size: 1.2rem;"></i>
+                    <i class="fab fa-linux skill-icon" style="color: #FFD700 !important; font-size: 1.2rem;"></i>
+                    <i class="fab fa-git skill-icon" style="color: #FF9F45 !important; font-size: 1.2rem;"></i>
+                    <i class="fab fa-html5 skill-icon" style="color: #B19CD9 !important; font-size: 1.2rem;"></i>
+                    <i class="fas fa-code skill-icon" style="color: #00CED1 !important; font-size: 1.2rem;"></i>
+                </div>
+            </div>
+
             <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation"><span class="navbar-toggler-icon"></span></button>
             <div class="collapse navbar-collapse" id="navbarSupportedContent">
                 <ul class="navbar-nav">
                     <li class="nav-item"><a class="nav-link js-scroll-trigger" href="#about">About</a></li>
-                    <li class="nav-item"><a class="nav-link js-scroll-trigger" href="#education">Education</a></li>
                     <li class="nav-item"><a class="nav-link js-scroll-trigger" href="#experience">Experience</a></li>
-                    <li class="nav-item"><a class="nav-link js-scroll-trigger" href="#skills">Skills</a></li>
-                    <li class="nav-item"><a class="nav-link js-scroll-trigger" href="#interests">Interests</a></li>
-                    <li class="nav-item"><a class="nav-link js-scroll-trigger" href="#awards">Awards</a></li>
+                    <li class="nav-item"><a class="nav-link js-scroll-trigger" href="#projects">Projects</a></li>
                     <li class="nav-item"><a class="nav-link js-scroll-trigger" href="#publications">Publications</a></li>
-                    <li class="nav-item"><a class="nav-link js-scroll-trigger" href="index.html">Blogs</a></li>
+                    <li class="nav-item"><a class="nav-link js-scroll-trigger" href="#blog">Blogs</a></li>
+                    <li class="nav-item"><a class="nav-link js-scroll-trigger" href="#awards">Awards</a></li>
+                    <li class="nav-item"><a href="homepage_cn.html" class="nav-button js-scroll-trigger"><i class="fas fa-globe-americas" style="font-size: 2rem;"></i></a></li>
                 </ul>
             </div>
         </nav>
@@ -41,22 +85,20 @@
             <!-- About-->
             <section class="resume-section" id="about">
                 <div class="resume-section-content">
-                    <h1 class="mb-0">Lixing Tan</h1>
-                    <div class="subheading mb-5">
-                        Beijing · China · <a href="mailto:name@email.com">LexonTran@qq.com</a>
-                    </div>
                     <div class="d-flex flex-column flex-md-row justify-content-between mb-5">
                         <div class="flex-grow-1">
                             <div>
-                                I am working on my EE MEng. at the University of Science & Technology Beijing. 
-                                My research focuses are surgical robotics perception and navigation, 
-                                with emphasis on image registration durign surgery. 
-                                I am jointly advised by Dr. Shuang Song (primary) Dr. Cheng Chen and Dr. Ruoxiu Xiao 
+                                <p>I am currently working on my MEng. (EE) at University of Science & Technology Beijing. 
+                                My research interests focus on computer aided surgery, semi-supervised learning methods for medical, in-silico medical simulation. 
+                                I am jointly advised by Dr. Shuang Song (primary) and Dr. Ruoxiu Xiao 
                                 in the School of Computer & Communication Engineering. I am affiliated with Laboratory of Medical
-                                Artificial Intelligence (MedAI).
-                                I received a Bachelor of Engineering in College of Big Data and Information Engineering from 
+                                Artificial Intelligence (MedAI).</p>
+                                <p>I received my Bachelor of Engineering in College of Big Data and Information Engineering from 
                                 Guizhou University. I was fortunate to work with Dr. Hanyu Lu and Dr. Rongfen Zhang 
-                                during my undergraduate study.
+                                during my undergraduate study.</p>
+                                <p>In my spare time, I enjoy playing badminton, doing rope jumping and reading.</p>
+                                <p>I also like to watch movies, strongly recommended 'The Secret Life of Walter Mitty'.</p>
+                                <p>As for music, my taste may seem a little bit wierd, I'm addicted to Vaporwave.</p>
                             </div>
                         </div>
                     </div>
@@ -65,36 +107,6 @@
                         <a class="social-icon" href="https://github.com/LexTran"><i class="fab fa-github"></i></a>
                         <a class="social-icon" href="https://www.zhihu.com/people/tu-lang-xing-jun"><i class="fab fa-zhihu"></i></a>
                         </div>
-                </div>
-            </section>
-            <hr class="m-0" />
-            <!-- Education-->
-            <section class="resume-section" id="education">
-                <div class="resume-section-content">
-                    <h2 class="mb-5">Education</h2>
-                    <div class="d-flex flex-column flex-md-row justify-content-between mb-5">
-                        <img class="rounded-circle" src="assets/img/USTB.jpg" width="80" height="80" alt="" />
-                        <div class="flex-grow-1" style="margin-left:20px ;">
-                            <h3 class="mb-0">
-                                University of Science & Technology Beijing
-                            </h3>
-                            <div class="subheading mb-3">MEng.</div>
-                            <div>Electronic Engineering</div>
-                            <div>Medical Image Processing</div>
-                        </div>
-                        <div class="flex-shrink-0"><span class="text-primary">Sep. 2022 - present</span></div>
-                    </div>
-                    <div class="d-flex flex-column flex-md-row justify-content-between mb-5">
-                        <img class="rounded-circle" src="assets/img/GZU.jpg" width="80" height="80" alt="" />
-                        <div class="flex-grow-1" style="margin-left:20px ;">
-                            <h3 class="mb-0">
-                                Guizhou University
-                            </h3>
-                            <div class="subheading mb-3">Bachelor of Engineering</div>
-                            <div>Electronic Communication Engineering</div>
-                        </div>
-                        <div class="flex-shrink-0"><span class="text-primary">Sep. 2017 - June 2021</span></div>
-                    </div>
                 </div>
             </section>
             <hr class="m-0" />
@@ -124,61 +136,59 @@
                 </div>
             </section>
             <hr class="m-0" />
-            <!-- Skills-->
-            <section class="resume-section" id="skills">
+            <!-- Projects-->
+            <section class="resume-section" id="projects">
                 <div class="resume-section-content">
-                    <h2 class="mb-5">Skills</h2>
-                    <div class="subheading mb-3">Programming Skills</div>
-                    <ul class="list-inline dev-icons">
-                        <li class="list-inline-item"><i class="fab fa-python"></i></li>
-                        <li class="list-inline-item"><i class="fab fa-medapps"></i></li>
-                        <li class="list-inline-item"><i class="fab fa-linux"></i></li>
-                        <li class="list-inline-item"><i class="fab fa-git"></i></li>
-                        <li class="list-inline-item"><i class="fab fa-html5"></i></li>
-                        <li class="list-inline-item"><i class="fab fa-css3-alt"></i></li>
-                    </ul>
-                    <div class="subheading mb-3">Research Interests</div>
-                    <ul class="fa-ul mb-0">
-                      <li>
-                          <span class="fa-li"><i class="fas fa-check"></i></span>
-                          Computer Assisted Interventions
-                      </li>
-                      <li>
-                          <span class="fa-li"><i class="fas fa-check"></i></span>
-                          Surgical Robotics Vision
-                      </li>
-                      <li>
-                          <span class="fa-li"><i class="fas fa-check"></i></span>
-                          Surgical Video Analysis
-                      </li>
-                    </ul>
-                </div>
-            </section>
-            <hr class="m-0" />
-            <!-- Interests-->
-            <section class="resume-section" id="interests">
-                <div class="resume-section-content">
-                    <h2 class="mb-5">Interests</h2>
-                    <p>In my spare time, I enjoy playing mountain ball, doing rope jumping and reading.</p>
-                    <p>I also like to watch movies, strongly recommended 'The Secret Life of Walter Mitty'.</p>
-                    <p>As for music, my taste may seem a little bit wierd, I'm addicted to Vaporwave.</p>
-                </div>
-            </section>
-            <hr class="m-0" />
-            <!-- Awards-->
-            <section class="resume-section" id="awards">
-                <div class="resume-section-content">
-                    <h2 class="mb-5">Awards & Certifications</h2>
-                    <ul class="fa-ul mb-0">
-                      <li>
-                          <span class="fa-li"><i class="fas fa-trophy text-warning"></i></span>
-                          2nd Price at Provincial Level, 2021 The Chinese Mathematics Competitions(CMC)
-                      </li>
-                      <li>
-                        <span class="fa-li"><i class="fas fa-trophy text-warning"></i></span>
-                        2nd Price at Provincial Level, 2021 China College Students' Entrepreneureship Competition
-                    </li>
-                    </ul>
+                    <h2 class="mb-5">Projects</h2>
+                    <div class="project-list">
+                        <div class="project-item">
+                            <div class="project-name">
+                                <b>Autonomous Suturing Technology and System Development for Laparoscopic Surgery Robot</b>
+                            </div>
+                            <div class="project-level" style="font-weight: bold;">NNSF Key R&D Program</div>
+                            <div class="project-date">Dec. 2023 -- Nov. 2026</div>
+                        </div>
+
+                        <div class="project-item">
+                            <div class="project-name">
+                                <b>Research on Key Technologies of Multi-modal Intelligent Diagnosis Platform and Evaluation System for Coronary Heart Disease</b>
+                            </div>
+                            <div class="project-level" style="font-weight: bold;">BNSF Key R&D Program</div>
+                            <div class="project-date">July 2024 -- June 2027</div>
+                        </div>
+
+                        <div class="project-item">
+                            <div class="project-name">
+                                <b>Research on Physical Properties Prediction of Complex Carbonate Reservoirs Based on Deep Learning</b>
+                            </div>
+                            <div class="project-level"></div>
+                            <div class="project-date">Oct. 2023 -- May. 2024</div>
+                        </div>
+                        
+                        <div class="project-item">
+                            <div class="project-name">
+                                <b>Seismic Impedance Inversion Prediction Based on Deep Learning</b>
+                            </div>
+                            <div class="project-level"></div>
+                            <div class="project-date">Mar. 2023 -- June 2023</div>
+                        </div>
+                        
+                        <div class="project-item">
+                            <div class="project-name">
+                                <b>Key Factors Assessment System for Lost Circulation</b>
+                            </div>
+                            <div class="project-level"></div>
+                            <div class="project-date">Oct. 2022 -- Dec. 2022</div>
+                        </div>
+                        
+                        <div class="project-item">
+                            <div class="project-name">
+                                <b>Intelligent Prediction System for Gas Field Lost Circulation</b>
+                            </div>
+                            <div class="project-level"></div>
+                            <div class="project-date">Oct. 2022 -- Dec. 2022</div>
+                        </div>
+                    </div>
                 </div>
             </section>
             <hr class="m-0" />
@@ -189,10 +199,36 @@
                     <div class="d-flex flex-column flex-md-row justify-content-between mb-5">
                         <div class="flex-grow-1">
                             <div class="mb-0" style="font-size: 24px;color: #343a40;margin-bottom: 0.5rem;line-height: 1.2;">
-                                <b>Tan Lixing</b>, Lu Jiaqi, Zhang Xiaonan, Liu Yuhong, Zhang Rongfen
+                                <b>Tan Lixing</b>, Shuang Song*, Kangneng Zhou, Chengbo Duan, Lanying Wang, Huayang Ren, Linlin Liu, Wei Zhang and Ruoxiu Xiao*.
                             </div>
                             <div class="subheading mb-3">
-                                <b>Improved Ghost Machine Gesture Interaction System based on Lightweight OpenPose.</b> Computer Engineering and Applications 57(16)
+                                <b>Multi-view X-ray Image Synthesis with Multiple Domain Disentanglement from CT Scans.</b> Accepted by ACM MM 2024 <a class="social-icons" href="https://arxiv.org/abs/2404.11889"><i class="fas fa-file"></i></a>
+                            </div>
+                        </div>
+                        <div class="flex-shrink-0">
+                            <p class="text-primary" style="text-align: right;font-size:20px">Apr. 2024</p>
+                        </div>
+                    </div>
+                    <div class="d-flex flex-column flex-md-row justify-content-between mb-5">
+                        <div class="flex-grow-1">
+                            <div class="mb-0" style="font-size: 24px;color: #343a40;margin-bottom: 0.5rem;line-height: 1.2;">
+                                <b>Tan Lixing</b>, Shuang Song, Yaofeng He, Kangneng Zhou, Tong Lu and Ruoxiu Xiao*.
+                            </div>
+                            <div class="subheading mb-3">
+                                <b>EAR: Edge-Aware Reconstruction of 3-D vertebrae structures from bi-planar X-ray images.</b> Under review <a class="social-icons" href="https://arxiv.org/abs/2407.20937"><i class="fas fa-file"></i></a>
+                            </div>
+                        </div>
+                        <div class="flex-shrink-0">
+                            <p class="text-primary" style="text-align: right;font-size:20px">May. 2024</p>
+                        </div>
+                    </div>
+                    <div class="d-flex flex-column flex-md-row justify-content-between mb-5">
+                        <div class="flex-grow-1">
+                            <div class="mb-0" style="font-size: 24px;color: #343a40;margin-bottom: 0.5rem;line-height: 1.2;">
+                                <b>Tan Lixing</b>, Lu Jiaqi, Zhang Xiaonan, Liu Yuhong, Zhang Rongfen*
+                            </div>
+                            <div class="subheading mb-3">
+                                <b>Improved Ghost Machine Gesture Interaction System based on Lightweight OpenPose.</b> Computer Engineering and Applications 57(16)  <a class="social-icons" href="https://kns.cnki.net/kcms2/article/abstract?v=6RlcORkFSJSkW5PGCFa7vxlrRusvqPqkN3AW9cH7LXwnleiuOFTC66Q5GlHUHwUqIcgufk4SDI-E6ddRdxTYr8UhYeiLB05USJhrUw2pw1gir3N9HAw8EUqPm_s-18ARJafXGUBoMKOn0KZP51K91w==&uniplatform=NZKPT&language=CHS"><i class="fas fa-file"></i></a>
                             </div>
                         </div>
                         <div class="flex-shrink-0">
@@ -201,8 +237,168 @@
                     </div>
                 </div>
             </section>
+            <hr class="m-0" />
+            <!-- Blog -->
+            <section class="resume-section" id="blog">
+                <div class="resume-section-content">
+                    <h2 class="mb-5">Blogs</h2>
+                    
+                    <div class="blog-posts">
+                        
+                        <article class="blog-card">
+                            <!-- 如果有封面图 -->
+                            
+                            
+                            <div class="blog-card-content">
+                                <!-- 标签 -->
+                                <div class="blog-tags">
+                                    
+                                    <span class="blog-tag">#geek</span>
+                                    
+                                </div>
+                                
+                                <!-- 标题 -->
+                                <h4 class="blog-title">
+                                    <a href="/2024/04/29/deploy/">Deploy your DL model</a>
+                                </h4>
+                                
+                                <!-- 摘要 -->
+                                <div class="blog-excerpt">
+                                    
+
+                                </div>
+                                
+                                <!-- 元信息 -->
+                                <div class="blog-meta">
+                                    <div class="blog-date">
+                                        <i class="far fa-calendar"></i>
+                                        2024-04-29
+                                    </div>
+                                    
+                                    <!-- 预计阅读时间 -->
+                                    <div class="blog-read-time">
+                                        <i class="far fa-clock"></i>
+                                        4 mins read
+                                    </div>
+                                </div>
+                            </div>
+                        </article>
+                        
+                        <article class="blog-card">
+                            <!-- 如果有封面图 -->
+                            
+                            
+                            <div class="blog-card-content">
+                                <!-- 标签 -->
+                                <div class="blog-tags">
+                                    
+                                    <span class="blog-tag">#geek</span>
+                                    
+                                </div>
+                                
+                                <!-- 标题 -->
+                                <h4 class="blog-title">
+                                    <a href="/2023/12/17/stylegan/">Issues during training StyleGAN2</a>
+                                </h4>
+                                
+                                <!-- 摘要 -->
+                                <div class="blog-excerpt">
+                                    
+
+                                </div>
+                                
+                                <!-- 元信息 -->
+                                <div class="blog-meta">
+                                    <div class="blog-date">
+                                        <i class="far fa-calendar"></i>
+                                        2023-12-17
+                                    </div>
+                                    
+                                    <!-- 预计阅读时间 -->
+                                    <div class="blog-read-time">
+                                        <i class="far fa-clock"></i>
+                                        1 mins read
+                                    </div>
+                                </div>
+                            </div>
+                        </article>
+                        
+                        <article class="blog-card">
+                            <!-- 如果有封面图 -->
+                            
+                            
+                            <div class="blog-card-content">
+                                <!-- 标签 -->
+                                <div class="blog-tags">
+                                    
+                                    <span class="blog-tag">#geek</span>
+                                    
+                                </div>
+                                
+                                <!-- 标题 -->
+                                <h4 class="blog-title">
+                                    <a href="/2023/06/12/ros2/">Unity Robotics Hub环境搭建</a>
+                                </h4>
+                                
+                                <!-- 摘要 -->
+                                <div class="blog-excerpt">
+                                    
+
+                                </div>
+                                
+                                <!-- 元信息 -->
+                                <div class="blog-meta">
+                                    <div class="blog-date">
+                                        <i class="far fa-calendar"></i>
+                                        2023-06-12
+                                    </div>
+                                    
+                                    <!-- 预计阅读时间 -->
+                                    <div class="blog-read-time">
+                                        <i class="far fa-clock"></i>
+                                        2 mins read
+                                    </div>
+                                </div>
+                            </div>
+                        </article>
+                        
+                    </div>
+                    
+                    <div class="view-more">
+                        <a href="index.html" class="btn btn-primary">More posts</a>
+                    </div>
+                </div>
+            </section>
+            <hr class="m-0" />
+            <!-- Awards-->
+            <section class="resume-section" id="awards">
+                <div class="resume-section-content">
+                    <h2 class="mb-5">Awards & Certifications</h2>
+                    <ul class="fa-ul mb-0">
+                      <li>
+                        <span class="fa-li"><i class="fas fa-trophy text-warning"></i></span>
+                        Special Price in China, 2023 "Challenge Cup" Chinese College Students' Academic Science and Technology Competition
+                      </li>
+                      <li>
+                        <span class="fa-li"><i class="fas fa-trophy text-warning"></i></span>
+                        Special Price at Beijing, 2023 "Challenge Cup" Chinese College Students' Academic Science and Technology Competition 
+                      </li>
+                      <li>
+                        <span class="fa-li"><i class="fas fa-award text-warning"></i></span>
+                        2nd Price at Beijing, The 9th College Students' "Internet+" Innovation and Entrepreneurship Competition 
+                      </li>
+                      <li>
+                          <span class="fa-li"><i class="fas fa-award text-warning"></i></span>
+                          2nd Price at Provincial Level, 2021 The Chinese Mathematics Competitions(CMC)
+                      </li>
+                      <li>
+                        <span class="fa-li"><i class="fas fa-award text-warning"></i></span>
+                        2nd Price at Provincial Level, 2021 China College Students' Entrepreneureship Competition
+                      </li>
+                    </ul>
+                </div>
+            </section>
         </div>
-        
         
         <!-- Bootstrap core JS-->
         <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>

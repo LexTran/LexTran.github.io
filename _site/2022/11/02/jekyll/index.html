@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
   <head>
-  <title>Lixing's Blog – </title>
+  <title>Jekyll 搭建博客 – Lixing's Blog – </title>
 
       <meta charset="utf-8" />
     <meta content='text/html; charset=utf-8' http-equiv='Content-Type'>
@@ -9,11 +9,16 @@
     <meta name='viewport' content='width=device-width, initial-scale=1.0, maximum-scale=1.0'>
 
     
-    <meta name="description" content="">
-    <meta property="og:description" content="" />
+    <meta name="description" content="
+" />
+    <meta property="og:description" content="
+" />
     
     <meta name="author" content="Lixing's Blog" />
 
+    
+    <meta property="og:title" content="Jekyll 搭建博客" />
+    <meta property="twitter:title" content="Jekyll 搭建博客" />
     
   <!-- Async font loading -->
 <script>
@@ -143,175 +148,79 @@
 
     <div id="main" role="main" class="wrapper-content">
       <div class="container">
-        <div class="search-container">
-  <input type="text" id="search-input" placeholder="search blog posts..." style="width: 90%;
-    height: 35px;
-    color: #333;
-    background-color: rgba(227,231,236,.2);
-    line-height: 35px;
-    padding:0px 16px;
-    border: 1px solid #c0c0c0;
-    font-size: 16px;
-    font-weight: bold;
-    border-radius: 17px;
-    outline: none;
-    box-sizing: border-box;
-    box-shadow: inset 0 1px 1px rgba(0,0,0,.075), 0 0 8px rgba(102,175,233,.6);">
-  <!-- 添加新建博客按钮 -->
-  <a href="/new-post" class="new-post-btn">
-    <i class="fas fa-plus" style="font-size: 16px; color: #333;"></i> 新建博客
-  </a>
-  <ul id="results-container"></ul>
+        <article class="posts">
+  
+  <h1>Jekyll 搭建博客</h1>
+
+  <div clsss="meta">
+    <span class="date">
+      2022-11-02
+    </span>
+
+    <ul class="tag">
+      
+      <li>
+        <a href="http://localhost:4000/tags#geek">
+          geek
+        </a>
+      </li>
+      
+    </ul>
+  </div>
+
+  
+
+  <div class="entry">
+    <!-- more -->
+
+<h1 id="jekyll-搭建博客">Jekyll 搭建博客</h1>
+
+<p>学习使用Github Page推荐的Jekyll搭建静态博客网站，大部分内容参考该<a href="https://lemonchann.github.io/create_blog_with_github_pages/">博客</a>，实现了一个简单的博客站。</p>
+
+<p>Jekyll安装按照官方教程安装即可，要注意Jekyll官方更推荐在Linux和Mac OS下使用，但是如果你只有Windows系统，可以参考<a href="http://jekyllcn.com/docs/windows/#installation">这个文档</a>安装Jekyll（我目前还没发现问题）。</p>
+
+<p>安装完成Jekyll后，在项目文件夹下输入</p>
+
+<div class="language-sh highlighter-rouge"><div class="highlight"><pre class="highlight"><code>jekyll server
+</code></pre></div></div>
+
+<p>命令即可在本地服务器运行项目，通过localhost:4000端口可查看项目界面。</p>
+
+<h2 id="jekyll项目结构">Jekyll项目结构</h2>
+
+<p>Jekyll部署的项目会自动转换.md文件成为.html文件，你需要一个首页，通常命名为index.html，然后需要一个_config.yml配置Jekyll主题和内容，博客文章放在_posts文件夹下，命名结构遵循_config.yml中的约定，然后你的博客就可以运行了，相当简单。</p>
+
+
+  </div>
+
+  
+<div class="comments">
+	<div id="disqus_thread"></div>
+	<script type="text/javascript">
+
+	    var disqus_shortname = '{"clientID"=>"aabbb89b1630d34f3abb", "clientSecret"=>"9ad0f345c24b1003d94f4ace6d81e0e686a0049a", "repo"=>"LexTran.github.io", "owner"=>"LexTran"}';
+
+	    (function() {
+	        var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
+	        dsq.src = '//' + disqus_shortname + '.disqus.com/embed.js';
+	        (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+	    })();
+
+	</script>
+	<noscript>Please enable JavaScript to view the <a href="http://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
 </div>
 
-<script src="https://unpkg.com/simple-jekyll-search/dest/simple-jekyll-search.min.js"></script>
-<script src="/js/simple-jekyll-search.min.js"></script>
-
-<script>
-	window.simpleJekyllSearch = new SimpleJekyllSearch({
-	searchInput: document.getElementById('search-input'),
-	resultsContainer: document.getElementById('results-container'),
-	json: '/search.json',
-	searchResultTemplate: '<li><a href="{url}?query={query}" title="{desc}">{title}</a></li>',
-	noResultsText: 'No results found',
-	limit: 10,
-	fuzzy: false,
-	exclude: ['Welcome']
-  })
-</script>
- 
-
-
-<div class="posts">
   
-  
-    <article class="post">
-      <h1>
-        <a href="/2024/04/29/deploy/">Deploy your DL model</a>
-      </h1>
-
-      <div clsss="meta">
-        <span class="date">
-          2024-04-29
-        </span>
-
-        <ul class="tag">
-          
-          <li>
-            <a href="http://localhost:4000/tags#geek">
-              geek
-            </a>
-          </li>
-          
-        </ul>
-      </div>
-
-      <div class="entry">
-        
-
-      </div>
-
-      <a href="/2024/04/29/deploy/" class="read-more">Read More</a>
-    </article>
-  
-  
-  
-    <article class="post">
-      <h1>
-        <a href="/2023/12/17/stylegan/">Issues during training StyleGAN2</a>
-      </h1>
-
-      <div clsss="meta">
-        <span class="date">
-          2023-12-17
-        </span>
-
-        <ul class="tag">
-          
-          <li>
-            <a href="http://localhost:4000/tags#geek">
-              geek
-            </a>
-          </li>
-          
-        </ul>
-      </div>
-
-      <div class="entry">
-        
-
-      </div>
-
-      <a href="/2023/12/17/stylegan/" class="read-more">Read More</a>
-    </article>
-  
-  
-  
-    <article class="post">
-      <h1>
-        <a href="/2023/06/12/ros2/">Unity Robotics Hub环境搭建</a>
-      </h1>
-
-      <div clsss="meta">
-        <span class="date">
-          2023-06-12
-        </span>
-
-        <ul class="tag">
-          
-          <li>
-            <a href="http://localhost:4000/tags#geek">
-              geek
-            </a>
-          </li>
-          
-        </ul>
-      </div>
-
-      <div class="entry">
-        
-
-      </div>
-
-      <a href="/2023/06/12/ros2/" class="read-more">Read More</a>
-    </article>
-  
-  
-  
-    <article class="post">
-      <h1>
-        <a href="/2022/11/02/jekyll/">Jekyll 搭建博客</a>
-      </h1>
-
-      <div clsss="meta">
-        <span class="date">
-          2022-11-02
-        </span>
-
-        <ul class="tag">
-          
-          <li>
-            <a href="http://localhost:4000/tags#geek">
-              geek
-            </a>
-          </li>
-          
-        </ul>
-      </div>
-
-      <div class="entry">
-        
-
-      </div>
-
-      <a href="/2022/11/02/jekyll/" class="read-more">Read More</a>
-    </article>
-  
-  
-</div>
+</article>
 
 <div class="pagination">
   
+  
+    <span class="next" >
+      <a href="http://localhost:4000/2023/06/12/ros2/">
+        下一篇 →
+      </a>
+    </span>
   
 </div>
       </div>

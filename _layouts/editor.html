@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html>
+  {% include head.html %}
+  <body class="editor-page">
+    <div class="editor-wrapper">
+      {{ content }}
+    </div>
+
+    {% include analytics.html %}
+    
+    <style>
+      html, body {
+        height: 100%;
+        margin: 0;
+        padding: 0;
+        background-color: #f5f5f5;
+      }
+      
+      .editor-page {
+        min-height: 100vh;
+        display: flex;
+        flex-direction: column;
+      }
+      
+      .editor-wrapper {
+        flex: 1;
+        padding: 2rem 4rem;
+        max-width: 1800px;
+        margin: 0 auto;
+        width: 100%;
+        box-sizing: border-box;
+        display: flex;
+        flex-direction: column;
+        gap: 1.5rem;
+      }
+
+      /* 页面顶部样式 */
+      .page-header {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        gap: 1rem;
+      }
+
+      .header-inputs {
+        flex: 1;
+        display: flex;
+        gap: 1rem;
+      }
+
+      .title-input {
+        flex: 2;
+        padding: 0.5rem;
+        font-size: 1.25rem;
+        border: none;
+        border-bottom: 2px solid #e0e0e0;
+        outline: none;
+        transition: border-color 0.3s;
+      }
+
+      .tags-input {
+        flex: 1;
+        padding: 0.5rem;
+        border: none;
+        border-bottom: 2px solid #e0e0e0;
+        outline: none;
+        transition: border-color 0.3s;
+      }
+
+      .title-input:focus,
+      .tags-input:focus {
+        border-bottom-color: #618264;
+      }
+
+      /* 编辑器容器样式 */
+      .editor-container {
+        flex: 1;
+        background: white;
+        border-radius: 8px;
+        box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+        overflow: hidden;
+        height: 600px;  /* 固定容器高度 */
+      }
+
+      /* 编辑器主体区域样式 */
+      .editor-main {
+        display: flex;
+        height: 100%;
+        overflow: hidden;
+      }
+
+      /* 编辑器和预览区样式 */
+      .editor-pane {
+        flex: 1;
+        border-right: 1px solid #e0e0e0;
+        display: flex;
+        flex-direction: column;
+        height: 100%;
+        overflow-y: hidden;
+      }
+
+      .preview-pane {
+        flex: 1;
+        padding: 20px;
+        padding-right: 32px;
+        overflow-y: scroll;  /* 始终显示滚动条 */
+        height: 570px;       /* 确保高度固定 */
+        box-sizing: border-box;
+      }
+
+      /* CodeMirror 编辑器样式 */
+      .CodeMirror {
+        height: 570px !important;  /* 与容器同高 */
+        padding-right: 12px;  /* 预留滚动条空间 */
+        overflow-y: hidden;
+      }
+
+      .markdown-body {
+        width: 100%;
+        word-wrap: break-word;
+        overflow-wrap: break-word;
+      }
+
+      /* 页面底部样式 */
+      .page-footer {
+        display: flex;
+        justify-content: flex-end;
+        gap: 1rem;
+      }
+
+      /* 按钮样式 */
+      .btn {
+        padding: 0.5rem 1rem;
+        border: none;
+        border-radius: 4px;
+        cursor: pointer;
+        transition: all 0.3s;
+      }
+
+      .btn-secondary {
+        background: #f0f0f0;
+        color: #333;
+      }
+
+      .btn-primary {
+        background: #618264;
+        color: white;
+      }
+
+      .btn:hover {
+        opacity: 0.9;
+        transform: translateY(-1px);
+      }
+    </style>
+  </body>
+</html>
