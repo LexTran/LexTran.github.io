@@ -1,0 +1,86 @@
+[
+  {
+    "file": "ct2x-gan.webp",
+    "source": "https://arxiv.org/pdf/2404.11889",
+    "pdf_page": 4,
+    "figure": 2,
+    "crop_points": [
+      52,
+      82,
+      558,
+      259
+    ]
+  },
+  {
+    "file": "ear.webp",
+    "source": "https://arxiv.org/pdf/2407.20937",
+    "pdf_page": 3,
+    "figure": 1,
+    "crop_points": [
+      49,
+      53,
+      542,
+      407
+    ]
+  },
+  {
+    "file": "phyevolve.webp",
+    "source": "https://arxiv.org/pdf/2610.30717",
+    "pdf_page": 2,
+    "figure": 1,
+    "crop_points": [
+      70,
+      70,
+      525,
+      281
+    ]
+  },
+  {
+    "file": "flashgaze.webp",
+    "source": "https://arxiv.org/pdf/2610.04225",
+    "pdf_page": 2,
+    "figure": 1,
+    "crop_points": [
+      106,
+      80,
+      504,
+      233
+    ]
+  },
+  {
+    "file": "stride.webp",
+    "source": "https://arxiv.org/pdf/2609.32462",
+    "pdf_page": 2,
+    "figure": 1,
+    "crop_points": [
+      106,
+      81,
+      506,
+      270
+    ]
+  },
+  {
+    "file": "remedy.webp",
+    "source": "https://arxiv.org/pdf/2609.32460",
+    "pdf_page": 2,
+    "figure": 1,
+    "crop_points": [
+      106,
+      379,
+      506,
+      567
+    ]
+  },
+  {
+    "file": "openpose.webp",
+    "source": "http://cea.ceaj.org/CN/10.3778/j.issn.1002-8331.2004-0201",
+    "pdf_page": 4,
+    "figure": 4,
+    "crop_points": [
+      152,
+      103,
+      478,
+      248
+    ]
+  }
+]
