@@ -65,7 +65,8 @@ h3 { margin: 0 0 6px; font-size: 17px; font-weight: 600; line-height: 1.5; }
 .paper-figure { display: flex; align-items: center; justify-content: center; min-width: 0; }
 .paper-figure img { width: auto; height: auto; max-width: 100%; max-height: 165px; object-fit: contain; }
 .paper-figure:hover { opacity: .85; }
-.paper.paper-text-only h3 { color: var(--ink); }
+.paper.paper-without-image h3 { color: var(--ink); }
+.paper-figure-placeholder { min-height: 165px; }
 .paper-summary { margin-top: 8px; font-size: 15px; line-height: 1.6; color: #454d59; }
 .paper h3, .patent h3 { color: var(--link); font-size: 18px; }
 .authors { color: #454d59; font-size: 15.5px; line-height: 1.65; }
