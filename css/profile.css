@@ -30,7 +30,9 @@ strong { font-weight: 600; }
 .page-section:focus { outline: none; }
 h1, h2 { font-family: var(--heading); font-weight: 400; line-height: 1.25; }
 h1 { margin: 0 0 22px; font-size: 44px; letter-spacing: -.025em; }
-h2 { margin: 0 0 22px; font-size: 31px; }
+h2 { display: flex; align-items: flex-start; gap: .36em; margin: 0 0 22px; font-size: 31px; }
+.heading-icon { flex: none; width: .84em; height: .84em; margin-top: .16em; }
+h2 > span { min-width: 0; }
 h3 { margin: 0 0 6px; font-size: 17px; font-weight: 600; line-height: 1.5; }
 .section-nav { position: fixed; top: 50%; left: max(20px, calc(50% - 656px)); width: 148px; transform: translateY(-50%); z-index: 20; }
 .nav-label { display: block; margin: 0 0 18px 17px; color: #454d59; font: 17px var(--heading); }
