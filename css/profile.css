@@ -219,28 +219,40 @@ h3 { margin: 0 0 6px; font-size: 17px; font-weight: 600; line-height: 1.5; }
 .theme-toggle[aria-pressed="true"] .icon-moon { opacity: 1; transform: none; stroke: var(--accent); fill: color-mix(in srgb, var(--accent) 30%, transparent); }
 
 /* ---------- Hero ---------- */
-.profile { display: grid; grid-template-columns: minmax(0, 1fr) 250px; gap: 46px; align-items: center; margin-top: 72px; }
+/* The portrait column stretches to the height of the bio text, so the photo's top and
+   bottom edges line up with the first and last lines of the About copy. */
+.profile { display: grid; grid-template-columns: minmax(0, 1fr) 300px; gap: 48px; align-items: stretch; margin-top: 72px; perspective: 1100px; }
 .profile-copy p + p { margin-top: 12px; }
-.profile-portrait { position: relative; perspective: 900px; }
+.profile-portrait {
+  position: relative; display: flex; flex-direction: column;
+  transform: rotateX(var(--tilt-x, 0deg)) rotateY(var(--tilt-y, 0deg));
+  transform-style: preserve-3d;
+  transition: transform .18s ease-out;
+}
+@property --halo-angle { syntax: "<angle>"; inherits: false; initial-value: 160deg; }
 .profile-portrait::before {
   content: ""; position: absolute; z-index: -1;
-  left: 50%; top: 143px; width: 290px; height: 330px;
-  transform: translate(-50%, -50%);
-  border-radius: 50%;
-  background: conic-gradient(from 160deg, var(--blob-a), var(--blob-b), var(--blob-c), var(--blob-a));
+  inset: -4% -10%; border-radius: 50%;
+  background: conic-gradient(from var(--halo-angle, 160deg), var(--blob-a), var(--blob-b), var(--blob-c), var(--blob-a));
   filter: blur(34px); opacity: .75;
-  animation: halo 16s linear infinite;
+  animation: halo 18s linear infinite;
 }
-@keyframes halo { to { transform: translate(-50%, -50%) rotate(360deg); } }
+@keyframes halo { to { --halo-angle: 520deg; } }
 .profile-portrait img {
-  width: 250px; height: 298px; object-fit: cover; border-radius: 44px;
+  flex: 1 1 0; min-height: 0; width: 100%; height: auto;
+  object-fit: cover; object-position: 46% 50%; border-radius: 40px;
   box-shadow: var(--shadow-md), 0 0 0 1px color-mix(in srgb, var(--line-strong) 70%, transparent);
-  transform: rotateX(var(--tilt-x, 0deg)) rotateY(var(--tilt-y, 0deg)) translateZ(0);
-  transition: transform .18s ease-out, box-shadow .4s ease;
-  transform-style: preserve-3d;
+  transition: box-shadow .4s ease;
 }
 .profile-portrait:hover img { box-shadow: var(--shadow-lg), 0 0 0 1px color-mix(in srgb, var(--line-strong) 70%, transparent); }
-.profile-portrait figcaption { margin-top: 14px; color: var(--muted); font-size: 13px; text-align: center; letter-spacing: .02em; }
+.profile-portrait figcaption {
+  position: absolute; left: 50%; bottom: 16px; transform: translateX(-50%);
+  padding: 5px 13px; border-radius: 999px; white-space: nowrap;
+  background: color-mix(in srgb, var(--bg-elev) 74%, transparent);
+  backdrop-filter: blur(10px); -webkit-backdrop-filter: blur(10px);
+  box-shadow: 0 2px 10px rgba(10, 16, 30, .14), inset 0 0 0 1px color-mix(in srgb, var(--line) 70%, transparent);
+  color: var(--ink-soft); font-size: 12.5px; letter-spacing: .02em;
+}
 .profile-portrait figcaption::before { content: "◦ "; color: var(--accent); }
 .profile-links { display: flex; flex-wrap: wrap; gap: 10px 12px; margin-top: 24px; font-size: 15px; }
 .profile-links a {
@@ -482,10 +494,13 @@ a.paper-figure::after {
   .institution { margin-left: 0; margin-right: 0; }
   .blob { filter: blur(60px); }
 }
+@media (max-width: 1000px) {
+  .profile { align-items: center; }
+  .profile-portrait img { flex: none; height: 400px; }
+}
 @media (max-width: 850px) {
-  .profile { grid-template-columns: minmax(0, 1fr) 200px; gap: 28px; }
-  .profile-portrait img { width: 200px; height: 250px; border-radius: 36px; }
-  .profile-portrait::before { top: 120px; width: 230px; height: 270px; }
+  .profile { grid-template-columns: minmax(0, 1fr) 210px; gap: 28px; }
+  .profile-portrait img { height: 280px; border-radius: 36px; }
   h1 { font-size: 38px; }
   .chinese-name { font-size: 33px; }
   .institution { grid-template-columns: 68px minmax(0, 1fr); gap: 3px 20px; }
@@ -507,8 +522,9 @@ a.paper-figure::after {
   .theme-toggle { width: 30px; height: 30px; }
   .profile { display: flex; flex-direction: column; align-items: stretch; gap: 26px; }
   .profile-portrait { order: -1; align-self: center; }
-  .profile-portrait img { width: 180px; height: 215px; }
-  .profile-portrait::before { top: 105px; width: 210px; height: 240px; }
+  .profile-portrait { width: 190px; }
+  .profile-portrait img { height: 236px; }
+  .profile-portrait figcaption { bottom: 12px; font-size: 12px; }
   h1 { text-align: center; font-size: 34px; }
   .chinese-name { font-size: 30px; }
   .name-divider { margin: 0; font-size: 23px; }
