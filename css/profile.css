@@ -60,13 +60,13 @@ h3 { margin: 0 0 6px; font-size: 17px; font-weight: 600; line-height: 1.5; }
 .news-archive .news-list { margin-top: 12px; }
 .celebration-icon { display: inline-block; width: 21px; height: 21px; vertical-align: -.2em; }
 .paper, .patent { margin: 13px -18px; padding: 23px 18px; }
-.paper-with-figure { display: grid; grid-template-columns: 337.5px minmax(0, 1fr); gap: 27px; align-items: center; }
+.paper-with-figure { display: grid; grid-template-columns: minmax(0, 4.5fr) minmax(0, 5.5fr); gap: 27px; align-items: center; }
 .paper-content { min-width: 0; }
 .paper-figure { display: flex; align-items: center; justify-content: center; min-width: 0; }
-.paper-figure img { width: auto; height: auto; max-width: 100%; max-height: 165px; object-fit: contain; }
+.paper-figure img { width: 100%; height: auto; max-width: 100%; max-height: 300px; object-fit: contain; }
 .paper-figure:hover { opacity: .85; }
 .paper.paper-without-image h3 { color: var(--ink); }
-.paper-figure-placeholder { min-height: 165px; }
+.paper-figure-placeholder { min-height: 220px; }
 .paper-summary { margin-top: 8px; font-size: 15px; line-height: 1.6; color: #454d59; }
 .paper h3, .patent h3 { color: var(--link); font-size: 18px; }
 .authors { color: #454d59; font-size: 15.5px; line-height: 1.65; }
@@ -113,7 +113,7 @@ h3 { margin: 0 0 6px; font-size: 17px; font-weight: 600; line-height: 1.5; }
   .experience-row { grid-template-columns: 82px minmax(0, 1fr); column-gap: 14px; }
   .dated-row { grid-template-columns: minmax(0, 1fr); gap: 5px; }
   .dated-row .date { text-align: left; }
-  .paper-with-figure { grid-template-columns: 285px minmax(0, 1fr); gap: 22px; padding: 21px 15px; }
+  .paper-with-figure { gap: 22px; padding: 21px 15px; }
 }
 @media (max-width: 640px) {
   body { font-size: 16px; }
@@ -134,7 +134,6 @@ h3 { margin: 0 0 6px; font-size: 17px; font-weight: 600; line-height: 1.5; }
   .paper, .patent { padding: 20px 15px; margin-top: 15px; }
   .paper-with-figure { grid-template-columns: 1fr; gap: 18px; }
   .paper-figure { justify-content: flex-start; }
-  .paper-figure img { max-width: min(337.5px, 100%); }
   .paper h3, .patent h3 { font-size: 18px; line-height: 1.5; }
   .paper .authors { font-size: 15.5px; }
   .institution h3 { font-size: 16px; }
