@@ -1,7 +1,7 @@
 <section class="page-section profile" id="about" tabindex="-1">
   <div class="profile-copy">
     <h1>Lixing Tan <span class="name-divider">/</span> <span class="chinese-name" lang="zh-CN">谭立行</span></h1>
-    <p>我目前在北京航空航天大学攻读计算机科学与技术博士学位，在虚拟现实技术与系统国家重点实验室由<a href="https://hsiatsing.github.io/">夏清</a>副研究员和<a href="https://scse.buaa.edu.cn/info/1078/2654.htm">郝爱民</a>教授联合指导。我在北京科技大学获得硕士学位，在医学可视与计算实验室由宋爽博士和肖若秀教授指导；本科毕业于贵州大学，曾在卢晗宇博士和张蓉芬博士的指导下开展科研训练。</p>
+    <p>我在北京航空航天大学虚拟现实技术与系统国家重点实验室攻读计算机科学与技术博士学位，由<a href="https://hsiatsing.github.io/">夏清</a>副研究员和<a href="https://scse.buaa.edu.cn/info/1078/2654.htm">郝爱民</a>教授联合指导。此前，我在北京科技大学获得硕士学位，在贵州大学获得学士学位。</p>
     <p>我目前在 <a href="https://www.canva.com/ai-research/">Canva</a> 的 AI Efficiency 团队担任研究实习生，参与了图像生成模型 <a href="https://www.canva.com/newsroom/news/canva-craft/"><strong>Canva Craft</strong></a> 的研发，该模型<strong>发布时位列 DesignArena 图像榜第 4 名</strong>（前三名都是 GPT-Image 系列模型）。此前，我在<a href="https://mtlab.meitu.com/en/index">美图 MT Lab</a> 人体组实习，从事扩散模型与个性化图像生成相关工作。</p>
     <p>我的研究兴趣包括动作-语言跨模态表征对齐、生成式人工智能、医学图像处理。</p>
     <p>欢迎与我交流研究想法、探讨合作，随时<a href="mailto:LexonTran@qq.com">联系我</a>！</p>
@@ -22,7 +22,7 @@
     <li><time datetime="2026-10">2026.10</time><span class="news-gap" aria-hidden="true">&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="news-event"><img class="celebration-icon" src="{{ "/assets/img/celebration.svg" | relative_url }}" width="21" height="21" alt=""> 祝贺我们的 <strong>Canva Craft</strong> 模型在 <strong>Design Arena</strong> 获得<strong>第 4 名</strong>！</span></li>
     <li><time datetime="2026-10">2026.10</time><span class="news-gap" aria-hidden="true">&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="news-event">向 <strong>NAACL</strong> 提交了 1 篇论文。</span></li>
     <li><time datetime="2026-09">2026.09</time><span class="news-gap" aria-hidden="true">&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="news-event">向 <strong>ICLR</strong> 提交了 3 篇论文。</span></li>
-    <li><time datetime="2026-09">2026.09</time><span class="news-gap" aria-hidden="true">&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="news-event"><img class="celebration-icon" src="{{ "/assets/img/celebration.svg" | relative_url }}" width="21" height="21" alt=""> 我们的论文 <strong>GSMedQA: Graph-Structured Prompting with Multimodal Priors for Medical Visual Question Answering</strong> 被 <strong>BIBM 2026</strong> 接收！</span></li>
+    <li><time datetime="2026-09">2026.09</time><span class="news-gap" aria-hidden="true">&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="news-event"><img class="celebration-icon" src="{{ "/assets/img/celebration.svg" | relative_url }}" width="21" height="21" alt=""> 我们的论文 <a href="#paper-gsmedqa"><strong>GSMedQA</strong></a> 被 <strong>BIBM 2026</strong> 接收！</span></li>
   </ul>
   <details class="news-archive">
     <summary>更多动态</summary>
@@ -34,16 +34,24 @@
   </details>
 </section>
 <section class="page-section" id="publications" tabindex="-1">
-  <h2>已发表成果</h2>
+  <h2>已发表与已录用</h2>
   <p class="section-note">* 通讯作者 · † 共同第一作者（同等贡献） · ‡ Project Leader（项目负责人）</p>
-  <article class="paper paper-with-figure paper-highlight">
+  <article class="paper paper-text-only" id="paper-gsmedqa">
+    <div class="paper-content">
+      <h3>GSMedQA: Graph-Structured Prompting with Multimodal Priors for Medical Visual Question Answering</h3>
+      <p class="authors">Guo Yuting, Zhenyu Yang, <strong class="author-self">Lixing Tan</strong>, Yujing Yan, Wenfeng Song, Xia Hou</p>
+      <p class="venue">BIBM 2026 · 2026.09 录用</p>
+    </div>
+  </article>
+  <article class="paper paper-with-figure">
     <a class="paper-figure" href='{{ "/assets/img/papers/ct2x-gan.webp" | relative_url }}' target="_blank" rel="noopener" aria-label="查看论文主图：ct2x-gan">
       <img src='{{ "/assets/img/papers/ct2x-gan.webp" | relative_url }}' alt="ct2x-gan 论文概览图" width="338" height="118" loading="lazy">
     </a>
     <div class="paper-content">
-      <h3><a href="https://arxiv.org/abs/2404.11889">Multi-view X-ray Image Synthesis with Multiple Domain Disentanglement from CT Scans.</a></h3>
-      <p class="authors"><strong class="author-self">Tan Lixing</strong>, Shuang Song*, Kangneng Zhou, Chengbo Duan, Lanying Wang, Huayang Ren, Linlin Liu, Wei Zhang and Ruoxiu Xiao*.</p>
-      <p class="venue">Accepted by ACM MM 2024 <span class="publication-date">· 2024.04</span></p>
+      <h3><a href="https://arxiv.org/abs/2404.11889">Multi-view X-ray Image Synthesis with Multiple Domain Disentanglement from CT Scans</a></h3>
+      <p class="authors"><strong class="author-self">Lixing Tan</strong>, Shuang Song<sup>*</sup>, Kangneng Zhou, Chengbo Duan, Lanying Wang, Huayang Ren, Linlin Liu, Wei Zhang, Ruoxiu Xiao<sup>*</sup></p>
+      <p class="venue">ACM MM 2024 <span class="publication-date">· 2024.07 录用</span></p>
+      <p class="paper-summary">解耦解剖结构与图像风格，无需配对的真实 X 光训练数据，即可从 CT 合成多视角 X 光图像。</p>
       <a class="paper-link" href="https://arxiv.org/abs/2404.11889">论文 <span aria-hidden="true">↗</span></a>
     </div>
   </article>
@@ -69,7 +77,8 @@
     <div class="paper-content">
       <h3><a href="https://www.alphaxiv.org/abs/2610.30717">PhyEvolve: Multi-Agent State-Evolution Planning for Physics-Aware Video Generation</a></h3>
       <p class="authors">Yang-Hao Zhou<sup>†</sup>, <strong class="author-self">Lixing Tan<sup>†</sup></strong>, Zhiqi Li, Guang Yang, Xiao Yang<sup>‡</sup></p>
-      <p class="venue">预印本 <span class="publication-date">· 2026.10</span></p>
+      <p class="venue">预印本 <span class="publication-date">· 2026.10 首次公开</span></p>
+      <p class="paper-summary">通过多智能体规划物理状态的因果演化，以提示词增强改善视频的物理一致性，无需重新训练生成模型。</p>
       <div class="paper-links">
         <a class="paper-link" href="https://www.alphaxiv.org/abs/2610.30717">论文 <span aria-hidden="true">↗</span></a>
         <a class="paper-link" href="https://phyevolve.github.io/PhyEvolve/">项目主页 <span aria-hidden="true">↗</span></a>
@@ -83,7 +92,8 @@
     <div class="paper-content">
       <h3><a href="https://www.alphaxiv.org/abs/2610.04225">FlashGaze: Training-Free Multi-Scale Patch Pruning For Efficient Video Understanding</a></h3>
       <p class="authors">Ziye Zhu, Yanghao Zhou, <strong class="author-self">Lixing Tan</strong>, Jialiang Kang, Shuxuan Li, Xiao Yang<sup>‡</sup></p>
-      <p class="venue">预印本 <span class="publication-date">· 2026.10</span></p>
+      <p class="venue">预印本 <span class="publication-date">· 2026.10 首次公开</span></p>
+      <p class="paper-summary">在视觉编码前剪枝、合并冗余视频图像块，无需额外训练即可减少计算开销。</p>
       <div class="paper-links">
         <a class="paper-link" href="https://www.alphaxiv.org/abs/2610.04225">论文 <span aria-hidden="true">↗</span></a>
         <a class="paper-link" href="https://zephyrzhu1.github.io/FlashGaze/">项目主页 <span aria-hidden="true">↗</span></a>
@@ -97,7 +107,8 @@
     <div class="paper-content">
       <h3><a href="https://www.alphaxiv.org/abs/2609.32462">Can Motion-Language Models Ground Structure? STRIDE for Evaluating the Evaluators</a></h3>
       <p class="authors"><strong class="author-self">Lixing Tan</strong>, Qing Xia<sup>*</sup>, Yuting Guo, Shuai Li, Aimin Hao</p>
-      <p class="venue">预印本 <span class="publication-date">· 2026.09</span></p>
+      <p class="venue">预印本 <span class="publication-date">· 2026.09 首次公开</span></p>
+      <p class="paper-summary">检验动作-语言评估器能否超越纯文本捷径，真正识别时间顺序、镜像反射与动作身份。</p>
       <div class="paper-links">
         <a class="paper-link" href="https://www.alphaxiv.org/abs/2609.32462">论文 <span aria-hidden="true">↗</span></a>
       </div>
@@ -110,7 +121,8 @@
     <div class="paper-content">
       <h3><a href="https://www.alphaxiv.org/abs/2609.32460">REMEDY: How Far Is Video Generation from Medical Education World Models?</a></h3>
       <p class="authors"><strong class="author-self">Lixing Tan</strong>, Yanghao Zhou, Qing Xia<sup>*</sup>, Yuting Guo, Shuai Li, Aimin Hao</p>
-      <p class="venue">预印本 <span class="publication-date">· 2026.09</span></p>
+      <p class="venue">预印本 <span class="publication-date">· 2026.09 首次公开</span></p>
+      <p class="paper-summary">通过临床操作清单评估生成的医学教学视频，区分视觉真实感与操作流程的正确性。</p>
       <div class="paper-links">
         <a class="paper-link" href="https://www.alphaxiv.org/abs/2609.32460">论文 <span aria-hidden="true">↗</span></a>
       </div>
@@ -121,9 +133,10 @@
       <img src='{{ "/assets/img/papers/ear.webp" | relative_url }}' alt="ear 论文概览图" width="230" height="165" loading="lazy">
     </a>
     <div class="paper-content">
-      <h3><a href="https://arxiv.org/abs/2407.20937">EAR: Edge-Aware Reconstruction of 3-D vertebrae structures from bi-planar X-ray images.</a></h3>
-      <p class="authors"><strong class="author-self">Tan Lixing</strong>, Shuang Song, Yaofeng He, Kangneng Zhou, Tong Lu and Ruoxiu Xiao*.</p>
-      <p class="venue">Preprint <span class="publication-date">· 2024.05</span></p>
+      <h3><a href="https://arxiv.org/abs/2407.20937">EAR: Edge-Aware Reconstruction of 3-D vertebrae structures from bi-planar X-ray images</a></h3>
+      <p class="authors"><strong class="author-self">Lixing Tan</strong>, Shuang Song, Yaofeng He, Kangneng Zhou, Tong Lu, Ruoxiu Xiao<sup>*</sup></p>
+      <p class="venue">预印本 <span class="publication-date">· 2024.07 首次公开</span></p>
+      <p class="paper-summary">结合边缘注意力与频域增强，从双视角 X 光图像重建椎骨的三维结构。</p>
       <a class="paper-link" href="https://arxiv.org/abs/2407.20937">论文 <span aria-hidden="true">↗</span></a>
     </div>
   </article>
@@ -151,12 +164,12 @@
   </article>
   <article class="institution">
     <img src="{{ "/assets/img/USTB.jpg" | relative_url }}" alt="北京科技大学" width="68" height="68" loading="lazy">
-    <div><h3>北京科技大学</h3><p>工学硕士 · 电子信息</p></div>
+    <div><h3>北京科技大学</h3><p>工学硕士 · 电子信息</p><p class="education-note">医学可视与计算实验室 · 导师：宋爽博士、肖若秀教授</p></div>
     <p class="date">2022.09 – 2025.06</p>
   </article>
   <article class="institution">
     <img src="{{ "/assets/img/GZU.jpg" | relative_url }}" alt="贵州大学" width="68" height="68" loading="lazy">
-    <div><h3>贵州大学</h3><p>工学学士 · 通信工程</p></div>
+    <div><h3>贵州大学</h3><p>工学学士 · 通信工程</p><p class="education-note">科研指导：卢晗宇博士、张蓉芬博士</p></div>
     <p class="date">2017.09 – 2021.06</p>
   </article>
 </section>
@@ -171,11 +184,11 @@
 
   <article class="institution experience-row">
     <img class="company-logo" src="{{ "/assets/img/companies/meitu.svg" | relative_url }}" alt="美图 Logo" width="68" height="68" loading="lazy">
-    <div><h3>美图 MT Lab · 人体组</h3><p>计算机视觉工程师(实习生)</p><p class="muted">扩散模型 · FLUX模型 · 个性化生成</p></div>
+    <div><h3>美图 MT Lab · 人体组</h3><p>计算机视觉工程师（实习生）</p><p class="muted">扩散模型 · FLUX 模型 · 个性化生成</p></div>
     <p class="date">2025.06 – 2025.09</p>
   </article>
   <article class="institution experience-row">
-    <img class="company-logo" src="{{ "/assets/img/companies/csic.jpg" | relative_url }}" alt="CSIC Logo" width="68" height="68" loading="lazy">
+    <img class="company-logo company-logo--wide" src="{{ "/assets/img/companies/csic.jpg" | relative_url }}" alt="CSIC Logo" width="68" height="68" loading="lazy">
     <div><h3>CSIC</h3><p>嵌入式软件工程师</p><p class="muted">嵌入式 C 编程 · C# 软件开发</p></div>
     <p class="date">2021.07 – 2021.09</p>
   </article>
@@ -184,16 +197,21 @@
   <h2>荣誉奖励</h2>
 
   <ul class="awards-list">
-    <li>2025年北京市普通高校优秀毕业生</li>
-    <li>2024-2025学年度北京科技大学国家奖学金</li>
-    <li>2024-2025学年度北京科技大学计算机与通信工程学院“学术之星”</li>
-    <li>首都一等奖，2024年&quot;青创北京&quot;挑战杯全国大学生创业计划竞赛主赛道</li>
-    <li>全国特等奖，2023年挑战杯全国大学生课外学术科技作品竞赛&quot;黑科技&quot;赛道</li>
-    <li>首都特等奖，2023年&quot;青创北京&quot;挑战杯首都大学生课外学术科技作品竞赛&quot;黑科技&quot;赛道</li>
-    <li>首都二等奖，第九届大学生&quot;互联网+&quot;创新创业大赛</li>
-    <li>省级二等奖，2021年全国大学生数学竞赛</li>
-    <li>省级二等奖，2021年&quot;创青春&quot;中国大学生创新创业大赛</li>
+    <li><strong>北京市普通高校优秀毕业生</strong> · 2025</li>
+    <li><strong>国家奖学金</strong> · 北京科技大学，2024–2025</li>
+    <li><strong>学术之星</strong> · 北京科技大学计算机与通信工程学院，2024–2025</li>
   </ul>
+  <details class="awards-archive">
+    <summary>更多奖项（6 项）</summary>
+    <ul class="awards-list">
+    <li><strong>首都一等奖</strong> · “青创北京”挑战杯全国大学生创业计划竞赛主赛道，2024</li>
+    <li><strong>全国特等奖</strong> · 挑战杯全国大学生课外学术科技作品竞赛“黑科技”赛道，2023</li>
+    <li><strong>首都特等奖</strong> · “青创北京”挑战杯首都大学生课外学术科技作品竞赛“黑科技”赛道，2023</li>
+    <li><strong>首都二等奖</strong> · 第九届大学生“互联网+”创新创业大赛</li>
+    <li><strong>省级二等奖</strong> · 全国大学生数学竞赛，2021</li>
+    <li><strong>省级二等奖</strong> · “创青春”中国大学生创新创业大赛，2021</li>
+    </ul>
+  </details>
 </section>
 <section class="page-section" id="beyond" tabindex="-1">
   <h2>生活兴趣</h2>

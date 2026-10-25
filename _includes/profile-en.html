@@ -1,7 +1,7 @@
 <section class="page-section profile" id="about" tabindex="-1">
   <div class="profile-copy">
     <h1>Lixing Tan <span class="name-divider">/</span> <span class="chinese-name" lang="zh-CN">谭立行</span></h1>
-    <p>I am a Ph.D. student in Computer Science at Beihang University, jointly advised by Associate Researcher <a href="https://hsiatsing.github.io/">Qing Xia</a> and Prof. <a href="https://scse.buaa.edu.cn/info/1078/2654.htm">Aimin Hao</a> at the State Key Laboratory of Virtual Reality Technology and Systems. I received my master’s degree from the University of Science and Technology Beijing, supervised by Dr. Shuang Song and Prof. Ruoxiu Xiao at the MedAI Lab, and my bachelor’s degree from Guizhou University, where I worked with Dr. Hanyu Lu and Dr. Rongfen Zhang.</p>
+    <p>I am a Ph.D. student in Computer Science at Beihang University’s State Key Laboratory of Virtual Reality Technology and Systems, jointly advised by Associate Researcher <a href="https://hsiatsing.github.io/">Qing Xia</a> and Prof. <a href="https://scse.buaa.edu.cn/info/1078/2654.htm">Aimin Hao</a>. I hold a master’s degree from the University of Science and Technology Beijing and a bachelor’s degree from Guizhou University.</p>
     <p>I am currently a Research Intern with <a href="https://www.canva.com/ai-research/">Canva</a>’s AI Efficiency team, where I contribute to <a href="https://www.canva.com/newsroom/news/canva-craft/"><strong>Canva Craft</strong></a>, an image generation model that debuted at <strong>No. 4 on DesignArena’s image leaderboard</strong> (the top three were all GPT-Image series models). Previously, I interned with the human body team at <a href="https://mtlab.meitu.com/en/index">Meitu’s MT Lab</a>, working on diffusion models and personalized image generation.</p>
     <p>My research interests include cross-modal representation alignment between motion and language, generative artificial intelligence, and medical image processing.</p>
     <p>I welcome research collaborations—feel free to <a href="mailto:LexonTran@qq.com">get in touch</a>!</p>
@@ -22,7 +22,7 @@
     <li><time datetime="2026-10">Oct 2026</time><span class="news-gap" aria-hidden="true">&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="news-event"><img class="celebration-icon" src="{{ "/assets/img/celebration.svg" | relative_url }}" width="21" height="21" alt=""> Congrats to our <strong>Canva Craft</strong> model on ranking <strong>4th in Design Arena</strong>! </span></li>
     <li><time datetime="2026-10">Oct 2026</time><span class="news-gap" aria-hidden="true">&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="news-event">Submitted one paper to <strong>NAACL</strong>.</span></li>
     <li><time datetime="2026-09">Sep 2026</time><span class="news-gap" aria-hidden="true">&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="news-event">Submitted three papers to <strong>ICLR</strong>.</span></li>
-    <li><time datetime="2026-09">Sep 2026</time><span class="news-gap" aria-hidden="true">&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="news-event"><img class="celebration-icon" src="{{ "/assets/img/celebration.svg" | relative_url }}" width="21" height="21" alt=""> Our paper <strong>GSMedQA: Graph-Structured Prompting with Multimodal Priors for Medical Visual Question Answering</strong> got accepted to <strong>BIBM 2026</strong>!</span></li>
+    <li><time datetime="2026-09">Sep 2026</time><span class="news-gap" aria-hidden="true">&nbsp;&nbsp;&nbsp;&nbsp;</span><span class="news-event"><img class="celebration-icon" src="{{ "/assets/img/celebration.svg" | relative_url }}" width="21" height="21" alt=""> Our paper <a href="#paper-gsmedqa"><strong>GSMedQA</strong></a> was accepted to <strong>BIBM 2026</strong>!</span></li>
   </ul>
   <details class="news-archive">
     <summary>More updates</summary>
@@ -34,16 +34,24 @@
   </details>
 </section>
 <section class="page-section" id="publications" tabindex="-1">
-  <h2>Published</h2>
+  <h2>Published &amp; Accepted</h2>
   <p class="section-note">* Corresponding author · † Equal contribution (co-first authors) · ‡ Project Leader</p>
-  <article class="paper paper-with-figure paper-highlight">
+  <article class="paper paper-text-only" id="paper-gsmedqa">
+    <div class="paper-content">
+      <h3>GSMedQA: Graph-Structured Prompting with Multimodal Priors for Medical Visual Question Answering</h3>
+      <p class="authors">Guo Yuting, Zhenyu Yang, <strong class="author-self">Lixing Tan</strong>, Yujing Yan, Wenfeng Song, Xia Hou</p>
+      <p class="venue">BIBM 2026 · Accepted Sep 2026</p>
+    </div>
+  </article>
+  <article class="paper paper-with-figure">
     <a class="paper-figure" href='{{ "/assets/img/papers/ct2x-gan.webp" | relative_url }}' target="_blank" rel="noopener" aria-label="View full figure: ct2x-gan">
       <img src='{{ "/assets/img/papers/ct2x-gan.webp" | relative_url }}' alt="ct2x-gan paper overview figure" width="338" height="118" loading="lazy">
     </a>
     <div class="paper-content">
-      <h3><a href="https://arxiv.org/abs/2404.11889">Multi-view X-ray Image Synthesis with Multiple Domain Disentanglement from CT Scans.</a></h3>
-      <p class="authors"><strong class="author-self">Tan Lixing</strong>, Shuang Song*, Kangneng Zhou, Chengbo Duan, Lanying Wang, Huayang Ren, Linlin Liu, Wei Zhang and Ruoxiu Xiao*.</p>
-      <p class="venue">Accepted by ACM MM 2024 <span class="publication-date">· Apr. 2024</span></p>
+      <h3><a href="https://arxiv.org/abs/2404.11889">Multi-view X-ray Image Synthesis with Multiple Domain Disentanglement from CT Scans</a></h3>
+      <p class="authors"><strong class="author-self">Lixing Tan</strong>, Shuang Song<sup>*</sup>, Kangneng Zhou, Chengbo Duan, Lanying Wang, Huayang Ren, Linlin Liu, Wei Zhang, Ruoxiu Xiao<sup>*</sup></p>
+      <p class="venue">ACM MM 2024 <span class="publication-date">· Accepted Jul 2024</span></p>
+      <p class="paper-summary">Disentangles anatomy and image style to synthesize multi-view X-rays from CT scans without paired real X-ray training data.</p>
       <a class="paper-link" href="https://arxiv.org/abs/2404.11889">Paper <span aria-hidden="true">↗</span></a>
     </div>
   </article>
@@ -69,7 +77,8 @@
     <div class="paper-content">
       <h3><a href="https://www.alphaxiv.org/abs/2610.30717">PhyEvolve: Multi-Agent State-Evolution Planning for Physics-Aware Video Generation</a></h3>
       <p class="authors">Yang-Hao Zhou<sup>†</sup>, <strong class="author-self">Lixing Tan<sup>†</sup></strong>, Zhiqi Li, Guang Yang, Xiao Yang<sup>‡</sup></p>
-      <p class="venue">Preprint <span class="publication-date">· Oct 2026</span></p>
+      <p class="venue">Preprint <span class="publication-date">· First posted Oct 2026</span></p>
+      <p class="paper-summary">Plans causal physical state transitions with multiple agents to improve video consistency through prompt enhancement, without retraining the generator.</p>
       <div class="paper-links">
         <a class="paper-link" href="https://www.alphaxiv.org/abs/2610.30717">Paper <span aria-hidden="true">↗</span></a>
         <a class="paper-link" href="https://phyevolve.github.io/PhyEvolve/">Project <span aria-hidden="true">↗</span></a>
@@ -83,7 +92,8 @@
     <div class="paper-content">
       <h3><a href="https://www.alphaxiv.org/abs/2610.04225">FlashGaze: Training-Free Multi-Scale Patch Pruning For Efficient Video Understanding</a></h3>
       <p class="authors">Ziye Zhu, Yanghao Zhou, <strong class="author-self">Lixing Tan</strong>, Jialiang Kang, Shuxuan Li, Xiao Yang<sup>‡</sup></p>
-      <p class="venue">Preprint <span class="publication-date">· Oct 2026</span></p>
+      <p class="venue">Preprint <span class="publication-date">· First posted Oct 2026</span></p>
+      <p class="paper-summary">Prunes and merges redundant video patches before vision encoding to reduce computation without additional training.</p>
       <div class="paper-links">
         <a class="paper-link" href="https://www.alphaxiv.org/abs/2610.04225">Paper <span aria-hidden="true">↗</span></a>
         <a class="paper-link" href="https://zephyrzhu1.github.io/FlashGaze/">Project <span aria-hidden="true">↗</span></a>
@@ -97,7 +107,8 @@
     <div class="paper-content">
       <h3><a href="https://www.alphaxiv.org/abs/2609.32462">Can Motion-Language Models Ground Structure? STRIDE for Evaluating the Evaluators</a></h3>
       <p class="authors"><strong class="author-self">Lixing Tan</strong>, Qing Xia<sup>*</sup>, Yuting Guo, Shuai Li, Aimin Hao</p>
-      <p class="venue">Preprint <span class="publication-date">· Sep 2026</span></p>
+      <p class="venue">Preprint <span class="publication-date">· First posted Sep 2026</span></p>
+      <p class="paper-summary">Tests whether motion-language evaluators ground temporal order, mirror reflection, and action identity beyond text-only shortcuts.</p>
       <div class="paper-links">
         <a class="paper-link" href="https://www.alphaxiv.org/abs/2609.32462">Paper <span aria-hidden="true">↗</span></a>
       </div>
@@ -110,7 +121,8 @@
     <div class="paper-content">
       <h3><a href="https://www.alphaxiv.org/abs/2609.32460">REMEDY: How Far Is Video Generation from Medical Education World Models?</a></h3>
       <p class="authors"><strong class="author-self">Lixing Tan</strong>, Yanghao Zhou, Qing Xia<sup>*</sup>, Yuting Guo, Shuai Li, Aimin Hao</p>
-      <p class="venue">Preprint <span class="publication-date">· Sep 2026</span></p>
+      <p class="venue">Preprint <span class="publication-date">· First posted Sep 2026</span></p>
+      <p class="paper-summary">Evaluates generated medical teaching videos against clinical action checklists, separating visual realism from procedural correctness.</p>
       <div class="paper-links">
         <a class="paper-link" href="https://www.alphaxiv.org/abs/2609.32460">Paper <span aria-hidden="true">↗</span></a>
       </div>
@@ -121,9 +133,10 @@
       <img src='{{ "/assets/img/papers/ear.webp" | relative_url }}' alt="ear paper overview figure" width="230" height="165" loading="lazy">
     </a>
     <div class="paper-content">
-      <h3><a href="https://arxiv.org/abs/2407.20937">EAR: Edge-Aware Reconstruction of 3-D vertebrae structures from bi-planar X-ray images.</a></h3>
-      <p class="authors"><strong class="author-self">Tan Lixing</strong>, Shuang Song, Yaofeng He, Kangneng Zhou, Tong Lu and Ruoxiu Xiao*.</p>
-      <p class="venue">Preprint <span class="publication-date">· May. 2024</span></p>
+      <h3><a href="https://arxiv.org/abs/2407.20937">EAR: Edge-Aware Reconstruction of 3-D vertebrae structures from bi-planar X-ray images</a></h3>
+      <p class="authors"><strong class="author-self">Lixing Tan</strong>, Shuang Song, Yaofeng He, Kangneng Zhou, Tong Lu, Ruoxiu Xiao<sup>*</sup></p>
+      <p class="venue">Preprint <span class="publication-date">· First posted Jul 2024</span></p>
+      <p class="paper-summary">Combines edge attention and frequency enhancement to reconstruct vertebral geometry from two X-ray views.</p>
       <a class="paper-link" href="https://arxiv.org/abs/2407.20937">Paper <span aria-hidden="true">↗</span></a>
     </div>
   </article>
@@ -151,12 +164,12 @@
   </article>
   <article class="institution">
     <img src="{{ "/assets/img/USTB.jpg" | relative_url }}" alt="University of Science and Technology Beijing" width="68" height="68" loading="lazy">
-    <div><h3>University of Science and Technology Beijing</h3><p>M.Eng. in Electronic Information</p></div>
+    <div><h3>University of Science and Technology Beijing</h3><p>M.Eng. in Electronic Information</p><p class="education-note">MedAI Lab · Advised by Dr. Shuang Song and Prof. Ruoxiu Xiao</p></div>
     <p class="date">Sep 2022 – Jun 2025</p>
   </article>
   <article class="institution">
     <img src="{{ "/assets/img/GZU.jpg" | relative_url }}" alt="Guizhou University" width="68" height="68" loading="lazy">
-    <div><h3>Guizhou University</h3><p>B.Eng. in Communication Engineering</p></div>
+    <div><h3>Guizhou University</h3><p>B.Eng. in Communication Engineering</p><p class="education-note">Research mentors: Dr. Hanyu Lu and Dr. Rongfen Zhang</p></div>
     <p class="date">Sep 2017 – Jun 2021</p>
   </article>
 </section>
@@ -165,17 +178,17 @@
 
   <article class="institution experience-row">
     <img class="company-logo" src="{{ "/assets/img/companies/canva.png" | relative_url }}" alt="Canva Logo" width="68" height="68" loading="lazy">
-    <div><h3>Canva · AI Efficiency</h3><p>Research Intern</p><p class="muted">Distillation · RL · Agent</p></div>
+    <div><h3>Canva · AI Efficiency</h3><p>Research Intern</p><p class="muted">Distillation · Reinforcement Learning · Agents</p></div>
     <p class="date">Apr 2026 – Present</p>
   </article>
 
   <article class="institution experience-row">
     <img class="company-logo" src="{{ "/assets/img/companies/meitu.svg" | relative_url }}" alt="Meitu Logo" width="68" height="68" loading="lazy">
-    <div><h3>Meitu-MT Lab · Human Body Team</h3><p>Computer Vision Engineer(Intern)</p><p class="muted">Diffusion Models · FLUX · Customized Generation</p></div>
+    <div><h3>Meitu-MT Lab · Human Body Team</h3><p>Computer Vision Engineer (Intern)</p><p class="muted">Diffusion Models · FLUX · Personalized Generation</p></div>
     <p class="date">Jun 2025 – Sep 2025</p>
   </article>
   <article class="institution experience-row">
-    <img class="company-logo" src="{{ "/assets/img/companies/csic.jpg" | relative_url }}" alt="CSIC Logo" width="68" height="68" loading="lazy">
+    <img class="company-logo company-logo--wide" src="{{ "/assets/img/companies/csic.jpg" | relative_url }}" alt="CSIC Logo" width="68" height="68" loading="lazy">
     <div><h3>CSIC</h3><p>Embedded Software Engineer</p><p class="muted">Embedded C Programming · C# Software Development</p></div>
     <p class="date">Jul 2021 – Sep 2021</p>
   </article>
@@ -184,21 +197,26 @@
   <h2>Honors & Awards</h2>
 
   <ul class="awards-list">
-    <li>2025 Outstanding Graduates of General Institutions of Higher Education in Beijing</li>
-    <li>2024-2025 USTB National Scholarship</li>
-    <li>2024-2025 USTB &quot;Academic Star&quot; of School of Computer &amp; Communication Engineering</li>
-    <li>1st Prize at Beijing, 2024 &quot;Challenge Cup&quot; National College Students&#x27; Entrepreneurship Competition</li>
-    <li>Special Prize in China, 2023 &quot;Challenge Cup&quot; National College Students&#x27; Academic Science and Technology Competition</li>
-    <li>Special Prize at Beijing, 2023 &quot;Challenge Cup&quot; National College Students&#x27; Academic Science and Technology Competition</li>
-    <li>2nd Prize at Beijing, The 9th College Students&#x27; &quot;Internet+&quot; Innovation and Entrepreneurship Competition</li>
-    <li>2nd Prize at Provincial Level, 2021 The National Mathematics Competitions(CMC)</li>
-    <li>2nd Prize at Provincial Level, 2021 National College Students&#x27; Entrepreneurship Competition</li>
+    <li><strong>Outstanding Graduate, Beijing</strong> · 2025</li>
+    <li><strong>National Scholarship</strong> · USTB, 2024–2025</li>
+    <li><strong>Academic Star</strong> · School of Computer and Communication Engineering, USTB, 2024–2025</li>
   </ul>
+  <details class="awards-archive">
+    <summary>More awards (6)</summary>
+    <ul class="awards-list">
+    <li><strong>First Prize, Beijing</strong> · Challenge Cup Entrepreneurship Competition, 2024</li>
+    <li><strong>National Special Prize</strong> · Challenge Cup Science and Technology Competition, “Black Technology” Track, 2023</li>
+    <li><strong>Special Prize, Beijing</strong> · Challenge Cup Science and Technology Competition, “Black Technology” Track, 2023</li>
+    <li><strong>Second Prize, Beijing</strong> · 9th Internet+ Innovation and Entrepreneurship Competition</li>
+    <li><strong>Provincial Second Prize</strong> · Chinese Mathematics Competitions (CMC), 2021</li>
+    <li><strong>Provincial Second Prize</strong> · National College Students’ Entrepreneurship Competition, 2021</li>
+    </ul>
+  </details>
 </section>
 <section class="page-section" id="beyond" tabindex="-1">
   <h2>Miscellaneous</h2>
 
-  <p>In my spare time, I enjoy playing badminton, doing rope jumping and reading.</p>
-  <p>I also like to watch movies, strongly recommended 'The Secret Life of Walter Mitty'.</p>
-  <p>As for music, my taste may seem a little bit unusual, I'm addicted to Vaporwave.</p>
+  <p>Outside research, I enjoy badminton, jump rope, and reading.</p>
+  <p>I enjoy films and especially recommend <em>The Secret Life of Walter Mitty</em>.</p>
+  <p>I also enjoy listening to vaporwave.</p>
 </section>

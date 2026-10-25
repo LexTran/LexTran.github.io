@@ -54,8 +54,9 @@ h3 { margin: 0 0 6px; font-size: 17px; font-weight: 600; line-height: 1.5; }
 .news-date, .news-list time { flex: none; margin: 0; color: var(--muted); font: 15px/1.7 "Courier New", Courier, monospace; font-variant-numeric: tabular-nums; white-space: nowrap; }
 .news-gap { flex: none; white-space: pre; font: 15px/1.7 "Courier New", Courier, monospace; }
 .news-event { flex: 1; min-width: 0; font-family: "Segoe UI", -apple-system, BlinkMacSystemFont, "Microsoft YaHei", sans-serif; }
-.news-archive { margin-top: 12px; }
-.news-archive summary { width: fit-content; color: var(--link); font-size: 14px; cursor: pointer; }
+.news-archive, .awards-archive { margin-top: 12px; }
+.news-archive summary, .awards-archive summary { width: fit-content; color: var(--link); font-size: 14px; cursor: pointer; }
+.awards-archive .awards-list { margin-top: 12px; }
 .news-archive .news-list { margin-top: 12px; }
 .celebration-icon { display: inline-block; width: 21px; height: 21px; vertical-align: -.2em; }
 .paper, .patent { margin: 13px -18px; padding: 23px 18px; }
@@ -64,7 +65,8 @@ h3 { margin: 0 0 6px; font-size: 17px; font-weight: 600; line-height: 1.5; }
 .paper-figure { display: flex; align-items: center; justify-content: center; min-width: 0; }
 .paper-figure img { width: auto; height: auto; max-width: 100%; max-height: 165px; object-fit: contain; }
 .paper-figure:hover { opacity: .85; }
-.paper-highlight { background: #f0f7ff; }
+.paper.paper-text-only h3 { color: var(--ink); }
+.paper-summary { margin-top: 8px; font-size: 15px; line-height: 1.6; color: #454d59; }
 .paper h3, .patent h3 { color: var(--link); font-size: 18px; }
 .authors { color: #454d59; font-size: 15.5px; line-height: 1.65; }
 .author-self { color: var(--ink); background: linear-gradient(transparent 50%, #fff17666 50%, #fff17666 90%, transparent 90%); }
@@ -73,6 +75,9 @@ h3 { margin: 0 0 6px; font-size: 17px; font-weight: 600; line-height: 1.5; }
 .paper-links { display: flex; flex-wrap: wrap; gap: 0 20px; }
 .institution { display: grid; grid-template-columns: 82px minmax(0, 1fr) auto; align-items: center; gap: 22px; padding: 15px 0; }
 .institution img { width: 68px; height: 68px; object-fit: contain; }
+.experience-row .company-logo { width: 60px; height: 60px; justify-self: center; }
+.experience-row .company-logo--wide { width: 82px; height: 68px; max-width: none; }
+.institution .education-note { color: var(--muted); font-size: 14px; line-height: 1.6; margin-top: 4px; }
 .institution p, .dated-row p { font-size: 15.5px; }
 .date { color: var(--muted); white-space: nowrap; font-variant-numeric: tabular-nums; text-align: right; }
 .dated-row { display: grid; grid-template-columns: minmax(0, 1fr) auto; gap: 26px; padding: 16px 0; }
@@ -104,6 +109,7 @@ h3 { margin: 0 0 6px; font-size: 17px; font-weight: 600; line-height: 1.5; }
   .institution { grid-template-columns: 68px minmax(0, 1fr); gap: 3px 20px; }
   .institution img { grid-row: span 2; }
   .institution .date { grid-column: 2; text-align: left; }
+  .experience-row { grid-template-columns: 82px minmax(0, 1fr); column-gap: 14px; }
   .dated-row { grid-template-columns: minmax(0, 1fr); gap: 5px; }
   .dated-row .date { text-align: left; }
   .paper-with-figure { grid-template-columns: 285px minmax(0, 1fr); gap: 22px; padding: 21px 15px; }
@@ -131,7 +137,8 @@ h3 { margin: 0 0 6px; font-size: 17px; font-weight: 600; line-height: 1.5; }
   .paper h3, .patent h3 { font-size: 18px; line-height: 1.5; }
   .paper .authors { font-size: 15.5px; }
   .institution h3 { font-size: 16px; }
-  .news-list li { font-size: 15.5px; }
+  .news-list li { display: block; font-size: 15.5px; }
+  .news-list time, .news-date, .news-gap, .news-event { display: inline; }
   .news-date, .news-list time, .news-gap { font-size: 14.5px; }
 }
 @media (prefers-reduced-motion: reduce) {
