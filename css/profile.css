@@ -219,12 +219,15 @@ h3 { margin: 0 0 6px; font-size: 17px; font-weight: 600; line-height: 1.5; }
 .theme-toggle[aria-pressed="true"] .icon-moon { opacity: 1; transform: none; stroke: var(--accent); fill: color-mix(in srgb, var(--accent) 30%, transparent); }
 
 /* ---------- Hero ---------- */
-/* The portrait column stretches to the height of the bio text, so the photo's top and
-   bottom edges line up with the first and last lines of the About copy. */
-.profile { display: grid; grid-template-columns: minmax(0, 1fr) 300px; gap: 48px; align-items: stretch; margin-top: 72px; perspective: 1100px; }
+/* The portrait lines up with the bio paragraphs: its top edge sits on the first paragraph
+   and its bottom edge on the last one, skipping the name above and the link row below.
+   profile.js measures those offsets and picks a width that keeps a photo-like ratio;
+   the custom-property fallbacks below approximate them when scripts are unavailable. */
+.profile { display: grid; grid-template-columns: minmax(0, 1fr) var(--portrait-w, 300px); gap: 48px; align-items: stretch; margin-top: 72px; perspective: 1100px; }
 .profile-copy p + p { margin-top: 12px; }
 .profile-portrait {
   position: relative; display: flex; flex-direction: column;
+  margin: var(--portrait-top, 83px) 0 var(--portrait-bottom, 68px);
   transform: rotateX(var(--tilt-x, 0deg)) rotateY(var(--tilt-y, 0deg));
   transform-style: preserve-3d;
   transition: transform .18s ease-out;
@@ -240,7 +243,7 @@ h3 { margin: 0 0 6px; font-size: 17px; font-weight: 600; line-height: 1.5; }
 @keyframes halo { to { --halo-angle: 520deg; } }
 .profile-portrait img {
   flex: 1 1 0; min-height: 0; width: 100%; height: auto;
-  object-fit: cover; object-position: 46% 50%; border-radius: 40px;
+  object-fit: cover; object-position: 46% 50%; border-radius: 38px;
   box-shadow: var(--shadow-md), 0 0 0 1px color-mix(in srgb, var(--line-strong) 70%, transparent);
   transition: box-shadow .4s ease;
 }
@@ -495,7 +498,8 @@ a.paper-figure::after {
   .blob { filter: blur(60px); }
 }
 @media (max-width: 1000px) {
-  .profile { align-items: center; }
+  .profile { grid-template-columns: minmax(0, 1fr) 300px; align-items: center; }
+  .profile-portrait { margin: 0; }
   .profile-portrait img { flex: none; height: 400px; }
 }
 @media (max-width: 850px) {

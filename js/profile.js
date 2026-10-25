@@ -171,6 +171,40 @@
     }, { passive: true });
   }
 
+  /* ---------- Portrait: align with the bio paragraphs, keep a photo-like ratio ---------- */
+  const profile = document.querySelector('.profile');
+  const copy = document.querySelector('.profile-copy');
+  const wideHero = window.matchMedia('(min-width: 1001px)');
+  const PORTRAIT_RATIO = 0.84;   // width / height of the original 250x298 portrait
+
+  function fitPortrait() {
+    if (!profile || !copy) return;
+    if (!wideHero.matches) {
+      ['--portrait-w', '--portrait-top', '--portrait-bottom'].forEach(v => profile.style.removeProperty(v));
+      return;
+    }
+    const paragraphs = copy.querySelectorAll(':scope > p');
+    if (!paragraphs.length) return;
+    // Widening the photo narrows the text and makes it taller, so settle in a few passes.
+    for (let pass = 0; pass < 3; pass++) {
+      const copyRect = copy.getBoundingClientRect();
+      const first = paragraphs[0].getBoundingClientRect();
+      const last = paragraphs[paragraphs.length - 1].getBoundingClientRect();
+      const height = last.bottom - first.top;
+      const width = Math.round(Math.min(340, Math.max(250, height * PORTRAIT_RATIO)));
+      profile.style.setProperty('--portrait-top', `${Math.round(first.top - copyRect.top)}px`);
+      profile.style.setProperty('--portrait-bottom', `${Math.round(copyRect.bottom - last.bottom)}px`);
+      const previous = profile.style.getPropertyValue('--portrait-w');
+      profile.style.setProperty('--portrait-w', `${width}px`);
+      if (previous === `${width}px`) break;
+    }
+  }
+
+  fitPortrait();
+  window.addEventListener('resize', () => window.requestAnimationFrame(fitPortrait));
+  if (document.fonts && document.fonts.ready) document.fonts.ready.then(fitPortrait);
+  window.addEventListener('load', fitPortrait);
+
   /* ---------- Portrait tilt ---------- */
   const portrait = document.querySelector('.profile-portrait');
   if (portrait && finePointer.matches && !reduceMotion.matches) {
