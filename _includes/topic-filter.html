@@ -1,0 +1,7 @@
+<div class="topic-filter" role="group" aria-label="{% if page.lang == 'zh' %}按研究方向筛选本板块论文{% else %}Filter this section by topic{% endif %}" data-empty="{% if page.lang == 'zh' %}本板块暂无该方向的论文{% else %}No papers under this topic in this section{% endif %}" hidden>
+  <span class="topic-indicator" aria-hidden="true"></span>
+  <button type="button" class="topic-chip" data-topic="all" aria-pressed="true">{% if page.lang == 'zh' %}全部{% else %}All{% endif %}<span class="topic-count"></span></button>
+  <button type="button" class="topic-chip" data-topic="motion" aria-pressed="false">{% if page.lang == 'zh' %}动作-语言{% else %}Motion &amp; Language{% endif %}<span class="topic-count"></span></button>
+  <button type="button" class="topic-chip" data-topic="medical" aria-pressed="false">{% if page.lang == 'zh' %}医学 AI{% else %}Medical AI{% endif %}<span class="topic-count"></span></button>
+  <button type="button" class="topic-chip" data-topic="generation" aria-pressed="false">{% if page.lang == 'zh' %}视频与生成式 AI{% else %}Video &amp; Generative AI{% endif %}<span class="topic-count"></span></button>
+</div>

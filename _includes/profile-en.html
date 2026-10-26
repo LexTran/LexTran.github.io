@@ -35,6 +35,7 @@
 </section>
 <section class="page-section" id="publications" tabindex="-1">
   <h2><img class="heading-icon" src="{{ "/assets/icons/publications.svg" | relative_url }}" width="26" height="26" alt="" aria-hidden="true"><span>Published &amp; Accepted</span></h2>
+  {% include topic-filter.html %}
   <p class="section-note">* Corresponding author · † Equal contribution (co-first authors) · ‡ Project Leader</p>
   <article class="paper paper-with-figure paper-without-image" id="paper-gsmedqa" data-topics="medical">
     <div class="paper-figure paper-figure-placeholder" aria-hidden="true"></div>
@@ -70,6 +71,7 @@
 </section>
 <section class="page-section" id="preprints" tabindex="-1">
   <h2><img class="heading-icon" src="{{ "/assets/icons/preprints.svg" | relative_url }}" width="26" height="26" alt="" aria-hidden="true"><span>Preprints</span></h2>
+  {% include topic-filter.html %}
   <p class="section-note">* Corresponding author · † Equal contribution (co-first authors) · ‡ Project Leader</p>
   <article class="paper paper-with-figure" id="paper-2610.30717" data-topics="generation">
     <a class="paper-figure" href='{{ "/assets/img/papers/phyevolve.webp" | relative_url }}' target="_blank" rel="noopener" aria-label="View full figure: phyevolve">

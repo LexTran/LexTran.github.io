@@ -35,6 +35,7 @@
 </section>
 <section class="page-section" id="publications" tabindex="-1">
   <h2><img class="heading-icon" src="{{ "/assets/icons/publications.svg" | relative_url }}" width="26" height="26" alt="" aria-hidden="true"><span>已发表与已录用</span></h2>
+  {% include topic-filter.html %}
   <p class="section-note">* 通讯作者 · † 共同第一作者（同等贡献） · ‡ Project Leader（项目负责人）</p>
   <article class="paper paper-with-figure paper-without-image" id="paper-gsmedqa" data-topics="medical">
     <div class="paper-figure paper-figure-placeholder" aria-hidden="true"></div>
@@ -70,6 +71,7 @@
 </section>
 <section class="page-section" id="preprints" tabindex="-1">
   <h2><img class="heading-icon" src="{{ "/assets/icons/preprints.svg" | relative_url }}" width="26" height="26" alt="" aria-hidden="true"><span>预印本</span></h2>
+  {% include topic-filter.html %}
   <p class="section-note">* 通讯作者 · † 共同第一作者（同等贡献） · ‡ Project Leader（项目负责人）</p>
   <article class="paper paper-with-figure" id="paper-2610.30717" data-topics="generation">
     <a class="paper-figure" href='{{ "/assets/img/papers/phyevolve.webp" | relative_url }}' target="_blank" rel="noopener" aria-label="查看论文主图：phyevolve">
