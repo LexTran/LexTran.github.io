@@ -38,6 +38,79 @@
   systemDark.addEventListener('change', syncToggle);
   syncToggle();
 
+  /* ---------- Floating topic filter for publications & preprints ---------- */
+  const filter = document.querySelector('.topic-filter');
+  const researchSections = ['#publications', '#preprints'].map(sel => document.querySelector(sel)).filter(Boolean);
+  const papers = researchSections.flatMap(section => Array.from(section.querySelectorAll('.paper[data-topics]')));
+  const topicsOf = paper => paper.dataset.topics.split(/\s+/);
+  let filterVisible = false;
+
+  function updateFilterVisibility() {
+    if (!filter || !researchSections.length) return;
+    const first = researchSections[0].getBoundingClientRect();
+    const last = researchSections[researchSections.length - 1].getBoundingClientRect();
+    const show = first.top < window.innerHeight * 0.55 && last.bottom > window.innerHeight * 0.45;
+    if (show !== filterVisible) {
+      filterVisible = show;
+      filter.classList.toggle('is-visible', show);
+    }
+  }
+
+  if (filter && papers.length) {
+    const chips = Array.from(filter.querySelectorAll('.topic-chip'));
+    const emptyNotes = new Map(researchSections.map(section => {
+      const note = document.createElement('p');
+      note.className = 'topic-empty';
+      note.textContent = filter.dataset.empty || '';
+      note.hidden = true;
+      section.appendChild(note);
+      return [section, note];
+    }));
+    chips.forEach(chip => {
+      const topic = chip.dataset.topic;
+      const count = chip.querySelector('.topic-count');
+      if (count) count.textContent = topic === 'all' ? papers.length : papers.filter(p => topicsOf(p).includes(topic)).length;
+    });
+    const activeChip = () => chips.find(chip => chip.getAttribute('aria-pressed') === 'true') || chips[0];
+    const moveChipIndicator = chip => {
+      filter.style.setProperty('--chip-left', `${chip.offsetLeft}px`);
+      filter.style.setProperty('--chip-width', `${chip.offsetWidth}px`);
+      filter.style.setProperty('--chip-top', `${chip.offsetTop}px`);
+      filter.style.setProperty('--chip-height', `${chip.offsetHeight}px`);
+      root.style.setProperty('--filter-h', `${filter.offsetHeight}px`);
+    };
+    const applyTopic = topic => {
+      chips.forEach(chip => chip.setAttribute('aria-pressed', String(chip.dataset.topic === topic)));
+      moveChipIndicator(activeChip());
+      papers.forEach(paper => {
+        const match = topic === 'all' || topicsOf(paper).includes(topic);
+        if (match && paper.hidden) {
+          paper.hidden = false;
+          paper.classList.add('is-entering');
+          paper.addEventListener('animationend', () => paper.classList.remove('is-entering'), { once: true });
+        } else if (!match) {
+          paper.hidden = true;
+        }
+      });
+      emptyNotes.forEach((note, section) => {
+        note.hidden = Array.from(section.querySelectorAll('.paper[data-topics]')).some(p => !p.hidden);
+      });
+      scheduleUpdate();
+    };
+    chips.forEach(chip => chip.addEventListener('click', () => {
+      if (chip.getAttribute('aria-pressed') === 'true') return;
+      applyTopic(chip.dataset.topic);
+      // Start the reader at the top of the filtered list if they were further down.
+      if (researchSections[0].getBoundingClientRect().top < 0) {
+        researchSections[0].scrollIntoView({ behavior: reduceMotion.matches ? 'auto' : 'smooth' });
+      }
+    }));
+    filter.hidden = false;
+    moveChipIndicator(activeChip());
+    window.addEventListener('resize', () => moveChipIndicator(activeChip()));
+    if (document.fonts && document.fonts.ready) document.fonts.ready.then(() => moveChipIndicator(activeChip()));
+  }
+
   /* ---------- Scroll: progress bar, active section, sliding indicator, back-to-top ---------- */
   const links = Array.from(document.querySelectorAll('.section-nav li a'));
   const sections = links.map(link => document.querySelector(link.hash));
@@ -86,6 +159,7 @@
     }
     moveIndicator(links[active]);
     revealPassed();
+    updateFilterVisibility();
     scheduled = false;
   }
 
