@@ -1,0 +1,675 @@
+[
+  {
+    "id": "paper-gsmedqa",
+    "title": "GSMedQA: Graph-Structured Prompting with Multimodal Priors for Medical Visual Question Answering",
+    "authors": [
+      {
+        "name": "Guo Yuting",
+        "self": false,
+        "marks": ""
+      },
+      {
+        "name": "Zhenyu Yang",
+        "self": false,
+        "marks": ""
+      },
+      {
+        "name": "Lixing Tan",
+        "self": true,
+        "marks": ""
+      },
+      {
+        "name": "Yujing Yan",
+        "self": false,
+        "marks": ""
+      },
+      {
+        "name": "Wenfeng Song",
+        "self": false,
+        "marks": ""
+      },
+      {
+        "name": "Xia Hou",
+        "self": false,
+        "marks": ""
+      }
+    ],
+    "section": "publications",
+    "year": 2026,
+    "venue": {
+      "en": "BIBM 2026 · Accepted Sep 2026",
+      "zh": "BIBM 2026 · 2026.09 录用"
+    },
+    "summary": {
+      "en": "",
+      "zh": ""
+    },
+    "image": null,
+    "links": [],
+    "topics": [
+      "medical"
+    ],
+    "arxiv_id": "",
+    "aliases": [],
+    "locked_fields": [
+      "title",
+      "authors",
+      "links",
+      "topics",
+      "summary",
+      "image",
+      "section",
+      "venue",
+      "year"
+    ]
+  },
+  {
+    "id": "paper-2610.30717",
+    "title": "PhyEvolve: Multi-Agent State-Evolution Planning for Physics-Aware Video Generation",
+    "authors": [
+      {
+        "name": "Yang-Hao Zhou",
+        "self": false,
+        "marks": "†"
+      },
+      {
+        "name": "Lixing Tan",
+        "self": true,
+        "marks": "†"
+      },
+      {
+        "name": "Zhiqi Li",
+        "self": false,
+        "marks": ""
+      },
+      {
+        "name": "Guang Yang",
+        "self": false,
+        "marks": ""
+      },
+      {
+        "name": "Xiao Yang",
+        "self": false,
+        "marks": "‡"
+      }
+    ],
+    "section": "preprints",
+    "year": 2026,
+    "venue": {
+      "en": "Preprint · First posted Oct 2026",
+      "zh": "预印本 · 2026.10 首次公开"
+    },
+    "summary": {
+      "en": "Plans causal physical state transitions with multiple agents to improve video consistency through prompt enhancement, without retraining the generator.",
+      "zh": "通过多智能体规划物理状态的因果演化，以提示词增强改善视频的物理一致性，无需重新训练生成模型。"
+    },
+    "image": {
+      "src": "/assets/img/papers/phyevolve.webp",
+      "width": 338,
+      "height": 156,
+      "alt": {
+        "en": "phyevolve paper overview figure",
+        "zh": "phyevolve 论文概览图"
+      }
+    },
+    "links": [
+      {
+        "label": {
+          "en": "Paper",
+          "zh": "论文"
+        },
+        "url": "https://www.alphaxiv.org/abs/2610.30717"
+      },
+      {
+        "label": {
+          "en": "Project",
+          "zh": "项目主页"
+        },
+        "url": "https://phyevolve.github.io/PhyEvolve/"
+      }
+    ],
+    "topics": [
+      "generation"
+    ],
+    "arxiv_id": "2610.30717",
+    "aliases": [],
+    "locked_fields": [
+      "title",
+      "authors",
+      "links",
+      "topics",
+      "summary",
+      "image"
+    ],
+    "scholar": {
+      "id": "wtordYAAAAAJ:Tyk-4Ss8FVUC",
+      "title": "PhyEvolve: Multi-Agent State-Evolution Planning for Physics-Aware Video Generation",
+      "authors": "YH Zhou, L Tan, Z Li, G Yang, X Yang",
+      "venue": "arXiv preprint arXiv:2610.30717",
+      "year": 2026,
+      "url": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=wtordYAAAAAJ&citation_for_view=wtordYAAAAAJ%3ATyk-4Ss8FVUC"
+    }
+  },
+  {
+    "id": "paper-2610.04225",
+    "title": "FlashGaze: Training-Free Multi-Scale Patch Pruning For Efficient Video Understanding",
+    "authors": [
+      {
+        "name": "Ziye Zhu",
+        "self": false,
+        "marks": ""
+      },
+      {
+        "name": "Yanghao Zhou",
+        "self": false,
+        "marks": ""
+      },
+      {
+        "name": "Lixing Tan",
+        "self": true,
+        "marks": ""
+      },
+      {
+        "name": "Jialiang Kang",
+        "self": false,
+        "marks": ""
+      },
+      {
+        "name": "Shuxuan Li",
+        "self": false,
+        "marks": ""
+      },
+      {
+        "name": "Xiao Yang",
+        "self": false,
+        "marks": "‡"
+      }
+    ],
+    "section": "preprints",
+    "year": 2026,
+    "venue": {
+      "en": "Preprint · First posted Oct 2026",
+      "zh": "预印本 · 2026.10 首次公开"
+    },
+    "summary": {
+      "en": "Prunes and merges redundant video patches before vision encoding to reduce computation without additional training.",
+      "zh": "在视觉编码前剪枝、合并冗余视频图像块，无需额外训练即可减少计算开销。"
+    },
+    "image": {
+      "src": "/assets/img/papers/flashgaze.webp",
+      "width": 338,
+      "height": 130,
+      "alt": {
+        "en": "flashgaze paper overview figure",
+        "zh": "flashgaze 论文概览图"
+      }
+    },
+    "links": [
+      {
+        "label": {
+          "en": "Paper",
+          "zh": "论文"
+        },
+        "url": "https://www.alphaxiv.org/abs/2610.04225"
+      },
+      {
+        "label": {
+          "en": "Project",
+          "zh": "项目主页"
+        },
+        "url": "https://zephyrzhu1.github.io/FlashGaze/"
+      }
+    ],
+    "topics": [
+      "generation"
+    ],
+    "arxiv_id": "2610.04225",
+    "aliases": [],
+    "locked_fields": [
+      "title",
+      "authors",
+      "links",
+      "topics",
+      "summary",
+      "image"
+    ],
+    "scholar": {
+      "id": "wtordYAAAAAJ:zYLM7Y9cAGgC",
+      "title": "FlashGaze: Training-Free Multi-Scale Patch Pruning For Efficient Video Understanding",
+      "authors": "Z Zhu, Y Zhou, L Tan, J Kang, S Li, X Yang",
+      "venue": "arXiv preprint arXiv:2610.04225",
+      "year": 2026,
+      "url": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=wtordYAAAAAJ&citation_for_view=wtordYAAAAAJ%3AzYLM7Y9cAGgC"
+    }
+  },
+  {
+    "id": "paper-2609.32462",
+    "title": "Can Motion-Language Models Ground Structure? STRIDE for Evaluating the Evaluators",
+    "authors": [
+      {
+        "name": "Lixing Tan",
+        "self": true,
+        "marks": ""
+      },
+      {
+        "name": "Qing Xia",
+        "self": false,
+        "marks": "*"
+      },
+      {
+        "name": "Yuting Guo",
+        "self": false,
+        "marks": ""
+      },
+      {
+        "name": "Shuai Li",
+        "self": false,
+        "marks": ""
+      },
+      {
+        "name": "Aimin Hao",
+        "self": false,
+        "marks": ""
+      }
+    ],
+    "section": "preprints",
+    "year": 2026,
+    "venue": {
+      "en": "Preprint · First posted Sep 2026",
+      "zh": "预印本 · 2026.09 首次公开"
+    },
+    "summary": {
+      "en": "Tests whether motion-language evaluators ground temporal order, mirror reflection, and action identity beyond text-only shortcuts.",
+      "zh": "检验动作-语言评估器能否超越纯文本捷径，真正识别时间顺序、镜像反射与动作身份。"
+    },
+    "image": {
+      "src": "/assets/img/papers/stride.webp",
+      "width": 338,
+      "height": 159,
+      "alt": {
+        "en": "stride paper overview figure",
+        "zh": "stride 论文概览图"
+      }
+    },
+    "links": [
+      {
+        "label": {
+          "en": "Paper",
+          "zh": "论文"
+        },
+        "url": "https://www.alphaxiv.org/abs/2609.32462"
+      }
+    ],
+    "topics": [
+      "motion"
+    ],
+    "arxiv_id": "2609.32462",
+    "aliases": [],
+    "locked_fields": [
+      "title",
+      "authors",
+      "links",
+      "topics",
+      "summary",
+      "image"
+    ],
+    "scholar": {
+      "id": "wtordYAAAAAJ:IjCSPb-OGe4C",
+      "title": "Can Motion-Language Models Ground Structure? STRIDE for Evaluating the Evaluators",
+      "authors": "L Tan, Q Xia, Y Guo, S Li, A Hao",
+      "venue": "arXiv preprint arXiv:2609.32462",
+      "year": 2026,
+      "url": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=wtordYAAAAAJ&citation_for_view=wtordYAAAAAJ%3AIjCSPb-OGe4C"
+    }
+  },
+  {
+    "id": "paper-2609.32460",
+    "title": "REMEDY: How Far Is Video Generation from Medical Education World Models?",
+    "authors": [
+      {
+        "name": "Lixing Tan",
+        "self": true,
+        "marks": ""
+      },
+      {
+        "name": "Yanghao Zhou",
+        "self": false,
+        "marks": ""
+      },
+      {
+        "name": "Qing Xia",
+        "self": false,
+        "marks": "*"
+      },
+      {
+        "name": "Yuting Guo",
+        "self": false,
+        "marks": ""
+      },
+      {
+        "name": "Shuai Li",
+        "self": false,
+        "marks": ""
+      },
+      {
+        "name": "Aimin Hao",
+        "self": false,
+        "marks": ""
+      }
+    ],
+    "section": "preprints",
+    "year": 2026,
+    "venue": {
+      "en": "Preprint · First posted Sep 2026",
+      "zh": "预印本 · 2026.09 首次公开"
+    },
+    "summary": {
+      "en": "Evaluates generated medical teaching videos against clinical action checklists, separating visual realism from procedural correctness.",
+      "zh": "通过临床操作清单评估生成的医学教学视频，区分视觉真实感与操作流程的正确性。"
+    },
+    "image": {
+      "src": "/assets/img/papers/remedy.webp",
+      "width": 338,
+      "height": 159,
+      "alt": {
+        "en": "remedy paper overview figure",
+        "zh": "remedy 论文概览图"
+      }
+    },
+    "links": [
+      {
+        "label": {
+          "en": "Paper",
+          "zh": "论文"
+        },
+        "url": "https://www.alphaxiv.org/abs/2609.32460"
+      }
+    ],
+    "topics": [
+      "medical",
+      "generation"
+    ],
+    "arxiv_id": "2609.32460",
+    "aliases": [],
+    "locked_fields": [
+      "title",
+      "authors",
+      "links",
+      "topics",
+      "summary",
+      "image"
+    ],
+    "scholar": {
+      "id": "wtordYAAAAAJ:UeHWp8X0CEIC",
+      "title": "REMEDY: How Far Is Video Generation from Medical Education World Models?",
+      "authors": "L Tan, Y Zhou, Q Xia, Y Guo, S Li, A Hao",
+      "venue": "arXiv preprint arXiv:2609.32460",
+      "year": 2026,
+      "url": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=wtordYAAAAAJ&citation_for_view=wtordYAAAAAJ%3AUeHWp8X0CEIC"
+    }
+  },
+  {
+    "id": "paper-scholar-Y0pCki6q_DkC",
+    "title": "C2R: A Coarse-to-Refine Centerline-Aware Multi-Task Learning Framework for Coronary Artery Segmentation in CCTA",
+    "authors": [
+      {
+        "name": "Lele Yue",
+        "self": false,
+        "marks": ""
+      },
+      {
+        "name": "Shuang Song",
+        "self": false,
+        "marks": ""
+      },
+      {
+        "name": "Lixing Tan",
+        "self": true,
+        "marks": ""
+      },
+      {
+        "name": "Ping Wang",
+        "self": false,
+        "marks": ""
+      },
+      {
+        "name": "Zheng Zhang",
+        "self": false,
+        "marks": ""
+      },
+      {
+        "name": "Xin Zhang",
+        "self": false,
+        "marks": ""
+      },
+      {
+        "name": "Ruoxiu Xiao",
+        "self": false,
+        "marks": ""
+      }
+    ],
+    "section": "publications",
+    "year": 2026,
+    "venue": {
+      "en": "2026 7th International Conference on Computer Vision, Image and Deep Learning (CVIDL)",
+      "zh": "2026 7th International Conference on Computer Vision, Image and Deep Learning (CVIDL)"
+    },
+    "summary": {
+      "en": "",
+      "zh": ""
+    },
+    "image": null,
+    "links": [
+      {
+        "label": {
+          "en": "Paper",
+          "zh": "论文"
+        },
+        "url": "https://ieeexplore.ieee.org/abstract/document/11637838/"
+      }
+    ],
+    "topics": [
+      "medical"
+    ],
+    "arxiv_id": "",
+    "aliases": [],
+    "locked_fields": [],
+    "scholar": {
+      "id": "wtordYAAAAAJ:Y0pCki6q_DkC",
+      "title": "C2R: A Coarse-to-Refine Centerline-Aware Multi-Task Learning Framework for Coronary Artery Segmentation in CCTA",
+      "authors": "L Yue, S Song, L Tan, P Wang, Z Zhang, X Zhang, R Xiao",
+      "venue": "2026 7th International Conference on Computer Vision, Image and Deep …",
+      "year": 2026,
+      "url": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=wtordYAAAAAJ&citation_for_view=wtordYAAAAAJ%3AY0pCki6q_DkC"
+    }
+  },
+  {
+    "id": "paper-2404.11889",
+    "title": "Multi-view X-ray Image Synthesis with Multiple Domain Disentanglement from CT Scans",
+    "authors": [
+      {
+        "name": "Lixing Tan",
+        "self": true,
+        "marks": ""
+      },
+      {
+        "name": "Shuang Song",
+        "self": false,
+        "marks": "*"
+      },
+      {
+        "name": "Kangneng Zhou",
+        "self": false,
+        "marks": ""
+      },
+      {
+        "name": "Chengbo Duan",
+        "self": false,
+        "marks": ""
+      },
+      {
+        "name": "Lanying Wang",
+        "self": false,
+        "marks": ""
+      },
+      {
+        "name": "Huayang Ren",
+        "self": false,
+        "marks": ""
+      },
+      {
+        "name": "Linlin Liu",
+        "self": false,
+        "marks": ""
+      },
+      {
+        "name": "Wei Zhang",
+        "self": false,
+        "marks": ""
+      },
+      {
+        "name": "Ruoxiu Xiao",
+        "self": false,
+        "marks": "*"
+      }
+    ],
+    "section": "publications",
+    "year": 2024,
+    "venue": {
+      "en": "ACM MM 2024 · Accepted Jul 2024",
+      "zh": "ACM MM 2024 · 2024.07 录用"
+    },
+    "summary": {
+      "en": "Disentangles anatomy and image style to synthesize multi-view X-rays from CT scans without paired real X-ray training data.",
+      "zh": "解耦解剖结构与图像风格，无需配对的真实 X 光训练数据，即可从 CT 合成多视角 X 光图像。"
+    },
+    "image": {
+      "src": "/assets/img/papers/ct2x-gan.webp",
+      "width": 338,
+      "height": 118,
+      "alt": {
+        "en": "ct2x-gan paper overview figure",
+        "zh": "ct2x-gan 论文概览图"
+      }
+    },
+    "links": [
+      {
+        "label": {
+          "en": "Paper",
+          "zh": "论文"
+        },
+        "url": "https://arxiv.org/abs/2404.11889"
+      }
+    ],
+    "topics": [
+      "medical",
+      "generation"
+    ],
+    "arxiv_id": "2404.11889",
+    "aliases": [],
+    "locked_fields": [
+      "title",
+      "authors",
+      "links",
+      "topics",
+      "summary",
+      "image",
+      "section",
+      "venue",
+      "year"
+    ],
+    "scholar": {
+      "id": "wtordYAAAAAJ:d1gkVwhDpl0C",
+      "title": "Multi-view X-ray Image Synthesis with Multiple Domain Disentanglement from CT Scans",
+      "authors": "L Tan, S Song, K Zhou, C Duan, L Wang, H Ren, L Liu, W Zhang, R Xiao",
+      "venue": "ACM Multimedia 2024",
+      "year": 2024,
+      "url": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=wtordYAAAAAJ&citation_for_view=wtordYAAAAAJ%3Ad1gkVwhDpl0C"
+    }
+  },
+  {
+    "id": "paper-2407.20937",
+    "title": "EAR: Edge-Aware Reconstruction of 3-D vertebrae structures from bi-planar X-ray images",
+    "authors": [
+      {
+        "name": "Lixing Tan",
+        "self": true,
+        "marks": ""
+      },
+      {
+        "name": "Shuang Song",
+        "self": false,
+        "marks": ""
+      },
+      {
+        "name": "Yaofeng He",
+        "self": false,
+        "marks": ""
+      },
+      {
+        "name": "Kangneng Zhou",
+        "self": false,
+        "marks": ""
+      },
+      {
+        "name": "Tong Lu",
+        "self": false,
+        "marks": ""
+      },
+      {
+        "name": "Ruoxiu Xiao",
+        "self": false,
+        "marks": "*"
+      }
+    ],
+    "section": "preprints",
+    "year": 2024,
+    "venue": {
+      "en": "Preprint · First posted Jul 2024",
+      "zh": "预印本 · 2024.07 首次公开"
+    },
+    "summary": {
+      "en": "Combines edge attention and frequency enhancement to reconstruct vertebral geometry from two X-ray views.",
+      "zh": "结合边缘注意力与频域增强，从双视角 X 光图像重建椎骨的三维结构。"
+    },
+    "image": {
+      "src": "/assets/img/papers/ear.webp",
+      "width": 230,
+      "height": 165,
+      "alt": {
+        "en": "ear paper overview figure",
+        "zh": "ear 论文概览图"
+      }
+    },
+    "links": [
+      {
+        "label": {
+          "en": "Paper",
+          "zh": "论文"
+        },
+        "url": "https://arxiv.org/abs/2407.20937"
+      }
+    ],
+    "topics": [
+      "medical"
+    ],
+    "arxiv_id": "2407.20937",
+    "aliases": [],
+    "locked_fields": [
+      "title",
+      "authors",
+      "links",
+      "topics",
+      "summary",
+      "image"
+    ],
+    "scholar": {
+      "id": "wtordYAAAAAJ:9yKSN-GCB0IC",
+      "title": "EAR: Edge-Aware Reconstruction of 3-D vertebrae structures from bi-planar X-ray images",
+      "authors": "L Tan, S Song, Y He, K Zhou, T Lu, R Xiao",
+      "venue": "arXiv preprint arXiv:2407.20937",
+      "year": 2024,
+      "url": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=wtordYAAAAAJ&citation_for_view=wtordYAAAAAJ%3A9yKSN-GCB0IC"
+    }
+  }
+]

@@ -95,6 +95,9 @@ include:
 
 # Exclude these files from your production _site
 exclude:
+  - scripts
+  - tests
+  - docs
   - "*.ppt"
   - "*.pptx"
   - Gemfile

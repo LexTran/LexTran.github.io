@@ -4,3 +4,5 @@ js/config.js
 # Source presentations are private inputs, not website assets.
 *.ppt
 *.pptx
+__pycache__/
+*.pyc

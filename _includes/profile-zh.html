@@ -38,27 +38,8 @@
   <h2><img class="heading-icon" src="{{ "/assets/icons/publications.svg" | relative_url }}" width="26" height="26" alt="" aria-hidden="true"><span>已发表与已录用</span></h2>
   {% include topic-filter.html %}
   <p class="section-note">* 通讯作者 · † 共同第一作者（同等贡献） · ‡ Project Leader（项目负责人）</p>
-  <article class="paper paper-with-figure paper-without-image" id="paper-gsmedqa" data-topics="medical">
-    <div class="paper-figure paper-figure-placeholder" aria-hidden="true"></div>
-    <div class="paper-content">
-      <h3>GSMedQA: Graph-Structured Prompting with Multimodal Priors for Medical Visual Question Answering</h3>
-      <p class="authors">Guo Yuting, Zhenyu Yang, <strong class="author-self">Lixing Tan</strong>, Yujing Yan, Wenfeng Song, Xia Hou</p>
-      <p class="venue">BIBM 2026 · 2026.09 录用</p>
-    </div>
-  </article>
-  <article class="paper paper-with-figure" data-topics="medical generation">
-    <a class="paper-figure" href='{{ "/assets/img/papers/ct2x-gan.webp" | relative_url }}' target="_blank" rel="noopener" aria-label="查看论文主图：ct2x-gan">
-      <img src='{{ "/assets/img/papers/ct2x-gan.webp" | relative_url }}' alt="ct2x-gan 论文概览图" width="338" height="118" loading="lazy">
-    </a>
-    <div class="paper-content">
-      <h3><a href="https://arxiv.org/abs/2404.11889">Multi-view X-ray Image Synthesis with Multiple Domain Disentanglement from CT Scans</a></h3>
-      <p class="authors"><strong class="author-self">Lixing Tan</strong>, Shuang Song<sup>*</sup>, Kangneng Zhou, Chengbo Duan, Lanying Wang, Huayang Ren, Linlin Liu, Wei Zhang, Ruoxiu Xiao<sup>*</sup></p>
-      <p class="venue">ACM MM 2024 <span class="publication-date">· 2024.07 录用</span></p>
-      <p class="paper-summary">解耦解剖结构与图像风格，无需配对的真实 X 光训练数据，即可从 CT 合成多视角 X 光图像。</p>
-      <a class="paper-link" href="https://arxiv.org/abs/2404.11889">论文 <span aria-hidden="true">↗</span></a>
-    </div>
-  </article>
-  <!-- <article class="paper paper-with-figure">
+  {% include paper-list.html section="publications" %}
+<!-- <article class="paper paper-with-figure">
     <a class="paper-figure" href='{{ "/assets/img/papers/openpose.webp" | relative_url }}' target="_blank" rel="noopener" aria-label="查看 OpenPose 改进结构图">
       <img src='{{ "/assets/img/papers/openpose.webp" | relative_url }}' alt="查看 OpenPose 改进结构图" width="338" height="150" loading="lazy">
     </a>
@@ -74,76 +55,7 @@
   <h2><img class="heading-icon" src="{{ "/assets/icons/preprints.svg" | relative_url }}" width="26" height="26" alt="" aria-hidden="true"><span>预印本</span></h2>
   {% include topic-filter.html %}
   <p class="section-note">* 通讯作者 · † 共同第一作者（同等贡献） · ‡ Project Leader（项目负责人）</p>
-  <article class="paper paper-with-figure" id="paper-2610.30717" data-topics="generation">
-    <a class="paper-figure" href='{{ "/assets/img/papers/phyevolve.webp" | relative_url }}' target="_blank" rel="noopener" aria-label="查看论文主图：phyevolve">
-      <img src='{{ "/assets/img/papers/phyevolve.webp" | relative_url }}' alt="phyevolve 论文概览图" width="338" height="156" loading="lazy">
-    </a>
-    <div class="paper-content">
-      <h3><a href="https://www.alphaxiv.org/abs/2610.30717">PhyEvolve: Multi-Agent State-Evolution Planning for Physics-Aware Video Generation</a></h3>
-      <p class="authors">Yang-Hao Zhou<sup>†</sup>, <strong class="author-self">Lixing Tan<sup>†</sup></strong>, Zhiqi Li, Guang Yang, Xiao Yang<sup>‡</sup></p>
-      <p class="venue">预印本 <span class="publication-date">· 2026.10 首次公开</span></p>
-      <p class="paper-summary">通过多智能体规划物理状态的因果演化，以提示词增强改善视频的物理一致性，无需重新训练生成模型。</p>
-      <div class="paper-links">
-        <a class="paper-link" href="https://www.alphaxiv.org/abs/2610.30717">论文 <span aria-hidden="true">↗</span></a>
-        <a class="paper-link" href="https://phyevolve.github.io/PhyEvolve/">项目主页 <span aria-hidden="true">↗</span></a>
-      </div>
-    </div>
-  </article>
-  <article class="paper paper-with-figure" id="paper-2610.04225" data-topics="generation">
-    <a class="paper-figure" href='{{ "/assets/img/papers/flashgaze.webp" | relative_url }}' target="_blank" rel="noopener" aria-label="查看论文主图：flashgaze">
-      <img src='{{ "/assets/img/papers/flashgaze.webp" | relative_url }}' alt="flashgaze 论文概览图" width="338" height="130" loading="lazy">
-    </a>
-    <div class="paper-content">
-      <h3><a href="https://www.alphaxiv.org/abs/2610.04225">FlashGaze: Training-Free Multi-Scale Patch Pruning For Efficient Video Understanding</a></h3>
-      <p class="authors">Ziye Zhu, Yanghao Zhou, <strong class="author-self">Lixing Tan</strong>, Jialiang Kang, Shuxuan Li, Xiao Yang<sup>‡</sup></p>
-      <p class="venue">预印本 <span class="publication-date">· 2026.10 首次公开</span></p>
-      <p class="paper-summary">在视觉编码前剪枝、合并冗余视频图像块，无需额外训练即可减少计算开销。</p>
-      <div class="paper-links">
-        <a class="paper-link" href="https://www.alphaxiv.org/abs/2610.04225">论文 <span aria-hidden="true">↗</span></a>
-        <a class="paper-link" href="https://zephyrzhu1.github.io/FlashGaze/">项目主页 <span aria-hidden="true">↗</span></a>
-      </div>
-    </div>
-  </article>
-  <article class="paper paper-with-figure" id="paper-2609.32462" data-topics="motion">
-    <a class="paper-figure" href='{{ "/assets/img/papers/stride.webp" | relative_url }}' target="_blank" rel="noopener" aria-label="查看论文主图：stride">
-      <img src='{{ "/assets/img/papers/stride.webp" | relative_url }}' alt="stride 论文概览图" width="338" height="159" loading="lazy">
-    </a>
-    <div class="paper-content">
-      <h3><a href="https://www.alphaxiv.org/abs/2609.32462">Can Motion-Language Models Ground Structure? STRIDE for Evaluating the Evaluators</a></h3>
-      <p class="authors"><strong class="author-self">Lixing Tan</strong>, Qing Xia<sup>*</sup>, Yuting Guo, Shuai Li, Aimin Hao</p>
-      <p class="venue">预印本 <span class="publication-date">· 2026.09 首次公开</span></p>
-      <p class="paper-summary">检验动作-语言评估器能否超越纯文本捷径，真正识别时间顺序、镜像反射与动作身份。</p>
-      <div class="paper-links">
-        <a class="paper-link" href="https://www.alphaxiv.org/abs/2609.32462">论文 <span aria-hidden="true">↗</span></a>
-      </div>
-    </div>
-  </article>
-  <article class="paper paper-with-figure" id="paper-2609.32460" data-topics="medical generation">
-    <a class="paper-figure" href='{{ "/assets/img/papers/remedy.webp" | relative_url }}' target="_blank" rel="noopener" aria-label="查看论文主图：remedy">
-      <img src='{{ "/assets/img/papers/remedy.webp" | relative_url }}' alt="remedy 论文概览图" width="338" height="159" loading="lazy">
-    </a>
-    <div class="paper-content">
-      <h3><a href="https://www.alphaxiv.org/abs/2609.32460">REMEDY: How Far Is Video Generation from Medical Education World Models?</a></h3>
-      <p class="authors"><strong class="author-self">Lixing Tan</strong>, Yanghao Zhou, Qing Xia<sup>*</sup>, Yuting Guo, Shuai Li, Aimin Hao</p>
-      <p class="venue">预印本 <span class="publication-date">· 2026.09 首次公开</span></p>
-      <p class="paper-summary">通过临床操作清单评估生成的医学教学视频，区分视觉真实感与操作流程的正确性。</p>
-      <div class="paper-links">
-        <a class="paper-link" href="https://www.alphaxiv.org/abs/2609.32460">论文 <span aria-hidden="true">↗</span></a>
-      </div>
-    </div>
-  </article>
-  <article class="paper paper-with-figure" data-topics="medical">
-    <a class="paper-figure" href='{{ "/assets/img/papers/ear.webp" | relative_url }}' target="_blank" rel="noopener" aria-label="查看论文主图：ear">
-      <img src='{{ "/assets/img/papers/ear.webp" | relative_url }}' alt="ear 论文概览图" width="230" height="165" loading="lazy">
-    </a>
-    <div class="paper-content">
-      <h3><a href="https://arxiv.org/abs/2407.20937">EAR: Edge-Aware Reconstruction of 3-D vertebrae structures from bi-planar X-ray images</a></h3>
-      <p class="authors"><strong class="author-self">Lixing Tan</strong>, Shuang Song, Yaofeng He, Kangneng Zhou, Tong Lu, Ruoxiu Xiao<sup>*</sup></p>
-      <p class="venue">预印本 <span class="publication-date">· 2024.07 首次公开</span></p>
-      <p class="paper-summary">结合边缘注意力与频域增强，从双视角 X 光图像重建椎骨的三维结构。</p>
-      <a class="paper-link" href="https://arxiv.org/abs/2407.20937">论文 <span aria-hidden="true">↗</span></a>
-    </div>
-  </article>
+  {% include paper-list.html section="preprints" %}
 </section>
 <!-- <section class="page-section" id="patents" tabindex="-1">
   <h2>专利</h2>

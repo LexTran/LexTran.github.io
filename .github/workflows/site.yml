@@ -1,0 +1,83 @@
+name: Sync publications and deploy site
+
+on:
+  push:
+    branches: [main]
+  schedule:
+    # 03:17 UTC = 11:17 Asia/Shanghai, on the 1st and 16th.
+    - cron: '17 3 1,16 * *'
+  workflow_dispatch:
+
+permissions:
+  contents: write
+  pages: write
+  id-token: write
+
+concurrency:
+  group: site-publication-sync
+  cancel-in-progress: false
+
+jobs:
+  sync-build-deploy:
+    runs-on: ubuntu-latest
+    timeout-minutes: 20
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
+    steps:
+      - name: Check out the latest homepage
+        uses: actions/checkout@v4
+        with:
+          ref: main
+          fetch-depth: 0
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+
+      - name: Test publication synchronization
+        run: python -m unittest discover -s tests -v
+
+      - name: Refresh papers from the verified Scholar profile
+        id: sync
+        continue-on-error: true
+        run: python scripts/sync_publications.py
+
+      - name: Save publication data and synchronization status
+        run: |
+          git config user.name 'github-actions[bot]'
+          git config user.email '41898282+github-actions[bot]@users.noreply.github.com'
+          git add _data/publications.json _data/scholar_sync.json
+          if ! git diff --cached --quiet; then
+            git commit -m 'chore: synchronize Scholar publications'
+            # Rebase only; never overwrite a concurrent homepage edit.
+            git pull --rebase origin main
+            git push origin HEAD:main
+          fi
+
+      # GITHUB_TOKEN commits do not trigger another workflow. Build the updated
+      # checkout in this same run so bot updates are deployed without recursion.
+      - name: Configure Pages
+        uses: actions/configure-pages@v5
+
+      - name: Build the updated Jekyll site
+        uses: actions/jekyll-build-pages@v1
+        with:
+          source: ./
+          destination: ./_site
+
+      - name: Upload site
+        uses: actions/upload-pages-artifact@v4
+        with:
+          path: ./_site
+
+      - name: Deploy site
+        id: deployment
+        uses: actions/deploy-pages@v4
+
+      - name: Report any Scholar access problem after publishing
+        if: steps.sync.outcome == 'failure'
+        run: |
+          echo '::error::Scholar synchronization was incomplete. The homepage was published using preserved paper records. See the sync step and _data/scholar_sync.json.'
+          exit 1

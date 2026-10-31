@@ -1,0 +1,23 @@
+{% assign papers = site.data.publications | where: 'section', include.section %}
+{% for paper in papers %}
+<article class="paper paper-with-figure{% unless paper.image %} paper-without-image{% endunless %}" id="{{ paper.id | escape }}" data-topics="{{ paper.topics | join: ' ' | escape }}">
+  {% if paper.image %}
+  <a class="paper-figure" href="{{ paper.image.src | relative_url }}" target="_blank" rel="noopener" aria-label="{{ paper.image.alt[page.lang] | escape }}">
+    <img src="{{ paper.image.src | relative_url }}" alt="{{ paper.image.alt[page.lang] | escape }}" width="{{ paper.image.width }}" height="{{ paper.image.height }}" loading="lazy">
+  </a>
+  {% else %}
+  <div class="paper-figure paper-figure-placeholder" aria-hidden="true"></div>
+  {% endif %}
+  <div class="paper-content">
+    <h3>{% if paper.links.size > 0 %}<a href="{{ paper.links.first.url | escape }}">{{ paper.title | escape }}</a>{% else %}{{ paper.title | escape }}{% endif %}</h3>
+    <p class="authors">{% for author in paper.authors %}{% if author.self %}<strong class="author-self">{% endif %}{{ author.name | escape }}{% if author.marks != '' %}<sup>{{ author.marks | escape }}</sup>{% endif %}{% if author.self %}</strong>{% endif %}{% unless forloop.last %}, {% endunless %}{% endfor %}</p>
+    <p class="venue">{{ paper.venue[page.lang] | escape }}</p>
+    {% if paper.summary[page.lang] != '' %}<p class="paper-summary">{{ paper.summary[page.lang] | escape }}</p>{% endif %}
+    {% if paper.links.size > 0 %}
+    <div class="paper-links">
+      {% for link in paper.links %}<a class="paper-link" href="{{ link.url | escape }}">{{ link.label[page.lang] | escape }} <span aria-hidden="true">↗</span></a>{% endfor %}
+    </div>
+    {% endif %}
+  </div>
+</article>
+{% endfor %}
