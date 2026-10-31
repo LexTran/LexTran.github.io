@@ -330,8 +330,8 @@ details[open] > .news-list, details[open] > .awards-list { animation: unfold .45
 .paper:hover::before { opacity: 1; }
 .paper-with-figure { display: grid; grid-template-columns: minmax(0, 4.5fr) minmax(0, 5.5fr); gap: 28px; align-items: center; }
 .paper-content { min-width: 0; }
-.paper-media { position: relative; min-width: 0; border-radius: 14px; }
-.paper-preview-video { position: absolute; inset: 0; width: 100%; height: 100%; object-fit: contain; border-radius: 12px; background: #000; opacity: 0; pointer-events: none; }
+.paper-media { position: relative; min-width: 0; aspect-ratio: 16 / 9; border-radius: 14px; overflow: hidden; box-shadow: var(--shadow-sm), 0 0 0 1px var(--line); }
+.paper-preview-video { position: absolute; inset: 0; width: 100%; height: 100%; object-fit: contain; border-radius: 14px; background: #fff; opacity: 0; pointer-events: none; }
 .paper-media.is-playing .paper-preview-video { opacity: 1; }
 .paper-preview-toggle { position: absolute; bottom: 8px; right: 8px; z-index: 1; padding: 5px 9px; border: 1px solid var(--line-strong); border-radius: 8px; color: var(--ink); background: var(--card-strong); box-shadow: var(--shadow-sm); font: 12px/1.5 var(--sans); cursor: pointer; }
 .paper-preview-toggle[hidden] { display: none; }
@@ -372,6 +372,16 @@ a.paper-figure::after {
   transition: transform .45s var(--ease-spring);
 }
 .paper:hover .paper-figure-placeholder::before { transform: translateY(-3px) rotate(-3deg); }
+/* Keep every paper thumbnail, placeholder and video in the same 16:9 frame. */
+.paper .paper-figure {
+  width: 100%; aspect-ratio: 16 / 9; min-height: 0; overflow: hidden;
+  justify-content: center; border-radius: 14px; background-color: #fff;
+  box-shadow: var(--shadow-sm), 0 0 0 1px var(--line);
+}
+.paper .paper-figure img {
+  position: absolute; inset: 0; width: 100%; height: 100%; max-height: none;
+  object-fit: contain; border-radius: 0; box-shadow: none; transform: none;
+}
 .paper-summary { margin-top: 8px; font-size: 15px; line-height: 1.6; color: var(--ink-soft); }
 .paper h3, .patent h3 { color: var(--link); font-size: 18px; }
 .authors { color: var(--ink-soft); font-size: 15.5px; line-height: 1.65; }
