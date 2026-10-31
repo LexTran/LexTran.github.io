@@ -42,7 +42,12 @@ jobs:
       - name: Refresh papers from the verified Scholar profile
         id: sync
         continue-on-error: true
-        run: python scripts/sync_publications.py
+        run: |
+          if [ "$GITHUB_EVENT_NAME" = 'push' ]; then
+            python scripts/sync_publications.py --daily
+          else
+            python scripts/sync_publications.py
+          fi
 
       - name: Discover project overview videos
         run: python scripts/sync_project_videos.py

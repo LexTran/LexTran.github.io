@@ -4,10 +4,14 @@ The verified source is [Lixing Tan's Google Scholar profile](https://scholar.goo
 
 ## Triggers and publication
 
-- Every push to `main` runs the sync, including homepage text, layout, images, or internship pages. There is no path filter.
+- Every push to `main` runs the sync check, including homepage text, layout, images, or internship pages. There is no path filter. Push-triggered runs use `--daily`: if a successful Scholar refresh already exists for the same Beijing calendar day (Asia/Shanghai, midnight boundary), they reuse the saved papers without any Scholar profile or detail requests. A failed or partial attempt does not count as a successful refresh; without a success that day, the next push can retry.
 - A scheduled run starts on the 1st and 16th at 03:17 UTC (11:17 Beijing time). GitHub may delay scheduled runs.
 - `Actions → Sync publications and deploy site → Run workflow` provides an immediate manual check.
 - Local edits are checked when pushed; uncommitted files cannot trigger a GitHub workflow.
+
+The 1st/16th scheduled runs and manual Run workflow checks still request Scholar. A success from either also counts toward that day's push deduplication. Skipping Scholar does not skip acceptance-news generation, venue sorting, project-video discovery, or the site build/deployment. The workflow's existing concurrency queue and latest-main checkout ensure queued pushes read the previous run's committed checkpoint.
+
+`scholar_sync.json` records `status: skipped` and the reason when reusing today's successful refresh. `last_check` records the workflow check time; `last_attempt` and `last_success` retain the actual Scholar request and success times. A skipped run exits successfully and does not pretend a new Scholar fetch occurred.
 
 The same workflow synchronizes, commits the data with `GITHUB_TOKEN`, builds Jekyll, and deploys Pages. Bot commits do not recursively trigger another run. GitHub Pages must use **GitHub Actions** as its publishing source. The workflow rebases on concurrent edits and never force-pushes.
 

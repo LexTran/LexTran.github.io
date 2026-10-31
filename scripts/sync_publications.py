@@ -323,27 +323,49 @@ def prepare_presentation(root, papers, now):
     return papers, emitted, review
 
 
-def run(root=ROOT):
+def already_synced_today(previous, now):
+    """Only a verified successful refresh counts, using Beijing calendar days."""
+    if previous.get('profile') != PROFILE_URL:
+        return False
+    try:
+        last = datetime.fromisoformat(previous['last_success'])
+        current = datetime.fromisoformat(now)
+        if last.tzinfo is None or last > current:
+            return False
+        zone = ZoneInfo('Asia/Shanghai')
+        return last.astimezone(zone).date() == current.astimezone(zone).date()
+    except (KeyError, TypeError, ValueError):
+        return False
+
+
+def run(root=ROOT, daily=False):
     catalogue = root / '_data/publications.json'
     status_path = root / '_data/scholar_sync.json'
     papers = json.loads(catalogue.read_text())
     previous = json.loads(status_path.read_text()) if status_path.exists() else {}
     now = datetime.now(timezone.utc).isoformat(timespec='seconds')
-    status = {'profile': PROFILE_URL, 'last_attempt': now, 'last_success': previous.get('last_success'),
+    reuse = daily and already_synced_today(previous, now)
+    status = {'profile': PROFILE_URL, 'last_check': now,
+              'last_attempt': previous.get('last_attempt') if reuse else now, 'last_success': previous.get('last_success'),
               'status': 'failed', 'added': [], 'updated': [], 'warnings': []}
     result = papers
-    try:
-        rows = collect_rows()
-        def detail(row):
-            time.sleep(3)
-            return parse_detail(fetch(row['url']), row)
-        result, added, updated, warnings = merge(papers, rows, detail)
-        status.update(status='partial' if warnings else 'success', added=added, updated=updated,
-                      warnings=warnings, profile_papers=len(rows), catalogue_papers=len(result))
-        if not warnings:
-            status['last_success'] = now
-    except (SyncError, OSError, ValueError) as exc:
-        status['warnings'] = [f'{type(exc).__name__}: {exc}']
+    if reuse:
+        status.update(status='skipped', skip_reason='already_synced_today_Asia/Shanghai', catalogue_papers=len(papers))
+        if 'profile_papers' in previous:
+            status['profile_papers'] = previous['profile_papers']
+    else:
+        try:
+            rows = collect_rows()
+            def detail(row):
+                time.sleep(3)
+                return parse_detail(fetch(row['url']), row)
+            result, added, updated, warnings = merge(papers, rows, detail)
+            status.update(status='partial' if warnings else 'success', added=added, updated=updated,
+                          warnings=warnings, profile_papers=len(rows), catalogue_papers=len(result))
+            if not warnings:
+                status['last_success'] = now
+        except (SyncError, OSError, ValueError) as exc:
+            status['warnings'] = [f'{type(exc).__name__}: {exc}']
     result, emitted, review = prepare_presentation(root, result, now)
     write_json(catalogue, result)
     status['acceptance_news_added'] = emitted
@@ -352,6 +374,8 @@ def run(root=ROOT):
     summary = (f"Scholar sync: {status['status']}\n"
                f"Added: {len(status['added'])}; updated: {len(status['updated'])}.\n"
                f"Profile: {PROFILE_URL}\n")
+    if reuse:
+        summary += 'Already refreshed successfully today (Asia/Shanghai); reused saved papers without requesting Scholar.\n'
     print(summary)
     for warning in status['warnings']:
         print('Warning:', warning)
@@ -360,13 +384,14 @@ def run(root=ROOT):
             f.write('## Publication synchronization\n\n' + summary.replace('\n', '  \n'))
             if status['warnings']:
                 f.write('\nThe previous records were retained for unavailable items. See the sync log.\n')
-    return 0 if status['status'] == 'success' else 2
+    return 0 if status['status'] in ('success', 'skipped') else 2
 
 
 if __name__ == '__main__':
     parser = argparse.ArgumentParser(description=__doc__)
     parser.add_argument('--root', type=Path, default=ROOT)
     parser.add_argument('--presentation-only', action='store_true', help='Rebuild news and ordering without a network request')
+    parser.add_argument('--daily', action='store_true', help='Reuse a successful Scholar refresh from the same Beijing calendar day')
     args = parser.parse_args()
     if args.presentation_only:
         path = args.root / '_data/publications.json'
@@ -374,4 +399,4 @@ if __name__ == '__main__':
         write_json(path, papers)
         print(f'Acceptance news added: {len(emitted)}; unranked venues: {len(review)}')
         raise SystemExit(0)
-    raise SystemExit(run(args.root))
+    raise SystemExit(run(args.root, daily=args.daily))
