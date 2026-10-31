@@ -1,0 +1,5486 @@
+{
+  "edition": "CCF 2026 · Seventh edition",
+  "source": "https://www.ccf.org.cn/Academic_Evaluation/By_category/2026-03-31/870181.shtml",
+  "pdf_mirror": "https://scdm-shu.github.io/ccf/2026-CCF-Ranking.pdf",
+  "sha256": "271b630b576bf8a4f802e767f5694caded93680e22b3a19bef7902591c45c1d3",
+  "venues": [
+    {
+      "short": "TOCS",
+      "name": "ACM Transactions on Computer Systems",
+      "kind": "journal",
+      "ccf": "A",
+      "aliases": [],
+      "page": 2
+    },
+    {
+      "short": "TOS",
+      "name": "ACM Transactions on Storage",
+      "kind": "journal",
+      "ccf": "A",
+      "aliases": [],
+      "page": 2
+    },
+    {
+      "short": "TCAD",
+      "name": "IEEE Transactions on Computer-Aided Design of Integrated Circuits and Systems",
+      "kind": "journal",
+      "ccf": "A",
+      "aliases": [],
+      "page": 2
+    },
+    {
+      "short": "TC",
+      "name": "IEEE Transactions on Computers",
+      "kind": "journal",
+      "ccf": "A",
+      "aliases": [],
+      "page": 2
+    },
+    {
+      "short": "TPDS",
+      "name": "IEEE Transactions on Parallel and Distributed Systems",
+      "kind": "journal",
+      "ccf": "A",
+      "aliases": [],
+      "page": 2
+    },
+    {
+      "short": "TACO",
+      "name": "ACM Transactions on Architecture and Code Optimization",
+      "kind": "journal",
+      "ccf": "A",
+      "aliases": [],
+      "page": 2
+    },
+    {
+      "short": "TAAS",
+      "name": "ACM Transactions on Autonomous and Adaptive Systems",
+      "kind": "journal",
+      "ccf": "B",
+      "aliases": [],
+      "page": 3
+    },
+    {
+      "short": "TODAES",
+      "name": "ACM Transactions on Design Automation of Electronic Systems",
+      "kind": "journal",
+      "ccf": "B",
+      "aliases": [],
+      "page": 3
+    },
+    {
+      "short": "TECS",
+      "name": "ACM Transactions on Embedded Computing Systems",
+      "kind": "journal",
+      "ccf": "B",
+      "aliases": [],
+      "page": 3
+    },
+    {
+      "short": "TRETS",
+      "name": "ACM Transactions on Reconfigurable Technology and Systems",
+      "kind": "journal",
+      "ccf": "B",
+      "aliases": [],
+      "page": 3
+    },
+    {
+      "short": "TVLSI",
+      "name": "IEEE Transactions on Very Large Scale Integration (VLSI) Systems",
+      "kind": "journal",
+      "ccf": "B",
+      "aliases": [],
+      "page": 3
+    },
+    {
+      "short": "JPDC",
+      "name": "Journal of Parallel and Distributed Computing",
+      "kind": "journal",
+      "ccf": "B",
+      "aliases": [],
+      "page": 3
+    },
+    {
+      "short": "JSA",
+      "name": "Journal of Systems Architecture: Embedded Software Design",
+      "kind": "journal",
+      "ccf": "B",
+      "aliases": [],
+      "page": 3
+    },
+    {
+      "short": "Parallel Computing",
+      "name": "Parallel Computing",
+      "kind": "journal",
+      "ccf": "B",
+      "aliases": [],
+      "page": 3
+    },
+    {
+      "short": "Performance Evaluation: An International Journal",
+      "name": "Performance Evaluation: An International Journal",
+      "kind": "journal",
+      "ccf": "B",
+      "aliases": [],
+      "page": 3
+    },
+    {
+      "short": "TCC",
+      "name": "IEEE Transactions on Cloud Computing",
+      "kind": "journal",
+      "ccf": "B",
+      "aliases": [],
+      "page": 3
+    },
+    {
+      "short": "JETC",
+      "name": "ACM Journal on Emerging Technologies in Computing Systems",
+      "kind": "journal",
+      "ccf": "C",
+      "aliases": [],
+      "page": 4
+    },
+    {
+      "short": "Concurrency and Computation: Practice and Experience",
+      "name": "Concurrency and Computation: Practice and Experience",
+      "kind": "journal",
+      "ccf": "C",
+      "aliases": [],
+      "page": 4
+    },
+    {
+      "short": "DC",
+      "name": "Distributed Computing",
+      "kind": "journal",
+      "ccf": "C",
+      "aliases": [],
+      "page": 4
+    },
+    {
+      "short": "FGCS",
+      "name": "Future Generation Computer Systems",
+      "kind": "journal",
+      "ccf": "C",
+      "aliases": [],
+      "page": 4
+    },
+    {
+      "short": "Integration",
+      "name": "Integration, the VLSI Journal",
+      "kind": "journal",
+      "ccf": "C",
+      "aliases": [],
+      "page": 4
+    },
+    {
+      "short": "JETTA",
+      "name": "Journal of Electronic Testing-Theory and Applications",
+      "kind": "journal",
+      "ccf": "C",
+      "aliases": [],
+      "page": 4
+    },
+    {
+      "short": "JGC",
+      "name": "Journal of Grid computing",
+      "kind": "journal",
+      "ccf": "C",
+      "aliases": [],
+      "page": 4
+    },
+    {
+      "short": "RTS",
+      "name": "Real-Time Systems",
+      "kind": "journal",
+      "ccf": "C",
+      "aliases": [],
+      "page": 4
+    },
+    {
+      "short": "TJSC",
+      "name": "The Journal of Supercomputing",
+      "kind": "journal",
+      "ccf": "C",
+      "aliases": [],
+      "page": 4
+    },
+    {
+      "short": "TCASI",
+      "name": "IEEE Transactions on Circuits and Systems I: Regular Papers",
+      "kind": "journal",
+      "ccf": "C",
+      "aliases": [],
+      "page": 4
+    },
+    {
+      "short": "CCF- THPC",
+      "name": "CCF Transactions on High Performance Computing",
+      "kind": "journal",
+      "ccf": "C",
+      "aliases": [],
+      "page": 4
+    },
+    {
+      "short": "TSUSC",
+      "name": "IEEE Transactions on Sustainable Computing",
+      "kind": "journal",
+      "ccf": "C",
+      "aliases": [],
+      "page": 4
+    },
+    {
+      "short": "PPoPP",
+      "name": "ACM SIGPLAN Symposium on Principles & Practice of Parallel Programming",
+      "kind": "conference",
+      "ccf": "A",
+      "aliases": [],
+      "page": 5
+    },
+    {
+      "short": "FAST",
+      "name": "USENIX Conference on File and Storage Technologies",
+      "kind": "conference",
+      "ccf": "A",
+      "aliases": [],
+      "page": 5
+    },
+    {
+      "short": "DAC",
+      "name": "Design Automation Conference",
+      "kind": "conference",
+      "ccf": "A",
+      "aliases": [],
+      "page": 5
+    },
+    {
+      "short": "HPCA",
+      "name": "IEEE International Symposium on High Performance Computer Architecture",
+      "kind": "conference",
+      "ccf": "A",
+      "aliases": [],
+      "page": 5
+    },
+    {
+      "short": "MICRO",
+      "name": "IEEE/ACM International Symposium on Microarchitecture",
+      "kind": "conference",
+      "ccf": "A",
+      "aliases": [],
+      "page": 5
+    },
+    {
+      "short": "SC",
+      "name": "International Conference for High Performance Computing, Networking, Storage, and Analysis",
+      "kind": "conference",
+      "ccf": "A",
+      "aliases": [],
+      "page": 5
+    },
+    {
+      "short": "ASPLOS",
+      "name": "International Conference on Architectural Support for Programming Languages and Operating Systems",
+      "kind": "conference",
+      "ccf": "A",
+      "aliases": [],
+      "page": 5
+    },
+    {
+      "short": "ISCA",
+      "name": "International Symposium on Computer Architecture",
+      "kind": "conference",
+      "ccf": "A",
+      "aliases": [],
+      "page": 5
+    },
+    {
+      "short": "ACM SIGOPS ATC",
+      "name": "ACM SIGOPS Annual Technical Conference",
+      "kind": "conference",
+      "ccf": "A",
+      "aliases": [
+        "USENIX ATC"
+      ],
+      "page": 5
+    },
+    {
+      "short": "EuroSys",
+      "name": "European Conference on Computer Systems",
+      "kind": "conference",
+      "ccf": "A",
+      "aliases": [],
+      "page": 5
+    },
+    {
+      "short": "HPDC",
+      "name": "The International ACM Symposium on High-Performance Parallel and Distributed Computing",
+      "kind": "conference",
+      "ccf": "A",
+      "aliases": [],
+      "page": 5
+    },
+    {
+      "short": "SoCC",
+      "name": "ACM Symposium on Cloud Computing",
+      "kind": "conference",
+      "ccf": "B",
+      "aliases": [],
+      "page": 6
+    },
+    {
+      "short": "SPAA",
+      "name": "ACM Symposium on Parallelism in Algorithms and Architectures",
+      "kind": "conference",
+      "ccf": "B",
+      "aliases": [],
+      "page": 6
+    },
+    {
+      "short": "PODC",
+      "name": "ACM Symposium on Principles of Distributed Computing",
+      "kind": "conference",
+      "ccf": "B",
+      "aliases": [],
+      "page": 6
+    },
+    {
+      "short": "FPGA",
+      "name": "ACM/SIGDA International Symposium on Field-Programmable Gate Arrays",
+      "kind": "conference",
+      "ccf": "B",
+      "aliases": [],
+      "page": 6
+    },
+    {
+      "short": "CGO",
+      "name": "The International Symposium on Code Generation and Optimization",
+      "kind": "conference",
+      "ccf": "B",
+      "aliases": [],
+      "page": 6
+    },
+    {
+      "short": "DATE",
+      "name": "Design, Automation & Test in Europe",
+      "kind": "conference",
+      "ccf": "B",
+      "aliases": [],
+      "page": 6
+    },
+    {
+      "short": "HOT CHIPS",
+      "name": "Hot Chips: A Symposium on High Performance Chips",
+      "kind": "conference",
+      "ccf": "B",
+      "aliases": [],
+      "page": 6
+    },
+    {
+      "short": "CLUSTER",
+      "name": "IEEE International Conference on Cluster Computing",
+      "kind": "conference",
+      "ccf": "B",
+      "aliases": [],
+      "page": 6
+    },
+    {
+      "short": "ICCD",
+      "name": "International Conference on Computer Design",
+      "kind": "conference",
+      "ccf": "B",
+      "aliases": [],
+      "page": 6
+    },
+    {
+      "short": "ICCAD",
+      "name": "International Conference on Computer-Aided Design",
+      "kind": "conference",
+      "ccf": "B",
+      "aliases": [],
+      "page": 6
+    },
+    {
+      "short": "ICDCS",
+      "name": "IEEE International Conference on Distributed Computing Systems",
+      "kind": "conference",
+      "ccf": "B",
+      "aliases": [],
+      "page": 6
+    },
+    {
+      "short": "CODES+ ISSS",
+      "name": "International Conference on Hardware/Software Co-design and System Synthesis",
+      "kind": "conference",
+      "ccf": "B",
+      "aliases": [],
+      "page": 6
+    },
+    {
+      "short": "HiPEAC",
+      "name": "International Conference on High Performance and Embedded Architectures and Compilers",
+      "kind": "conference",
+      "ccf": "B",
+      "aliases": [],
+      "page": 6
+    },
+    {
+      "short": "SIG- METRICS",
+      "name": "International Conference on Measurement and Modeling of Computer Systems",
+      "kind": "conference",
+      "ccf": "B",
+      "aliases": [],
+      "page": 7
+    },
+    {
+      "short": "PACT",
+      "name": "International Conference on Parallel Architectures and Compilation Techniques",
+      "kind": "conference",
+      "ccf": "B",
+      "aliases": [],
+      "page": 7
+    },
+    {
+      "short": "ICPP",
+      "name": "International Conference on Parallel Processing",
+      "kind": "conference",
+      "ccf": "B",
+      "aliases": [],
+      "page": 7
+    },
+    {
+      "short": "ICS",
+      "name": "International Conference on Supercomputing",
+      "kind": "conference",
+      "ccf": "B",
+      "aliases": [],
+      "page": 7
+    },
+    {
+      "short": "VEE",
+      "name": "International Conference on Virtual Execution Environments",
+      "kind": "conference",
+      "ccf": "B",
+      "aliases": [],
+      "page": 7
+    },
+    {
+      "short": "IPDPS",
+      "name": "IEEE International Parallel & Distributed Processing Symposium",
+      "kind": "conference",
+      "ccf": "B",
+      "aliases": [],
+      "page": 7
+    },
+    {
+      "short": "Performance",
+      "name": "International Symposium on Computer Performance, Modeling, Measurements and Evaluation",
+      "kind": "conference",
+      "ccf": "B",
+      "aliases": [],
+      "page": 7
+    },
+    {
+      "short": "ITC",
+      "name": "International Test Conference",
+      "kind": "conference",
+      "ccf": "B",
+      "aliases": [],
+      "page": 7
+    },
+    {
+      "short": "LISA",
+      "name": "Large Installation System Administration Conference",
+      "kind": "conference",
+      "ccf": "B",
+      "aliases": [],
+      "page": 7
+    },
+    {
+      "short": "MSST",
+      "name": "Mass Storage Systems and Technologies",
+      "kind": "conference",
+      "ccf": "B",
+      "aliases": [],
+      "page": 7
+    },
+    {
+      "short": "RTAS",
+      "name": "IEEE Real-Time and Embedded Technology and Applications Symposium",
+      "kind": "conference",
+      "ccf": "B",
+      "aliases": [],
+      "page": 7
+    },
+    {
+      "short": "Euro-Par",
+      "name": "European Conference on Parallel and Distributed Computing Springer",
+      "kind": "conference",
+      "ccf": "B",
+      "aliases": [],
+      "page": 7
+    },
+    {
+      "short": "ISCAS",
+      "name": "IEEE International Symposium on Circuits and Systems",
+      "kind": "conference",
+      "ccf": "B",
+      "aliases": [],
+      "page": 7
+    },
+    {
+      "short": "CF",
+      "name": "ACM International Conference on Computing Frontiers",
+      "kind": "conference",
+      "ccf": "C",
+      "aliases": [],
+      "page": 8
+    },
+    {
+      "short": "SYSTOR",
+      "name": "ACM International Systems and Storage Conference",
+      "kind": "conference",
+      "ccf": "C",
+      "aliases": [],
+      "page": 8
+    },
+    {
+      "short": "NOCS",
+      "name": "ACM/IEEE International Symposium on Networks-on-Chip",
+      "kind": "conference",
+      "ccf": "C",
+      "aliases": [],
+      "page": 8
+    },
+    {
+      "short": "ASAP",
+      "name": "IEEE International Conference on Application-Specific Systems, Architectures, and Processors",
+      "kind": "conference",
+      "ccf": "C",
+      "aliases": [],
+      "page": 8
+    },
+    {
+      "short": "ASP-DAC",
+      "name": "Asia and South Pacific Design Automation Conference",
+      "kind": "conference",
+      "ccf": "C",
+      "aliases": [],
+      "page": 8
+    },
+    {
+      "short": "ETS",
+      "name": "IEEE European Test Symposium",
+      "kind": "conference",
+      "ccf": "C",
+      "aliases": [],
+      "page": 8
+    },
+    {
+      "short": "FPL",
+      "name": "International Conference on Field-Programmable Logic and Applications",
+      "kind": "conference",
+      "ccf": "C",
+      "aliases": [],
+      "page": 8
+    },
+    {
+      "short": "FCCM",
+      "name": "IEEE Symposium on Field-Programmable Custom Computing Machines",
+      "kind": "conference",
+      "ccf": "C",
+      "aliases": [],
+      "page": 8
+    },
+    {
+      "short": "GLSVLSI",
+      "name": "Great Lakes Symposium on VLSI",
+      "kind": "conference",
+      "ccf": "C",
+      "aliases": [],
+      "page": 8
+    },
+    {
+      "short": "ATS",
+      "name": "IEEE Asian Test Symposium",
+      "kind": "conference",
+      "ccf": "C",
+      "aliases": [],
+      "page": 8
+    },
+    {
+      "short": "HPCC",
+      "name": "IEEE International Conference on High Performance Computing and Communications",
+      "kind": "conference",
+      "ccf": "C",
+      "aliases": [],
+      "page": 8
+    },
+    {
+      "short": "HiPC",
+      "name": "IEEE International Conference on High Performance Computing, Data and Analytics",
+      "kind": "conference",
+      "ccf": "C",
+      "aliases": [],
+      "page": 8
+    },
+    {
+      "short": "MASCOTS",
+      "name": "International Symposium on Modeling, Analysis, and Simulation of Computer and Telecommunication Systems",
+      "kind": "conference",
+      "ccf": "C",
+      "aliases": [],
+      "page": 8
+    },
+    {
+      "short": "ISPA",
+      "name": "IEEE International Symposium on Parallel and Distributed Processing with Applications",
+      "kind": "conference",
+      "ccf": "C",
+      "aliases": [],
+      "page": 9
+    },
+    {
+      "short": "CCGRID",
+      "name": "IEEE/ACM International Symposium on Cluster, Cloud and Grid Computing",
+      "kind": "conference",
+      "ccf": "C",
+      "aliases": [],
+      "page": 9
+    },
+    {
+      "short": "NPC",
+      "name": "IFIP International Conference on Network and Parallel Computing",
+      "kind": "conference",
+      "ccf": "C",
+      "aliases": [],
+      "page": 9
+    },
+    {
+      "short": "ICA3PP",
+      "name": "International Conference on Algorithms and Architectures for Parallel Processing",
+      "kind": "conference",
+      "ccf": "C",
+      "aliases": [],
+      "page": 9
+    },
+    {
+      "short": "CASES",
+      "name": "International Conference on Compilers, Architectures, and Synthesis for Embedded Systems",
+      "kind": "conference",
+      "ccf": "C",
+      "aliases": [],
+      "page": 9
+    },
+    {
+      "short": "FPT",
+      "name": "International Conference on Field-Programmable Technology",
+      "kind": "conference",
+      "ccf": "C",
+      "aliases": [],
+      "page": 9
+    },
+    {
+      "short": "ICPADS",
+      "name": "International Conference on Parallel and Distributed Systems",
+      "kind": "conference",
+      "ccf": "C",
+      "aliases": [],
+      "page": 9
+    },
+    {
+      "short": "ISLPED",
+      "name": "International Symposium on Low Power Electronics and Design",
+      "kind": "conference",
+      "ccf": "C",
+      "aliases": [],
+      "page": 9
+    },
+    {
+      "short": "ISPD",
+      "name": "International Symposium on Physical Design",
+      "kind": "conference",
+      "ccf": "C",
+      "aliases": [],
+      "page": 9
+    },
+    {
+      "short": "HOTI",
+      "name": "IEEE Symposium on High-Performance Interconnects",
+      "kind": "conference",
+      "ccf": "C",
+      "aliases": [],
+      "page": 9
+    },
+    {
+      "short": "VTS",
+      "name": "IEEE VLSI Test Symposium",
+      "kind": "conference",
+      "ccf": "C",
+      "aliases": [],
+      "page": 9
+    },
+    {
+      "short": "ITC-Asia",
+      "name": "International Test Conference in Asia",
+      "kind": "conference",
+      "ccf": "C",
+      "aliases": [],
+      "page": 9
+    },
+    {
+      "short": "SEC",
+      "name": "ACM/IEEE Symposium on Edge Computing",
+      "kind": "conference",
+      "ccf": "C",
+      "aliases": [],
+      "page": 9
+    },
+    {
+      "short": "NAS",
+      "name": "International Conference on Networking, Architecture and Storages",
+      "kind": "conference",
+      "ccf": "C",
+      "aliases": [],
+      "page": 9
+    },
+    {
+      "short": "HotStorage",
+      "name": "HotStorage",
+      "kind": "conference",
+      "ccf": "C",
+      "aliases": [],
+      "page": 9
+    },
+    {
+      "short": "APPT",
+      "name": "International Symposium on Advanced Parallel Processing Technology",
+      "kind": "conference",
+      "ccf": "C",
+      "aliases": [],
+      "page": 9
+    },
+    {
+      "short": "JCC",
+      "name": "International Conference on JointCloud Computing",
+      "kind": "conference",
+      "ccf": "C",
+      "aliases": [],
+      "page": 9
+    },
+    {
+      "short": "JSAC",
+      "name": "IEEE Journal on Selected Areas in Communications",
+      "kind": "journal",
+      "ccf": "A",
+      "aliases": [],
+      "page": 10
+    },
+    {
+      "short": "TMC",
+      "name": "IEEE Transactions on Mobile Computing",
+      "kind": "journal",
+      "ccf": "A",
+      "aliases": [],
+      "page": 10
+    },
+    {
+      "short": "TON",
+      "name": "IEEE Transactions on Networking",
+      "kind": "journal",
+      "ccf": "A",
+      "aliases": [
+        "IEEE/ACM Transactions on Networking"
+      ],
+      "page": 10
+    },
+    {
+      "short": "TOIT",
+      "name": "ACM Transactions on Internet Technology",
+      "kind": "journal",
+      "ccf": "B",
+      "aliases": [],
+      "page": 11
+    },
+    {
+      "short": "TOMM",
+      "name": "ACM Transactions on Multimedia Computing, Communications and Applications",
+      "kind": "journal",
+      "ccf": "B",
+      "aliases": [],
+      "page": 11
+    },
+    {
+      "short": "TOSN",
+      "name": "ACM Transactions on Sensor Networks",
+      "kind": "journal",
+      "ccf": "B",
+      "aliases": [],
+      "page": 11
+    },
+    {
+      "short": "CN",
+      "name": "Computer Networks",
+      "kind": "journal",
+      "ccf": "B",
+      "aliases": [],
+      "page": 11
+    },
+    {
+      "short": "TCOM",
+      "name": "IEEE Transactions on Communications",
+      "kind": "journal",
+      "ccf": "B",
+      "aliases": [],
+      "page": 11
+    },
+    {
+      "short": "TWC",
+      "name": "IEEE Transactions on Wireless Communications",
+      "kind": "journal",
+      "ccf": "B",
+      "aliases": [],
+      "page": 11
+    },
+    {
+      "short": "Ad Hoc Networks",
+      "name": "Ad Hoc Networks",
+      "kind": "journal",
+      "ccf": "C",
+      "aliases": [],
+      "page": 12
+    },
+    {
+      "short": "CC",
+      "name": "Computer Communications",
+      "kind": "journal",
+      "ccf": "C",
+      "aliases": [],
+      "page": 12
+    },
+    {
+      "short": "TNSM",
+      "name": "IEEE Transactions on Network and Service Management",
+      "kind": "journal",
+      "ccf": "C",
+      "aliases": [],
+      "page": 12
+    },
+    {
+      "short": "IET Communications",
+      "name": "IET Communications",
+      "kind": "journal",
+      "ccf": "C",
+      "aliases": [],
+      "page": 12
+    },
+    {
+      "short": "JNCA",
+      "name": "Journal of Network and Computer Applications",
+      "kind": "journal",
+      "ccf": "C",
+      "aliases": [],
+      "page": 12
+    },
+    {
+      "short": "MONET",
+      "name": "Mobile Networks and Applications",
+      "kind": "journal",
+      "ccf": "C",
+      "aliases": [],
+      "page": 12
+    },
+    {
+      "short": "Networks",
+      "name": "Networks",
+      "kind": "journal",
+      "ccf": "C",
+      "aliases": [],
+      "page": 12
+    },
+    {
+      "short": "PPNA",
+      "name": "Peer-to-Peer Networking and Applications",
+      "kind": "journal",
+      "ccf": "C",
+      "aliases": [],
+      "page": 12
+    },
+    {
+      "short": "WCMC",
+      "name": "Wireless Communications and Mobile Computing",
+      "kind": "journal",
+      "ccf": "C",
+      "aliases": [],
+      "page": 12
+    },
+    {
+      "short": "Wireless Networks",
+      "name": "Wireless Networks",
+      "kind": "journal",
+      "ccf": "C",
+      "aliases": [],
+      "page": 12
+    },
+    {
+      "short": "IOT",
+      "name": "IEEE Internet of Things Journal",
+      "kind": "journal",
+      "ccf": "C",
+      "aliases": [],
+      "page": 12
+    },
+    {
+      "short": "TIOT",
+      "name": "ACM Transactions on Internet of Things",
+      "kind": "journal",
+      "ccf": "C",
+      "aliases": [],
+      "page": 12
+    },
+    {
+      "short": "SIGCOMM",
+      "name": "ACM International Conference on Applications, Technologies, Architectures, and Protocols for Computer Communication",
+      "kind": "conference",
+      "ccf": "A",
+      "aliases": [],
+      "page": 13
+    },
+    {
+      "short": "MobiCom",
+      "name": "ACM International Conference on Mobile Computing and Networking",
+      "kind": "conference",
+      "ccf": "A",
+      "aliases": [],
+      "page": 13
+    },
+    {
+      "short": "INFOCOM",
+      "name": "IEEE International Conference on Computer Communications",
+      "kind": "conference",
+      "ccf": "A",
+      "aliases": [],
+      "page": 13
+    },
+    {
+      "short": "NSDI",
+      "name": "Symposium on Network System Design and Implementation",
+      "kind": "conference",
+      "ccf": "A",
+      "aliases": [],
+      "page": 13
+    },
+    {
+      "short": "SenSys",
+      "name": "ACM Conference on Embedded Networked Sensor Systems",
+      "kind": "conference",
+      "ccf": "B",
+      "aliases": [],
+      "page": 14
+    },
+    {
+      "short": "CoNEXT",
+      "name": "ACM International Conference on Emerging Networking Experiments and Technologies",
+      "kind": "conference",
+      "ccf": "B",
+      "aliases": [],
+      "page": 14
+    },
+    {
+      "short": "SECON",
+      "name": "IEEE International Conference on Sensing, Communication, and Networking",
+      "kind": "conference",
+      "ccf": "B",
+      "aliases": [],
+      "page": 14
+    },
+    {
+      "short": "IPSN",
+      "name": "International Conference on Information Processing in Sensor Networks",
+      "kind": "conference",
+      "ccf": "B",
+      "aliases": [],
+      "page": 14
+    },
+    {
+      "short": "MobiSys",
+      "name": "ACM International Conference on Mobile Systems, Applications, and Services",
+      "kind": "conference",
+      "ccf": "B",
+      "aliases": [],
+      "page": 14
+    },
+    {
+      "short": "ICNP",
+      "name": "IEEE International Conference on Network Protocols",
+      "kind": "conference",
+      "ccf": "B",
+      "aliases": [],
+      "page": 14
+    },
+    {
+      "short": "MobiHoc",
+      "name": "International Symposium on Theory, Algorithmic Foundations, and Protocol Design for Mobile Networks and Mobile Computing",
+      "kind": "conference",
+      "ccf": "B",
+      "aliases": [],
+      "page": 14
+    },
+    {
+      "short": "NOSSDAV",
+      "name": "International Workshop on Network and Operating System Support for Digital Audio and Video",
+      "kind": "conference",
+      "ccf": "B",
+      "aliases": [],
+      "page": 14
+    },
+    {
+      "short": "IWQoS",
+      "name": "IEEE/ACM International Workshop on Quality of Service",
+      "kind": "conference",
+      "ccf": "B",
+      "aliases": [],
+      "page": 14
+    },
+    {
+      "short": "IMC",
+      "name": "ACM Internet Measurement Conference",
+      "kind": "conference",
+      "ccf": "B",
+      "aliases": [],
+      "page": 14
+    },
+    {
+      "short": "ANCS",
+      "name": "ACM/IEEE Symposium on Architectures for Networking and Communication Systems",
+      "kind": "conference",
+      "ccf": "C",
+      "aliases": [],
+      "page": 15
+    },
+    {
+      "short": "APNOMS",
+      "name": "Asia-Pacific Network Operations and Management Symposium",
+      "kind": "conference",
+      "ccf": "C",
+      "aliases": [],
+      "page": 15
+    },
+    {
+      "short": "FORTE",
+      "name": "International Conference on Formal Techniques for Distributed Objects, Components, and Systems",
+      "kind": "conference",
+      "ccf": "C",
+      "aliases": [],
+      "page": 15
+    },
+    {
+      "short": "LCN",
+      "name": "IEEE Conference on Local Computer Networks",
+      "kind": "conference",
+      "ccf": "C",
+      "aliases": [],
+      "page": 15
+    },
+    {
+      "short": "GLOBECOM",
+      "name": "IEEE Global Communications Conference",
+      "kind": "conference",
+      "ccf": "C",
+      "aliases": [],
+      "page": 15
+    },
+    {
+      "short": "ICC",
+      "name": "IEEE International Conference on Communications",
+      "kind": "conference",
+      "ccf": "C",
+      "aliases": [],
+      "page": 15
+    },
+    {
+      "short": "ICCCN",
+      "name": "IEEE International Conference on Computer Communications and Networks",
+      "kind": "conference",
+      "ccf": "C",
+      "aliases": [],
+      "page": 15
+    },
+    {
+      "short": "MASS",
+      "name": "IEEE International Conference on Mobile Adhoc and Sensor Systems",
+      "kind": "conference",
+      "ccf": "C",
+      "aliases": [],
+      "page": 15
+    },
+    {
+      "short": "P2P",
+      "name": "IEEE International Conference on Peer-to-Peer Computing",
+      "kind": "conference",
+      "ccf": "C",
+      "aliases": [],
+      "page": 15
+    },
+    {
+      "short": "IPCCC",
+      "name": "IEEE International Performance Computing and Communications Conference",
+      "kind": "conference",
+      "ccf": "C",
+      "aliases": [],
+      "page": 15
+    },
+    {
+      "short": "WoWMoM",
+      "name": "IEEE International Symposium on a World of Wireless, Mobile and Multimedia Networks",
+      "kind": "conference",
+      "ccf": "C",
+      "aliases": [],
+      "page": 15
+    },
+    {
+      "short": "ISCC",
+      "name": "IEEE Symposium on Computers and Communications",
+      "kind": "conference",
+      "ccf": "C",
+      "aliases": [],
+      "page": 15
+    },
+    {
+      "short": "WCNC",
+      "name": "IEEE Wireless Communications and Networking Conference",
+      "kind": "conference",
+      "ccf": "C",
+      "aliases": [],
+      "page": 15
+    },
+    {
+      "short": "Networking",
+      "name": "IFIP International Conferences on Networking",
+      "kind": "conference",
+      "ccf": "C",
+      "aliases": [],
+      "page": 16
+    },
+    {
+      "short": "IM",
+      "name": "IFIP/IEEE International Symposium on Integrated Network Management",
+      "kind": "conference",
+      "ccf": "C",
+      "aliases": [],
+      "page": 16
+    },
+    {
+      "short": "MSN",
+      "name": "International Conference on Mobility, Sensing and Networking",
+      "kind": "conference",
+      "ccf": "C",
+      "aliases": [],
+      "page": 16
+    },
+    {
+      "short": "MSWiM",
+      "name": "International Conference on Modeling, Analysis and Simulation of Wireless and Mobile Systems",
+      "kind": "conference",
+      "ccf": "C",
+      "aliases": [],
+      "page": 16
+    },
+    {
+      "short": "WASA",
+      "name": "The International Conference on Wireless Artificial Intelligent Computing Systems and Applications",
+      "kind": "conference",
+      "ccf": "C",
+      "aliases": [],
+      "page": 16
+    },
+    {
+      "short": "HotNets",
+      "name": "ACM The Workshop on Hot Topics in Networks",
+      "kind": "conference",
+      "ccf": "C",
+      "aliases": [],
+      "page": 16
+    },
+    {
+      "short": "APNet",
+      "name": "Asia-Pacific Workshop on Networking",
+      "kind": "conference",
+      "ccf": "C",
+      "aliases": [],
+      "page": 16
+    },
+    {
+      "short": "TDSC",
+      "name": "IEEE Transactions on Dependable and Secure Computing",
+      "kind": "journal",
+      "ccf": "A",
+      "aliases": [],
+      "page": 17
+    },
+    {
+      "short": "TIFS",
+      "name": "IEEE Transactions on Information Forensics and Security",
+      "kind": "journal",
+      "ccf": "A",
+      "aliases": [],
+      "page": 17
+    },
+    {
+      "short": "Journal of Cryptology",
+      "name": "Journal of Cryptology",
+      "kind": "journal",
+      "ccf": "A",
+      "aliases": [],
+      "page": 17
+    },
+    {
+      "short": "TOPS",
+      "name": "ACM Transactions on Privacy and Security",
+      "kind": "journal",
+      "ccf": "B",
+      "aliases": [],
+      "page": 18
+    },
+    {
+      "short": "Computers & Security",
+      "name": "Computers & Security",
+      "kind": "journal",
+      "ccf": "B",
+      "aliases": [],
+      "page": 18
+    },
+    {
+      "short": "Designs, Codes and Cryptography",
+      "name": "Designs, Codes and Cryptography",
+      "kind": "journal",
+      "ccf": "B",
+      "aliases": [],
+      "page": 18
+    },
+    {
+      "short": "JCS",
+      "name": "Journal of Computer Security",
+      "kind": "journal",
+      "ccf": "B",
+      "aliases": [],
+      "page": 18
+    },
+    {
+      "short": "Cybersecurity",
+      "name": "Cybersecurity",
+      "kind": "journal",
+      "ccf": "B",
+      "aliases": [],
+      "page": 18
+    },
+    {
+      "short": "CLSR",
+      "name": "Computer Law & Security Review",
+      "kind": "journal",
+      "ccf": "C",
+      "aliases": [],
+      "page": 19
+    },
+    {
+      "short": "EURASIP Journal on Information Security",
+      "name": "EURASIP Journal on Information Security",
+      "kind": "journal",
+      "ccf": "C",
+      "aliases": [],
+      "page": 19
+    },
+    {
+      "short": "IET Information Security",
+      "name": "IET Information Security",
+      "kind": "journal",
+      "ccf": "C",
+      "aliases": [],
+      "page": 19
+    },
+    {
+      "short": "IMCS",
+      "name": "Information and Computer Security",
+      "kind": "journal",
+      "ccf": "C",
+      "aliases": [],
+      "page": 19
+    },
+    {
+      "short": "IJICS",
+      "name": "International Journal of Information and Computer Security",
+      "kind": "journal",
+      "ccf": "C",
+      "aliases": [],
+      "page": 19
+    },
+    {
+      "short": "IJISP",
+      "name": "International Journal of Information Security and Privacy",
+      "kind": "journal",
+      "ccf": "C",
+      "aliases": [],
+      "page": 19
+    },
+    {
+      "short": "JISA",
+      "name": "Journal of Information Security and Applications",
+      "kind": "journal",
+      "ccf": "C",
+      "aliases": [],
+      "page": 19
+    },
+    {
+      "short": "SCN",
+      "name": "Security and Communication Networks",
+      "kind": "journal",
+      "ccf": "C",
+      "aliases": [],
+      "page": 19
+    },
+    {
+      "short": "HCC",
+      "name": "High-Confidence Computing",
+      "kind": "journal",
+      "ccf": "C",
+      "aliases": [],
+      "page": 19
+    },
+    {
+      "short": "CCS",
+      "name": "ACM Conference on Computer and Communications Security",
+      "kind": "conference",
+      "ccf": "A",
+      "aliases": [],
+      "page": 20
+    },
+    {
+      "short": "EUROCRYPT",
+      "name": "International Conference on the Theory and Applications of Cryptographic Techniques",
+      "kind": "conference",
+      "ccf": "A",
+      "aliases": [],
+      "page": 20
+    },
+    {
+      "short": "S&P",
+      "name": "IEEE Symposium on Security and Privacy",
+      "kind": "conference",
+      "ccf": "A",
+      "aliases": [],
+      "page": 20
+    },
+    {
+      "short": "CRYPTO",
+      "name": "International Cryptology Conference",
+      "kind": "conference",
+      "ccf": "A",
+      "aliases": [],
+      "page": 20
+    },
+    {
+      "short": "USENIX Security",
+      "name": "USENIX Security Symposium",
+      "kind": "conference",
+      "ccf": "A",
+      "aliases": [],
+      "page": 20
+    },
+    {
+      "short": "NDSS",
+      "name": "Network and Distributed System Security Symposium",
+      "kind": "conference",
+      "ccf": "A",
+      "aliases": [],
+      "page": 20
+    },
+    {
+      "short": "ACSAC",
+      "name": "Annual Computer Security Applications Conference",
+      "kind": "conference",
+      "ccf": "B",
+      "aliases": [],
+      "page": 21
+    },
+    {
+      "short": "ASIACRYPT",
+      "name": "Annual International Conference on the Theory and Application of Cryptology and Information Security",
+      "kind": "conference",
+      "ccf": "B",
+      "aliases": [],
+      "page": 21
+    },
+    {
+      "short": "ESORICS",
+      "name": "European Symposium on Research in Computer Security",
+      "kind": "conference",
+      "ccf": "B",
+      "aliases": [],
+      "page": 21
+    },
+    {
+      "short": "FSE",
+      "name": "Fast Software Encryption",
+      "kind": "conference",
+      "ccf": "B",
+      "aliases": [],
+      "page": 21
+    },
+    {
+      "short": "CSFW",
+      "name": "IEEE Computer Security Foundations Workshop",
+      "kind": "conference",
+      "ccf": "B",
+      "aliases": [],
+      "page": 21
+    },
+    {
+      "short": "SRDS",
+      "name": "IEEE International Symposium on Reliable Distributed Systems",
+      "kind": "conference",
+      "ccf": "B",
+      "aliases": [],
+      "page": 21
+    },
+    {
+      "short": "CHES",
+      "name": "International Conference on Cryptographic Hardware and Embedded Systems",
+      "kind": "conference",
+      "ccf": "B",
+      "aliases": [],
+      "page": 21
+    },
+    {
+      "short": "DSN",
+      "name": "International Conference on Dependable Systems and Networks",
+      "kind": "conference",
+      "ccf": "B",
+      "aliases": [],
+      "page": 21
+    },
+    {
+      "short": "RAID",
+      "name": "International Symposium on Recent Advances in Intrusion Detection",
+      "kind": "conference",
+      "ccf": "B",
+      "aliases": [],
+      "page": 21
+    },
+    {
+      "short": "PKC",
+      "name": "International Workshop on Practice and Theory in Public Key Cryptography",
+      "kind": "conference",
+      "ccf": "B",
+      "aliases": [],
+      "page": 21
+    },
+    {
+      "short": "TCC",
+      "name": "Theory of Cryptography Conference",
+      "kind": "conference",
+      "ccf": "B",
+      "aliases": [],
+      "page": 21
+    },
+    {
+      "short": "WiSec",
+      "name": "ACM Conference on Security and Privacy in Wireless and Mobile Networks",
+      "kind": "conference",
+      "ccf": "C",
+      "aliases": [],
+      "page": 22
+    },
+    {
+      "short": "SACMAT",
+      "name": "ACM Symposium on Access Control Models and Technologies",
+      "kind": "conference",
+      "ccf": "C",
+      "aliases": [],
+      "page": 22
+    },
+    {
+      "short": "DRM",
+      "name": "ACM Workshop on Digital Rights Management",
+      "kind": "conference",
+      "ccf": "C",
+      "aliases": [],
+      "page": 22
+    },
+    {
+      "short": "IH&MMSec",
+      "name": "ACM Workshop on Information Hiding and Multimedia Security",
+      "kind": "conference",
+      "ccf": "C",
+      "aliases": [],
+      "page": 22
+    },
+    {
+      "short": "ACNS",
+      "name": "International Conference on Applied Cryptography and Network Security",
+      "kind": "conference",
+      "ccf": "C",
+      "aliases": [],
+      "page": 22
+    },
+    {
+      "short": "AsiaCCS",
+      "name": "ACM Asia Conference on Computer and Communications Security",
+      "kind": "conference",
+      "ccf": "C",
+      "aliases": [],
+      "page": 22
+    },
+    {
+      "short": "ACISP",
+      "name": "Australasia Conference on Information Security and Privacy",
+      "kind": "conference",
+      "ccf": "C",
+      "aliases": [],
+      "page": 22
+    },
+    {
+      "short": "CT-RSA",
+      "name": "The Cryptographer's Track at RSA Conference",
+      "kind": "conference",
+      "ccf": "C",
+      "aliases": [],
+      "page": 22
+    },
+    {
+      "short": "DIMVA",
+      "name": "Conference on Detection of Intrusions and Malware & Vulnerability Assessment",
+      "kind": "conference",
+      "ccf": "C",
+      "aliases": [],
+      "page": 22
+    },
+    {
+      "short": "DFRWS",
+      "name": "Digital Forensic Research Workshop",
+      "kind": "conference",
+      "ccf": "C",
+      "aliases": [],
+      "page": 22
+    },
+    {
+      "short": "FC",
+      "name": "Financial Cryptography and Data Security",
+      "kind": "conference",
+      "ccf": "C",
+      "aliases": [],
+      "page": 22
+    },
+    {
+      "short": "TrustCom",
+      "name": "IEEE International Conference on Trust, Security and Privacy in Computing and Communications",
+      "kind": "conference",
+      "ccf": "C",
+      "aliases": [],
+      "page": 22
+    },
+    {
+      "short": "SEC",
+      "name": "IFIP International Information Security Conference",
+      "kind": "conference",
+      "ccf": "C",
+      "aliases": [],
+      "page": 22
+    },
+    {
+      "short": "IFIP WG 11.9",
+      "name": "IFIP Working Group 11.9 International Conference on Digital Forensics",
+      "kind": "conference",
+      "ccf": "C",
+      "aliases": [],
+      "page": 23
+    },
+    {
+      "short": "ISC",
+      "name": "Information Security Conference",
+      "kind": "conference",
+      "ccf": "C",
+      "aliases": [],
+      "page": 23
+    },
+    {
+      "short": "ICDF2C",
+      "name": "International Conference on Digital Forensics & Cyber Crime",
+      "kind": "conference",
+      "ccf": "C",
+      "aliases": [],
+      "page": 23
+    },
+    {
+      "short": "ICICS",
+      "name": "International Conference on Information and Communications Security",
+      "kind": "conference",
+      "ccf": "C",
+      "aliases": [],
+      "page": 23
+    },
+    {
+      "short": "SecureComm",
+      "name": "International Conference on Security and Privacy in Communication Networks",
+      "kind": "conference",
+      "ccf": "C",
+      "aliases": [],
+      "page": 23
+    },
+    {
+      "short": "NSPW",
+      "name": "New Security Paradigms Workshop",
+      "kind": "conference",
+      "ccf": "C",
+      "aliases": [],
+      "page": 23
+    },
+    {
+      "short": "PAM",
+      "name": "Passive and Active Measurement Conference",
+      "kind": "conference",
+      "ccf": "C",
+      "aliases": [],
+      "page": 23
+    },
+    {
+      "short": "PETS",
+      "name": "Privacy Enhancing Technologies Symposium",
+      "kind": "conference",
+      "ccf": "C",
+      "aliases": [],
+      "page": 23
+    },
+    {
+      "short": "SAC",
+      "name": "Selected Areas in Cryptography",
+      "kind": "conference",
+      "ccf": "C",
+      "aliases": [],
+      "page": 23
+    },
+    {
+      "short": "SOUPS",
+      "name": "Symposium On Usable Privacy and Security",
+      "kind": "conference",
+      "ccf": "C",
+      "aliases": [],
+      "page": 23
+    },
+    {
+      "short": "HotSec",
+      "name": "USENIX Workshop on Hot Topics in Security",
+      "kind": "conference",
+      "ccf": "C",
+      "aliases": [],
+      "page": 23
+    },
+    {
+      "short": "EuroS&P",
+      "name": "IEEE European Symposium on Security and Privacy",
+      "kind": "conference",
+      "ccf": "C",
+      "aliases": [],
+      "page": 23
+    },
+    {
+      "short": "Inscrypt",
+      "name": "International Conference on Information Security and Cryptology",
+      "kind": "conference",
+      "ccf": "C",
+      "aliases": [],
+      "page": 23
+    },
+    {
+      "short": "CODASPY",
+      "name": "Conference on Data and Application Security and Privacy",
+      "kind": "conference",
+      "ccf": "C",
+      "aliases": [],
+      "page": 23
+    },
+    {
+      "short": "BlockSys",
+      "name": "International Conference on Blockchain, Artificial Intelligence, and Trustworthy Systems",
+      "kind": "conference",
+      "ccf": "C",
+      "aliases": [],
+      "page": 23
+    },
+    {
+      "short": "CSCloud",
+      "name": "International Conference on Cyber Security and Cloud Computing",
+      "kind": "conference",
+      "ccf": "C",
+      "aliases": [],
+      "page": 23
+    },
+    {
+      "short": "TOPLAS",
+      "name": "ACM Transactions on Programming Languages and Systems",
+      "kind": "journal",
+      "ccf": "A",
+      "aliases": [],
+      "page": 24
+    },
+    {
+      "short": "TOSEM",
+      "name": "ACM Transactions on Software Engineering and Methodology",
+      "kind": "journal",
+      "ccf": "A",
+      "aliases": [],
+      "page": 24
+    },
+    {
+      "short": "TSE",
+      "name": "IEEE Transactions on Software Engineering",
+      "kind": "journal",
+      "ccf": "A",
+      "aliases": [],
+      "page": 24
+    },
+    {
+      "short": "TSC",
+      "name": "IEEE Transactions on Services Computing",
+      "kind": "journal",
+      "ccf": "A",
+      "aliases": [],
+      "page": 24
+    },
+    {
+      "short": "ASE",
+      "name": "Automated Software Engineering",
+      "kind": "journal",
+      "ccf": "B",
+      "aliases": [],
+      "page": 25
+    },
+    {
+      "short": "ESE",
+      "name": "Empirical Software Engineering",
+      "kind": "journal",
+      "ccf": "B",
+      "aliases": [],
+      "page": 25
+    },
+    {
+      "short": "IETS",
+      "name": "IET Software",
+      "kind": "journal",
+      "ccf": "B",
+      "aliases": [],
+      "page": 25
+    },
+    {
+      "short": "IST",
+      "name": "Information and Software Technology",
+      "kind": "journal",
+      "ccf": "B",
+      "aliases": [],
+      "page": 25
+    },
+    {
+      "short": "JFP",
+      "name": "Journal of Functional Programming",
+      "kind": "journal",
+      "ccf": "B",
+      "aliases": [],
+      "page": 25
+    },
+    {
+      "short": "Journal of Software: Evolution and Process",
+      "name": "Journal of Software: Evolution and Process",
+      "kind": "journal",
+      "ccf": "B",
+      "aliases": [],
+      "page": 25
+    },
+    {
+      "short": "JSS",
+      "name": "Journal of Systems and Software",
+      "kind": "journal",
+      "ccf": "B",
+      "aliases": [],
+      "page": 25
+    },
+    {
+      "short": "RE",
+      "name": "Requirements Engineering",
+      "kind": "journal",
+      "ccf": "B",
+      "aliases": [],
+      "page": 25
+    },
+    {
+      "short": "SCP",
+      "name": "Science of Computer Programming",
+      "kind": "journal",
+      "ccf": "B",
+      "aliases": [],
+      "page": 25
+    },
+    {
+      "short": "SoSyM",
+      "name": "Software and Systems Modeling",
+      "kind": "journal",
+      "ccf": "B",
+      "aliases": [],
+      "page": 25
+    },
+    {
+      "short": "STVR",
+      "name": "Software Testing, Verification and Reliability",
+      "kind": "journal",
+      "ccf": "B",
+      "aliases": [],
+      "page": 25
+    },
+    {
+      "short": "SPE",
+      "name": "Software: Practice and Experience",
+      "kind": "journal",
+      "ccf": "B",
+      "aliases": [],
+      "page": 25
+    },
+    {
+      "short": "CL",
+      "name": "Computer Languages, Systems and Structures",
+      "kind": "journal",
+      "ccf": "C",
+      "aliases": [],
+      "page": 26
+    },
+    {
+      "short": "IJSEKE",
+      "name": "International Journal of Software Engineering and Knowledge Engineering",
+      "kind": "journal",
+      "ccf": "C",
+      "aliases": [],
+      "page": 26
+    },
+    {
+      "short": "STTT",
+      "name": "International Journal of Software Tools for Technology Transfer",
+      "kind": "journal",
+      "ccf": "C",
+      "aliases": [],
+      "page": 26
+    },
+    {
+      "short": "JLAMP",
+      "name": "Journal of Logical and Algebraic Methods in Programming",
+      "kind": "journal",
+      "ccf": "C",
+      "aliases": [],
+      "page": 26
+    },
+    {
+      "short": "JWE",
+      "name": "Journal of Web Engineering",
+      "kind": "journal",
+      "ccf": "C",
+      "aliases": [],
+      "page": 26
+    },
+    {
+      "short": "SOCA",
+      "name": "Service Oriented Computing and Applications",
+      "kind": "journal",
+      "ccf": "C",
+      "aliases": [],
+      "page": 26
+    },
+    {
+      "short": "SQJ",
+      "name": "Software Quality Journal",
+      "kind": "journal",
+      "ccf": "C",
+      "aliases": [],
+      "page": 26
+    },
+    {
+      "short": "TPLP",
+      "name": "Theory and Practice of Logic Programming",
+      "kind": "journal",
+      "ccf": "C",
+      "aliases": [],
+      "page": 26
+    },
+    {
+      "short": "PACM PL",
+      "name": "Proceedings of the ACM on Programming Languages",
+      "kind": "journal",
+      "ccf": "C",
+      "aliases": [],
+      "page": 26
+    },
+    {
+      "short": "PLDI",
+      "name": "ACM SIGPLAN Conference on Programming Language Design and Implementation",
+      "kind": "conference",
+      "ccf": "A",
+      "aliases": [],
+      "page": 27
+    },
+    {
+      "short": "POPL",
+      "name": "ACM SIGPLAN-SIGACT Symposium on Principles of Programming Languages",
+      "kind": "conference",
+      "ccf": "A",
+      "aliases": [],
+      "page": 27
+    },
+    {
+      "short": "FSE",
+      "name": "ACM International Conference on the Foundations of Software Engineering",
+      "kind": "conference",
+      "ccf": "A",
+      "aliases": [],
+      "page": 27
+    },
+    {
+      "short": "SOSP",
+      "name": "ACM Symposium on Operating Systems Principles",
+      "kind": "conference",
+      "ccf": "A",
+      "aliases": [],
+      "page": 27
+    },
+    {
+      "short": "OOPSLA",
+      "name": "Conference on Object-Oriented Programming Systems, Languages, and Applications",
+      "kind": "conference",
+      "ccf": "A",
+      "aliases": [],
+      "page": 27
+    },
+    {
+      "short": "ASE",
+      "name": "International Conference on Automated Software Engineering",
+      "kind": "conference",
+      "ccf": "A",
+      "aliases": [],
+      "page": 27
+    },
+    {
+      "short": "ICSE",
+      "name": "International Conference on Software Engineering",
+      "kind": "conference",
+      "ccf": "A",
+      "aliases": [],
+      "page": 27
+    },
+    {
+      "short": "ISSTA",
+      "name": "International Symposium on Software Testing and Analysis",
+      "kind": "conference",
+      "ccf": "A",
+      "aliases": [],
+      "page": 27
+    },
+    {
+      "short": "OSDI",
+      "name": "USENIX Symposium on Operating Systems Design and Implementation",
+      "kind": "conference",
+      "ccf": "A",
+      "aliases": [],
+      "page": 27
+    },
+    {
+      "short": "FM",
+      "name": "International Symposium on Formal Methods",
+      "kind": "conference",
+      "ccf": "A",
+      "aliases": [],
+      "page": 27
+    },
+    {
+      "short": "ECOOP",
+      "name": "European Conference on Object-Oriented Programming",
+      "kind": "conference",
+      "ccf": "B",
+      "aliases": [],
+      "page": 28
+    },
+    {
+      "short": "ETAPS",
+      "name": "European Joint Conferences on Theory and Practice of Software",
+      "kind": "conference",
+      "ccf": "B",
+      "aliases": [],
+      "page": 28
+    },
+    {
+      "short": "ICPC",
+      "name": "IEEE International Conference on Program Comprehension",
+      "kind": "conference",
+      "ccf": "B",
+      "aliases": [],
+      "page": 28
+    },
+    {
+      "short": "RE",
+      "name": "IEEE International Requirements Engineering Conference",
+      "kind": "conference",
+      "ccf": "B",
+      "aliases": [],
+      "page": 28
+    },
+    {
+      "short": "CAiSE",
+      "name": "International Conference on Advanced Information Systems Engineering",
+      "kind": "conference",
+      "ccf": "B",
+      "aliases": [],
+      "page": 28
+    },
+    {
+      "short": "ICFP",
+      "name": "ACM SIGPLAN International Conference on Function Programming",
+      "kind": "conference",
+      "ccf": "B",
+      "aliases": [],
+      "page": 28
+    },
+    {
+      "short": "LCTES",
+      "name": "ACM SIGPLAN/SIGBED International Conference on Languages, Compilers and Tools for Embedded Systems",
+      "kind": "conference",
+      "ccf": "B",
+      "aliases": [],
+      "page": 28
+    },
+    {
+      "short": "MoDELS",
+      "name": "ACM/IEEE International Conference on Model Driven EngineeringLanguages and Systems",
+      "kind": "conference",
+      "ccf": "B",
+      "aliases": [],
+      "page": 28
+    },
+    {
+      "short": "CP",
+      "name": "International Conference on Principles and Practice of Constraint Programming",
+      "kind": "conference",
+      "ccf": "B",
+      "aliases": [],
+      "page": 28
+    },
+    {
+      "short": "ICSOC",
+      "name": "International Conference on Service Oriented Computing",
+      "kind": "conference",
+      "ccf": "B",
+      "aliases": [],
+      "page": 28
+    },
+    {
+      "short": "SANER",
+      "name": "IEEE International Conference on Software Analysis, Evolution, and Reengineering",
+      "kind": "conference",
+      "ccf": "B",
+      "aliases": [],
+      "page": 29
+    },
+    {
+      "short": "ICSME",
+      "name": "International Conference on Software Maintenance and Evolution",
+      "kind": "conference",
+      "ccf": "B",
+      "aliases": [],
+      "page": 29
+    },
+    {
+      "short": "VMCAI",
+      "name": "International Conference on Verification, Model Checking and Abstract Interpretation",
+      "kind": "conference",
+      "ccf": "B",
+      "aliases": [],
+      "page": 29
+    },
+    {
+      "short": "ICWS",
+      "name": "IEEE International Conference on Web Services",
+      "kind": "conference",
+      "ccf": "B",
+      "aliases": [],
+      "page": 29
+    },
+    {
+      "short": "Middleware",
+      "name": "International Middleware Conference",
+      "kind": "conference",
+      "ccf": "B",
+      "aliases": [],
+      "page": 29
+    },
+    {
+      "short": "SAS",
+      "name": "International Static Analysis Symposium",
+      "kind": "conference",
+      "ccf": "B",
+      "aliases": [],
+      "page": 29
+    },
+    {
+      "short": "ESEM",
+      "name": "International Symposium on Empirical Software Engineering and Measurement",
+      "kind": "conference",
+      "ccf": "B",
+      "aliases": [],
+      "page": 29
+    },
+    {
+      "short": "ISSRE",
+      "name": "IEEE International Symposium on Software Reliability Engineering",
+      "kind": "conference",
+      "ccf": "B",
+      "aliases": [],
+      "page": 29
+    },
+    {
+      "short": "HotOS",
+      "name": "USENIX Workshop on Hot Topics in Operating Systems",
+      "kind": "conference",
+      "ccf": "B",
+      "aliases": [],
+      "page": 29
+    },
+    {
+      "short": "CC",
+      "name": "International Conference on Compiler Construction",
+      "kind": "conference",
+      "ccf": "B",
+      "aliases": [],
+      "page": 29
+    },
+    {
+      "short": "PEPM",
+      "name": "ACM SIGPLAN Workshop on Partial Evaluation and Program Manipulation",
+      "kind": "conference",
+      "ccf": "C",
+      "aliases": [],
+      "page": 30
+    },
+    {
+      "short": "PASTE",
+      "name": "ACMSIGPLAN-SIGSOFT Workshop on Program Analysis for Software Tools and Engineering",
+      "kind": "conference",
+      "ccf": "C",
+      "aliases": [],
+      "page": 30
+    },
+    {
+      "short": "APLAS",
+      "name": "Asian Symposium on Programming Languages and Systems",
+      "kind": "conference",
+      "ccf": "C",
+      "aliases": [],
+      "page": 30
+    },
+    {
+      "short": "APSEC",
+      "name": "Asia-Pacific Software Engineering Conference",
+      "kind": "conference",
+      "ccf": "C",
+      "aliases": [],
+      "page": 30
+    },
+    {
+      "short": "EASE",
+      "name": "International Conference on Evaluation and Assessment in Software Engineering",
+      "kind": "conference",
+      "ccf": "C",
+      "aliases": [],
+      "page": 30
+    },
+    {
+      "short": "ICECCS",
+      "name": "International Conference on Engineering of Complex Computer Systems",
+      "kind": "conference",
+      "ccf": "C",
+      "aliases": [],
+      "page": 30
+    },
+    {
+      "short": "ICST",
+      "name": "IEEE International Conference on Software Testing, Verification and Validation",
+      "kind": "conference",
+      "ccf": "C",
+      "aliases": [],
+      "page": 30
+    },
+    {
+      "short": "ISPASS",
+      "name": "IEEE International Symposium on Performance Analysis of Systems and Software",
+      "kind": "conference",
+      "ccf": "C",
+      "aliases": [],
+      "page": 30
+    },
+    {
+      "short": "SCAM",
+      "name": "IEEE International Working Conference on Source Code Analysis and Manipulation",
+      "kind": "conference",
+      "ccf": "C",
+      "aliases": [],
+      "page": 30
+    },
+    {
+      "short": "COMPSAC",
+      "name": "International Computer Software and Applications Conference",
+      "kind": "conference",
+      "ccf": "C",
+      "aliases": [],
+      "page": 30
+    },
+    {
+      "short": "ICFEM",
+      "name": "International Conference on Formal Engineering Methods",
+      "kind": "conference",
+      "ccf": "C",
+      "aliases": [],
+      "page": 30
+    },
+    {
+      "short": "SSE",
+      "name": "IEEE International Conference on Software Services Engineering",
+      "kind": "conference",
+      "ccf": "C",
+      "aliases": [],
+      "page": 30
+    },
+    {
+      "short": "ICSSP",
+      "name": "International Conference on Software and System Process",
+      "kind": "conference",
+      "ccf": "C",
+      "aliases": [],
+      "page": 30
+    },
+    {
+      "short": "SEKE",
+      "name": "International Conference on Software Engineering and Knowledge Engineering",
+      "kind": "conference",
+      "ccf": "C",
+      "aliases": [],
+      "page": 31
+    },
+    {
+      "short": "QRS",
+      "name": "International Conference on Software Quality, Reliability and Security",
+      "kind": "conference",
+      "ccf": "C",
+      "aliases": [],
+      "page": 31
+    },
+    {
+      "short": "ICSR",
+      "name": "International Conference on Software Reuse",
+      "kind": "conference",
+      "ccf": "C",
+      "aliases": [],
+      "page": 31
+    },
+    {
+      "short": "ICWE",
+      "name": "International Conference on Web Engineering",
+      "kind": "conference",
+      "ccf": "C",
+      "aliases": [],
+      "page": 31
+    },
+    {
+      "short": "SPIN",
+      "name": "International Symposium on Model Checking of Software",
+      "kind": "conference",
+      "ccf": "C",
+      "aliases": [],
+      "page": 31
+    },
+    {
+      "short": "ATVA",
+      "name": "International Symposium on Automated Technology for Verification and Analysis",
+      "kind": "conference",
+      "ccf": "C",
+      "aliases": [],
+      "page": 31
+    },
+    {
+      "short": "LOPSTR",
+      "name": "International Symposium on Logic-based Program Synthesis and Transformation",
+      "kind": "conference",
+      "ccf": "C",
+      "aliases": [],
+      "page": 31
+    },
+    {
+      "short": "TASE",
+      "name": "Theoretical Aspects of Software Engineering Conference",
+      "kind": "conference",
+      "ccf": "C",
+      "aliases": [],
+      "page": 31
+    },
+    {
+      "short": "MSR",
+      "name": "Mining Software Repositories",
+      "kind": "conference",
+      "ccf": "C",
+      "aliases": [],
+      "page": 31
+    },
+    {
+      "short": "REFSQ",
+      "name": "Requirements Engineering: Foundation for Software Quality",
+      "kind": "conference",
+      "ccf": "C",
+      "aliases": [],
+      "page": 31
+    },
+    {
+      "short": "WICSA",
+      "name": "Working IEEE/IFIP Conference on Software Architecture",
+      "kind": "conference",
+      "ccf": "C",
+      "aliases": [],
+      "page": 31
+    },
+    {
+      "short": "Internetware",
+      "name": "Asia-Pacific Symposium on Internetware",
+      "kind": "conference",
+      "ccf": "C",
+      "aliases": [],
+      "page": 31
+    },
+    {
+      "short": "RV",
+      "name": "International Conference on Runtime Verification",
+      "kind": "conference",
+      "ccf": "C",
+      "aliases": [],
+      "page": 31
+    },
+    {
+      "short": "MEMOCODE",
+      "name": "International Conference on Formal Methods and Models for Co-Design",
+      "kind": "conference",
+      "ccf": "C",
+      "aliases": [],
+      "page": 31
+    },
+    {
+      "short": "TODS",
+      "name": "ACM Transactions on Database Systems",
+      "kind": "journal",
+      "ccf": "A",
+      "aliases": [],
+      "page": 32
+    },
+    {
+      "short": "TOIS",
+      "name": "ACM Transactions on Information Systems",
+      "kind": "journal",
+      "ccf": "A",
+      "aliases": [],
+      "page": 32
+    },
+    {
+      "short": "TKDE",
+      "name": "IEEE Transactions on Knowledge and Data Engineering",
+      "kind": "journal",
+      "ccf": "A",
+      "aliases": [],
+      "page": 32
+    },
+    {
+      "short": "VLDBJ",
+      "name": "The VLDB Journal",
+      "kind": "journal",
+      "ccf": "A",
+      "aliases": [],
+      "page": 32
+    },
+    {
+      "short": "TKDD",
+      "name": "ACM Transactions on Knowledge Discovery from Data",
+      "kind": "journal",
+      "ccf": "B",
+      "aliases": [],
+      "page": 33
+    },
+    {
+      "short": "TWEB",
+      "name": "ACM Transactions on the Web",
+      "kind": "journal",
+      "ccf": "B",
+      "aliases": [],
+      "page": 33
+    },
+    {
+      "short": "AEI",
+      "name": "Advanced Engineering Informatics",
+      "kind": "journal",
+      "ccf": "B",
+      "aliases": [],
+      "page": 33
+    },
+    {
+      "short": "DKE",
+      "name": "Data & Knowledge Engineering",
+      "kind": "journal",
+      "ccf": "B",
+      "aliases": [],
+      "page": 33
+    },
+    {
+      "short": "DMKD",
+      "name": "Data Mining and Knowledge Discovery",
+      "kind": "journal",
+      "ccf": "B",
+      "aliases": [],
+      "page": 33
+    },
+    {
+      "short": "EJIS",
+      "name": "European Journal of Information Systems",
+      "kind": "journal",
+      "ccf": "B",
+      "aliases": [],
+      "page": 33
+    },
+    {
+      "short": "GeoInformatica",
+      "name": "GeoInformatica",
+      "kind": "journal",
+      "ccf": "B",
+      "aliases": [],
+      "page": 33
+    },
+    {
+      "short": "IPM",
+      "name": "Information Processing and Management",
+      "kind": "journal",
+      "ccf": "B",
+      "aliases": [],
+      "page": 33
+    },
+    {
+      "short": "Information Sciences",
+      "name": "Information Sciences",
+      "kind": "journal",
+      "ccf": "B",
+      "aliases": [],
+      "page": 33
+    },
+    {
+      "short": "IS",
+      "name": "Information Systems",
+      "kind": "journal",
+      "ccf": "B",
+      "aliases": [],
+      "page": 33
+    },
+    {
+      "short": "JASIST",
+      "name": "Journal of the Association for Information Science and Technology",
+      "kind": "journal",
+      "ccf": "B",
+      "aliases": [],
+      "page": 33
+    },
+    {
+      "short": "JWS",
+      "name": "Journal of Web Semantics",
+      "kind": "journal",
+      "ccf": "B",
+      "aliases": [],
+      "page": 33
+    },
+    {
+      "short": "KAIS",
+      "name": "Knowledge and Information Systems",
+      "kind": "journal",
+      "ccf": "B",
+      "aliases": [],
+      "page": 33
+    },
+    {
+      "short": "DSE",
+      "name": "Data Science and Engineering",
+      "kind": "journal",
+      "ccf": "B",
+      "aliases": [],
+      "page": 33
+    },
+    {
+      "short": "DPD",
+      "name": "Distributed and Parallel Databases",
+      "kind": "journal",
+      "ccf": "C",
+      "aliases": [],
+      "page": 34
+    },
+    {
+      "short": "I&M",
+      "name": "Information & Management",
+      "kind": "journal",
+      "ccf": "C",
+      "aliases": [],
+      "page": 34
+    },
+    {
+      "short": "IPL",
+      "name": "Information Processing Letters",
+      "kind": "journal",
+      "ccf": "C",
+      "aliases": [],
+      "page": 34
+    },
+    {
+      "short": "Discover Computing",
+      "name": "Discover Computing",
+      "kind": "journal",
+      "ccf": "C",
+      "aliases": [
+        "IR",
+        "Information Retrieval Journal"
+      ],
+      "page": 34
+    },
+    {
+      "short": "IJCIS",
+      "name": "International Journal of Cooperative Information Systems",
+      "kind": "journal",
+      "ccf": "C",
+      "aliases": [],
+      "page": 34
+    },
+    {
+      "short": "IJGIS",
+      "name": "International Journal of Geographical Information Science",
+      "kind": "journal",
+      "ccf": "C",
+      "aliases": [],
+      "page": 34
+    },
+    {
+      "short": "IJIS",
+      "name": "International Journal of Intelligent Systems",
+      "kind": "journal",
+      "ccf": "C",
+      "aliases": [],
+      "page": 34
+    },
+    {
+      "short": "IJKM",
+      "name": "International Journal of Knowledge Management",
+      "kind": "journal",
+      "ccf": "C",
+      "aliases": [],
+      "page": 34
+    },
+    {
+      "short": "IJSWIS",
+      "name": "International Journal on Semantic Web and Information Systems",
+      "kind": "journal",
+      "ccf": "C",
+      "aliases": [],
+      "page": 34
+    },
+    {
+      "short": "JCIS",
+      "name": "Journal of Computer Information Systems",
+      "kind": "journal",
+      "ccf": "C",
+      "aliases": [],
+      "page": 34
+    },
+    {
+      "short": "JDM",
+      "name": "Journal of Database Management",
+      "kind": "journal",
+      "ccf": "C",
+      "aliases": [],
+      "page": 34
+    },
+    {
+      "short": "JGITM",
+      "name": "Journal of Global Information Technology Management",
+      "kind": "journal",
+      "ccf": "C",
+      "aliases": [],
+      "page": 34
+    },
+    {
+      "short": "JIIS",
+      "name": "Journal of Intelligent Information Systems",
+      "kind": "journal",
+      "ccf": "C",
+      "aliases": [],
+      "page": 34
+    },
+    {
+      "short": "JSIS",
+      "name": "The Journal of Strategic Information Systems",
+      "kind": "journal",
+      "ccf": "C",
+      "aliases": [],
+      "page": 34
+    },
+    {
+      "short": "TIST",
+      "name": "ACM Transactions on Intelligent Systems and Technology",
+      "kind": "journal",
+      "ccf": "C",
+      "aliases": [],
+      "page": 34
+    },
+    {
+      "short": "TORS",
+      "name": "ACM Transactions on Recommender Systems",
+      "kind": "journal",
+      "ccf": "C",
+      "aliases": [],
+      "page": 34
+    },
+    {
+      "short": "SIGMOD",
+      "name": "ACM SIGMOD Conference",
+      "kind": "conference",
+      "ccf": "A",
+      "aliases": [],
+      "page": 35
+    },
+    {
+      "short": "SIGKDD",
+      "name": "ACM SIGKDD Conference on Knowledge Discovery and Data Mining",
+      "kind": "conference",
+      "ccf": "A",
+      "aliases": [],
+      "page": 35
+    },
+    {
+      "short": "ICDE",
+      "name": "IEEE International Conference on Data Engineering",
+      "kind": "conference",
+      "ccf": "A",
+      "aliases": [],
+      "page": 35
+    },
+    {
+      "short": "SIGIR",
+      "name": "International ACM SIGIR Conference on Research and Development in Information Retrieval",
+      "kind": "conference",
+      "ccf": "A",
+      "aliases": [],
+      "page": 35
+    },
+    {
+      "short": "VLDB",
+      "name": "International Conference on Very Large Data Bases",
+      "kind": "conference",
+      "ccf": "A",
+      "aliases": [],
+      "page": 35
+    },
+    {
+      "short": "CIKM",
+      "name": "ACM International Conference on Information and Knowledge Management",
+      "kind": "conference",
+      "ccf": "B",
+      "aliases": [],
+      "page": 36
+    },
+    {
+      "short": "WSDM",
+      "name": "ACM International Conference on Web Search and Data Mining",
+      "kind": "conference",
+      "ccf": "B",
+      "aliases": [],
+      "page": 36
+    },
+    {
+      "short": "PODS",
+      "name": "ACM SIGMOD-SIGACT-SIGAI Symposium on Principles of Database Systems",
+      "kind": "conference",
+      "ccf": "B",
+      "aliases": [],
+      "page": 36
+    },
+    {
+      "short": "DASFAA",
+      "name": "International Conference on Database Systems for Advanced Applications",
+      "kind": "conference",
+      "ccf": "B",
+      "aliases": [],
+      "page": 36
+    },
+    {
+      "short": "ECML-PKDD",
+      "name": "European Conference on Machine Learning and Principles and Practice of Knowledge Discovery in Databases",
+      "kind": "conference",
+      "ccf": "B",
+      "aliases": [],
+      "page": 36
+    },
+    {
+      "short": "ISWC",
+      "name": "IEEE International Semantic Web Conference",
+      "kind": "conference",
+      "ccf": "B",
+      "aliases": [],
+      "page": 36
+    },
+    {
+      "short": "ICDM",
+      "name": "IEEE International Conference on Data Mining",
+      "kind": "conference",
+      "ccf": "B",
+      "aliases": [],
+      "page": 36
+    },
+    {
+      "short": "ICDT",
+      "name": "International Conference on Database Theory",
+      "kind": "conference",
+      "ccf": "B",
+      "aliases": [],
+      "page": 36
+    },
+    {
+      "short": "EDBT",
+      "name": "International Conference on Extending Database Technology",
+      "kind": "conference",
+      "ccf": "B",
+      "aliases": [],
+      "page": 36
+    },
+    {
+      "short": "CIDR",
+      "name": "Conference on Innovative Data Systems Research",
+      "kind": "conference",
+      "ccf": "B",
+      "aliases": [],
+      "page": 36
+    },
+    {
+      "short": "SDM",
+      "name": "SIAM International Conference on Data Mining",
+      "kind": "conference",
+      "ccf": "B",
+      "aliases": [],
+      "page": 36
+    },
+    {
+      "short": "RecSys",
+      "name": "ACM Conference on Recommender Systems",
+      "kind": "conference",
+      "ccf": "B",
+      "aliases": [],
+      "page": 36
+    },
+    {
+      "short": "WISE",
+      "name": "Web Information Systems Engineering Conference",
+      "kind": "conference",
+      "ccf": "B",
+      "aliases": [],
+      "page": 36
+    },
+    {
+      "short": "APWeb",
+      "name": "Asia Pacific Web Conference",
+      "kind": "conference",
+      "ccf": "C",
+      "aliases": [],
+      "page": 37
+    },
+    {
+      "short": "DEXA",
+      "name": "International Conference on Database and Expert System Applications",
+      "kind": "conference",
+      "ccf": "C",
+      "aliases": [],
+      "page": 37
+    },
+    {
+      "short": "ECIR",
+      "name": "European Conference on Information Retrieval",
+      "kind": "conference",
+      "ccf": "C",
+      "aliases": [],
+      "page": 37
+    },
+    {
+      "short": "ESWC",
+      "name": "Extended Semantic Web Conference",
+      "kind": "conference",
+      "ccf": "C",
+      "aliases": [],
+      "page": 37
+    },
+    {
+      "short": "WebDB",
+      "name": "International Workshop on Web and Databases",
+      "kind": "conference",
+      "ccf": "C",
+      "aliases": [],
+      "page": 37
+    },
+    {
+      "short": "ER",
+      "name": "International Conference on Conceptual Modeling",
+      "kind": "conference",
+      "ccf": "C",
+      "aliases": [],
+      "page": 37
+    },
+    {
+      "short": "MDM",
+      "name": "International Conference on Mobile Data Management",
+      "kind": "conference",
+      "ccf": "C",
+      "aliases": [],
+      "page": 37
+    },
+    {
+      "short": "SSDBM",
+      "name": "International Conference on Scientific and Statistical Database Management",
+      "kind": "conference",
+      "ccf": "C",
+      "aliases": [],
+      "page": 37
+    },
+    {
+      "short": "WAIM",
+      "name": "International Conference on Web Age Information Management",
+      "kind": "conference",
+      "ccf": "C",
+      "aliases": [],
+      "page": 37
+    },
+    {
+      "short": "SSTD",
+      "name": "International Symposium on Spatial and Temporal Databases",
+      "kind": "conference",
+      "ccf": "C",
+      "aliases": [],
+      "page": 37
+    },
+    {
+      "short": "PAKDD",
+      "name": "Pacific-Asia Conference on Knowledge Discovery and Data Mining",
+      "kind": "conference",
+      "ccf": "C",
+      "aliases": [],
+      "page": 37
+    },
+    {
+      "short": "ADMA",
+      "name": "International Conference on Advanced Data Mining and Applications",
+      "kind": "conference",
+      "ccf": "C",
+      "aliases": [],
+      "page": 37
+    },
+    {
+      "short": "WISA",
+      "name": "Web Information Systems and Applications",
+      "kind": "conference",
+      "ccf": "C",
+      "aliases": [],
+      "page": 37
+    },
+    {
+      "short": "TIT",
+      "name": "IEEE Transactions on Information Theory",
+      "kind": "journal",
+      "ccf": "A",
+      "aliases": [],
+      "page": 38
+    },
+    {
+      "short": "IANDC",
+      "name": "Information and Computation",
+      "kind": "journal",
+      "ccf": "A",
+      "aliases": [],
+      "page": 38
+    },
+    {
+      "short": "SICOMP",
+      "name": "SIAM Journal on Computing",
+      "kind": "journal",
+      "ccf": "A",
+      "aliases": [],
+      "page": 38
+    },
+    {
+      "short": "TALG",
+      "name": "ACM Transactions on Algorithms",
+      "kind": "journal",
+      "ccf": "B",
+      "aliases": [],
+      "page": 39
+    },
+    {
+      "short": "TOCL",
+      "name": "ACM Transactions on Computational Logic",
+      "kind": "journal",
+      "ccf": "B",
+      "aliases": [],
+      "page": 39
+    },
+    {
+      "short": "TOMS",
+      "name": "ACM Transactions on Mathematical Software",
+      "kind": "journal",
+      "ccf": "B",
+      "aliases": [],
+      "page": 39
+    },
+    {
+      "short": "Algorithmica",
+      "name": "Algorithmica",
+      "kind": "journal",
+      "ccf": "B",
+      "aliases": [],
+      "page": 39
+    },
+    {
+      "short": "CC",
+      "name": "Computational Complexity",
+      "kind": "journal",
+      "ccf": "B",
+      "aliases": [],
+      "page": 39
+    },
+    {
+      "short": "FAC",
+      "name": "Formal Aspects of Computing",
+      "kind": "journal",
+      "ccf": "B",
+      "aliases": [],
+      "page": 39
+    },
+    {
+      "short": "FMSD",
+      "name": "Formal Methods in System Design",
+      "kind": "journal",
+      "ccf": "B",
+      "aliases": [],
+      "page": 39
+    },
+    {
+      "short": "INFORMS",
+      "name": "INFORMS Journal on Computing",
+      "kind": "journal",
+      "ccf": "B",
+      "aliases": [],
+      "page": 39
+    },
+    {
+      "short": "JCSS",
+      "name": "Journal of Computer and System Sciences",
+      "kind": "journal",
+      "ccf": "B",
+      "aliases": [],
+      "page": 39
+    },
+    {
+      "short": "JGO",
+      "name": "Journal of Global Optimization",
+      "kind": "journal",
+      "ccf": "B",
+      "aliases": [],
+      "page": 39
+    },
+    {
+      "short": "JSC",
+      "name": "Journal of Symbolic Computation",
+      "kind": "journal",
+      "ccf": "B",
+      "aliases": [],
+      "page": 39
+    },
+    {
+      "short": "MSCS",
+      "name": "Mathematical Structures in Computer Science",
+      "kind": "journal",
+      "ccf": "B",
+      "aliases": [],
+      "page": 39
+    },
+    {
+      "short": "TCS",
+      "name": "Theoretical Computer Science",
+      "kind": "journal",
+      "ccf": "B",
+      "aliases": [],
+      "page": 39
+    },
+    {
+      "short": "ACTA",
+      "name": "Acta Informatica",
+      "kind": "journal",
+      "ccf": "C",
+      "aliases": [],
+      "page": 40
+    },
+    {
+      "short": "APAL",
+      "name": "Annals of Pure and Applied Logic",
+      "kind": "journal",
+      "ccf": "C",
+      "aliases": [],
+      "page": 40
+    },
+    {
+      "short": "DAM",
+      "name": "Discrete Applied Mathematics",
+      "kind": "journal",
+      "ccf": "C",
+      "aliases": [],
+      "page": 40
+    },
+    {
+      "short": "FUIN",
+      "name": "Fundamenta Informaticae",
+      "kind": "journal",
+      "ccf": "C",
+      "aliases": [],
+      "page": 40
+    },
+    {
+      "short": "IPL",
+      "name": "Information Processing Letters",
+      "kind": "journal",
+      "ccf": "C",
+      "aliases": [],
+      "page": 40
+    },
+    {
+      "short": "JCOMPLEXI TY",
+      "name": "Journal of Complexity",
+      "kind": "journal",
+      "ccf": "C",
+      "aliases": [],
+      "page": 40
+    },
+    {
+      "short": "LOGCOM",
+      "name": "Journal of Logic and Computation",
+      "kind": "journal",
+      "ccf": "C",
+      "aliases": [],
+      "page": 40
+    },
+    {
+      "short": "JSL",
+      "name": "The Journal of Symbolic Logic",
+      "kind": "journal",
+      "ccf": "C",
+      "aliases": [],
+      "page": 40
+    },
+    {
+      "short": "LMCS",
+      "name": "Logical Methods in Computer Science",
+      "kind": "journal",
+      "ccf": "C",
+      "aliases": [],
+      "page": 40
+    },
+    {
+      "short": "SIDMA",
+      "name": "SIAM Journal on Discrete Mathematics",
+      "kind": "journal",
+      "ccf": "C",
+      "aliases": [],
+      "page": 40
+    },
+    {
+      "short": "Theory of Computing Systems",
+      "name": "Theory of Computing Systems",
+      "kind": "journal",
+      "ccf": "C",
+      "aliases": [],
+      "page": 40
+    },
+    {
+      "short": "TQC",
+      "name": "ACM Transactions in Quantum Computing",
+      "kind": "journal",
+      "ccf": "C",
+      "aliases": [],
+      "page": 40
+    },
+    {
+      "short": "STOC",
+      "name": "ACM Symposium on the Theory of Computing",
+      "kind": "conference",
+      "ccf": "A",
+      "aliases": [],
+      "page": 41
+    },
+    {
+      "short": "SODA",
+      "name": "ACM-SIAM Symposium on Discrete Algorithms",
+      "kind": "conference",
+      "ccf": "A",
+      "aliases": [],
+      "page": 41
+    },
+    {
+      "short": "CAV",
+      "name": "International Conference on Computer Aided Verification",
+      "kind": "conference",
+      "ccf": "A",
+      "aliases": [],
+      "page": 41
+    },
+    {
+      "short": "FOCS",
+      "name": "IEEE Annual Symposium on Foundations of Computer Science",
+      "kind": "conference",
+      "ccf": "A",
+      "aliases": [],
+      "page": 41
+    },
+    {
+      "short": "LICS",
+      "name": "ACM/IEEE Symposium on Logic in Computer Science",
+      "kind": "conference",
+      "ccf": "A",
+      "aliases": [],
+      "page": 41
+    },
+    {
+      "short": "SoCG",
+      "name": "International Symposium on Computational Geometry",
+      "kind": "conference",
+      "ccf": "B",
+      "aliases": [],
+      "page": 42
+    },
+    {
+      "short": "ESA",
+      "name": "European Symposium on Algorithms",
+      "kind": "conference",
+      "ccf": "B",
+      "aliases": [],
+      "page": 42
+    },
+    {
+      "short": "CCC",
+      "name": "Conference on Computational Complexity",
+      "kind": "conference",
+      "ccf": "B",
+      "aliases": [],
+      "page": 42
+    },
+    {
+      "short": "ICALP",
+      "name": "International Colloquium on Automata, Languages and Programming",
+      "kind": "conference",
+      "ccf": "B",
+      "aliases": [],
+      "page": 42
+    },
+    {
+      "short": "CADE",
+      "name": "Conference on Automated Deduction",
+      "kind": "conference",
+      "ccf": "B",
+      "aliases": [],
+      "page": 42
+    },
+    {
+      "short": "CONCUR",
+      "name": "International Conference on Concurrency Theory",
+      "kind": "conference",
+      "ccf": "B",
+      "aliases": [],
+      "page": 42
+    },
+    {
+      "short": "HSCC",
+      "name": "International Conference on Hybrid Systems: Computation and Control",
+      "kind": "conference",
+      "ccf": "B",
+      "aliases": [],
+      "page": 42
+    },
+    {
+      "short": "SAT",
+      "name": "International Conference on Theory and Applications of Satisfiability Testing",
+      "kind": "conference",
+      "ccf": "B",
+      "aliases": [],
+      "page": 42
+    },
+    {
+      "short": "COCOON",
+      "name": "International Computing and Combinatorics Conference",
+      "kind": "conference",
+      "ccf": "B",
+      "aliases": [],
+      "page": 42
+    },
+    {
+      "short": "FMCAD",
+      "name": "Formal Methods in Computer-Aided Design",
+      "kind": "conference",
+      "ccf": "B",
+      "aliases": [],
+      "page": 42
+    },
+    {
+      "short": "CSL",
+      "name": "Computer Science Logic",
+      "kind": "conference",
+      "ccf": "C",
+      "aliases": [],
+      "page": 43
+    },
+    {
+      "short": "FSTTCS",
+      "name": "Foundations of Software Technology and Theoretical Computer Science",
+      "kind": "conference",
+      "ccf": "C",
+      "aliases": [],
+      "page": 43
+    },
+    {
+      "short": "DSAA",
+      "name": "IEEE International Conference on Data Science and Advanced Analytics",
+      "kind": "conference",
+      "ccf": "C",
+      "aliases": [],
+      "page": 43
+    },
+    {
+      "short": "ICTAC",
+      "name": "International Colloquium on Theoretical Aspects of Computing",
+      "kind": "conference",
+      "ccf": "C",
+      "aliases": [],
+      "page": 43
+    },
+    {
+      "short": "IPCO",
+      "name": "International Conference on Integer Programming and Combinatorial Optimization",
+      "kind": "conference",
+      "ccf": "C",
+      "aliases": [],
+      "page": 43
+    },
+    {
+      "short": "FSCD",
+      "name": "International Conference on Formal Structures for Computation and Deduction",
+      "kind": "conference",
+      "ccf": "C",
+      "aliases": [
+        "RTA"
+      ],
+      "page": 43
+    },
+    {
+      "short": "ISAAC",
+      "name": "International Symposium on Algorithms and Computation",
+      "kind": "conference",
+      "ccf": "C",
+      "aliases": [],
+      "page": 43
+    },
+    {
+      "short": "MFCS",
+      "name": "International Conference on Mathematical Foundations of Computer Science",
+      "kind": "conference",
+      "ccf": "C",
+      "aliases": [],
+      "page": 43
+    },
+    {
+      "short": "STACS",
+      "name": "Symposium on Theoretical Aspects of Computer Science",
+      "kind": "conference",
+      "ccf": "C",
+      "aliases": [],
+      "page": 43
+    },
+    {
+      "short": "SETTA",
+      "name": "International Symposium on Software Engineering: Theories, Tools, and Applications",
+      "kind": "conference",
+      "ccf": "C",
+      "aliases": [],
+      "page": 43
+    },
+    {
+      "short": "TOG",
+      "name": "ACM Transactions on Graphics",
+      "kind": "journal",
+      "ccf": "A",
+      "aliases": [],
+      "page": 44
+    },
+    {
+      "short": "TIP",
+      "name": "IEEE Transactions on Image Processing",
+      "kind": "journal",
+      "ccf": "A",
+      "aliases": [],
+      "page": 44
+    },
+    {
+      "short": "TVCG",
+      "name": "IEEE Transactions on Visualization and Computer Graphics",
+      "kind": "journal",
+      "ccf": "A",
+      "aliases": [],
+      "page": 44
+    },
+    {
+      "short": "TMM",
+      "name": "IEEE Transactions on Multimedia",
+      "kind": "journal",
+      "ccf": "A",
+      "aliases": [],
+      "page": 44
+    },
+    {
+      "short": "TOMM",
+      "name": "ACM Transactions on Multimedia Computing, Communications and Applications",
+      "kind": "journal",
+      "ccf": "B",
+      "aliases": [],
+      "page": 45
+    },
+    {
+      "short": "CAGD",
+      "name": "Computer Aided Geometric Design",
+      "kind": "journal",
+      "ccf": "B",
+      "aliases": [],
+      "page": 45
+    },
+    {
+      "short": "CGF",
+      "name": "Computer Graphics Forum",
+      "kind": "journal",
+      "ccf": "B",
+      "aliases": [],
+      "page": 45
+    },
+    {
+      "short": "CAD",
+      "name": "Computer-Aided Design",
+      "kind": "journal",
+      "ccf": "B",
+      "aliases": [],
+      "page": 45
+    },
+    {
+      "short": "TCSVT",
+      "name": "IEEE Transactions on Circuits and Systems for Video Technology",
+      "kind": "journal",
+      "ccf": "B",
+      "aliases": [],
+      "page": 45
+    },
+    {
+      "short": "JASA",
+      "name": "The Journal of the Acoustical Society of America",
+      "kind": "journal",
+      "ccf": "B",
+      "aliases": [],
+      "page": 45
+    },
+    {
+      "short": "SIIMS",
+      "name": "SIAM Journal on Imaging Sciences",
+      "kind": "journal",
+      "ccf": "B",
+      "aliases": [],
+      "page": 45
+    },
+    {
+      "short": "SPECOM",
+      "name": "Speech Communication",
+      "kind": "journal",
+      "ccf": "B",
+      "aliases": [],
+      "page": 45
+    },
+    {
+      "short": "CVMJ",
+      "name": "Computational Visual Media",
+      "kind": "journal",
+      "ccf": "B",
+      "aliases": [],
+      "page": 45
+    },
+    {
+      "short": "CGTA",
+      "name": "Computational Geometry: Theory and Applications",
+      "kind": "journal",
+      "ccf": "C",
+      "aliases": [],
+      "page": 46
+    },
+    {
+      "short": "CAVW",
+      "name": "Computer animation & virtual worlds",
+      "kind": "journal",
+      "ccf": "C",
+      "aliases": [],
+      "page": 46
+    },
+    {
+      "short": "C&G",
+      "name": "Computers & Graphics",
+      "kind": "journal",
+      "ccf": "C",
+      "aliases": [],
+      "page": 46
+    },
+    {
+      "short": "DCG",
+      "name": "Discrete & Computational Geometry",
+      "kind": "journal",
+      "ccf": "C",
+      "aliases": [],
+      "page": 46
+    },
+    {
+      "short": "SPL",
+      "name": "IEEE Signal Processing Letters",
+      "kind": "journal",
+      "ccf": "C",
+      "aliases": [],
+      "page": 46
+    },
+    {
+      "short": "IET-IPR",
+      "name": "IET Image Processing",
+      "kind": "journal",
+      "ccf": "C",
+      "aliases": [],
+      "page": 46
+    },
+    {
+      "short": "JVCIR",
+      "name": "Journal of Visual Communication and Image Representation",
+      "kind": "journal",
+      "ccf": "C",
+      "aliases": [],
+      "page": 46
+    },
+    {
+      "short": "MS",
+      "name": "Multimedia Systems",
+      "kind": "journal",
+      "ccf": "C",
+      "aliases": [],
+      "page": 46
+    },
+    {
+      "short": "MTA",
+      "name": "Multimedia Tools and Applications",
+      "kind": "journal",
+      "ccf": "C",
+      "aliases": [],
+      "page": 46
+    },
+    {
+      "short": "SIGPRO",
+      "name": "Signal Processing",
+      "kind": "journal",
+      "ccf": "C",
+      "aliases": [],
+      "page": 46
+    },
+    {
+      "short": "IMAGE",
+      "name": "Signal Processing: Image Communication",
+      "kind": "journal",
+      "ccf": "C",
+      "aliases": [],
+      "page": 46
+    },
+    {
+      "short": "TVC",
+      "name": "The Visual Computer",
+      "kind": "journal",
+      "ccf": "C",
+      "aliases": [],
+      "page": 46
+    },
+    {
+      "short": "VI",
+      "name": "Visual Informatics",
+      "kind": "journal",
+      "ccf": "C",
+      "aliases": [],
+      "page": 46
+    },
+    {
+      "short": "VRIH",
+      "name": "Virtual Reality & Intelligent Hardware",
+      "kind": "journal",
+      "ccf": "C",
+      "aliases": [],
+      "page": 46
+    },
+    {
+      "short": "GMOD",
+      "name": "Graphical Models",
+      "kind": "journal",
+      "ccf": "C",
+      "aliases": [],
+      "page": 46
+    },
+    {
+      "short": "ACM MM",
+      "name": "ACM International Conference on Multimedia",
+      "kind": "conference",
+      "ccf": "A",
+      "aliases": [
+        "ACM Multimedia",
+        "ACM MM",
+        "ACM International Conference on Multimedia"
+      ],
+      "page": 47
+    },
+    {
+      "short": "SIGGRAPH",
+      "name": "ACM Special Interest Group on Computer Graphics",
+      "kind": "conference",
+      "ccf": "A",
+      "aliases": [],
+      "page": 47
+    },
+    {
+      "short": "VR",
+      "name": "IEEE Conference on Virtual Reality and 3D User Interfaces",
+      "kind": "conference",
+      "ccf": "A",
+      "aliases": [
+        "IEEE Virtual Reality"
+      ],
+      "page": 47
+    },
+    {
+      "short": "IEEE VIS",
+      "name": "IEEE Visualization Conference",
+      "kind": "conference",
+      "ccf": "A",
+      "aliases": [],
+      "page": 47
+    },
+    {
+      "short": "ICMR",
+      "name": "ACM SIGMM International Conference on Multimedia Retrieval",
+      "kind": "conference",
+      "ccf": "B",
+      "aliases": [],
+      "page": 48
+    },
+    {
+      "short": "I3D",
+      "name": "ACM SIGGRAPH Symposium on Interactive 3D Graphics and Games",
+      "kind": "conference",
+      "ccf": "B",
+      "aliases": [],
+      "page": 48
+    },
+    {
+      "short": "SCA",
+      "name": "ACM SIGGRAPH/Eurographics Symposium on Computer Animation",
+      "kind": "conference",
+      "ccf": "B",
+      "aliases": [],
+      "page": 48
+    },
+    {
+      "short": "DCC",
+      "name": "Data Compression Conference",
+      "kind": "conference",
+      "ccf": "B",
+      "aliases": [],
+      "page": 48
+    },
+    {
+      "short": "Eurographics",
+      "name": "Annual Conference of the European Association for Computer Graphics",
+      "kind": "conference",
+      "ccf": "B",
+      "aliases": [],
+      "page": 48
+    },
+    {
+      "short": "EuroVis",
+      "name": "Eurographics Conference on Visualization",
+      "kind": "conference",
+      "ccf": "B",
+      "aliases": [],
+      "page": 48
+    },
+    {
+      "short": "SGP",
+      "name": "Eurographics Symposium on Geometry Processing",
+      "kind": "conference",
+      "ccf": "B",
+      "aliases": [],
+      "page": 48
+    },
+    {
+      "short": "EGSR",
+      "name": "Eurographics Symposium on Rendering",
+      "kind": "conference",
+      "ccf": "B",
+      "aliases": [],
+      "page": 48
+    },
+    {
+      "short": "ICASSP",
+      "name": "IEEE International Conference on Acoustics, Speech and Signal Processing",
+      "kind": "conference",
+      "ccf": "B",
+      "aliases": [],
+      "page": 48
+    },
+    {
+      "short": "ICME",
+      "name": "IEEE International Conference on Multimedia & Expo",
+      "kind": "conference",
+      "ccf": "B",
+      "aliases": [],
+      "page": 48
+    },
+    {
+      "short": "ISMAR",
+      "name": "International Symposium on Mixed and Augmented Reality",
+      "kind": "conference",
+      "ccf": "B",
+      "aliases": [],
+      "page": 48
+    },
+    {
+      "short": "PG",
+      "name": "Pacific Conference onComputer Graphics and Applications",
+      "kind": "conference",
+      "ccf": "B",
+      "aliases": [],
+      "page": 48
+    },
+    {
+      "short": "SPM",
+      "name": "Symposium on Solid and Physical Modeling",
+      "kind": "conference",
+      "ccf": "B",
+      "aliases": [],
+      "page": 48
+    },
+    {
+      "short": "INTER- SPEECH",
+      "name": "Conference of the International Speech Communication Association",
+      "kind": "conference",
+      "ccf": "B",
+      "aliases": [],
+      "page": 48
+    },
+    {
+      "short": "VRST",
+      "name": "ACM Symposium on Virtual Reality Software and Technology",
+      "kind": "conference",
+      "ccf": "C",
+      "aliases": [],
+      "page": 49
+    },
+    {
+      "short": "CASAXR",
+      "name": "International Conference on Computer Animation, Social Agents, and Extended Reality",
+      "kind": "conference",
+      "ccf": "C",
+      "aliases": [
+        "CASA",
+        "International Conference on Computer Animation and Social Agents"
+      ],
+      "page": 49
+    },
+    {
+      "short": "CGI",
+      "name": "Computer Graphics International",
+      "kind": "conference",
+      "ccf": "C",
+      "aliases": [],
+      "page": 49
+    },
+    {
+      "short": "GMP",
+      "name": "Geometric Modeling and Processing",
+      "kind": "conference",
+      "ccf": "C",
+      "aliases": [],
+      "page": 49
+    },
+    {
+      "short": "PacificVis",
+      "name": "IEEE Pacific Visualization Symposium",
+      "kind": "conference",
+      "ccf": "C",
+      "aliases": [],
+      "page": 49
+    },
+    {
+      "short": "3DV",
+      "name": "International Conference on 3D Vision",
+      "kind": "conference",
+      "ccf": "C",
+      "aliases": [],
+      "page": 49
+    },
+    {
+      "short": "CAD/Graphics",
+      "name": "International Conference on Computer-Aided Design and Computer Graphics Processing",
+      "kind": "conference",
+      "ccf": "C",
+      "aliases": [],
+      "page": 49
+    },
+    {
+      "short": "ICIP",
+      "name": "IEEE International Conference on Image Processing",
+      "kind": "conference",
+      "ccf": "C",
+      "aliases": [],
+      "page": 49
+    },
+    {
+      "short": "MMM",
+      "name": "International Conference on Multimedia Modeling",
+      "kind": "conference",
+      "ccf": "C",
+      "aliases": [],
+      "page": 49
+    },
+    {
+      "short": "MMAsia",
+      "name": "ACM Multimedia Asia",
+      "kind": "conference",
+      "ccf": "C",
+      "aliases": [],
+      "page": 49
+    },
+    {
+      "short": "SMI",
+      "name": "Shape Modeling International",
+      "kind": "conference",
+      "ccf": "C",
+      "aliases": [],
+      "page": 49
+    },
+    {
+      "short": "CVM",
+      "name": "Computational Visual Media",
+      "kind": "conference",
+      "ccf": "C",
+      "aliases": [],
+      "page": 49
+    },
+    {
+      "short": "PRCV",
+      "name": "Chinese Conference on Pattern Recognition and Computer Vision",
+      "kind": "conference",
+      "ccf": "C",
+      "aliases": [],
+      "page": 49
+    },
+    {
+      "short": "ICIG",
+      "name": "International Conference on Image and Graphics",
+      "kind": "conference",
+      "ccf": "C",
+      "aliases": [],
+      "page": 50
+    },
+    {
+      "short": "NCMMSC",
+      "name": "National Conference on Man-Machine Speech Communication",
+      "kind": "conference",
+      "ccf": "C",
+      "aliases": [],
+      "page": 50
+    },
+    {
+      "short": "ASRU",
+      "name": "Automatic Speech Recognition and Understanding Workshop",
+      "kind": "conference",
+      "ccf": "C",
+      "aliases": [],
+      "page": 50
+    },
+    {
+      "short": "SLT",
+      "name": "Spoken Language Technology",
+      "kind": "conference",
+      "ccf": "C",
+      "aliases": [],
+      "page": 50
+    },
+    {
+      "short": "AI",
+      "name": "Artificial Intelligence",
+      "kind": "journal",
+      "ccf": "A",
+      "aliases": [],
+      "page": 51
+    },
+    {
+      "short": "TPAMI",
+      "name": "IEEE Transactions on Pattern Analysis and Machine Intelligence",
+      "kind": "journal",
+      "ccf": "A",
+      "aliases": [],
+      "page": 51
+    },
+    {
+      "short": "IJCV",
+      "name": "International Journal of Computer Vision",
+      "kind": "journal",
+      "ccf": "A",
+      "aliases": [],
+      "page": 51
+    },
+    {
+      "short": "JMLR",
+      "name": "Journal of Machine Learning Research",
+      "kind": "journal",
+      "ccf": "A",
+      "aliases": [],
+      "page": 51
+    },
+    {
+      "short": "TAP",
+      "name": "ACM Transactions on Applied Perception",
+      "kind": "journal",
+      "ccf": "B",
+      "aliases": [],
+      "page": 52
+    },
+    {
+      "short": "AAMAS",
+      "name": "Autonomous Agents and Multi-Agent Systems",
+      "kind": "journal",
+      "ccf": "B",
+      "aliases": [],
+      "page": 52
+    },
+    {
+      "short": "Computational Linguistics",
+      "name": "Computational Linguistics",
+      "kind": "journal",
+      "ccf": "B",
+      "aliases": [],
+      "page": 52
+    },
+    {
+      "short": "CVIU",
+      "name": "Computer Vision and Image Understanding",
+      "kind": "journal",
+      "ccf": "B",
+      "aliases": [],
+      "page": 52
+    },
+    {
+      "short": "DKE",
+      "name": "Data & Knowledge Engineering",
+      "kind": "journal",
+      "ccf": "B",
+      "aliases": [],
+      "page": 52
+    },
+    {
+      "short": "Evolutionary Computation",
+      "name": "Evolutionary Computation",
+      "kind": "journal",
+      "ccf": "B",
+      "aliases": [],
+      "page": 52
+    },
+    {
+      "short": "TAC",
+      "name": "IEEE Transactions on Affective Computing",
+      "kind": "journal",
+      "ccf": "B",
+      "aliases": [],
+      "page": 52
+    },
+    {
+      "short": "TASLP",
+      "name": "IEEE Transactions on Audio, Speech and Language Processing",
+      "kind": "journal",
+      "ccf": "B",
+      "aliases": [
+        "IEEE/ACM Transactions on Audio, Speech and Language Processing"
+      ],
+      "page": 52
+    },
+    {
+      "short": "IEEE Transactions on Cybernetics",
+      "name": "IEEE Transactions on Cybernetics",
+      "kind": "journal",
+      "ccf": "B",
+      "aliases": [],
+      "page": 52
+    },
+    {
+      "short": "TEC",
+      "name": "IEEE Transactions on Evolutionary Computation",
+      "kind": "journal",
+      "ccf": "B",
+      "aliases": [],
+      "page": 52
+    },
+    {
+      "short": "TFS",
+      "name": "IEEE Transactions on Fuzzy Systems",
+      "kind": "journal",
+      "ccf": "B",
+      "aliases": [],
+      "page": 52
+    },
+    {
+      "short": "TNNLS",
+      "name": "IEEE Transactions on Neural Networks and learning systems",
+      "kind": "journal",
+      "ccf": "B",
+      "aliases": [],
+      "page": 52
+    },
+    {
+      "short": "IJAR",
+      "name": "International Journal of Approximate Reasoning",
+      "kind": "journal",
+      "ccf": "B",
+      "aliases": [],
+      "page": 52
+    },
+    {
+      "short": "JAIR",
+      "name": "Journal of Artificial Intelligence Research",
+      "kind": "journal",
+      "ccf": "B",
+      "aliases": [],
+      "page": 53
+    },
+    {
+      "short": "Journal of Automated Reasoning",
+      "name": "Journal of Automated Reasoning",
+      "kind": "journal",
+      "ccf": "B",
+      "aliases": [],
+      "page": 53
+    },
+    {
+      "short": "JSLHR",
+      "name": "Journal of Speech, Language, and Hearing Research",
+      "kind": "journal",
+      "ccf": "B",
+      "aliases": [],
+      "page": 53
+    },
+    {
+      "short": "Machine Learning",
+      "name": "Machine Learning",
+      "kind": "journal",
+      "ccf": "B",
+      "aliases": [],
+      "page": 53
+    },
+    {
+      "short": "Neural Computation",
+      "name": "Neural Computation",
+      "kind": "journal",
+      "ccf": "B",
+      "aliases": [],
+      "page": 53
+    },
+    {
+      "short": "Neural Networks",
+      "name": "Neural Networks",
+      "kind": "journal",
+      "ccf": "B",
+      "aliases": [],
+      "page": 53
+    },
+    {
+      "short": "PR",
+      "name": "Pattern Recognition",
+      "kind": "journal",
+      "ccf": "B",
+      "aliases": [],
+      "page": 53
+    },
+    {
+      "short": "TACL",
+      "name": "Transactions of the Association for Computational Linguistics",
+      "kind": "journal",
+      "ccf": "B",
+      "aliases": [],
+      "page": 53
+    },
+    {
+      "short": "TALLIP",
+      "name": "ACM Transactions on Asian and Low-Resource Language Information Processing",
+      "kind": "journal",
+      "ccf": "C",
+      "aliases": [],
+      "page": 54
+    },
+    {
+      "short": "Applied Intelligence",
+      "name": "Applied Intelligence",
+      "kind": "journal",
+      "ccf": "C",
+      "aliases": [],
+      "page": 54
+    },
+    {
+      "short": "AIM",
+      "name": "Artificial Intelligence in Medicine",
+      "kind": "journal",
+      "ccf": "C",
+      "aliases": [],
+      "page": 54
+    },
+    {
+      "short": "Artificial Life",
+      "name": "Artificial Life",
+      "kind": "journal",
+      "ccf": "C",
+      "aliases": [],
+      "page": 54
+    },
+    {
+      "short": "Computational Intelligence",
+      "name": "Computational Intelligence",
+      "kind": "journal",
+      "ccf": "C",
+      "aliases": [],
+      "page": 54
+    },
+    {
+      "short": "Computer Speech & Language",
+      "name": "Computer Speech & Language",
+      "kind": "journal",
+      "ccf": "C",
+      "aliases": [],
+      "page": 54
+    },
+    {
+      "short": "Connection Science",
+      "name": "Connection Science",
+      "kind": "journal",
+      "ccf": "C",
+      "aliases": [],
+      "page": 54
+    },
+    {
+      "short": "DSS",
+      "name": "Decision Support Systems",
+      "kind": "journal",
+      "ccf": "C",
+      "aliases": [],
+      "page": 54
+    },
+    {
+      "short": "EAAI",
+      "name": "Engineering Applications of Artificial Intelligence",
+      "kind": "journal",
+      "ccf": "C",
+      "aliases": [],
+      "page": 54
+    },
+    {
+      "short": "Expert Systems",
+      "name": "Expert Systems",
+      "kind": "journal",
+      "ccf": "C",
+      "aliases": [],
+      "page": 54
+    },
+    {
+      "short": "ESWA",
+      "name": "Expert Systems with Applications",
+      "kind": "journal",
+      "ccf": "C",
+      "aliases": [],
+      "page": 54
+    },
+    {
+      "short": "Fuzzy Sets and Systems",
+      "name": "Fuzzy Sets and Systems",
+      "kind": "journal",
+      "ccf": "C",
+      "aliases": [],
+      "page": 54
+    },
+    {
+      "short": "TG",
+      "name": "IEEE Transactions on Games",
+      "kind": "journal",
+      "ccf": "C",
+      "aliases": [],
+      "page": 54
+    },
+    {
+      "short": "IET-CVI",
+      "name": "IET Computer Vision",
+      "kind": "journal",
+      "ccf": "C",
+      "aliases": [],
+      "page": 54
+    },
+    {
+      "short": "IET Signal Processing",
+      "name": "IET Signal Processing",
+      "kind": "journal",
+      "ccf": "C",
+      "aliases": [],
+      "page": 54
+    },
+    {
+      "short": "IVC",
+      "name": "Image and Vision Computing",
+      "kind": "journal",
+      "ccf": "C",
+      "aliases": [],
+      "page": 55
+    },
+    {
+      "short": "IDA",
+      "name": "Intelligent Data Analysis",
+      "kind": "journal",
+      "ccf": "C",
+      "aliases": [],
+      "page": 55
+    },
+    {
+      "short": "IJCIA",
+      "name": "International Journal of Computational Intelligence and Applications",
+      "kind": "journal",
+      "ccf": "C",
+      "aliases": [],
+      "page": 55
+    },
+    {
+      "short": "IJIS",
+      "name": "International Journal of Intelligent Systems",
+      "kind": "journal",
+      "ccf": "C",
+      "aliases": [],
+      "page": 55
+    },
+    {
+      "short": "IJNS",
+      "name": "International Journal of Neural Systems",
+      "kind": "journal",
+      "ccf": "C",
+      "aliases": [],
+      "page": 55
+    },
+    {
+      "short": "IJPRAI",
+      "name": "International Journal of Pattern Recognition and Artificial Intelligence",
+      "kind": "journal",
+      "ccf": "C",
+      "aliases": [],
+      "page": 55
+    },
+    {
+      "short": "IJUFKS",
+      "name": "International Journal of Uncertainty, Fuzziness and Knowledge-Based Systems",
+      "kind": "journal",
+      "ccf": "C",
+      "aliases": [],
+      "page": 55
+    },
+    {
+      "short": "IJDAR",
+      "name": "International Journal on Document Analysis and Recognition",
+      "kind": "journal",
+      "ccf": "C",
+      "aliases": [],
+      "page": 55
+    },
+    {
+      "short": "JETAI",
+      "name": "Journal of Experimental and Theoretical Artificial Intelligence",
+      "kind": "journal",
+      "ccf": "C",
+      "aliases": [],
+      "page": 55
+    },
+    {
+      "short": "KBS",
+      "name": "Knowledge-Based Systems",
+      "kind": "journal",
+      "ccf": "C",
+      "aliases": [],
+      "page": 55
+    },
+    {
+      "short": "Machine Translation",
+      "name": "Machine Translation",
+      "kind": "journal",
+      "ccf": "C",
+      "aliases": [],
+      "page": 55
+    },
+    {
+      "short": "Machine Vision and Applications",
+      "name": "Machine Vision and Applications",
+      "kind": "journal",
+      "ccf": "C",
+      "aliases": [],
+      "page": 55
+    },
+    {
+      "short": "Natural Computing",
+      "name": "Natural Computing",
+      "kind": "journal",
+      "ccf": "C",
+      "aliases": [],
+      "page": 55
+    },
+    {
+      "short": "NLE",
+      "name": "Natural Language Engineering",
+      "kind": "journal",
+      "ccf": "C",
+      "aliases": [],
+      "page": 55
+    },
+    {
+      "short": "NCA",
+      "name": "Neural Computing and Applications",
+      "kind": "journal",
+      "ccf": "C",
+      "aliases": [],
+      "page": 55
+    },
+    {
+      "short": "NPL",
+      "name": "Neural Processing Letters",
+      "kind": "journal",
+      "ccf": "C",
+      "aliases": [],
+      "page": 56
+    },
+    {
+      "short": "Neurocomputing",
+      "name": "Neurocomputing",
+      "kind": "journal",
+      "ccf": "C",
+      "aliases": [],
+      "page": 56
+    },
+    {
+      "short": "PAA",
+      "name": "Pattern Analysis and Applications",
+      "kind": "journal",
+      "ccf": "C",
+      "aliases": [],
+      "page": 56
+    },
+    {
+      "short": "PRL",
+      "name": "Pattern Recognition Letters",
+      "kind": "journal",
+      "ccf": "C",
+      "aliases": [],
+      "page": 56
+    },
+    {
+      "short": "Soft Computing",
+      "name": "Soft Computing",
+      "kind": "journal",
+      "ccf": "C",
+      "aliases": [],
+      "page": 56
+    },
+    {
+      "short": "WI",
+      "name": "Web Intelligence",
+      "kind": "journal",
+      "ccf": "C",
+      "aliases": [],
+      "page": 56
+    },
+    {
+      "short": "TIIS",
+      "name": "ACM Transactions on Interactive Intelligent Systems",
+      "kind": "journal",
+      "ccf": "C",
+      "aliases": [],
+      "page": 56
+    },
+    {
+      "short": "TELO",
+      "name": "ACM Transactions on Evolutionary Learning and Optimization",
+      "kind": "journal",
+      "ccf": "C",
+      "aliases": [],
+      "page": 56
+    },
+    {
+      "short": "JATS",
+      "name": "ACM Journal on Autonomous Transportation Systems",
+      "kind": "journal",
+      "ccf": "C",
+      "aliases": [],
+      "page": 56
+    },
+    {
+      "short": "AAAI",
+      "name": "AAAI Conference on Artificial Intelligence",
+      "kind": "conference",
+      "ccf": "A",
+      "aliases": [],
+      "page": 57
+    },
+    {
+      "short": "NeurIPS",
+      "name": "Conference on Neural Information Processing Systems",
+      "kind": "conference",
+      "ccf": "A",
+      "aliases": [
+        "NIPS",
+        "Advances in Neural Information Processing Systems"
+      ],
+      "page": 57
+    },
+    {
+      "short": "ACL",
+      "name": "Annual Meeting of the Association for Computational Linguistics",
+      "kind": "conference",
+      "ccf": "A",
+      "aliases": [],
+      "page": 57
+    },
+    {
+      "short": "CVPR",
+      "name": "IEEE/CVF Computer Vision and Pattern Recognition Conference",
+      "kind": "conference",
+      "ccf": "A",
+      "aliases": [],
+      "page": 57
+    },
+    {
+      "short": "ICCV",
+      "name": "International Conference on Computer Vision",
+      "kind": "conference",
+      "ccf": "A",
+      "aliases": [],
+      "page": 57
+    },
+    {
+      "short": "ICML",
+      "name": "International Conference on Machine Learning",
+      "kind": "conference",
+      "ccf": "A",
+      "aliases": [],
+      "page": 57
+    },
+    {
+      "short": "ICLR",
+      "name": "International Conference on Learning Representations",
+      "kind": "conference",
+      "ccf": "A",
+      "aliases": [],
+      "page": 57
+    },
+    {
+      "short": "COLT",
+      "name": "Annual Conference on Computational Learning Theory",
+      "kind": "conference",
+      "ccf": "B",
+      "aliases": [],
+      "page": 58
+    },
+    {
+      "short": "EMNLP",
+      "name": "Conference on Empirical Methods in Natural Language Processing",
+      "kind": "conference",
+      "ccf": "B",
+      "aliases": [],
+      "page": 58
+    },
+    {
+      "short": "ECAI",
+      "name": "European Conference on Artificial Intelligence",
+      "kind": "conference",
+      "ccf": "B",
+      "aliases": [],
+      "page": 58
+    },
+    {
+      "short": "ECCV",
+      "name": "European Conference on Computer Vision",
+      "kind": "conference",
+      "ccf": "B",
+      "aliases": [],
+      "page": 58
+    },
+    {
+      "short": "ICRA",
+      "name": "IEEE International Conference on Robotics and Automation",
+      "kind": "conference",
+      "ccf": "B",
+      "aliases": [],
+      "page": 58
+    },
+    {
+      "short": "ICAPS",
+      "name": "International Conference on Automated Planning and Scheduling",
+      "kind": "conference",
+      "ccf": "B",
+      "aliases": [],
+      "page": 58
+    },
+    {
+      "short": "ICCBR",
+      "name": "International Conference on Case-Based Reasoning",
+      "kind": "conference",
+      "ccf": "B",
+      "aliases": [],
+      "page": 58
+    },
+    {
+      "short": "COLING",
+      "name": "International Conference on Computational Linguistics",
+      "kind": "conference",
+      "ccf": "B",
+      "aliases": [],
+      "page": 58
+    },
+    {
+      "short": "KR",
+      "name": "International Conference on Principles of Knowledge Representation and Reasoning",
+      "kind": "conference",
+      "ccf": "B",
+      "aliases": [],
+      "page": 58
+    },
+    {
+      "short": "UAI",
+      "name": "Conference on Uncertainty in Artificial Intelligence",
+      "kind": "conference",
+      "ccf": "B",
+      "aliases": [],
+      "page": 58
+    },
+    {
+      "short": "AAMAS",
+      "name": "International Joint Conference on Autonomous Agents and Multi-agent Systems",
+      "kind": "conference",
+      "ccf": "B",
+      "aliases": [],
+      "page": 58
+    },
+    {
+      "short": "PPSN",
+      "name": "Parallel Problem Solving from Nature",
+      "kind": "conference",
+      "ccf": "B",
+      "aliases": [],
+      "page": 58
+    },
+    {
+      "short": "NAACL",
+      "name": "North American Chapter of the Association for Computational Linguistics",
+      "kind": "conference",
+      "ccf": "B",
+      "aliases": [
+        "North American Chapter of the Association for Computational Linguistics"
+      ],
+      "page": 58
+    },
+    {
+      "short": "IJCAI",
+      "name": "International Joint Conference on Artificial Intelligence",
+      "kind": "conference",
+      "ccf": "B",
+      "aliases": [],
+      "page": 58
+    },
+    {
+      "short": "AISTATS",
+      "name": "International Conference on Artificial Intelligence and Statistics",
+      "kind": "conference",
+      "ccf": "C",
+      "aliases": [],
+      "page": 59
+    },
+    {
+      "short": "ACCV",
+      "name": "Asian Conference on Computer Vision",
+      "kind": "conference",
+      "ccf": "C",
+      "aliases": [],
+      "page": 59
+    },
+    {
+      "short": "ACML",
+      "name": "Asian Conference on Machine Learning",
+      "kind": "conference",
+      "ccf": "C",
+      "aliases": [],
+      "page": 59
+    },
+    {
+      "short": "BMVC",
+      "name": "British Machine Vision Conference",
+      "kind": "conference",
+      "ccf": "C",
+      "aliases": [],
+      "page": 59
+    },
+    {
+      "short": "NLPCC",
+      "name": "CCF International Conference on Natural Language Processing and Chinese Computing",
+      "kind": "conference",
+      "ccf": "C",
+      "aliases": [],
+      "page": 59
+    },
+    {
+      "short": "CoNLL",
+      "name": "Conference on Computational Natural Language Learning",
+      "kind": "conference",
+      "ccf": "C",
+      "aliases": [],
+      "page": 59
+    },
+    {
+      "short": "GECCO",
+      "name": "Genetic and Evolutionary Computation Conference",
+      "kind": "conference",
+      "ccf": "C",
+      "aliases": [],
+      "page": 59
+    },
+    {
+      "short": "ICTAI",
+      "name": "IEEE International Conference on Tools with Artificial Intelligence",
+      "kind": "conference",
+      "ccf": "C",
+      "aliases": [],
+      "page": 59
+    },
+    {
+      "short": "IROS",
+      "name": "IEEE\\RSJ International Conference on Intelligent Robots and Systems",
+      "kind": "conference",
+      "ccf": "C",
+      "aliases": [],
+      "page": 59
+    },
+    {
+      "short": "ALT",
+      "name": "International Conference on Algorithmic Learning Theory",
+      "kind": "conference",
+      "ccf": "C",
+      "aliases": [],
+      "page": 59
+    },
+    {
+      "short": "ICANN",
+      "name": "International Conference on Artificial Neural Networks",
+      "kind": "conference",
+      "ccf": "C",
+      "aliases": [],
+      "page": 59
+    },
+    {
+      "short": "FG",
+      "name": "IEEE International Conference on Automatic Face and Gesture Recognition",
+      "kind": "conference",
+      "ccf": "C",
+      "aliases": [],
+      "page": 59
+    },
+    {
+      "short": "ICDAR",
+      "name": "International Conference on Document Analysis and Recognition",
+      "kind": "conference",
+      "ccf": "C",
+      "aliases": [],
+      "page": 60
+    },
+    {
+      "short": "ILP",
+      "name": "International Conference on Inductive Logic Programming",
+      "kind": "conference",
+      "ccf": "C",
+      "aliases": [],
+      "page": 60
+    },
+    {
+      "short": "KSEM",
+      "name": "International conference on Knowledge Science, Engineering and Management",
+      "kind": "conference",
+      "ccf": "C",
+      "aliases": [],
+      "page": 60
+    },
+    {
+      "short": "ICONIP",
+      "name": "International Conference on Neural Information Processing",
+      "kind": "conference",
+      "ccf": "C",
+      "aliases": [],
+      "page": 60
+    },
+    {
+      "short": "ICPR",
+      "name": "International Conference on Pattern Recognition",
+      "kind": "conference",
+      "ccf": "C",
+      "aliases": [],
+      "page": 60
+    },
+    {
+      "short": "IJCB",
+      "name": "International Joint Conference on Biometrics",
+      "kind": "conference",
+      "ccf": "C",
+      "aliases": [],
+      "page": 60
+    },
+    {
+      "short": "IJCNN",
+      "name": "International Joint Conference on Neural Networks",
+      "kind": "conference",
+      "ccf": "C",
+      "aliases": [],
+      "page": 60
+    },
+    {
+      "short": "PRICAI",
+      "name": "Pacific Rim International Conference on Artificial Intelligence",
+      "kind": "conference",
+      "ccf": "C",
+      "aliases": [],
+      "page": 60
+    },
+    {
+      "short": "IEEE CEC",
+      "name": "Congress on Evolutionary Computation",
+      "kind": "conference",
+      "ccf": "C",
+      "aliases": [],
+      "page": 60
+    },
+    {
+      "short": "DAI",
+      "name": "International Conference on Distributed Artificial Intelligence",
+      "kind": "conference",
+      "ccf": "C",
+      "aliases": [],
+      "page": 60
+    },
+    {
+      "short": "TOCHI",
+      "name": "ACM Transactions on Computer-Human Interaction",
+      "kind": "journal",
+      "ccf": "A",
+      "aliases": [],
+      "page": 61
+    },
+    {
+      "short": "IJHCS",
+      "name": "International Journal of Human-Computer Studies",
+      "kind": "journal",
+      "ccf": "A",
+      "aliases": [],
+      "page": 61
+    },
+    {
+      "short": "CSCW",
+      "name": "Computer Supported Cooperative Work",
+      "kind": "journal",
+      "ccf": "B",
+      "aliases": [],
+      "page": 62
+    },
+    {
+      "short": "HCI",
+      "name": "Human-Computer Interaction",
+      "kind": "journal",
+      "ccf": "B",
+      "aliases": [],
+      "page": 62
+    },
+    {
+      "short": "IEEE Transactions on Human-Machine Systems",
+      "name": "IEEE Transactions on Human-Machine Systems",
+      "kind": "journal",
+      "ccf": "B",
+      "aliases": [],
+      "page": 62
+    },
+    {
+      "short": "IWC",
+      "name": "Interacting with Computers",
+      "kind": "journal",
+      "ccf": "B",
+      "aliases": [],
+      "page": 62
+    },
+    {
+      "short": "IJHCI",
+      "name": "International Journal of Human-Computer Interaction",
+      "kind": "journal",
+      "ccf": "B",
+      "aliases": [],
+      "page": 62
+    },
+    {
+      "short": "UMUAI",
+      "name": "User Modeling and User-Adapted Interaction",
+      "kind": "journal",
+      "ccf": "B",
+      "aliases": [],
+      "page": 62
+    },
+    {
+      "short": "TSMC",
+      "name": "IEEE Transactions on Systems, Man,and Cybernetics: Systems",
+      "kind": "journal",
+      "ccf": "B",
+      "aliases": [],
+      "page": 62
+    },
+    {
+      "short": "CCF TPCI",
+      "name": "CCF Transactions on Pervasive Computing and Interaction",
+      "kind": "journal",
+      "ccf": "B",
+      "aliases": [],
+      "page": 62
+    },
+    {
+      "short": "BIT",
+      "name": "Behaviour & Information Technology",
+      "kind": "journal",
+      "ccf": "C",
+      "aliases": [],
+      "page": 63
+    },
+    {
+      "short": "PUC",
+      "name": "Personal and Ubiquitous Computing",
+      "kind": "journal",
+      "ccf": "C",
+      "aliases": [],
+      "page": 63
+    },
+    {
+      "short": "PMC",
+      "name": "Pervasive and Mobile Computing",
+      "kind": "journal",
+      "ccf": "C",
+      "aliases": [],
+      "page": 63
+    },
+    {
+      "short": "PACMHCI",
+      "name": "Proceedings of the ACM on Human-Computer Interaction",
+      "kind": "journal",
+      "ccf": "C",
+      "aliases": [],
+      "page": 63
+    },
+    {
+      "short": "THRI",
+      "name": "ACM Transactions on Human-Robot Interaction",
+      "kind": "journal",
+      "ccf": "C",
+      "aliases": [],
+      "page": 63
+    },
+    {
+      "short": "CSCW",
+      "name": "ACM Conference On Computer-Supported Cooperative Work And Social Computing",
+      "kind": "conference",
+      "ccf": "A",
+      "aliases": [],
+      "page": 64
+    },
+    {
+      "short": "CHI",
+      "name": "ACM Conference on Human Factors in Computing Systems",
+      "kind": "conference",
+      "ccf": "A",
+      "aliases": [],
+      "page": 64
+    },
+    {
+      "short": "UbiComp",
+      "name": "ACM international joint conference on Pervasive and Ubiquitous Computing",
+      "kind": "conference",
+      "ccf": "A",
+      "aliases": [],
+      "page": 64
+    },
+    {
+      "short": "UIST",
+      "name": "ACM Symposium on User Interface Software and Technology",
+      "kind": "conference",
+      "ccf": "A",
+      "aliases": [],
+      "page": 64
+    },
+    {
+      "short": "GROUP",
+      "name": "ACM International Conference on Supporting Group Work",
+      "kind": "conference",
+      "ccf": "B",
+      "aliases": [],
+      "page": 65
+    },
+    {
+      "short": "IUI",
+      "name": "ACM International Conference on Intelligent User Interfaces",
+      "kind": "conference",
+      "ccf": "B",
+      "aliases": [],
+      "page": 65
+    },
+    {
+      "short": "ISS",
+      "name": "ACM International Conference on Interactive Surfaces and Spaces",
+      "kind": "conference",
+      "ccf": "B",
+      "aliases": [],
+      "page": 65
+    },
+    {
+      "short": "ECSCW",
+      "name": "European Conference on Computer Supported Cooperative Work",
+      "kind": "conference",
+      "ccf": "B",
+      "aliases": [],
+      "page": 65
+    },
+    {
+      "short": "PERCOM",
+      "name": "IEEE International Conference on Pervasive Computing and Communications",
+      "kind": "conference",
+      "ccf": "B",
+      "aliases": [],
+      "page": 65
+    },
+    {
+      "short": "MobileHCI",
+      "name": "ACM International Conference on Mobile Human- Computer Interaction",
+      "kind": "conference",
+      "ccf": "B",
+      "aliases": [],
+      "page": 65
+    },
+    {
+      "short": "ICWSM",
+      "name": "The International AAAI Conference on Web and Social Media",
+      "kind": "conference",
+      "ccf": "B",
+      "aliases": [],
+      "page": 65
+    },
+    {
+      "short": "DIS",
+      "name": "ACM SIGCHI Conference on Designing Interactive Systems",
+      "kind": "conference",
+      "ccf": "C",
+      "aliases": [],
+      "page": 66
+    },
+    {
+      "short": "ICMI",
+      "name": "ACM International Conference on Multimodal Interaction",
+      "kind": "conference",
+      "ccf": "C",
+      "aliases": [],
+      "page": 66
+    },
+    {
+      "short": "ASSETS",
+      "name": "International ACM SIGACCESS Conference on Computers and Accessibility",
+      "kind": "conference",
+      "ccf": "C",
+      "aliases": [],
+      "page": 66
+    },
+    {
+      "short": "GI",
+      "name": "Graphics Interface",
+      "kind": "conference",
+      "ccf": "C",
+      "aliases": [],
+      "page": 66
+    },
+    {
+      "short": "UIC",
+      "name": "IEEE International Conference on Ubiquitous Intelligence and Computing",
+      "kind": "conference",
+      "ccf": "C",
+      "aliases": [],
+      "page": 66
+    },
+    {
+      "short": "IEEE World Haptics Conference",
+      "name": "IEEE World Haptics Conference",
+      "kind": "conference",
+      "ccf": "C",
+      "aliases": [],
+      "page": 66
+    },
+    {
+      "short": "INTERACT",
+      "name": "International Conference on Human- Computer Interaction of International Federation for Information Processing",
+      "kind": "conference",
+      "ccf": "C",
+      "aliases": [],
+      "page": 66
+    },
+    {
+      "short": "IDC",
+      "name": "ACM Interaction Design and Children",
+      "kind": "conference",
+      "ccf": "C",
+      "aliases": [],
+      "page": 66
+    },
+    {
+      "short": "CollaborateCom",
+      "name": "International Conference on Collaborative Computing: Networking, Applications and Worksharing",
+      "kind": "conference",
+      "ccf": "C",
+      "aliases": [],
+      "page": 66
+    },
+    {
+      "short": "CSCWD",
+      "name": "International Conference on Computer Supported Cooperative Work in Design",
+      "kind": "conference",
+      "ccf": "C",
+      "aliases": [],
+      "page": 66
+    },
+    {
+      "short": "CoopIS",
+      "name": "International Conference on Cooperative Information Systems",
+      "kind": "conference",
+      "ccf": "C",
+      "aliases": [],
+      "page": 66
+    },
+    {
+      "short": "MobiQuitous",
+      "name": "International Conference on Mobile and Ubiquitous Systems: Computing, Networking and Services",
+      "kind": "conference",
+      "ccf": "C",
+      "aliases": [],
+      "page": 66
+    },
+    {
+      "short": "AVI",
+      "name": "International Working Conference on Advanced Visual Interfaces",
+      "kind": "conference",
+      "ccf": "C",
+      "aliases": [],
+      "page": 66
+    },
+    {
+      "short": "GPC",
+      "name": "Conference on Green, Pervasive and Cloud Computing",
+      "kind": "conference",
+      "ccf": "C",
+      "aliases": [],
+      "page": 66
+    },
+    {
+      "short": "ICXR",
+      "name": "CCF International Conference on Extended Reality",
+      "kind": "conference",
+      "ccf": "C",
+      "aliases": [],
+      "page": 66
+    },
+    {
+      "short": "JACM",
+      "name": "Journal of the ACM",
+      "kind": "journal",
+      "ccf": "A",
+      "aliases": [],
+      "page": 67
+    },
+    {
+      "short": "Proc. IEEE",
+      "name": "Proceedings of the IEEE",
+      "kind": "journal",
+      "ccf": "A",
+      "aliases": [],
+      "page": 67
+    },
+    {
+      "short": "SCIS",
+      "name": "Science China Information Sciences",
+      "kind": "journal",
+      "ccf": "A",
+      "aliases": [],
+      "page": 67
+    },
+    {
+      "short": "Bioinformatics",
+      "name": "Bioinformatics",
+      "kind": "journal",
+      "ccf": "A",
+      "aliases": [],
+      "page": 67
+    },
+    {
+      "short": "Briefings in Bioinformatics",
+      "name": "Briefings in Bioinformatics",
+      "kind": "journal",
+      "ccf": "B",
+      "aliases": [],
+      "page": 68
+    },
+    {
+      "short": "Cognition",
+      "name": "Cognition",
+      "kind": "journal",
+      "ccf": "B",
+      "aliases": [],
+      "page": 68
+    },
+    {
+      "short": "TASAE",
+      "name": "IEEE Transactions on Automation Science and Engineering",
+      "kind": "journal",
+      "ccf": "B",
+      "aliases": [],
+      "page": 68
+    },
+    {
+      "short": "TGARS",
+      "name": "IEEE Transactions on Geoscience and Remote Sensing",
+      "kind": "journal",
+      "ccf": "B",
+      "aliases": [],
+      "page": 68
+    },
+    {
+      "short": "TITS",
+      "name": "IEEE Transactions on Intelligent Transportation Systems",
+      "kind": "journal",
+      "ccf": "B",
+      "aliases": [],
+      "page": 68
+    },
+    {
+      "short": "TMI",
+      "name": "IEEE Transactions on Medical Imaging",
+      "kind": "journal",
+      "ccf": "B",
+      "aliases": [],
+      "page": 68
+    },
+    {
+      "short": "TR",
+      "name": "IEEE Transactions on Robotics",
+      "kind": "journal",
+      "ccf": "B",
+      "aliases": [],
+      "page": 68
+    },
+    {
+      "short": "TCBB",
+      "name": "IEEE/ACM Transactions on Computational Biology and Bioinformatics",
+      "kind": "journal",
+      "ccf": "B",
+      "aliases": [],
+      "page": 68
+    },
+    {
+      "short": "JCST",
+      "name": "Journal of Computer Science and Technology",
+      "kind": "journal",
+      "ccf": "B",
+      "aliases": [],
+      "page": 68
+    },
+    {
+      "short": "JAMIA",
+      "name": "Journal of the American Medical Informatics Association",
+      "kind": "journal",
+      "ccf": "B",
+      "aliases": [],
+      "page": 68
+    },
+    {
+      "short": "PLOS Computational Biology",
+      "name": "PLOS Computational Biology",
+      "kind": "journal",
+      "ccf": "B",
+      "aliases": [],
+      "page": 68
+    },
+    {
+      "short": "The Computer Journal",
+      "name": "The Computer Journal",
+      "kind": "journal",
+      "ccf": "B",
+      "aliases": [],
+      "page": 68
+    },
+    {
+      "short": "WWW",
+      "name": "World Wide Web",
+      "kind": "journal",
+      "ccf": "B",
+      "aliases": [],
+      "page": 68
+    },
+    {
+      "short": "FCS",
+      "name": "Frontiers of Computer Science",
+      "kind": "journal",
+      "ccf": "B",
+      "aliases": [],
+      "page": 68
+    },
+    {
+      "short": "BCRA",
+      "name": "Blockchain: Research and Applications",
+      "kind": "journal",
+      "ccf": "B",
+      "aliases": [],
+      "page": 68
+    },
+    {
+      "short": "BMC Bioinformatics",
+      "name": "BMC Bioinformatics",
+      "kind": "journal",
+      "ccf": "C",
+      "aliases": [],
+      "page": 69
+    },
+    {
+      "short": "Cybernetics and Systems",
+      "name": "Cybernetics and Systems",
+      "kind": "journal",
+      "ccf": "C",
+      "aliases": [],
+      "page": 69
+    },
+    {
+      "short": "IEEE Geoscience and Remote Sensing Letters",
+      "name": "IEEE Geoscience and Remote Sensing Letters",
+      "kind": "journal",
+      "ccf": "C",
+      "aliases": [],
+      "page": 69
+    },
+    {
+      "short": "JBHI",
+      "name": "IEEE Journal of Biomedical and Health Informatics",
+      "kind": "journal",
+      "ccf": "C",
+      "aliases": [],
+      "page": 69
+    },
+    {
+      "short": "TBD",
+      "name": "IEEE Transactions on Big Data",
+      "kind": "journal",
+      "ccf": "C",
+      "aliases": [],
+      "page": 69
+    },
+    {
+      "short": "IET Intelligent Transport Systems",
+      "name": "IET Intelligent Transport Systems",
+      "kind": "journal",
+      "ccf": "C",
+      "aliases": [],
+      "page": 69
+    },
+    {
+      "short": "JBI",
+      "name": "Journal of Biomedical Informatics",
+      "kind": "journal",
+      "ccf": "C",
+      "aliases": [],
+      "page": 69
+    },
+    {
+      "short": "Medical Image Analysis",
+      "name": "Medical Image Analysis",
+      "kind": "journal",
+      "ccf": "C",
+      "aliases": [],
+      "page": 69
+    },
+    {
+      "short": "TII",
+      "name": "IEEE Transactions on Industrial Informatics",
+      "kind": "journal",
+      "ccf": "C",
+      "aliases": [],
+      "page": 69
+    },
+    {
+      "short": "TCPS",
+      "name": "ACM Transactions on Cyber-Physical Systems",
+      "kind": "journal",
+      "ccf": "C",
+      "aliases": [],
+      "page": 69
+    },
+    {
+      "short": "TOCE",
+      "name": "ACM Transactions on Computing Education",
+      "kind": "journal",
+      "ccf": "C",
+      "aliases": [],
+      "page": 69
+    },
+    {
+      "short": "EITEE",
+      "name": "ENGINEERING Information Technology & Electronic Engineering",
+      "kind": "journal",
+      "ccf": "C",
+      "aliases": [
+        "FITEE",
+        "Frontiers of Information Technology & Electronic Engineering"
+      ],
+      "page": 69
+    },
+    {
+      "short": "TCSS",
+      "name": "IEEE Transactions on Computational Social Systems",
+      "kind": "journal",
+      "ccf": "C",
+      "aliases": [],
+      "page": 69
+    },
+    {
+      "short": "IEEE Transactions on Reliability",
+      "name": "IEEE Transactions on Reliability",
+      "kind": "journal",
+      "ccf": "C",
+      "aliases": [],
+      "page": 69
+    },
+    {
+      "short": "HEALTH",
+      "name": "ACM Transactions on Computing for Healthcare",
+      "kind": "journal",
+      "ccf": "C",
+      "aliases": [],
+      "page": 69
+    },
+    {
+      "short": "ACM DLT",
+      "name": "ACM Distributed Ledger Technologies: Research and Practice",
+      "kind": "journal",
+      "ccf": "C",
+      "aliases": [],
+      "page": 69
+    },
+    {
+      "short": "WWW",
+      "name": "The Web Conference",
+      "kind": "conference",
+      "ccf": "A",
+      "aliases": [
+        "International World Wide Web Conference"
+      ],
+      "page": 70
+    },
+    {
+      "short": "RTSS",
+      "name": "IEEE Real-Time Systems Symposium",
+      "kind": "conference",
+      "ccf": "A",
+      "aliases": [],
+      "page": 70
+    },
+    {
+      "short": "CogSci",
+      "name": "Annual Meeting of the Cognitive Science Society",
+      "kind": "conference",
+      "ccf": "B",
+      "aliases": [],
+      "page": 71
+    },
+    {
+      "short": "BIBM",
+      "name": "IEEE International Conference on Bioinformatics and Biomedicine",
+      "kind": "conference",
+      "ccf": "B",
+      "aliases": [],
+      "page": 71
+    },
+    {
+      "short": "EMSOFT",
+      "name": "International Conference on Embedded Software",
+      "kind": "conference",
+      "ccf": "B",
+      "aliases": [],
+      "page": 71
+    },
+    {
+      "short": "ISMB",
+      "name": "International conference on Intelligent Systems for Molecular Biology",
+      "kind": "conference",
+      "ccf": "B",
+      "aliases": [],
+      "page": 71
+    },
+    {
+      "short": "RECOMB",
+      "name": "Annual International Conference on Research in Computational Molecular Biology",
+      "kind": "conference",
+      "ccf": "B",
+      "aliases": [],
+      "page": 71
+    },
+    {
+      "short": "MICCAI",
+      "name": "International Conference on Medical Image Computing and Computer-Assisted Intervention",
+      "kind": "conference",
+      "ccf": "B",
+      "aliases": [],
+      "page": 71
+    },
+    {
+      "short": "WINE",
+      "name": "Conference on Web and Internet Economics",
+      "kind": "conference",
+      "ccf": "B",
+      "aliases": [],
+      "page": 71
+    },
+    {
+      "short": "AMIA",
+      "name": "American Medical Informatics Association Annual Symposium",
+      "kind": "conference",
+      "ccf": "C",
+      "aliases": [],
+      "page": 72
+    },
+    {
+      "short": "APBC",
+      "name": "Asia Pacific Bioinformatics Conference",
+      "kind": "conference",
+      "ccf": "C",
+      "aliases": [],
+      "page": 72
+    },
+    {
+      "short": "IEEE BigData",
+      "name": "IEEE International Conference on Big Data",
+      "kind": "conference",
+      "ccf": "C",
+      "aliases": [],
+      "page": 72
+    },
+    {
+      "short": "IEEE CLOUD",
+      "name": "IEEE International Conference on Cloud Computing",
+      "kind": "conference",
+      "ccf": "C",
+      "aliases": [],
+      "page": 72
+    },
+    {
+      "short": "SMC",
+      "name": "IEEE International Conference on Systems, Man, and Cybernetics",
+      "kind": "conference",
+      "ccf": "C",
+      "aliases": [],
+      "page": 72
+    },
+    {
+      "short": "COSIT",
+      "name": "International Conference on Spatial Information Theory",
+      "kind": "conference",
+      "ccf": "C",
+      "aliases": [],
+      "page": 72
+    },
+    {
+      "short": "ISBRA",
+      "name": "International Symposium on Bioinformatics Research and Applications",
+      "kind": "conference",
+      "ccf": "C",
+      "aliases": [],
+      "page": 72
+    },
+    {
+      "short": "SAGT",
+      "name": "International Symposium on Algorithmic Game Theory",
+      "kind": "conference",
+      "ccf": "C",
+      "aliases": [],
+      "page": 72
+    },
+    {
+      "short": "SIGSPATIAL",
+      "name": "ACM Special Interest Group on Spatial Information",
+      "kind": "conference",
+      "ccf": "C",
+      "aliases": [],
+      "page": 72
+    },
+    {
+      "short": "ICIC",
+      "name": "International Conference on Intelligent Computing",
+      "kind": "conference",
+      "ccf": "C",
+      "aliases": [],
+      "page": 72
+    },
+    {
+      "short": "ICSS",
+      "name": "International Conference on Service Science",
+      "kind": "conference",
+      "ccf": "C",
+      "aliases": [],
+      "page": 72
+    },
+    {
+      "short": "AFT",
+      "name": "Advances in Financial Technologies",
+      "kind": "conference",
+      "ccf": "C",
+      "aliases": [],
+      "page": 72
+    },
+    {
+      "short": "IJTCS-FAW",
+      "name": "International Joint Conference on Theoretical Computer Science - Frontier of Algorithmic Wisdom",
+      "kind": "conference",
+      "ccf": "C",
+      "aliases": [],
+      "page": 72
+    }
+  ]
+}

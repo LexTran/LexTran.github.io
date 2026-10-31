@@ -1,11 +1,15 @@
 {
   "profile": "https://scholar.google.com/citations?user=wtordYAAAAAJ",
-  "last_attempt": "2026-10-31T09:38:43+00:00",
-  "last_success": "2026-10-31T09:38:43+00:00",
+  "last_attempt": "2026-10-31T09:57:25+00:00",
+  "last_success": "2026-10-31T09:57:25+00:00",
   "status": "success",
   "added": [],
   "updated": [],
   "warnings": [],
   "profile_papers": 7,
-  "catalogue_papers": 8
+  "catalogue_papers": 8,
+  "acceptance_news_added": [],
+  "unranked_venues": [
+    "paper-scholar-Y0pCki6q_DkC"
+  ]
 }

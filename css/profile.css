@@ -368,6 +368,7 @@ a.paper-figure::after {
 .authors { color: var(--ink-soft); font-size: 15.5px; line-height: 1.65; }
 .author-self { color: var(--ink); background: linear-gradient(transparent 52%, var(--marker) 52%, var(--marker) 92%, transparent 92%); padding: 0 2px; border-radius: 2px; }
 .venue { margin-top: 6px; font-size: 15px; font-style: italic; color: var(--ink-soft); }
+.venue-rank { display: inline-block; margin-left: 6px; padding: 1px 8px; border: 1px solid var(--line); border-radius: 999px; font: 12px/1.7 var(--sans); color: var(--link); background: var(--chip); white-space: nowrap; }
 .paper-link { display: inline-flex; align-items: center; gap: 4px; margin-top: 12px; padding: 5px 12px; font-size: 14px; border: 1px solid var(--line); border-radius: 999px; background: var(--card-strong); transition: border-color .25s ease, box-shadow .3s ease, transform .3s var(--ease-out), color .2s ease; }
 .paper-link:hover { border-color: var(--link); box-shadow: var(--shadow-sm); transform: translateY(-1px); }
 .paper-link span { transition: transform .3s var(--ease-out); }

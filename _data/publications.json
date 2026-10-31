@@ -61,7 +61,18 @@
       "section",
       "venue",
       "year"
-    ]
+    ],
+    "short_title": "GSMedQA",
+    "acceptance_date": "2026-09",
+    "news_venue": "BIBM 2026",
+    "ranking": {
+      "priority": 1,
+      "label": "CCF B",
+      "source": "https://www.ccf.org.cn/Academic_Evaluation/By_category/2026-03-31/870181.shtml",
+      "basis": "CCF 2026 · Seventh edition",
+      "venue": "BIBM"
+    },
+    "publication_order": 1
   },
   {
     "id": "paper-2610.30717",
@@ -148,6 +159,13 @@
       "venue": "arXiv preprint arXiv:2610.30717",
       "year": 2026,
       "url": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=wtordYAAAAAJ&citation_for_view=wtordYAAAAAJ%3ATyk-4Ss8FVUC"
+    },
+    "short_title": "PhyEvolve",
+    "ranking": {
+      "priority": 99,
+      "label": "",
+      "source": "",
+      "basis": "preprint"
     }
   },
   {
@@ -240,6 +258,13 @@
       "venue": "arXiv preprint arXiv:2610.04225",
       "year": 2026,
       "url": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=wtordYAAAAAJ&citation_for_view=wtordYAAAAAJ%3AzYLM7Y9cAGgC"
+    },
+    "short_title": "FlashGaze",
+    "ranking": {
+      "priority": 99,
+      "label": "",
+      "source": "",
+      "basis": "preprint"
     }
   },
   {
@@ -320,6 +345,13 @@
       "venue": "arXiv preprint arXiv:2609.32462",
       "year": 2026,
       "url": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=wtordYAAAAAJ&citation_for_view=wtordYAAAAAJ%3AIjCSPb-OGe4C"
+    },
+    "short_title": "STRIDE",
+    "ranking": {
+      "priority": 99,
+      "label": "",
+      "source": "",
+      "basis": "preprint"
     }
   },
   {
@@ -406,6 +438,13 @@
       "venue": "arXiv preprint arXiv:2609.32460",
       "year": 2026,
       "url": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=wtordYAAAAAJ&citation_for_view=wtordYAAAAAJ%3AUeHWp8X0CEIC"
+    },
+    "short_title": "REMEDY",
+    "ranking": {
+      "priority": 99,
+      "label": "",
+      "source": "",
+      "basis": "preprint"
     }
   },
   {
@@ -481,7 +520,15 @@
       "venue": "2026 7th International Conference on Computer Vision, Image and Deep …",
       "year": 2026,
       "url": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=wtordYAAAAAJ&citation_for_view=wtordYAAAAAJ%3AY0pCki6q_DkC"
-    }
+    },
+    "short_title": "C2R",
+    "ranking": {
+      "priority": 7,
+      "label": "",
+      "source": "",
+      "basis": "unlisted-or-unverified"
+    },
+    "publication_order": 2
   },
   {
     "id": "paper-2404.11889",
@@ -585,7 +632,18 @@
       "venue": "ACM Multimedia 2024",
       "year": 2024,
       "url": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=wtordYAAAAAJ&citation_for_view=wtordYAAAAAJ%3Ad1gkVwhDpl0C"
-    }
+    },
+    "short_title": "CT2X-GAN",
+    "acceptance_date": "2024-07",
+    "news_venue": "ACM MM 2024",
+    "ranking": {
+      "priority": 0,
+      "label": "CCF A",
+      "source": "https://www.ccf.org.cn/Academic_Evaluation/By_category/2026-03-31/870181.shtml",
+      "basis": "CCF 2026 · Seventh edition",
+      "venue": "ACM MM"
+    },
+    "publication_order": 0
   },
   {
     "id": "paper-2407.20937",
@@ -670,6 +728,13 @@
       "venue": "arXiv preprint arXiv:2407.20937",
       "year": 2024,
       "url": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=wtordYAAAAAJ&citation_for_view=wtordYAAAAAJ%3A9yKSN-GCB0IC"
+    },
+    "short_title": "EAR",
+    "ranking": {
+      "priority": 99,
+      "label": "",
+      "source": "",
+      "basis": "preprint"
     }
   }
 ]

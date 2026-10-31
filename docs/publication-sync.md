@@ -24,6 +24,20 @@ The same workflow synchronizes, commits the data with `GITHUB_TOKEN`, builds Jek
 - Confirmed preprints move to Publications when Scholar reports a published venue. Already accepted/published records are never downgraded to arXiv. The manually accepted GSMedQA entry remains even while absent from Scholar.
 - Missing papers are not automatically deleted. Add a former title to `aliases` when manually renaming a paper before it has been matched.
 
+## Acceptance news and venue ordering
+
+`_data/news.json` supplies both language versions. Confirmed new publications and preprints promoted to a formal Journal/Conference/Book venue generate one acceptance announcement per paper. The English template is `Our paper <short title> was accepted to <venue>!`; the Chinese page uses the equivalent wording. Every acceptance announcement has one celebration icon and a link to its paper. The four newest announcements remain visible; older entries appear under More updates.
+
+`short_title` can be edited per paper (e.g. STRIDE or CT2X-GAN). Otherwise the script uses a short title prefix or a shortened descriptive title, never an invented acronym. `news_venue` optionally overrides the venue label. `acceptance_date` accepts YYYY-MM or YYYY-MM-DD. Without an explicit acceptance date, News uses the month of detection in Beijing time, marked as an announcement month in the date tooltip; a publication date is never converted into an acceptance date.
+
+`_data/news_state.json` tracks already known publications, preventing duplicate news on later metadata updates, retries, or scheduled runs. Existing ACM MM and BIBM acceptance news were migrated. The other already-published record was initialized as historical, so enabling the feature does not announce old publications as newly accepted. A manually accepted paper can generate news before Scholar catches up when its local venue explicitly says Accepted / 录用 or it has an `acceptance_date`.
+
+Published papers are sorted by CCF A → B → C → SCI/JCR Q1 → Q2 → Q3 → Q4 → unlisted/unverified, then by descending year. Preprints retain their chronological order. `_data/venue_rankings.json` contains the 681 rows extracted from the CCF 2026 seventh-edition directory, with the official announcement, original-document mirror, page numbers and PDF checksum. Venue matching avoids treating a longer, unrelated conference name as a known conference or confusing conference and journal acronyms. Findings, workshops and companion publications do not inherit the main conference's rank. An explicit `paper_type: short` also excludes a conference paper from the CCF rank.
+
+JCR is not supplied by Scholar. Only verified SCIE entries in `_data/jcr_rankings.json` (or a paper's `jcr` field) are used. Each entry needs `name`, optional `aliases`, `indexes` containing `SCIE`, the integer metric `year`, `source`, `verified_on`, and `categories` with category names and `quartile` values Q1–Q4. If several verified years exist, use the latest; for several subject categories, use the best quartile. ESCI-only records do not qualify as SCI. The registry currently contains no journals because the current publication list consists of conference papers. Unknown venues are placed last and listed in `scholar_sync.json` under `unranked_venues`; this does not assert they are not SCI-indexed. A future journal needs a verified JCR record before receiving a quartile rank.
+
+Use `python3 scripts/sync_publications.py --presentation-only` to rebuild ordering and news after local editorial changes without requesting Scholar. The regular workflow does this even if Scholar is temporarily inaccessible.
+
 ## Access failures
 
 Google Scholar is a public HTML source, not an official API, and may block automated access. The script makes low-frequency requests with a timeout and no login, CAPTCHA bypass, or proxy rotation. A blocked page, invalid identity, empty response, truncated metadata, or repeated pagination is not treated as a successful empty list.

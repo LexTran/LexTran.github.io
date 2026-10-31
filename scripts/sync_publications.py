@@ -14,6 +14,7 @@ from pathlib import Path
 import re
 import time
 import unicodedata
+from zoneinfo import ZoneInfo
 from urllib.parse import parse_qs, urlencode, urljoin, urlsplit
 from urllib.request import Request, urlopen
 
@@ -149,13 +150,17 @@ def parse_detail(html, row):
     year_match = re.match(r'(\d{4})', fields.get('Publication date', ''))
     link = root.one(cls='gsc_oci_title_link')
     paper_url = safe_url(link.attrs['href']) if link and link.attrs.get('href') else row['url']
+    kind = next((kind for key, kind in [('Journal', 'journal'), ('Conference', 'conference'), ('Book', 'book')]
+                 if fields.get(key)), None)
     return {'title': row['title'], 'authors': [a.strip() for a in re.split(r',|;', authors) if a.strip()],
             'venue': venue, 'year': int(year_match.group(1)) if year_match else row['year'],
-            'paper_url': paper_url, 'publication_date': fields.get('Publication date', '')}
+            'paper_url': paper_url, 'publication_date': fields.get('Publication date', ''),
+            'acceptance_date': fields.get('Acceptance date', ''), 'kind': kind,
+            'confirmed': bool(kind and section_for(venue) == 'publications')}
 
 
 def section_for(venue):
-    if re.search(r'arxiv|biorxiv|medrxiv|preprint|under review|submitted', venue, re.I):
+    if re.search(r'arxiv|biorxiv|medrxiv|preprint|under review|submitted|in preparation', venue, re.I):
         return 'preprints'
     return 'publications' if venue.strip() else None
 
@@ -253,6 +258,9 @@ def merge(papers, rows, get_detail):
             if 'links' not in locks:
                 links = [l for l in paper['links'] if l['label']['en'] != 'Paper']
                 paper['links'] = [{'label': {'en': 'Paper', 'zh': '论文'}, 'url': detail['paper_url']}] + links
+        if detail and (paper['section'] == section_for(detail['venue'])):
+            paper['publication'] = {key: detail.get(key) for key in
+                                    ('venue', 'kind', 'publication_date', 'acceptance_date', 'confirmed')}
         paper['scholar'] = row
         if old and old != paper:
             updated.append(paper['id'])
@@ -300,6 +308,21 @@ def write_json(path, data):
     temp.replace(path)
 
 
+def prepare_presentation(root, papers, now):
+    """Also runs when the network is unavailable, so local edits still rank correctly."""
+    from publication_presentation import prepare
+    if not (root / '_data/venue_rankings.json').exists():
+        return papers, [], []
+    def read(name):
+        return json.loads((root / '_data' / name).read_text())
+    papers, news, state, emitted, review = prepare(
+        papers, read('news.json'), read('news_state.json'), read('venue_rankings.json'),
+        read('jcr_rankings.json'), datetime.fromisoformat(now).astimezone(ZoneInfo('Asia/Shanghai')).strftime('%Y-%m'))
+    write_json(root / '_data/news.json', news)
+    write_json(root / '_data/news_state.json', state)
+    return papers, emitted, review
+
+
 def run(root=ROOT):
     catalogue = root / '_data/publications.json'
     status_path = root / '_data/scholar_sync.json'
@@ -308,19 +331,23 @@ def run(root=ROOT):
     now = datetime.now(timezone.utc).isoformat(timespec='seconds')
     status = {'profile': PROFILE_URL, 'last_attempt': now, 'last_success': previous.get('last_success'),
               'status': 'failed', 'added': [], 'updated': [], 'warnings': []}
+    result = papers
     try:
         rows = collect_rows()
         def detail(row):
             time.sleep(3)
             return parse_detail(fetch(row['url']), row)
         result, added, updated, warnings = merge(papers, rows, detail)
-        write_json(catalogue, result)
         status.update(status='partial' if warnings else 'success', added=added, updated=updated,
                       warnings=warnings, profile_papers=len(rows), catalogue_papers=len(result))
         if not warnings:
             status['last_success'] = now
     except (SyncError, OSError, ValueError) as exc:
         status['warnings'] = [f'{type(exc).__name__}: {exc}']
+    result, emitted, review = prepare_presentation(root, result, now)
+    write_json(catalogue, result)
+    status['acceptance_news_added'] = emitted
+    status['unranked_venues'] = review
     write_json(status_path, status)
     summary = (f"Scholar sync: {status['status']}\n"
                f"Added: {len(status['added'])}; updated: {len(status['updated'])}.\n"
@@ -339,5 +366,12 @@ def run(root=ROOT):
 if __name__ == '__main__':
     parser = argparse.ArgumentParser(description=__doc__)
     parser.add_argument('--root', type=Path, default=ROOT)
+    parser.add_argument('--presentation-only', action='store_true', help='Rebuild news and ordering without a network request')
     args = parser.parse_args()
+    if args.presentation_only:
+        path = args.root / '_data/publications.json'
+        papers, emitted, review = prepare_presentation(args.root, json.loads(path.read_text()), datetime.now(timezone.utc).isoformat())
+        write_json(path, papers)
+        print(f'Acceptance news added: {len(emitted)}; unranked venues: {len(review)}')
+        raise SystemExit(0)
     raise SystemExit(run(args.root))

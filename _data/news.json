@@ -1,0 +1,79 @@
+[
+  {
+    "id": "craft-ranking",
+    "type": "manual",
+    "month": "2026-10",
+    "date_basis": "event",
+    "celebrate": true,
+    "content": {
+      "en": "Congrats to our <strong>Canva Craft</strong> model on ranking <strong>4th in Design Arena</strong>!",
+      "zh": "祝贺我们的 <strong>Canva Craft</strong> 模型在 <strong>Design Arena</strong> 获得<strong>第 4 名</strong>！"
+    }
+  },
+  {
+    "id": "naacl-submission",
+    "type": "manual",
+    "month": "2026-10",
+    "date_basis": "event",
+    "celebrate": false,
+    "content": {
+      "en": "Submitted one paper to <strong>NAACL</strong>.",
+      "zh": "向 <strong>NAACL</strong> 提交了 1 篇论文。"
+    }
+  },
+  {
+    "id": "iclr-submissions",
+    "type": "manual",
+    "month": "2026-09",
+    "date_basis": "event",
+    "celebrate": false,
+    "content": {
+      "en": "Submitted three papers to <strong>ICLR</strong>.",
+      "zh": "向 <strong>ICLR</strong> 提交了 3 篇论文。"
+    }
+  },
+  {
+    "id": "accepted-paper-gsmedqa",
+    "type": "acceptance",
+    "paper_id": "paper-gsmedqa",
+    "month": "2026-09",
+    "date_basis": "acceptance",
+    "short_title": "GSMedQA",
+    "venue": "BIBM 2026",
+    "celebrate": true,
+    "source": "editorial"
+  },
+  {
+    "id": "beihang-start",
+    "type": "manual",
+    "month": "2025-09",
+    "date_basis": "event",
+    "celebrate": false,
+    "content": {
+      "en": "Started my Ph.D. in Computer Science at <strong>Beihang University</strong>.",
+      "zh": "开始在<strong>北京航空航天大学</strong>攻读计算机科学与技术博士学位。"
+    }
+  },
+  {
+    "id": "outstanding-graduate",
+    "type": "manual",
+    "month": "2025-06",
+    "date_basis": "event",
+    "celebrate": false,
+    "content": {
+      "en": "Recognized as an <strong>Outstanding Graduate of Beijing’s higher education institutions</strong>.",
+      "zh": "获评<strong>北京市普通高校优秀毕业生</strong>。"
+    }
+  },
+  {
+    "id": "accepted-paper-2404.11889",
+    "type": "acceptance",
+    "paper_id": "paper-2404.11889",
+    "month": "2024-07",
+    "date_basis": "acceptance",
+    "short_title": "CT2X-GAN",
+    "venue": "ACM MM 2024",
+    "celebrate": true,
+    "source": "editorial"
+  }
+]

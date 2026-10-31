@@ -1,0 +1,11 @@
+<ul class="news-list">
+  {% for event in site.data.news limit:4 %}{% include news-item.html %}{% endfor %}
+</ul>
+{% if site.data.news.size > 4 %}
+<details class="news-archive">
+  <summary>{% if page.lang == 'zh' %}更多动态{% else %}More updates{% endif %}</summary>
+  <ul class="news-list">
+    {% for event in site.data.news offset:4 %}{% include news-item.html %}{% endfor %}
+  </ul>
+</details>
+{% endif %}
