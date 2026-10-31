@@ -98,7 +98,9 @@ def parse_profile(html):
     root = DOM(html).root
     name, verified = root.one(id='gsc_prf_in'), root.one(id='gsc_prf_ivh')
     if not name or normalized(name.text()) != 'lixingtan':
-        raise SyncError('Scholar profile missing or identity mismatch (possibly blocked/login page)')
+        title = root.one(tag='title')
+        page_title = title.text()[:100] if title else '(no title)'
+        raise SyncError(f'Scholar profile missing or identity mismatch; response title: {page_title}')
     if not verified or not re.search(r'\bVerified email at buaa\.edu\.cn\b', verified.text(), re.I):
         raise SyncError('Scholar verified Beihang email domain is missing')
     rows = []
