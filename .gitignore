@@ -1,2 +1,6 @@
 _site/js/config.js
 js/config.js
+
+# Source presentations are private inputs, not website assets.
+*.ppt
+*.pptx

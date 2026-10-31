@@ -392,6 +392,22 @@ a.paper-figure::after {
 .experience-row .company-logo { width: 62px; height: 62px; justify-self: center; }
 .experience-row .company-logo--wide { width: 82px; height: 68px; max-width: none; }
 .institution .education-note { color: var(--muted); font-size: 14px; line-height: 1.6; margin-top: 4px; }
+.experience-showcase {
+  display: grid; grid-template-columns: 200px minmax(0, 1fr); gap: 24px; align-items: center;
+  margin: 12px 0 26px 104px; padding: 16px; border: 1px solid var(--line); border-radius: 16px;
+  background: var(--card); color: var(--ink); transition: border-color .2s ease, box-shadow .2s ease;
+}
+.experience-showcase:hover { border-color: var(--link); box-shadow: var(--shadow-md); color: var(--ink); }
+.experience-preview { display: grid; grid-template-columns: 1fr 1fr; gap: 6px; }
+.experience-preview img { width: 100%; height: auto; border-radius: 8px; }
+.experience-showcase-copy { display: grid; gap: 8px; font-size: 14px; line-height: 1.6; color: var(--muted); }
+.experience-showcase-copy strong { color: var(--ink); font-size: 17px; }
+.experience-showcase-link { color: var(--link); }
+@media (max-width: 640px) {
+  .experience-showcase { margin-left: 0; grid-template-columns: 112px minmax(0, 1fr); gap: 14px; padding: 12px; }
+  .experience-showcase-copy { font-size: 13px; }
+  .experience-showcase-copy strong { font-size: 15px; }
+}
 .institution p, .dated-row p { font-size: 15.5px; }
 .date {
   color: var(--muted); white-space: nowrap; font-variant-numeric: tabular-nums; text-align: right;
