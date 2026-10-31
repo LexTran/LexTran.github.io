@@ -1,11 +1,15 @@
-<a class="experience-showcase experience-showcase--canva" href="https://x.com/canva/status/2113348707223753165" target="_blank" rel="noopener noreferrer">
-  <span class="experience-preview experience-preview--single">
-    <img src="{{ '/assets/img/work/canva/craft-launch.webp' | relative_url }}" width="960" height="540" alt="{% if page.lang == 'zh' %}Canva Craft 官方发布展示图{% else %}Canva Craft official launch artwork{% endif %}" loading="lazy">
-  </span>
+<div class="experience-showcase experience-showcase--canva">
+  <div class="experience-video" data-experience-video data-tweet-id="2113348707223753165">
+    <a class="experience-video-fallback" href="https://x.com/canva/status/2113348707223753165" target="_blank" rel="noopener noreferrer" aria-label="{% if page.lang == 'zh' %}在 X 上查看 Canva Craft 发布视频{% else %}Watch the Canva Craft launch video on X{% endif %}">
+      <img src="{{ '/assets/img/work/canva/craft-video-poster.jpg' | relative_url }}" width="1920" height="1080" alt="{% if page.lang == 'zh' %}Canva Craft 原推文视频封面{% else %}Original Canva Craft launch video poster{% endif %}" loading="lazy">
+      <span>{% if page.lang == 'zh' %}▶ 查看发布视频{% else %}▶ Watch launch video{% endif %}</span>
+    </a>
+    <div class="experience-video-embed"></div>
+  </div>
   <span class="experience-showcase-copy">
     <strong>{% if page.lang == 'zh' %}Canva Craft · 贡献者之一{% else %}Canva Craft · Contributor{% endif %}</strong>
     <span>{% if page.lang == 'zh' %}在 Canva 研究实习期间，参与了 Canva Craft 的研发工作。{% else %}I contributed to Canva Craft during my research internship at Canva.{% endif %}</span>
     <span class="experience-showcase-source">{% if page.lang == 'zh' %}Canva 官方发布 · 2026 年 10 月 22 日{% else %}Official Canva announcement · Oct 22, 2026{% endif %}</span>
-    <span class="experience-showcase-link">{% if page.lang == 'zh' %}查看 X 上的发布推文{% else %}View launch post on X{% endif %} <span aria-hidden="true">↗</span></span>
+    <a class="experience-showcase-link" href="https://x.com/canva/status/2113348707223753165" target="_blank" rel="noopener noreferrer">{% if page.lang == 'zh' %}查看 X 上的原推文{% else %}View original post on X{% endif %} <span aria-hidden="true">↗</span></a>
   </span>
-</a>
+</div>

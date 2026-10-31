@@ -4,5 +4,12 @@
     "original_image": "https://content-management-files.canva.com/eaaa25f7-5062-44e3-8d32-f47802e44aab/CanvaCraftthumbnail.png",
     "announcement": "https://x.com/canva/status/2113348707223753165",
     "note": "Official Canva newsroom thumbnail, resized and encoded as WebP for delivery. Not a screenshot of the X post."
+  },
+  "craft-video-poster.jpg": {
+    "source": "https://x.com/canva/status/2113348707223753165",
+    "original_image": "https://pbs.twimg.com/amplify_video_thumb/2113343729167958017/img/1WgmTkjCS8-UW8Qt.jpg",
+    "duration_seconds": 35.16,
+    "note": "Original poster from the official public X embed. The page uses X Publish video-only mode (mediaMaxWidth); playback is handled by the official X player.",
+    "embed_provider": "https://platform.twitter.com/widgets.js"
   }
 }
