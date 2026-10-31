@@ -72,7 +72,8 @@
       "basis": "CCF 2026 · Seventh edition",
       "venue": "BIBM"
     },
-    "publication_order": 1
+    "publication_order": 1,
+    "show_on_homepage": true
   },
   {
     "id": "paper-2610.30717",
@@ -166,7 +167,8 @@
       "label": "",
       "source": "",
       "basis": "preprint"
-    }
+    },
+    "show_on_homepage": true
   },
   {
     "id": "paper-2610.04225",
@@ -265,7 +267,8 @@
       "label": "",
       "source": "",
       "basis": "preprint"
-    }
+    },
+    "show_on_homepage": true
   },
   {
     "id": "paper-2609.32462",
@@ -352,7 +355,8 @@
       "label": "",
       "source": "",
       "basis": "preprint"
-    }
+    },
+    "show_on_homepage": true
   },
   {
     "id": "paper-2609.32460",
@@ -445,7 +449,8 @@
       "label": "",
       "source": "",
       "basis": "preprint"
-    }
+    },
+    "show_on_homepage": true
   },
   {
     "id": "paper-scholar-Y0pCki6q_DkC",
@@ -528,7 +533,8 @@
       "source": "",
       "basis": "unlisted-or-unverified"
     },
-    "publication_order": 2
+    "publication_order": 2,
+    "show_on_homepage": false
   },
   {
     "id": "paper-2404.11889",
@@ -643,7 +649,8 @@
       "basis": "CCF 2026 · Seventh edition",
       "venue": "ACM MM"
     },
-    "publication_order": 0
+    "publication_order": 0,
+    "show_on_homepage": true
   },
   {
     "id": "paper-2407.20937",
@@ -735,6 +742,7 @@
       "label": "",
       "source": "",
       "basis": "preprint"
-    }
+    },
+    "show_on_homepage": true
   }
 ]

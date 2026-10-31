@@ -1,5 +1,5 @@
 {% assign papers = site.data.publications | where: 'section', include.section %}
-{% if include.section == 'publications' %}{% assign papers = papers | sort: 'publication_order' %}{% endif %}
+{% if include.section == 'publications' %}{% assign papers = papers | where: 'show_on_homepage', true | sort: 'publication_order' %}{% endif %}
 {% for paper in papers %}
 <article class="paper paper-with-figure{% unless paper.image %} paper-without-image{% endunless %}" id="{{ paper.id | escape }}" data-topics="{{ paper.topics | join: ' ' | escape }}">
   {% assign project_media = nil %}

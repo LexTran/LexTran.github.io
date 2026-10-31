@@ -56,7 +56,9 @@ def find_ccf(venue, catalogue, kind=None, paper_type=None):
     return best[0]
 
 
-def verified_jcr(paper, registry):
+def verified_sci_records(paper, registry):
+    if paper.get('publication', {}).get('kind') in ('conference', 'book'):
+        return []
     venue = words(venue_name(paper))
     entries = list(registry.get('journals', []))
     if paper.get('jcr'):
@@ -68,7 +70,16 @@ def verified_jcr(paper, registry):
             continue
         # JCR includes non-SCI indexes too; require explicit SCIE verification.
         if ('SCIE' not in entry.get('indexes', []) or not entry.get('source') or
-                not entry.get('verified_on') or not isinstance(entry.get('year'), int)):
+                not entry.get('verified_on')):
+            continue
+        matched.append(entry)
+    return matched
+
+
+def verified_jcr(paper, registry):
+    matched = []
+    for entry in verified_sci_records(paper, registry):
+        if not isinstance(entry.get('year'), int):
             continue
         quartiles = [c.get('quartile') for c in entry.get('categories', [])]
         if not quartiles or any(q not in ('Q1', 'Q2', 'Q3', 'Q4') for q in quartiles):
@@ -137,6 +148,8 @@ def prepare(papers, news, state, catalogue, jcr, month):
     for paper in papers:
         paper['short_title'] = short_title(paper)
         paper['ranking'] = rank_paper(paper, catalogue, jcr)
+        paper['show_on_homepage'] = (paper['section'] != 'publications' or
+                                     paper['ranking']['priority'] < 7 or bool(verified_sci_records(paper, jcr)))
         if paper['section'] != 'publications':
             continue
         if paper['ranking']['priority'] == 7:

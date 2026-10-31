@@ -56,6 +56,29 @@ class PresentationTests(unittest.TestCase):
         self.assertEqual(rank['priority'],4)
         self.assertIn('2025',rank['basis'])
 
+    def test_homepage_publications_require_ccf_or_verified_sci(self):
+        papers=[self.paper('ccf','BIBM 2026'),self.paper('unknown','Unknown Venue'),
+                self.paper('preprint','arXiv preprint',section='preprints'),
+                self.paper('sci','Example Medical Journal')]
+        papers[-1]['publication']['kind']='journal'
+        # SCI membership does not require a known JCR quartile.
+        record=self.jcr();record.pop('categories')
+        out,*_=prepare(papers,[],{},self.catalogue,{'journals':[record]},'2026-10')
+        self.assertEqual({p['id']:p['show_on_homepage'] for p in out},
+                         {'ccf':True,'unknown':False,'preprint':True,'sci':True})
+        self.assertEqual(len(out),4)  # Hidden records are retained for future verification.
+        record['indexes']=['ESCI']
+        out,*_=prepare(papers,[],{},self.catalogue,{'journals':[record]},'2026-10')
+        self.assertFalse(out[-1]['show_on_homepage'])
+
+    def test_hidden_publication_becomes_visible_when_venue_is_verified(self):
+        paper=self.paper(venue='Unknown Venue')
+        out,news,state,*_=prepare([paper],[],{},self.catalogue,{},'2026-10')
+        self.assertFalse(out[0]['show_on_homepage'])
+        out[0]['publication']['venue']='BIBM 2026'
+        updated,*_=prepare(out,news,state,self.catalogue,{},'2026-10')
+        self.assertTrue(updated[0]['show_on_homepage'])
+
     def test_ccf_takes_precedence_over_jcr(self):
         p=self.paper(venue='BIBM 2026')
         j=dict(self.jcr(),name='BIBM 2026')
