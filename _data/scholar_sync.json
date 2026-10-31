@@ -1,11 +1,11 @@
 {
   "profile": "https://scholar.google.com/citations?user=wtordYAAAAAJ",
-  "last_attempt": "2026-10-31T09:37:16+00:00",
-  "last_success": "2026-10-31T09:35:30+00:00",
-  "status": "failed",
+  "last_attempt": "2026-10-31T09:38:43+00:00",
+  "last_success": "2026-10-31T09:38:43+00:00",
+  "status": "success",
   "added": [],
   "updated": [],
-  "warnings": [
-    "SyncError: Scholar profile missing or identity mismatch (possibly blocked/login page)"
-  ]
+  "warnings": [],
+  "profile_papers": 7,
+  "catalogue_papers": 8
 }
