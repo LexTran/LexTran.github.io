@@ -413,8 +413,9 @@ a.paper-figure::after {
 .experience-row .company-logo--wide { width: 82px; height: 68px; max-width: none; }
 .institution .education-note { color: var(--muted); font-size: 14px; line-height: 1.6; margin-top: 4px; }
 .experience-showcase {
-  display: grid; grid-template-columns: 200px minmax(0, 1fr); gap: 24px; align-items: center;
-  margin: 12px 0 26px 104px; padding: 16px; border: 1px solid var(--line); border-radius: 16px;
+  display: grid; grid-template-columns: 300px minmax(0, 1fr); gap: 24px; align-items: center;
+  /* Match the 62px logo centered in its 82px column, plus the row border. */
+  margin: 12px 0 26px 11px; padding: 16px; border: 1px solid var(--line); border-radius: 16px;
   background: var(--card); color: var(--ink); transition: border-color .2s ease, box-shadow .2s ease;
 }
 .experience-showcase:hover { border-color: var(--link); box-shadow: var(--shadow-md); color: var(--ink); }
@@ -424,7 +425,7 @@ a.paper-figure::after {
 .experience-showcase-copy strong { color: var(--ink); font-size: 17px; }
 .experience-showcase-link { color: var(--link); }
 @media (max-width: 640px) {
-  .experience-showcase { margin-left: 0; grid-template-columns: 112px minmax(0, 1fr); gap: 14px; padding: 12px; }
+  .experience-showcase { grid-template-columns: minmax(0, 1fr); gap: 14px; padding: 12px; }
   .experience-showcase-copy { font-size: 13px; }
   .experience-showcase-copy strong { font-size: 15px; }
 }
@@ -567,6 +568,7 @@ a.paper-figure::after {
   .profile { margin-top: 44px; }
   .paper, .patent { margin-left: 0; margin-right: 0; }
   .institution { margin-left: 0; margin-right: 0; }
+  .experience-showcase { margin-left: 27px; }
   .blob { filter: blur(60px); }
 }
 @media (max-width: 1000px) {
