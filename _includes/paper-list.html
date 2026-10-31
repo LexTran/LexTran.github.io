@@ -2,12 +2,20 @@
 {% if include.section == 'publications' %}{% assign papers = papers | sort: 'publication_order' %}{% endif %}
 {% for paper in papers %}
 <article class="paper paper-with-figure{% unless paper.image %} paper-without-image{% endunless %}" id="{{ paper.id | escape }}" data-topics="{{ paper.topics | join: ' ' | escape }}">
+  {% assign project_media = nil %}
+  {% if site.data.project_videos contains paper.id %}{% assign project_media = site.data.project_videos[paper.id] %}{% endif %}
+  {% if project_media contains 'video' %}<div class="paper-media" data-paper-video data-video-url="{{ project_media.video.url | escape }}">{% endif %}
   {% if paper.image %}
   <a class="paper-figure" href="{{ paper.image.src | relative_url }}" target="_blank" rel="noopener" aria-label="{{ paper.image.alt[page.lang] | escape }}">
     <img src="{{ paper.image.src | relative_url }}" alt="{{ paper.image.alt[page.lang] | escape }}" width="{{ paper.image.width }}" height="{{ paper.image.height }}" loading="lazy">
   </a>
   {% else %}
   <div class="paper-figure paper-figure-placeholder" aria-hidden="true"></div>
+  {% endif %}
+  {% if project_media contains 'video' %}
+    <video class="paper-preview-video" muted loop playsinline preload="none" disablepictureinpicture aria-hidden="true" tabindex="-1"></video>
+    <button class="paper-preview-toggle" type="button" hidden aria-pressed="false" data-play="{% if page.lang == 'zh' %}▶ 预览讲解{% else %}▶ Preview video{% endif %}" data-stop="{% if page.lang == 'zh' %}■ 停止预览{% else %}■ Stop preview{% endif %}" data-error="{% if page.lang == 'zh' %}视频暂时无法播放，请访问项目主页{% else %}Video unavailable; visit the project page{% endif %}">{% if page.lang == 'zh' %}▶ 预览讲解{% else %}▶ Preview video{% endif %}</button>
+  </div>
   {% endif %}
   <div class="paper-content">
     <h3>{% if paper.links.size > 0 %}<a href="{{ paper.links.first.url | escape }}">{{ paper.title | escape }}</a>{% else %}{{ paper.title | escape }}{% endif %}</h3>

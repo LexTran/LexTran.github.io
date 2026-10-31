@@ -44,11 +44,14 @@ jobs:
         continue-on-error: true
         run: python scripts/sync_publications.py
 
+      - name: Discover project overview videos
+        run: python scripts/sync_project_videos.py
+
       - name: Save publication data and synchronization status
         run: |
           git config user.name 'github-actions[bot]'
           git config user.email '41898282+github-actions[bot]@users.noreply.github.com'
-          git add _data/publications.json _data/scholar_sync.json _data/news.json _data/news_state.json
+          git add _data/publications.json _data/scholar_sync.json _data/news.json _data/news_state.json _data/project_videos.json _data/project_video_sync.json
           if ! git diff --cached --quiet; then
             git commit -m 'chore: synchronize Scholar publications'
             # Rebase only; never overwrite a concurrent homepage edit.

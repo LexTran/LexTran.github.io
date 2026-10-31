@@ -54,3 +54,11 @@ python3 scripts/sync_publications.py
 ```
 
 The first command is offline. The second reads the live public profile and updates the catalogue/status files. Review and push those files to publish the changes.
+
+## Project video previews
+
+The same push / 1st-and-16th workflow runs `scripts/sync_project_videos.py` after Scholar synchronization, including when Scholar is inaccessible. It checks each paper's Project link for explicitly labelled overview, method, teaser or presentation videos, resolves relative URLs, and verifies MP4/WebM media types. HTML video/source tags and literal `methodVideo` / `overviewVideo` / `teaserVideo` / `presentationVideo` configurations are supported without executing remote scripts. Ordinary demo clips, ambiguous choices and iframe-only players are not automatically selected. Other dynamically generated players may need a future detector or an editorial mapping. No video files are copied into this repository.
+
+`_data/project_videos.json` stores the discovered source and project URL; `_data/project_video_sync.json` records checks and warnings. A failed request preserves a previously verified source for the same project. A successful check with no supported video removes its preview. The browser retains the thumbnail on playback failure.
+
+Desktop previews begin after a short hover, play muted inline, and stop on pointer exit, scrolling away, filtering, opening the image or hiding the tab. Mobile users and visitors with reduced-motion preferences use the explicit preview button. Video URLs are assigned only on interaction; the image remains visible until playback starts, with no change in the figure's dimensions. Only one preview plays at a time. Clicking the image continues to open its existing image lightbox.

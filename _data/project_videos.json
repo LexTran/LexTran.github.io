@@ -1,0 +1,20 @@
+{
+  "paper-2610.30717": {
+    "project_url": "https://phyevolve.github.io/PhyEvolve/",
+    "status": "available",
+    "video": {
+      "url": "https://phyevolve.github.io/PhyEvolve/assets/video/PhyEvolve_overview.mp4",
+      "evidence": "PhyEvolve overview video   assets/video/PhyEvolve_overview.mp4",
+      "score": 100
+    }
+  },
+  "paper-2610.04225": {
+    "project_url": "https://zephyrzhu1.github.io/FlashGaze/",
+    "status": "available",
+    "video": {
+      "url": "https://zephyrzhu1.github.io/FlashGaze/anon4method/Method_video.mp4",
+      "evidence": "methodVideo",
+      "score": 110
+    }
+  }
+}
