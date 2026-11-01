@@ -1,13 +1,13 @@
 {
   "profile": "https://scholar.google.com/citations?user=wtordYAAAAAJ",
-  "last_check": "2026-10-31T11:06:20+00:00",
-  "last_attempt": "2026-10-31T10:12:33+00:00",
-  "last_success": "2026-10-31T10:03:23+00:00",
-  "status": "skipped",
+  "last_check": "2026-11-01T10:33:41+00:00",
+  "last_attempt": "2026-11-01T10:33:41+00:00",
+  "last_success": "2026-11-01T10:33:41+00:00",
+  "status": "success",
   "added": [],
   "updated": [],
   "warnings": [],
-  "skip_reason": "already_synced_today_Asia/Shanghai",
+  "profile_papers": 7,
   "catalogue_papers": 8,
   "acceptance_news_added": [],
   "unranked_venues": [
