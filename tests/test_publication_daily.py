@@ -11,6 +11,7 @@ sys.path.insert(0, str(Path(__file__).resolve().parents[1] / 'scripts'))
 import sync_publications as sync
 
 NOW = '2026-10-31T10:30:00+00:00'
+AUTHOR = sync.load_author()
 SUCCESS = '2026-10-30T17:00:00+00:00'  # Same Beijing day despite different UTC day.
 
 
@@ -20,10 +21,11 @@ class DailyPublicationTests(unittest.TestCase):
         self.addCleanup(self.temp.cleanup)
         self.root = Path(self.temp.name)
         (self.root / '_data').mkdir()
-        self.previous = {'profile': sync.PROFILE_URL, 'last_attempt': SUCCESS,
+        self.previous = {'feed_url': AUTHOR['feed_url'], 'last_attempt': SUCCESS,
                          'last_success': SUCCESS, 'status': 'success'}
+        self.write('arxiv_author.json', {'identifier': 'tan_l_3', 'name': 'Lixing Tan', 'orcid': '0000-0002-0323-8802'})
         self.write('publications.json', [])
-        self.write('scholar_sync.json', self.previous)
+        self.write('arxiv_sync.json', self.previous)
 
     def write(self, filename, value):
         (self.root / '_data' / filename).write_text(json.dumps(value))
@@ -37,22 +39,22 @@ class DailyPublicationTests(unittest.TestCase):
             return sync.run(self.root, daily=daily)
 
     def test_beijing_calendar_boundary_not_utc_or_rolling_24_hours(self):
-        self.assertTrue(sync.already_synced_today(self.previous, NOW))
+        self.assertTrue(sync.already_synced_today(self.previous, NOW, AUTHOR))
         previous = dict(self.previous, last_success='2026-10-31T15:59:00+00:00')
-        self.assertFalse(sync.already_synced_today(previous, '2026-10-31T16:00:00+00:00'))
+        self.assertFalse(sync.already_synced_today(previous, '2026-10-31T16:00:00+00:00', AUTHOR))
 
     def test_invalid_future_naive_or_foreign_checkpoint_does_not_skip(self):
         for value in [None, '', 'invalid', '2026-10-31T10:00:00', '2026-10-31T11:00:00+00:00']:
-            self.assertFalse(sync.already_synced_today(dict(self.previous, last_success=value), NOW))
-        self.assertFalse(sync.already_synced_today(dict(self.previous, profile='another profile'), NOW))
+            self.assertFalse(sync.already_synced_today(dict(self.previous, last_success=value), NOW, AUTHOR))
+        self.assertFalse(sync.already_synced_today(dict(self.previous, feed_url='another feed'), NOW, AUTHOR))
 
-    def test_repeated_pushes_make_no_scholar_requests_and_keep_real_timestamps(self):
+    def test_repeated_pushes_make_no_arxiv_requests_and_keep_real_timestamps(self):
         with patch.object(sync, 'collect_rows') as rows, patch.object(sync, 'fetch') as fetch:
             self.assertEqual(self.run_sync(), 0)
             self.assertEqual(self.run_sync(), 0)
             rows.assert_not_called()
             fetch.assert_not_called()
-        status = self.read('scholar_sync.json')
+        status = self.read('arxiv_sync.json')
         self.assertEqual(status['status'], 'skipped')
         self.assertEqual(status['last_check'], NOW)
         self.assertEqual(status['last_attempt'], SUCCESS)
@@ -60,15 +62,15 @@ class DailyPublicationTests(unittest.TestCase):
 
     def test_failed_or_partial_without_success_today_allows_retry(self):
         for state in ['failed', 'partial']:
-            self.write('scholar_sync.json', dict(self.previous, status=state, last_attempt=NOW,
+            self.write('arxiv_sync.json', dict(self.previous, status=state, last_attempt=NOW,
                                                last_success='2026-10-29T17:00:00+00:00'))
             with patch.object(sync, 'collect_rows', side_effect=sync.SyncError('offline')) as rows:
                 self.assertEqual(self.run_sync(), 2)
                 rows.assert_called_once()
-            self.assertEqual(self.read('scholar_sync.json')['last_attempt'], NOW)
+            self.assertEqual(self.read('arxiv_sync.json')['last_attempt'], NOW)
 
     def test_previous_failure_does_not_erase_earlier_success_today(self):
-        self.write('scholar_sync.json', dict(self.previous, status='failed', last_attempt=NOW))
+        self.write('arxiv_sync.json', dict(self.previous, status='failed', last_attempt=NOW))
         with patch.object(sync, 'collect_rows') as rows:
             self.assertEqual(self.run_sync(), 0)
             rows.assert_not_called()

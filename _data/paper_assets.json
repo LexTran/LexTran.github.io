@@ -1,0 +1,90 @@
+{
+  "paper-2611.01541": {
+    "arxiv_id": "2611.01541",
+    "version": 1,
+    "source": "https://arxiv.org/html/2611.01541v1",
+    "warnings": [],
+    "project": {
+      "kind": "Project",
+      "url": "https://lextran.github.io/MoPort/",
+      "evidence": "Affiliation:Beijing Information Science and Technology UniversityProject page: https://lextran.github.io/MoPort/"
+    },
+    "image": {
+      "url": "https://arxiv.org/html/2611.01541v1/moport_framework_layout_v10.png",
+      "figure": "S1.F2",
+      "caption": "Figure 2:MoPort framework.(a) A shared MoPort encodes different 2D projections of one 3D motion and aligns them with latent and token targets from a pretrained 3D encoder. The view loss pulls the two latents together, and sampled cameras supervise the camera head. (b) The camera head estimates the e",
+      "score": 130,
+      "kind": "figure",
+      "file": "assets/img/papers/arxiv-2611.01541.webp"
+    },
+    "status": "success",
+    "last_checked": "2026-11-12T06:28:56+00:00"
+  },
+  "paper-2611.01536": {
+    "arxiv_id": "2611.01536",
+    "version": 2,
+    "source": "https://arxiv.org/html/2611.01536v2",
+    "warnings": [],
+    "project": {
+      "kind": "Project",
+      "url": "https://lextran.github.io/CUFormer/",
+      "evidence": "Affiliation:Beijing Information Science and Technology UniversityProject page: https://lextran.github.io/CUFormer/*Corresponding author: xiaqing@buaa.edu.cn"
+    },
+    "image": {
+      "url": "https://arxiv.org/html/2611.01536v2/cuformer_v2.png",
+      "figure": "S2.F3",
+      "caption": "Figure 3:Overview of CUFormer. Top: a shared encoder and MAT produce modality-aware features. Reference-side visibility guides coarse and fine matching before rigid transformation estimation. Bottom left: modality embeddings are added to coarse features before attention and to fine features before m",
+      "score": 128,
+      "kind": "figure",
+      "file": "assets/img/papers/arxiv-2611.01536.webp"
+    },
+    "status": "success",
+    "last_checked": "2026-11-12T06:28:56+00:00"
+  },
+  "paper-2609.32462": {
+    "arxiv_id": "2609.32462",
+    "version": 1,
+    "source": "https://arxiv.org/html/2609.32462v1",
+    "warnings": [],
+    "rejected_links": [
+      {
+        "kind": "Code",
+        "url": "https://github.com/line/ChronAccRet",
+        "evidence": "ChronRet (CAR) (Fujiwara et al., 2024): We use the HumanML3D-trained variants. Code is available at https://github.com/line/ChronAccRet, with released weights at https://huggingface.co/line-corporation/ChronAccRet.",
+        "reason": "Linked page title does not identify this paper"
+      },
+      {
+        "kind": "Code",
+        "url": "https://huggingface.co/line-corporation/ChronAccRet",
+        "evidence": "rained variants. Code is available at https://github.com/line/ChronAccRet, with released weights at https://huggingface.co/line-corporation/ChronAccRet.",
+        "reason": "Linked page title does not identify this paper"
+      }
+    ],
+    "status": "success",
+    "last_checked": "2026-11-12T06:30:19+00:00"
+  },
+  "paper-2609.32460": {
+    "arxiv_id": "2609.32460",
+    "version": 1,
+    "source": "https://arxiv.org/html/2609.32460v1",
+    "warnings": [],
+    "status": "success",
+    "last_checked": "2026-11-12T06:28:56+00:00"
+  },
+  "paper-2404.11889": {
+    "arxiv_id": "2404.11889",
+    "version": 2,
+    "source": "https://arxiv.org/html/2404.11889v2",
+    "warnings": [],
+    "status": "success",
+    "last_checked": "2026-11-12T06:28:56+00:00"
+  },
+  "paper-2407.20937": {
+    "arxiv_id": "2407.20937",
+    "version": 2,
+    "source": "https://arxiv.org/html/2407.20937v2",
+    "warnings": [],
+    "status": "success",
+    "last_checked": "2026-11-12T06:28:56+00:00"
+  }
+}

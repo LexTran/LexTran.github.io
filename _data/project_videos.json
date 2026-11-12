@@ -1,4 +1,22 @@
 {
+  "paper-2611.01541": {
+    "project_url": "https://lextran.github.io/MoPort/",
+    "status": "available",
+    "video": {
+      "url": "https://lextran.github.io/MoPort/static/videos/moport_oral.mp4",
+      "evidence": "MoPort presentation video, about two minutes, with narration: the result on a stair-descent motion, the gap between 3D motion-capture training and 2D video deployment, failure cases of routes through ",
+      "score": 100
+    }
+  },
+  "paper-2611.01536": {
+    "project_url": "https://lextran.github.io/CUFormer/",
+    "status": "available",
+    "video": {
+      "url": "https://lextran.github.io/CUFormer/static/videos/cuformer_overview.mp4?v=20261101b",
+      "evidence": "   ./static/videos/cuformer_overview.mp4?v=20261101b",
+      "score": 100
+    }
+  },
   "paper-2610.30717": {
     "project_url": "https://phyevolve.github.io/PhyEvolve/",
     "status": "available",

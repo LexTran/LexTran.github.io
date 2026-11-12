@@ -8,7 +8,7 @@ from pathlib import Path
 import re
 from urllib.parse import urljoin, urlsplit
 from urllib.request import Request, urlopen
-from sync_publications import DOM, Node, ROOT, write_json
+from site_data import DOM, Node, ROOT, write_json
 
 VIDEO_WORDS = re.compile(r'overview|method|teaser|presentation|explain|explanation|讲解|介绍', re.I)
 JS_TOKENS = re.compile(r'''("(?:\\.|[^"\\])*"|'(?:\\.|[^'\\])*'|`(?:\\.|[^`\\])*`)|/\*[\s\S]*?\*/|//[^\n]*''')

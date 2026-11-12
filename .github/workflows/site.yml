@@ -1,4 +1,4 @@
-name: Sync publications and deploy site
+name: Sync arXiv publications and deploy site
 
 on:
   push:
@@ -36,10 +36,13 @@ jobs:
         with:
           python-version: '3.12'
 
+      - name: Install synchronization dependencies
+        run: python -m pip install -r requirements-sync.txt
+
       - name: Test publication synchronization
         run: python -m unittest discover -s tests -v
 
-      - name: Refresh papers from the verified Scholar profile
+      - name: Refresh papers from the verified arXiv author feed
         id: sync
         continue-on-error: true
         run: |
@@ -49,6 +52,9 @@ jobs:
             python scripts/sync_publications.py
           fi
 
+      - name: Discover paper thumbnails and project links
+        run: python scripts/sync_paper_assets.py
+
       - name: Discover project overview videos
         run: python scripts/sync_project_videos.py
 
@@ -56,9 +62,9 @@ jobs:
         run: |
           git config user.name 'github-actions[bot]'
           git config user.email '41898282+github-actions[bot]@users.noreply.github.com'
-          git add _data/publications.json _data/scholar_sync.json _data/news.json _data/news_state.json _data/project_videos.json _data/project_video_sync.json
+          git add _data/publications.json _data/arxiv_sync.json _data/paper_assets.json _data/paper_asset_sync.json assets/img/papers _data/news.json _data/news_state.json _data/project_videos.json _data/project_video_sync.json
           if ! git diff --cached --quiet; then
-            git commit -m 'chore: synchronize Scholar publications'
+            git commit -m 'chore: synchronize arXiv publications'
             # Rebase only; never overwrite a concurrent homepage edit.
             git pull --rebase origin main
             git push origin HEAD:main
@@ -84,8 +90,8 @@ jobs:
         id: deployment
         uses: actions/deploy-pages@v4
 
-      - name: Report any Scholar access problem after publishing
+      - name: Report any arXiv access problem after publishing
         if: steps.sync.outcome == 'failure'
         run: |
-          echo '::error::Scholar synchronization was incomplete. The homepage was published using preserved paper records. See the sync step and _data/scholar_sync.json.'
+          echo '::error::arXiv synchronization was incomplete. The homepage was published using preserved paper records. See the sync step and _data/arxiv_sync.json.'
           exit 1

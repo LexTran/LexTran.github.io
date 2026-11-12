@@ -1,0 +1,212 @@
+<?xml version='1.0' encoding='utf-8'?>
+<feed xmlns="http://www.w3.org/2005/Atom" xmlns:arxiv="http://arxiv.org/schemas/atom">
+  <title>Lixing Tan's articles on arXiv</title>
+  <link rel="describes" href="https://orcid.org/0000-0002-0323-8802" />
+  <updated>2026-11-12T00:00:00-05:00</updated>
+  <id>http://arxiv.org/a/tan_l_3</id>
+  <link href="http://arxiv.org/a/tan_l_3.atom" rel="self" type="application/atom+xml" />
+  <link rel="describes" href="http://arxiv.org/a/tan_l_3" />
+  <entry>
+    <id>http://arxiv.org/abs/2611.01536v2</id>
+    <updated>2026-11-04T21:33:32-05:00</updated>
+    <published>2026-11-01T00:07:27-04:00</published>
+    <title>CUFormer: Modality-Aware CT-Ultrasound Point Cloud Registration for Orthopedic Navigation</title>
+    <author>
+      <name>Lixing Tan</name>
+    </author>
+    <author>
+      <name>Hongye Hao</name>
+    </author>
+    <author>
+      <name>Tianrun Gu</name>
+    </author>
+    <author>
+      <name>Qing Xia</name>
+    </author>
+    <author>
+      <name>Yuting Guo</name>
+    </author>
+    <author>
+      <name>Shuai Li</name>
+    </author>
+    <author>
+      <name>Aimin Hao</name>
+    </author>
+    <link href="http://arxiv.org/abs/2611.01536v2" rel="alternate" type="text/html" />
+    <link title="pdf" href="http://arxiv.org/pdf/2611.01536v2" rel="related" type="application/pdf" />
+    <arxiv:primary_category term="cs.CV" scheme="http://arxiv.org/schemas/atom" label="Computer Vision and Pattern Recognition (cs.CV)" />
+    <category term="cs.CV" scheme="http://arxiv.org/schemas/atom" label="Computer Vision and Pattern Recognition (cs.CV)" />
+  </entry>
+  <entry>
+    <id>http://arxiv.org/abs/2611.01541v1</id>
+    <updated>2026-11-01T00:11:25-04:00</updated>
+    <published>2026-11-01T00:11:25-04:00</published>
+    <title>MoPort: A View-Aware 2D Interface for Motion Language Models</title>
+    <author>
+      <name>Lixing Tan</name>
+    </author>
+    <author>
+      <name>Qing Xia</name>
+    </author>
+    <author>
+      <name>Yuting Guo</name>
+    </author>
+    <author>
+      <name>Shuai Li</name>
+    </author>
+    <author>
+      <name>Aimin Hao</name>
+    </author>
+    <link href="http://arxiv.org/abs/2611.01541v1" rel="alternate" type="text/html" />
+    <link title="pdf" href="http://arxiv.org/pdf/2611.01541v1" rel="related" type="application/pdf" />
+    <arxiv:primary_category term="cs.CV" scheme="http://arxiv.org/schemas/atom" label="Computer Vision and Pattern Recognition (cs.CV)" />
+    <category term="cs.CV" scheme="http://arxiv.org/schemas/atom" label="Computer Vision and Pattern Recognition (cs.CV)" />
+  </entry>
+  <entry>
+    <id>http://arxiv.org/abs/2610.30717v1</id>
+    <updated>2026-10-22T00:33:35-04:00</updated>
+    <published>2026-10-22T00:33:35-04:00</published>
+    <title>PhyEvolve: Multi-Agent State-Evolution Planning for Physics-Aware Video Generation</title>
+    <author>
+      <name>Yang-Hao Zhou</name>
+    </author>
+    <author>
+      <name>Lixing Tan</name>
+    </author>
+    <author>
+      <name>Zhiqi Li</name>
+    </author>
+    <author>
+      <name>Guang Yang</name>
+    </author>
+    <author>
+      <name>Xiao Yang</name>
+    </author>
+    <link href="http://arxiv.org/abs/2610.30717v1" rel="alternate" type="text/html" />
+    <link title="pdf" href="http://arxiv.org/pdf/2610.30717v1" rel="related" type="application/pdf" />
+    <arxiv:primary_category term="cs.CV" scheme="http://arxiv.org/schemas/atom" label="Computer Vision and Pattern Recognition (cs.CV)" />
+    <category term="cs.CV" scheme="http://arxiv.org/schemas/atom" label="Computer Vision and Pattern Recognition (cs.CV)" />
+  </entry>
+  <entry>
+    <id>http://arxiv.org/abs/2609.32462v1</id>
+    <updated>2026-09-26T06:52:20-04:00</updated>
+    <published>2026-09-26T06:52:20-04:00</published>
+    <title>Can Motion-Language Models Ground Structure? STRIDE for Evaluating the Evaluators</title>
+    <author>
+      <name>Lixing Tan</name>
+    </author>
+    <author>
+      <name>Qing Xia</name>
+    </author>
+    <author>
+      <name>Yuting Guo</name>
+    </author>
+    <author>
+      <name>Shuai Li</name>
+    </author>
+    <author>
+      <name>Aimin Hao</name>
+    </author>
+    <link href="http://arxiv.org/abs/2609.32462v1" rel="alternate" type="text/html" />
+    <link title="pdf" href="http://arxiv.org/pdf/2609.32462v1" rel="related" type="application/pdf" />
+    <arxiv:primary_category term="cs.CV" scheme="http://arxiv.org/schemas/atom" label="Computer Vision and Pattern Recognition (cs.CV)" />
+    <category term="cs.CV" scheme="http://arxiv.org/schemas/atom" label="Computer Vision and Pattern Recognition (cs.CV)" />
+  </entry>
+  <entry>
+    <id>http://arxiv.org/abs/2609.32460v1</id>
+    <updated>2026-09-26T06:49:58-04:00</updated>
+    <published>2026-09-26T06:49:58-04:00</published>
+    <title>REMEDY: How Far Is Video Generation from Medical Education World Models?</title>
+    <author>
+      <name>Lixing Tan</name>
+    </author>
+    <author>
+      <name>Yanghao Zhou</name>
+    </author>
+    <author>
+      <name>Qing Xia</name>
+    </author>
+    <author>
+      <name>Yuting Guo</name>
+    </author>
+    <author>
+      <name>Shuai Li</name>
+    </author>
+    <author>
+      <name>Aimin Hao</name>
+    </author>
+    <link href="http://arxiv.org/abs/2609.32460v1" rel="alternate" type="text/html" />
+    <link title="pdf" href="http://arxiv.org/pdf/2609.32460v1" rel="related" type="application/pdf" />
+    <arxiv:primary_category term="cs.CV" scheme="http://arxiv.org/schemas/atom" label="Computer Vision and Pattern Recognition (cs.CV)" />
+    <category term="cs.CV" scheme="http://arxiv.org/schemas/atom" label="Computer Vision and Pattern Recognition (cs.CV)" />
+  </entry>
+  <entry>
+    <id>http://arxiv.org/abs/2407.20937v2</id>
+    <updated>2024-08-04T21:27:39-04:00</updated>
+    <published>2024-07-30T12:19:14-04:00</published>
+    <title>EAR: Edge-Aware Reconstruction of 3-D vertebrae structures from bi-planar X-ray images</title>
+    <author>
+      <name>Lixing Tan</name>
+    </author>
+    <author>
+      <name>Shuang Song</name>
+    </author>
+    <author>
+      <name>Yaofeng He</name>
+    </author>
+    <author>
+      <name>Kangneng Zhou</name>
+    </author>
+    <author>
+      <name>Tong Lu</name>
+    </author>
+    <author>
+      <name>Ruoxiu Xiao</name>
+    </author>
+    <link href="http://arxiv.org/abs/2407.20937v2" rel="alternate" type="text/html" />
+    <link title="pdf" href="http://arxiv.org/pdf/2407.20937v2" rel="related" type="application/pdf" />
+    <arxiv:primary_category term="eess.IV" scheme="http://arxiv.org/schemas/atom" label="Image and Video Processing (eess.IV)" />
+    <category term="eess.IV" scheme="http://arxiv.org/schemas/atom" label="Image and Video Processing (eess.IV)" />
+    <category term="cs.CV" scheme="http://arxiv.org/schemas/atom" label="Computer Vision and Pattern Recognition (cs.CV)" />
+  </entry>
+  <entry>
+    <id>http://arxiv.org/abs/2404.11889v2</id>
+    <updated>2024-07-30T19:50:55-04:00</updated>
+    <published>2024-04-18T00:25:56-04:00</published>
+    <title>Multi-view X-ray Image Synthesis with Multiple Domain Disentanglement from CT Scans</title>
+    <author>
+      <name>Lixing Tan</name>
+    </author>
+    <author>
+      <name>Shuang Song</name>
+    </author>
+    <author>
+      <name>Kangneng Zhou</name>
+    </author>
+    <author>
+      <name>Chengbo Duan</name>
+    </author>
+    <author>
+      <name>Lanying Wang</name>
+    </author>
+    <author>
+      <name>Huayang Ren</name>
+    </author>
+    <author>
+      <name>Linlin Liu</name>
+    </author>
+    <author>
+      <name>Wei Zhang</name>
+    </author>
+    <author>
+      <name>Ruoxiu Xiao</name>
+    </author>
+    <arxiv:doi>10.1145/3664647.3681154</arxiv:doi>
+    <link href="http://arxiv.org/abs/2404.11889v2" rel="alternate" type="text/html" />
+    <link title="pdf" href="http://arxiv.org/pdf/2404.11889v2" rel="related" type="application/pdf" />
+    <link title="doi" href="http://dx.doi.org/10.1145/3664647.3681154" rel="related" />
+    <arxiv:primary_category term="eess.IV" scheme="http://arxiv.org/schemas/atom" label="Image and Video Processing (eess.IV)" />
+    <category term="eess.IV" scheme="http://arxiv.org/schemas/atom" label="Image and Video Processing (eess.IV)" />
+    <category term="cs.CV" scheme="http://arxiv.org/schemas/atom" label="Computer Vision and Pattern Recognition (cs.CV)" />
+  </entry>
+</feed>

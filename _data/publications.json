@@ -115,7 +115,15 @@
       "en": "Connects 2D pose observations to motion language models through paired-view alignment and camera-modulated encoding, supporting motion understanding across viewpoints.",
       "zh": "通过配对视角对齐与相机调制编码，将二维姿态观测接入动作语言模型，支持跨视角的动作理解。"
     },
-    "image": null,
+    "image": {
+      "src": "/assets/img/papers/arxiv-2611.01541.webp",
+      "width": 841,
+      "height": 430,
+      "alt": {
+        "en": "MoPort paper overview",
+        "zh": "MoPort 论文概览图"
+      }
+    },
     "links": [
       {
         "label": {
@@ -123,6 +131,13 @@
           "zh": "论文"
         },
         "url": "https://arxiv.org/abs/2611.01541"
+      },
+      {
+        "label": {
+          "en": "Project",
+          "zh": "项目主页"
+        },
+        "url": "https://lextran.github.io/MoPort/"
       }
     ],
     "topics": [
@@ -144,7 +159,27 @@
       "source": "",
       "basis": "preprint"
     },
-    "show_on_homepage": true
+    "show_on_homepage": true,
+    "arxiv": {
+      "id": "2611.01541",
+      "version": 1,
+      "title": "MoPort: A View-Aware 2D Interface for Motion Language Models",
+      "authors": [
+        "Lixing Tan",
+        "Qing Xia",
+        "Yuting Guo",
+        "Shuai Li",
+        "Aimin Hao"
+      ],
+      "published": "2026-11-01T04:11:25+00:00",
+      "updated": "2026-11-01T04:11:25+00:00",
+      "url": "https://arxiv.org/abs/2611.01541",
+      "journal_ref": "",
+      "doi": "",
+      "categories": [
+        "cs.CV"
+      ]
+    }
   },
   {
     "id": "paper-2611.01536",
@@ -196,7 +231,15 @@
       "en": "Registers partial ultrasound bone surfaces to preoperative CT using modality-aware features and visibility-weighted correspondences for orthopedic navigation.",
       "zh": "利用模态感知特征与可见性加权对应关系，将超声观测的局部骨表面配准至术前 CT，为骨科导航提供支持。"
     },
-    "image": null,
+    "image": {
+      "src": "/assets/img/papers/arxiv-2611.01536.webp",
+      "width": 825,
+      "height": 384,
+      "alt": {
+        "en": "CUFormer paper overview",
+        "zh": "CUFormer 论文概览图"
+      }
+    },
     "links": [
       {
         "label": {
@@ -204,6 +247,13 @@
           "zh": "论文"
         },
         "url": "https://arxiv.org/abs/2611.01536"
+      },
+      {
+        "label": {
+          "en": "Project",
+          "zh": "项目主页"
+        },
+        "url": "https://lextran.github.io/CUFormer/"
       }
     ],
     "topics": [
@@ -225,7 +275,29 @@
       "source": "",
       "basis": "preprint"
     },
-    "show_on_homepage": true
+    "show_on_homepage": true,
+    "arxiv": {
+      "id": "2611.01536",
+      "version": 2,
+      "title": "CUFormer: Modality-Aware CT-Ultrasound Point Cloud Registration for Orthopedic Navigation",
+      "authors": [
+        "Lixing Tan",
+        "Hongye Hao",
+        "Tianrun Gu",
+        "Qing Xia",
+        "Yuting Guo",
+        "Shuai Li",
+        "Aimin Hao"
+      ],
+      "published": "2026-11-01T04:07:27+00:00",
+      "updated": "2026-11-05T02:33:32+00:00",
+      "url": "https://arxiv.org/abs/2611.01536",
+      "journal_ref": "",
+      "doi": "",
+      "categories": [
+        "cs.CV"
+      ]
+    }
   },
   {
     "id": "paper-2610.30717",
@@ -320,7 +392,27 @@
       "source": "",
       "basis": "preprint"
     },
-    "show_on_homepage": true
+    "show_on_homepage": true,
+    "arxiv": {
+      "id": "2610.30717",
+      "version": 1,
+      "title": "PhyEvolve: Multi-Agent State-Evolution Planning for Physics-Aware Video Generation",
+      "authors": [
+        "Yang-Hao Zhou",
+        "Lixing Tan",
+        "Zhiqi Li",
+        "Guang Yang",
+        "Xiao Yang"
+      ],
+      "published": "2026-10-22T04:33:35+00:00",
+      "updated": "2026-10-22T04:33:35+00:00",
+      "url": "https://arxiv.org/abs/2610.30717",
+      "journal_ref": "",
+      "doi": "",
+      "categories": [
+        "cs.CV"
+      ]
+    }
   },
   {
     "id": "paper-2610.04225",
@@ -508,7 +600,27 @@
       "source": "",
       "basis": "preprint"
     },
-    "show_on_homepage": true
+    "show_on_homepage": true,
+    "arxiv": {
+      "id": "2609.32462",
+      "version": 1,
+      "title": "Can Motion-Language Models Ground Structure? STRIDE for Evaluating the Evaluators",
+      "authors": [
+        "Lixing Tan",
+        "Qing Xia",
+        "Yuting Guo",
+        "Shuai Li",
+        "Aimin Hao"
+      ],
+      "published": "2026-09-26T10:52:20+00:00",
+      "updated": "2026-09-26T10:52:20+00:00",
+      "url": "https://arxiv.org/abs/2609.32462",
+      "journal_ref": "",
+      "doi": "",
+      "categories": [
+        "cs.CV"
+      ]
+    }
   },
   {
     "id": "paper-2609.32460",
@@ -602,7 +714,28 @@
       "source": "",
       "basis": "preprint"
     },
-    "show_on_homepage": true
+    "show_on_homepage": true,
+    "arxiv": {
+      "id": "2609.32460",
+      "version": 1,
+      "title": "REMEDY: How Far Is Video Generation from Medical Education World Models?",
+      "authors": [
+        "Lixing Tan",
+        "Yanghao Zhou",
+        "Qing Xia",
+        "Yuting Guo",
+        "Shuai Li",
+        "Aimin Hao"
+      ],
+      "published": "2026-09-26T10:49:58+00:00",
+      "updated": "2026-09-26T10:49:58+00:00",
+      "url": "https://arxiv.org/abs/2609.32460",
+      "journal_ref": "",
+      "doi": "",
+      "categories": [
+        "cs.CV"
+      ]
+    }
   },
   {
     "id": "paper-scholar-Y0pCki6q_DkC",
@@ -802,7 +935,32 @@
       "venue": "ACM MM"
     },
     "publication_order": 0,
-    "show_on_homepage": true
+    "show_on_homepage": true,
+    "arxiv": {
+      "id": "2404.11889",
+      "version": 2,
+      "title": "Multi-view X-ray Image Synthesis with Multiple Domain Disentanglement from CT Scans",
+      "authors": [
+        "Lixing Tan",
+        "Shuang Song",
+        "Kangneng Zhou",
+        "Chengbo Duan",
+        "Lanying Wang",
+        "Huayang Ren",
+        "Linlin Liu",
+        "Wei Zhang",
+        "Ruoxiu Xiao"
+      ],
+      "published": "2024-04-18T04:25:56+00:00",
+      "updated": "2024-07-30T23:50:55+00:00",
+      "url": "https://arxiv.org/abs/2404.11889",
+      "journal_ref": "",
+      "doi": "10.1145/3664647.3681154",
+      "categories": [
+        "eess.IV",
+        "cs.CV"
+      ]
+    }
   },
   {
     "id": "paper-2407.20937",
@@ -895,6 +1053,28 @@
       "source": "",
       "basis": "preprint"
     },
-    "show_on_homepage": true
+    "show_on_homepage": true,
+    "arxiv": {
+      "id": "2407.20937",
+      "version": 2,
+      "title": "EAR: Edge-Aware Reconstruction of 3-D vertebrae structures from bi-planar X-ray images",
+      "authors": [
+        "Lixing Tan",
+        "Shuang Song",
+        "Yaofeng He",
+        "Kangneng Zhou",
+        "Tong Lu",
+        "Ruoxiu Xiao"
+      ],
+      "published": "2024-07-30T16:19:14+00:00",
+      "updated": "2024-08-05T01:27:39+00:00",
+      "url": "https://arxiv.org/abs/2407.20937",
+      "journal_ref": "",
+      "doi": "",
+      "categories": [
+        "eess.IV",
+        "cs.CV"
+      ]
+    }
   }
 ]

@@ -17,7 +17,7 @@ class PresentationTests(unittest.TestCase):
     def paper(self, id='p', venue='BIBM 2026', section='publications', year=2026):
         return {'id':id,'title':'DEMO: A complete paper title','section':section,'year':year,
                 'venue':{'en':venue,'zh':venue},'publication':{'venue':venue,'kind':'conference','confirmed':True},
-                'scholar':{'id':'test:'+id,'url':'https://scholar.google.com/citations?user=wtordYAAAAAJ'}}
+                'arxiv':{'id':id,'url':'https://arxiv.org/abs/2611.01541'}}
 
     def test_ccf_full_catalogue_and_current_venues(self):
         self.assertEqual(len(self.catalogue['venues']),681)
@@ -119,13 +119,13 @@ class PresentationTests(unittest.TestCase):
         p['acceptance_date']='2026-09'
         self.assertEqual(acceptance_month(p,'2026-10'),('2026-09','acceptance'))
 
-    def test_manual_acceptance_before_scholar_is_supported(self):
+    def test_manual_acceptance_before_arxiv_is_supported(self):
         p=self.paper(venue='BIBM 2026 · Accepted Sep 2026')
         p['publication']['confirmed']=False;p['acceptance_date']='2026-09'
         _,news,*_=prepare([p],[],{},self.catalogue,{},'2026-10')
         self.assertEqual(news[0]['month'],'2026-09')
 
-    def test_uncorroborated_scholar_source_does_not_announce_acceptance(self):
+    def test_uncorroborated_arxiv_source_does_not_announce_acceptance(self):
         p=self.paper();p['publication']['confirmed']=False
         _,news,state,added,_=prepare([p],[],{},self.catalogue,{},'2026-10')
         self.assertFalse(news or added)

@@ -157,17 +157,17 @@ def prepare(papers, news, state, catalogue, jcr, month):
         if paper['id'] in seen:
             continue
         # A local editorial publication entry is explicit user confirmation.
-        # Automatic entries need a formal Journal/Conference/Book detail field.
+        # Automatic entries need an explicit arXiv journal reference.
         editorial_acceptance = bool(paper.get('acceptance_date')) or bool(re.search(
             r'\baccepted\b|录用|接收', paper['venue']['en'] + paper['venue']['zh'], re.I))
-        formal = not paper.get('scholar') or paper.get('publication', {}).get('confirmed', False) or editorial_acceptance
+        formal = not paper.get('arxiv') or paper.get('publication', {}).get('confirmed', False) or editorial_acceptance
         if not formal:
             continue
         date, basis = acceptance_month(paper, month)
         event = {'id': 'accepted-' + paper['id'], 'type': 'acceptance', 'paper_id': paper['id'],
                  'month': date, 'date_basis': basis, 'short_title': paper['short_title'],
                  'venue': news_venue(paper, catalogue), 'celebrate': True,
-                 'source': paper.get('scholar', {}).get('url', 'editorial')}
+                 'source': paper.get('arxiv', {}).get('url', 'editorial')}
         news.insert(0, event)
         added.append(event['id'])
         seen.add(paper['id'])
