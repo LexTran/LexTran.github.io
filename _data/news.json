@@ -1,5 +1,16 @@
 [
   {
+    "id": "cvpr-2027-submissions",
+    "type": "manual",
+    "month": "2026-11",
+    "date_basis": "event",
+    "celebrate": false,
+    "content": {
+      "en": "We have submitted <strong>7 papers</strong> to <strong>CVPR 2027</strong>.",
+      "zh": "我们已向 <strong>CVPR 2027</strong> 投稿 <strong>7 篇论文</strong>。"
+    }
+  },
+  {
     "id": "craft-ranking",
     "type": "manual",
     "month": "2026-10",

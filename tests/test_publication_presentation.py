@@ -149,7 +149,7 @@ class PresentationTests(unittest.TestCase):
 
     def test_existing_news_order_and_acceptance_state_are_preserved(self):
         news=json.loads((ROOT/'_data/news.json').read_text())
-        self.assertEqual([n['id'] for n in news[:4]],['craft-ranking','naacl-submission','iclr-submissions','accepted-paper-gsmedqa'])
+        self.assertEqual([n['id'] for n in news[:5]],['cvpr-2027-submissions','craft-ranking','naacl-submission','iclr-submissions','accepted-paper-gsmedqa'])
         self.assertEqual(len([n for n in news if n['type']=='acceptance']),2)
 
 

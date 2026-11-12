@@ -26,7 +26,7 @@
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,400;9..144,500;9..144,600&display=swap">
-  <link rel="stylesheet" href="{{ '/css/profile.css' | relative_url }}?v=20261031craftranking">
+  <link rel="stylesheet" href="{{ '/css/profile.css' | relative_url }}?v=20261112sidebar">
   <script src="{{ '/js/profile.js' | relative_url }}?v=20261025f" defer></script>
   <script src="{{ '/js/paper-video.js' | relative_url }}?v=20261031video" defer></script>
 </head>
@@ -40,6 +40,7 @@
   </div>
   <div class="scroll-progress" aria-hidden="true"></div>
   <a class="skip-link" href="#about">{% if chinese %}跳至正文{% else %}Skip to content{% endif %}</a>
+  <div class="profile-sidebar">
   <nav class="section-nav" aria-label="{% if chinese %}页面目录{% else %}Page sections{% endif %}">
     <a class="nav-label" href="#about">{% if chinese %}目录{% else %}Index{% endif %}</a>
     <ul>
@@ -61,6 +62,8 @@
       </button>
     </div>
   </nav>
+  {% include visitor-map.html %}
+  </div>
   <main class="page-shell">
     {{ content }}
     <footer class="site-footer">

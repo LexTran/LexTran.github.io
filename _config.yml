@@ -52,6 +52,13 @@ disqus: # fromendworld
 # Used for Sitemap.xml and your RSS feed
 url: https://lextran.github.io
 
+# Homepage visitor map. This public ID was issued by https://whos.amung.us/getstarted/.
+# Keep the same ID across languages to preserve a single visitor history.
+# Set enabled to false to remove the map and stop loading its tracking script.
+visitor_map:
+  enabled: true
+  site_id: "i0vccgqfxv"
+
 # If you're hosting your site at a Project repository on GitHub pages
 # (http://yourusername.github.io/repository-name)
 # and NOT your User repository (http://yourusername.github.io)

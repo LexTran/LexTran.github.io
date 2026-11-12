@@ -1,0 +1,16 @@
+{% if site.visitor_map.enabled and site.visitor_map.site_id != blank %}
+<section class="visitor-map" aria-labelledby="visitor-map-title">
+  <h2 id="visitor-map-title">{% if chinese %}访客足迹{% else %}Visitor map{% endif %}</h2>
+  <div class="visitor-map-viewport" data-visitor-map data-site-id="{{ site.visitor_map.site_id | escape }}" data-site-url="{{ site.url | escape }}"
+       data-unavailable="{% if chinese %}地图暂时无法加载，请查看访问统计。{% else %}Map unavailable. Please open visitor stats.{% endif %}"
+       data-preview="{% if chinese %}访客地图将在正式网站上显示。{% else %}The visitor map is available on the live website.{% endif %}">
+    <p class="visitor-map-status" role="status">{% if chinese %}启用 JavaScript 或查看访问统计。{% else %}Enable JavaScript or open visitor stats.{% endif %}</p>
+    <div class="visitor-map-canvas"></div>
+  </div>
+  <div class="visitor-map-copy">
+    <a href="https://whos.amung.us/stats/{{ site.visitor_map.site_id | uri_escape }}/" target="_blank" rel="noopener noreferrer">{% if chinese %}查看访问统计{% else %}View visitor stats{% endif %} <span aria-hidden="true">↗</span></a>
+    <small>whos.amung.us</small>
+  </div>
+</section>
+<script src="{{ '/js/visitor-map.js' | relative_url }}?v=20261112" defer></script>
+{% endif %}
