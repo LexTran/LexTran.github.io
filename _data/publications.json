@@ -76,6 +76,158 @@
     "show_on_homepage": true
   },
   {
+    "id": "paper-2611.01541",
+    "title": "MoPort: A View-Aware 2D Interface for Motion Language Models",
+    "authors": [
+      {
+        "name": "Lixing Tan",
+        "self": true,
+        "marks": ""
+      },
+      {
+        "name": "Qing Xia",
+        "self": false,
+        "marks": ""
+      },
+      {
+        "name": "Yuting Guo",
+        "self": false,
+        "marks": ""
+      },
+      {
+        "name": "Shuai Li",
+        "self": false,
+        "marks": ""
+      },
+      {
+        "name": "Aimin Hao",
+        "self": false,
+        "marks": ""
+      }
+    ],
+    "section": "preprints",
+    "year": 2026,
+    "venue": {
+      "en": "Preprint · First posted Nov 2026",
+      "zh": "预印本 · 2026.11 首次公开"
+    },
+    "summary": {
+      "en": "Connects 2D pose observations to motion language models through paired-view alignment and camera-modulated encoding, supporting motion understanding across viewpoints.",
+      "zh": "通过配对视角对齐与相机调制编码，将二维姿态观测接入动作语言模型，支持跨视角的动作理解。"
+    },
+    "image": null,
+    "links": [
+      {
+        "label": {
+          "en": "Paper",
+          "zh": "论文"
+        },
+        "url": "https://arxiv.org/abs/2611.01541"
+      }
+    ],
+    "topics": [
+      "motion"
+    ],
+    "arxiv_id": "2611.01541",
+    "aliases": [],
+    "locked_fields": [
+      "title",
+      "authors",
+      "links",
+      "topics",
+      "summary"
+    ],
+    "short_title": "MoPort",
+    "ranking": {
+      "priority": 99,
+      "label": "",
+      "source": "",
+      "basis": "preprint"
+    },
+    "show_on_homepage": true
+  },
+  {
+    "id": "paper-2611.01536",
+    "title": "CUFormer: Modality-Aware CT-Ultrasound Point Cloud Registration for Orthopedic Navigation",
+    "authors": [
+      {
+        "name": "Lixing Tan",
+        "self": true,
+        "marks": ""
+      },
+      {
+        "name": "Hongye Hao",
+        "self": false,
+        "marks": ""
+      },
+      {
+        "name": "Tianrun Gu",
+        "self": false,
+        "marks": ""
+      },
+      {
+        "name": "Qing Xia",
+        "self": false,
+        "marks": ""
+      },
+      {
+        "name": "Yuting Guo",
+        "self": false,
+        "marks": ""
+      },
+      {
+        "name": "Shuai Li",
+        "self": false,
+        "marks": ""
+      },
+      {
+        "name": "Aimin Hao",
+        "self": false,
+        "marks": ""
+      }
+    ],
+    "section": "preprints",
+    "year": 2026,
+    "venue": {
+      "en": "Preprint · First posted Nov 2026",
+      "zh": "预印本 · 2026.11 首次公开"
+    },
+    "summary": {
+      "en": "Registers partial ultrasound bone surfaces to preoperative CT using modality-aware features and visibility-weighted correspondences for orthopedic navigation.",
+      "zh": "利用模态感知特征与可见性加权对应关系，将超声观测的局部骨表面配准至术前 CT，为骨科导航提供支持。"
+    },
+    "image": null,
+    "links": [
+      {
+        "label": {
+          "en": "Paper",
+          "zh": "论文"
+        },
+        "url": "https://arxiv.org/abs/2611.01536"
+      }
+    ],
+    "topics": [
+      "medical"
+    ],
+    "arxiv_id": "2611.01536",
+    "aliases": [],
+    "locked_fields": [
+      "title",
+      "authors",
+      "links",
+      "topics",
+      "summary"
+    ],
+    "short_title": "CUFormer",
+    "ranking": {
+      "priority": 99,
+      "label": "",
+      "source": "",
+      "basis": "preprint"
+    },
+    "show_on_homepage": true
+  },
+  {
     "id": "paper-2610.30717",
     "title": "PhyEvolve: Multi-Agent State-Evolution Planning for Physics-Aware Video Generation",
     "authors": [
